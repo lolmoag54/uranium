@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/raw_uranium",
+    "up": "uranium:block/raw_uranium",
+    "north": "uranium:block/raw_uranium",
+    "east": "uranium:block/raw_uranium",
+    "south": "uranium:block/raw_uranium",
+    "west": "uranium:block/raw_uranium",
+    "particle": "uranium:block/raw_uranium"
+  }
+}

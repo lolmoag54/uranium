@@ -3,7 +3,7 @@
   "_type": "tab",
   "definition": {
     "name": "Uranium",
-    "icon": "Blocks.MANGROVE_PROPAGULE",
+    "icon": "CUSTOM:Enricheduranium",
     "showSearch": false
   }
 }

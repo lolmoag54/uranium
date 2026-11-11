@@ -6,9 +6,9 @@
   "item.uranium.depleteduranium": "Depleted uranium",
   "item.uranium.enricheduranium": "Enriched uranium",
   "item.uranium.yellowcake": "Yellowcake",
-  "item.uranium.rawuranium": "Raw uranium",
   "fluid.uranium.sulfuricacid": "Sulfuricacid",
   "block.uranium.sulfuricacid": "Sulfuricacid",
   "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
-  "fluid_type.uranium.sulfuricacid": "Sulfuricacid"
+  "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
+  "item.uranium.rawuranium": "Rawuranium"
 }

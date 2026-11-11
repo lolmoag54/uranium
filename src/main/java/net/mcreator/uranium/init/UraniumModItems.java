@@ -16,7 +16,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.uranium.item.*;
+import net.mcreator.uranium.item.YellowcakeItem;
+import net.mcreator.uranium.item.SulfuricacidItem;
+import net.mcreator.uranium.item.SteelItem;
+import net.mcreator.uranium.item.EnricheduraniumItem;
+import net.mcreator.uranium.item.DepleteduraniumItem;
 import net.mcreator.uranium.UraniumMod;
 
 import java.util.function.Function;
@@ -29,16 +33,16 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> DEPLETEDURANIUM;
 	public static final DeferredItem<Item> ENRICHEDURANIUM;
 	public static final DeferredItem<Item> YELLOWCAKE;
-	public static final DeferredItem<Item> RAWURANIUM;
 	public static final DeferredItem<Item> SULFURICACID_BUCKET;
+	public static final DeferredItem<Item> RAWURANIUM;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
 		DEPLETEDURANIUM = register("depleteduranium", DepleteduraniumItem::new);
 		ENRICHEDURANIUM = register("enricheduranium", EnricheduraniumItem::new);
 		YELLOWCAKE = register("yellowcake", YellowcakeItem::new);
-		RAWURANIUM = register("rawuranium", RawuraniumItem::new);
 		SULFURICACID_BUCKET = register("sulfuricacid_bucket", SulfuricacidItem::new);
+		RAWURANIUM = block(UraniumModBlocks.RAWURANIUM);
 	}
 
 	// Start of user code block custom items

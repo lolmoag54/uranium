@@ -136,20 +136,6 @@
       "path": "~/centrifuge"
     },
     {
-      "name": "Rawuranium",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rawuranium",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/uranium/item/RawuraniumItem.java",
-          "src/main/resources/assets/uranium/models/item/rawuranium.json",
-          "src/main/resources/assets/uranium/items/rawuranium.json"
-        ]
-      }
-    },
-    {
       "name": "Sulfuricacid",
       "type": "fluid",
       "compiles": true,
@@ -191,6 +177,23 @@
           "src/main/resources/data/uranium/recipe/enricheduraniumrecipe.json"
         ]
       }
+    },
+    {
+      "name": "Rawuranium",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rawuranium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json",
+          "src/main/resources/assets/uranium/models/block/rawuranium.json",
+          "src/main/resources/assets/uranium/models/item/rawuranium.json",
+          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
+          "src/main/resources/assets/uranium/blockstates/rawuranium.json",
+          "src/main/resources/assets/uranium/items/rawuranium.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -216,11 +219,11 @@
       "item.uranium.depleteduranium": "Depleted uranium",
       "item.uranium.enricheduranium": "Enriched uranium",
       "item.uranium.yellowcake": "Yellowcake",
-      "item.uranium.rawuranium": "Raw uranium",
       "fluid.uranium.sulfuricacid": "Sulfuricacid",
       "block.uranium.sulfuricacid": "Sulfuricacid",
       "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
-      "fluid_type.uranium.sulfuricacid": "Sulfuricacid"
+      "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
+      "item.uranium.rawuranium": "Rawuranium"
     }
   },
   "metadata": {

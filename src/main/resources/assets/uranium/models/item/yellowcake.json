@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "uranium:item/steel_ingot"
+    "layer0": "uranium:item/yellow_cake"
   }
 }
