@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "on=true": {
+      "model": "uranium:block/centrifuge_0"
+    },
+    "on=false": {
+      "model": "uranium:block/centrifuge"
+    }
+  }
+}

@@ -20,6 +20,10 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.uranium.init.UraniumModItems;
+import net.mcreator.uranium.init.UraniumModBlocks;
+import net.mcreator.uranium.init.UraniumModBlockEntities;
+
 import javax.annotation.Nullable;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -46,6 +50,9 @@ public class UraniumMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		UraniumModBlocks.REGISTRY.register(modEventBus);
+		UraniumModBlockEntities.REGISTRY.register(modEventBus);
+		UraniumModItems.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

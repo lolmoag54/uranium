@@ -1,14 +1,61 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Steel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/steel.json",
+          "src/main/resources/assets/uranium/models/item/steel.json",
+          "src/main/java/net/mcreator/uranium/item/SteelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Centrifuge",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifuge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
+          "src/main/resources/assets/uranium/models/block/centrifuge.json",
+          "src/main/resources/assets/uranium/items/centrifuge.json",
+          "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
+          "src/main/resources/assets/uranium/models/item/centrifuge.json",
+          "src/main/resources/assets/uranium/blockstates/centrifuge.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/centrifuge_0.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Centrifuge@CUSTOM:Centrifuge"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~Centrifuge@CUSTOM:Centrifuge"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.uranium.steel": "Steel",
+      "item.uranium.centrifuge": "Centrifuge"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/uranium/UraniumMod.java",
       "src/main/resources/pack.mcmeta"
