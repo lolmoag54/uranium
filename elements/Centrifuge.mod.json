@@ -255,6 +255,18 @@
         "name": "CUSTOM:on",
         "type": "logic",
         "value": false
+      },
+      {
+        "min": 0,
+        "max": 400,
+        "name": "CUSTOM:centrifugation",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "name": "CUSTOM:light",
+        "type": "logic",
+        "value": false
       }
     ],
     "name": "Centrifuge",
@@ -269,7 +281,9 @@
     "maxStackSize": 16,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      "CUSTOM:Uraniumcreativetab"
+    ],
     "destroyTool": "pickaxe",
     "customDrop": "",
     "dropAmount": 1,
@@ -282,7 +296,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": true,
     "lightOpacity": 0,
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -305,12 +319,12 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": "ANVIL",
-    "isCustomSoundType": false,
-    "breakSound": "",
-    "fallSound": "",
-    "hitSound": "",
-    "placeSound": "",
-    "stepSound": "",
+    "isCustomSoundType": true,
+    "breakSound": "block.anvil.break",
+    "fallSound": "block.anvil.fall",
+    "hitSound": "block.anvil.hit",
+    "placeSound": "block.anvil.place",
+    "stepSound": "block.anvil.step",
     "luminance": {
       "fixedValue": 0.0
     },
@@ -323,21 +337,23 @@
       "fixedValue": 7.0
     },
     "hasInventory": true,
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "guiBoundTo": "Centrifugegui",
+    "openGUIOnRightClick": true,
+    "inventorySize": 3,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
-    "energyInitial": 0,
-    "energyCapacity": 400000,
-    "energyMaxReceive": 200,
-    "energyMaxExtract": 200,
+    "energyInitial": 100,
+    "energyCapacity": 50000,
+    "energyMaxReceive": 1000,
+    "energyMaxExtract": 1000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": "CentrifugeOnTickUpdate",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

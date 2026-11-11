@@ -1,4 +1,9 @@
 {
   "item.uranium.steel": "Steel",
-  "item.uranium.centrifuge": "Centrifuge"
+  "item.uranium.centrifuge": "Centrifuge",
+  "gui.uranium.centrifugegui.label_centrifuge": "centrifuge",
+  "item_group.uranium.uraniumcreativetab": "Uranium",
+  "item.uranium.depleteduranium": "Depleted uranium",
+  "item.uranium.enricheduranium": "Enriched uranium",
+  "item.uranium.yellowcake": "Yellowcake"
 }

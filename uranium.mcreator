@@ -31,7 +31,144 @@
           "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
           "src/main/resources/assets/uranium/models/block/centrifuge_0.json"
         ]
+      },
+      "path": "~/centrifuge"
+    },
+    {
+      "name": "CentrifugeOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifuge_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CentrifugeOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/centrifuge"
+    },
+    {
+      "name": "Centrifugegui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifugegui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/client/gui/CentrifugeguiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/CentrifugeguiMenu.java"
+        ]
+      },
+      "path": "~/centrifuge"
+    },
+    {
+      "name": "Uraniumcreativetab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumcreativetab",
+      "metadata": {
+        "files": []
       }
+    },
+    {
+      "name": "Depleteduranium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleteduranium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/DepleteduraniumItem.java",
+          "src/main/resources/assets/uranium/models/item/depleteduranium.json",
+          "src/main/resources/assets/uranium/items/depleteduranium.json"
+        ]
+      }
+    },
+    {
+      "name": "Enricheduranium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enricheduranium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/enricheduranium.json",
+          "src/main/java/net/mcreator/uranium/item/EnricheduraniumItem.java",
+          "src/main/resources/assets/uranium/models/item/enricheduranium.json"
+        ]
+      }
+    },
+    {
+      "name": "Yellowcake",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowcake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/YellowcakeItem.java",
+          "src/main/resources/assets/uranium/models/item/yellowcake.json",
+          "src/main/resources/assets/uranium/items/yellowcake.json"
+        ]
+      }
+    },
+    {
+      "name": "CentrifugeOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifuge_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CentrifugeOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/centrifuge"
     }
   ],
   "variable_elements": [],
@@ -48,22 +185,36 @@
   "language_map": {
     "en_us": {
       "item.uranium.steel": "Steel",
-      "item.uranium.centrifuge": "Centrifuge"
+      "item.uranium.centrifuge": "Centrifuge",
+      "gui.uranium.centrifugegui.label_centrifuge": "centrifuge",
+      "item_group.uranium.uraniumcreativetab": "Uranium",
+      "item.uranium.depleteduranium": "Depleted uranium",
+      "item.uranium.enricheduranium": "Enriched uranium",
+      "item.uranium.yellowcake": "Yellowcake"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
       "src/main/java/net/mcreator/uranium/UraniumMod.java",
       "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "centrifuge",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "uranium",
