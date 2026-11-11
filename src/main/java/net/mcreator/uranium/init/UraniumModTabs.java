@@ -23,5 +23,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.DEPLETEDURANIUM.get());
 				tabData.accept(UraniumModItems.ENRICHEDURANIUM.get());
 				tabData.accept(UraniumModItems.YELLOWCAKE.get());
+				tabData.accept(UraniumModItems.RAWURANIUM.get());
+				tabData.accept(UraniumModItems.SULFURICACID_BUCKET.get());
 			}).build());
 }

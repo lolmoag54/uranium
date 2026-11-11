@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "uranium:rawuranium",
+    "b": "uranium:sulfuricacid_bucket"
+  },
+  "result": {
+    "id": "uranium:yellowcake",
+    "count": 8
+  }
+}

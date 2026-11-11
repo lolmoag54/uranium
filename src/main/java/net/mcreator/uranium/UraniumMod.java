@@ -20,11 +20,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.uranium.init.UraniumModTabs;
-import net.mcreator.uranium.init.UraniumModMenus;
-import net.mcreator.uranium.init.UraniumModItems;
-import net.mcreator.uranium.init.UraniumModBlocks;
-import net.mcreator.uranium.init.UraniumModBlockEntities;
+import net.mcreator.uranium.init.*;
 
 import javax.annotation.Nullable;
 
@@ -57,6 +53,8 @@ public class UraniumMod {
 		UraniumModItems.REGISTRY.register(modEventBus);
 		UraniumModTabs.REGISTRY.register(modEventBus);
 		UraniumModMenus.REGISTRY.register(modEventBus);
+		UraniumModFluids.REGISTRY.register(modEventBus);
+		UraniumModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
