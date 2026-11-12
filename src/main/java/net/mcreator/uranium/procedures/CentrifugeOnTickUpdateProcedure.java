@@ -35,6 +35,7 @@ public class CentrifugeOnTickUpdateProcedure {
 					world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 			}
 		}
+		CentrifugeenergyprocedureProcedure.execute(world, x, y, z);
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {

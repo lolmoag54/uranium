@@ -22,14 +22,14 @@
       "registry_name": "centrifuge",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
-          "src/main/resources/assets/uranium/models/block/centrifuge.json",
-          "src/main/resources/assets/uranium/items/centrifuge.json",
-          "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
-          "src/main/resources/assets/uranium/models/item/centrifuge.json",
-          "src/main/resources/assets/uranium/blockstates/centrifuge.json",
           "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
-          "src/main/resources/assets/uranium/models/block/centrifuge_0.json"
+          "src/main/resources/assets/uranium/items/centrifuge.json",
+          "src/main/resources/assets/uranium/models/block/centrifuge_0.json",
+          "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
+          "src/main/resources/assets/uranium/models/block/centrifuge.json",
+          "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
+          "src/main/resources/assets/uranium/models/item/centrifuge.json",
+          "src/main/resources/assets/uranium/blockstates/centrifuge.json"
         ]
       },
       "path": "~/centrifuge"
@@ -1382,6 +1382,37 @@
         ]
       },
       "path": "~/cables/procedure/FE"
+    },
+    {
+      "name": "Centrifugeenergyprocedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifugeenergyprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CentrifugeenergyprocedureProcedure.java"
+        ]
+      },
+      "path": "~/centrifuge"
     }
   ],
   "variable_elements": [
@@ -1398,6 +1429,8 @@
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Cable@CUSTOM:Cable",
       "~CableTXCC@CUSTOM:CableTXCC",
       "~CableTX@CUSTOM:CableTX",
       "~CableLT@CUSTOM:CableLT",
@@ -1413,12 +1446,7 @@
       "~CableLC@CUSTOM:CableLC",
       "~CableLCC@CUSTOM:CableLCC",
       "~CableTXC@CUSTOM:CableTXC",
-      "~CableX@CUSTOM:CableX",
-      "~Cable@CUSTOM:Cable",
-      "~Centrifuge@CUSTOM:Centrifuge"
-    ],
-    "BLOCKS:minecraft:needs_diamond_tool": [
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~CableX@CUSTOM:CableX"
     ],
     "BLOCKS:fe_system:cables/f/copper": [
       "CUSTOM:Cable",
@@ -1438,6 +1466,9 @@
       "CUSTOM:CableXC",
       "CUSTOM:CableF",
       "CUSTOM:CableS"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~Centrifuge@CUSTOM:Centrifuge"
     ]
   },
   "tab_element_order": {},
