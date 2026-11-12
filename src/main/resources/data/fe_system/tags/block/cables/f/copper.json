@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "uranium:cable_t",
+    "uranium:cable_txc",
+    "uranium:cable_x",
+    "uranium:cable_tx",
+    "uranium:cable_xc",
+    "uranium:cable_lt",
+    "uranium:cable_ltc",
+    "uranium:cable_e",
+    "uranium:cable_lcc",
+    "uranium:cable",
+    "uranium:cable_tc",
+    "uranium:cable_f",
+    "uranium:cable_i",
+    "uranium:cable_txcc",
+    "uranium:cable_l",
+    "uranium:cable_lc",
+    "uranium:cable_s"
+  ]
+}

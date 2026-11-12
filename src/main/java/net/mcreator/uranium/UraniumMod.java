@@ -20,6 +20,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.uranium.network.UraniumModVariables;
 import net.mcreator.uranium.init.*;
 
 import javax.annotation.Nullable;
@@ -52,6 +53,7 @@ public class UraniumMod {
 		UraniumModBlockEntities.REGISTRY.register(modEventBus);
 		UraniumModItems.REGISTRY.register(modEventBus);
 		UraniumModTabs.REGISTRY.register(modEventBus);
+		UraniumModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		UraniumModMenus.REGISTRY.register(modEventBus);
 		UraniumModFluids.REGISTRY.register(modEventBus);
 		UraniumModFluidTypes.REGISTRY.register(modEventBus);

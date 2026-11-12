@@ -23,6 +23,23 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> MINERAIDEPLOMB;
 	public static final DeferredBlock<Block> GROSSEBATTERIE;
 	public static final DeferredBlock<Block> SOLARPANEL;
+	public static final DeferredBlock<Block> CABLE;
+	public static final DeferredBlock<Block> CABLE_E;
+	public static final DeferredBlock<Block> CABLE_I;
+	public static final DeferredBlock<Block> CABLE_L;
+	public static final DeferredBlock<Block> CABLE_LC;
+	public static final DeferredBlock<Block> CABLE_LCC;
+	public static final DeferredBlock<Block> CABLE_LT;
+	public static final DeferredBlock<Block> CABLE_LTC;
+	public static final DeferredBlock<Block> CABLE_T;
+	public static final DeferredBlock<Block> CABLE_TC;
+	public static final DeferredBlock<Block> CABLE_TX;
+	public static final DeferredBlock<Block> CABLE_TXC;
+	public static final DeferredBlock<Block> CABLE_TXCC;
+	public static final DeferredBlock<Block> CABLE_X;
+	public static final DeferredBlock<Block> CABLE_XC;
+	public static final DeferredBlock<Block> CABLE_F;
+	public static final DeferredBlock<Block> CABLE_S;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -31,6 +48,23 @@ public class UraniumModBlocks {
 		MINERAIDEPLOMB = register("mineraideplomb", MineraideplombBlock::new);
 		GROSSEBATTERIE = register("grossebatterie", GrossebatterieBlock::new);
 		SOLARPANEL = register("solarpanel", SolarpanelBlock::new);
+		CABLE = register("cable", CableBlock::new);
+		CABLE_E = register("cable_e", CableEBlock::new);
+		CABLE_I = register("cable_i", CableIBlock::new);
+		CABLE_L = register("cable_l", CableLBlock::new);
+		CABLE_LC = register("cable_lc", CableLCBlock::new);
+		CABLE_LCC = register("cable_lcc", CableLCCBlock::new);
+		CABLE_LT = register("cable_lt", CableLTBlock::new);
+		CABLE_LTC = register("cable_ltc", CableLTCBlock::new);
+		CABLE_T = register("cable_t", CableTBlock::new);
+		CABLE_TC = register("cable_tc", CableTCBlock::new);
+		CABLE_TX = register("cable_tx", CableTXBlock::new);
+		CABLE_TXC = register("cable_txc", CableTXCBlock::new);
+		CABLE_TXCC = register("cable_txcc", CableTXCCBlock::new);
+		CABLE_X = register("cable_x", CableXBlock::new);
+		CABLE_XC = register("cable_xc", CableXCBlock::new);
+		CABLE_F = register("cable_f", CableFBlock::new);
+		CABLE_S = register("cable_s", CableSBlock::new);
 	}
 
 	// Start of user code block custom blocks

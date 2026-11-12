@@ -38,6 +38,23 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> MINERAIDEPLOMB;
 	public static final DeferredItem<Item> GROSSEBATTERIE;
 	public static final DeferredItem<Item> SOLARPANEL;
+	public static final DeferredItem<Item> CABLE;
+	public static final DeferredItem<Item> CABLE_E;
+	public static final DeferredItem<Item> CABLE_I;
+	public static final DeferredItem<Item> CABLE_L;
+	public static final DeferredItem<Item> CABLE_LC;
+	public static final DeferredItem<Item> CABLE_LCC;
+	public static final DeferredItem<Item> CABLE_LT;
+	public static final DeferredItem<Item> CABLE_LTC;
+	public static final DeferredItem<Item> CABLE_T;
+	public static final DeferredItem<Item> CABLE_TC;
+	public static final DeferredItem<Item> CABLE_TX;
+	public static final DeferredItem<Item> CABLE_TXC;
+	public static final DeferredItem<Item> CABLE_TXCC;
+	public static final DeferredItem<Item> CABLE_X;
+	public static final DeferredItem<Item> CABLE_XC;
+	public static final DeferredItem<Item> CABLE_F;
+	public static final DeferredItem<Item> CABLE_S;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -53,6 +70,23 @@ public class UraniumModItems {
 		MINERAIDEPLOMB = block(UraniumModBlocks.MINERAIDEPLOMB);
 		GROSSEBATTERIE = block(UraniumModBlocks.GROSSEBATTERIE);
 		SOLARPANEL = block(UraniumModBlocks.SOLARPANEL);
+		CABLE = block(UraniumModBlocks.CABLE);
+		CABLE_E = block(UraniumModBlocks.CABLE_E);
+		CABLE_I = block(UraniumModBlocks.CABLE_I);
+		CABLE_L = block(UraniumModBlocks.CABLE_L);
+		CABLE_LC = block(UraniumModBlocks.CABLE_LC);
+		CABLE_LCC = block(UraniumModBlocks.CABLE_LCC);
+		CABLE_LT = block(UraniumModBlocks.CABLE_LT);
+		CABLE_LTC = block(UraniumModBlocks.CABLE_LTC);
+		CABLE_T = block(UraniumModBlocks.CABLE_T);
+		CABLE_TC = block(UraniumModBlocks.CABLE_TC);
+		CABLE_TX = block(UraniumModBlocks.CABLE_TX);
+		CABLE_TXC = block(UraniumModBlocks.CABLE_TXC);
+		CABLE_TXCC = block(UraniumModBlocks.CABLE_TXCC);
+		CABLE_X = block(UraniumModBlocks.CABLE_X);
+		CABLE_XC = block(UraniumModBlocks.CABLE_XC);
+		CABLE_F = block(UraniumModBlocks.CABLE_F);
+		CABLE_S = block(UraniumModBlocks.CABLE_S);
 	}
 
 	// Start of user code block custom items

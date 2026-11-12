@@ -353,12 +353,13 @@
       "registry_name": "grossebatterie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
           "src/main/resources/data/uranium/loot_table/blocks/grossebatterie.json",
-          "src/main/resources/assets/uranium/models/block/grossebatterie.json",
           "src/main/resources/assets/uranium/blockstates/grossebatterie.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie.json",
           "src/main/resources/assets/uranium/models/item/grossebatterie.json",
-          "src/main/resources/assets/uranium/items/grossebatterie.json"
+          "src/main/resources/assets/uranium/items/grossebatterie.json",
+          "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/GrossebatterieBlockEntity.java"
         ]
       }
     },
@@ -408,19 +409,1035 @@
           "src/main/resources/assets/uranium/blockstates/solarpanel.json"
         ]
       }
+    },
+    {
+      "name": "GrossebatterieOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grossebatterie_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/GrossebatterieOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CableOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure"
+    },
+    {
+      "name": "Cable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CableBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/cable.json",
+          "src/main/resources/assets/uranium/models/block/cable.json",
+          "src/main/java/net/mcreator/uranium/block/CableBlock.java",
+          "src/main/resources/assets/uranium/models/item/cable.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable.json",
+          "src/main/resources/assets/uranium/items/cable.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableE",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_e",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/cable_e.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableEBlockEntity.java",
+          "src/main/resources/assets/uranium/items/cable_e.json",
+          "src/main/resources/assets/uranium/models/block/cable_e.json",
+          "src/main/resources/assets/uranium/models/item/cable_e.json",
+          "src/main/java/net/mcreator/uranium/block/CableEBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_e.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableI",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_i",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/cable_i.json",
+          "src/main/resources/assets/uranium/models/block/cable_i.json",
+          "src/main/java/net/mcreator/uranium/block/CableIBlock.java",
+          "src/main/resources/assets/uranium/blockstates/cable_i.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_i.json",
+          "src/main/resources/assets/uranium/models/item/cable_i.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableIBlockEntity.java"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableL",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_l",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/cable_l.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableLBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CableLBlock.java",
+          "src/main/resources/assets/uranium/items/cable_l.json",
+          "src/main/resources/assets/uranium/models/item/cable_l.json",
+          "src/main/resources/assets/uranium/blockstates/cable_l.json",
+          "src/main/resources/assets/uranium/models/block/cable_l.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableLC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CableLCBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/cable_lc.json",
+          "src/main/resources/assets/uranium/models/item/cable_lc.json",
+          "src/main/resources/assets/uranium/items/cable_lc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_lc.json",
+          "src/main/resources/assets/uranium/models/block/cable_lc.json",
+          "src/main/java/net/mcreator/uranium/block/CableLCBlock.java"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableLCC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lcc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CableLCCBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_lcc.json",
+          "src/main/resources/assets/uranium/items/cable_lcc.json",
+          "src/main/resources/assets/uranium/blockstates/cable_lcc.json",
+          "src/main/resources/assets/uranium/models/block/cable_lcc.json",
+          "src/main/java/net/mcreator/uranium/block/CableLCCBlock.java",
+          "src/main/resources/assets/uranium/models/item/cable_lcc.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableLT",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/cable_lt.json",
+          "src/main/resources/assets/uranium/models/block/cable_lt.json",
+          "src/main/resources/assets/uranium/blockstates/cable_lt.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_lt.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableLTBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CableLTBlock.java",
+          "src/main/resources/assets/uranium/items/cable_lt.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableLTC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_ltc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/cable_ltc.json",
+          "src/main/resources/assets/uranium/items/cable_ltc.json",
+          "src/main/resources/assets/uranium/blockstates/cable_ltc.json",
+          "src/main/resources/assets/uranium/models/block/cable_ltc.json",
+          "src/main/java/net/mcreator/uranium/block/CableLTCBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CableLTCBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_ltc.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableT",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_t",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CableTBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_t.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableTBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/cable_t.json",
+          "src/main/resources/assets/uranium/blockstates/cable_t.json",
+          "src/main/resources/assets/uranium/models/block/cable_t.json",
+          "src/main/resources/assets/uranium/items/cable_t.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableTC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_tc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/cable_tc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_tc.json",
+          "src/main/resources/assets/uranium/models/item/cable_tc.json",
+          "src/main/resources/assets/uranium/items/cable_tc.json",
+          "src/main/resources/assets/uranium/models/block/cable_tc.json",
+          "src/main/java/net/mcreator/uranium/block/CableTCBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CableTCBlockEntity.java"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableTX",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_tx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CableTXBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/cable_tx.json",
+          "src/main/resources/assets/uranium/models/item/cable_tx.json",
+          "src/main/resources/assets/uranium/items/cable_tx.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_tx.json",
+          "src/main/java/net/mcreator/uranium/block/CableTXBlock.java",
+          "src/main/resources/assets/uranium/blockstates/cable_tx.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableTXC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_txc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CableTXCBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CableTXCBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/cable_txc.json",
+          "src/main/resources/assets/uranium/items/cable_txc.json",
+          "src/main/resources/assets/uranium/blockstates/cable_txc.json",
+          "src/main/resources/assets/uranium/models/block/cable_txc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_txc.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableTXCC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_txcc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CableTXCCBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CableTXCCBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/cable_txcc.json",
+          "src/main/resources/assets/uranium/models/item/cable_txcc.json",
+          "src/main/resources/assets/uranium/items/cable_txcc.json",
+          "src/main/resources/assets/uranium/blockstates/cable_txcc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_txcc.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableX",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_x",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CableXBlock.java",
+          "src/main/resources/assets/uranium/blockstates/cable_x.json",
+          "src/main/resources/assets/uranium/models/item/cable_x.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_x.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableXBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/cable_x.json",
+          "src/main/resources/assets/uranium/items/cable_x.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableXC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_xc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CableXCBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_xc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableXCBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/cable_xc.json",
+          "src/main/resources/assets/uranium/models/item/cable_xc.json",
+          "src/main/resources/assets/uranium/items/cable_xc.json",
+          "src/main/resources/assets/uranium/blockstates/cable_xc.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableF",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/cable_f.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_f.json",
+          "src/main/resources/assets/uranium/models/block/cable_f.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableFBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/cable_f.json",
+          "src/main/java/net/mcreator/uranium/block/CableFBlock.java",
+          "src/main/resources/assets/uranium/blockstates/cable_f.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableS",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_s",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/cable_s.json",
+          "src/main/resources/assets/uranium/items/cable_s.json",
+          "src/main/resources/assets/uranium/blockstates/cable_s.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableSBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_s.json",
+          "src/main/java/net/mcreator/uranium/block/CableSBlock.java",
+          "src/main/resources/assets/uranium/models/block/cable_s.json"
+        ]
+      },
+      "path": "~/cables/cables"
+    },
+    {
+      "name": "CableModelUpdaterMain",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_main",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterMainProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater"
+    },
+    {
+      "name": "CableModelUpdaterN",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_n",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterNProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterE",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_e",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterEProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_i",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterIProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterL",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_l",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterLC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_lc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLCProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterLCC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_lcc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLCCProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterLT",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_lt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLTProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterLTC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_ltc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLTCProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterT",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_t",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterTC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_tc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTCProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterTX",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_tx",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTXProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterTXC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_txc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTXCProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterTXCC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_txcc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTXCCProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterX",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_x",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterXProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterXC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_xc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterXCProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterF",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_f",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterFProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableModelUpdaterS",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_model_updater_s",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterSProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/Model_Updater/SubModel"
+    },
+    {
+      "name": "CableForgeEnergyMain",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cable_forge_energy_main",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CableForgeEnergyMainProcedure.java"
+        ]
+      },
+      "path": "~/cables/procedure/FE"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "forgeFlow",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CableTXCC@CUSTOM:CableTXCC",
+      "~CableTX@CUSTOM:CableTX",
+      "~CableLT@CUSTOM:CableLT",
+      "~CableLTC@CUSTOM:CableLTC",
+      "~CableXC@CUSTOM:CableXC",
+      "~CableL@CUSTOM:CableL",
+      "~CableI@CUSTOM:CableI",
+      "~CableTC@CUSTOM:CableTC",
+      "~CableE@CUSTOM:CableE",
+      "~CableF@CUSTOM:CableF",
+      "~CableS@CUSTOM:CableS",
+      "~CableT@CUSTOM:CableT",
+      "~CableLC@CUSTOM:CableLC",
+      "~CableLCC@CUSTOM:CableLCC",
+      "~CableTXC@CUSTOM:CableTXC",
+      "~CableX@CUSTOM:CableX",
+      "~Cable@CUSTOM:Cable",
       "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~Centrifuge@CUSTOM:Centrifuge"
+    ],
+    "BLOCKS:fe_system:cables/f/copper": [
+      "CUSTOM:Cable",
+      "CUSTOM:CableE",
+      "CUSTOM:CableI",
+      "CUSTOM:CableL",
+      "CUSTOM:CableLC",
+      "CUSTOM:CableLCC",
+      "CUSTOM:CableLT",
+      "CUSTOM:CableLTC",
+      "CUSTOM:CableT",
+      "CUSTOM:CableTC",
+      "CUSTOM:CableTX",
+      "CUSTOM:CableTXC",
+      "CUSTOM:CableTXCC",
+      "CUSTOM:CableX",
+      "CUSTOM:CableXC",
+      "CUSTOM:CableF",
+      "CUSTOM:CableS"
     ]
   },
   "tab_element_order": {},
@@ -443,8 +1460,25 @@
       "item.uranium.pepitedeplomb": "Pepite de plomb",
       "item.uranium.blockdeplomb": "Block de plomb",
       "item.uranium.mineraideplomb": "Minerai de plomb",
-      "item.uranium.grossebatterie": "Grossebatterie",
-      "item.uranium.solarpanel": "Solar panel"
+      "item.uranium.grossebatterie": "heavy batterie",
+      "item.uranium.solarpanel": "Solar panel",
+      "item.uranium.cable": "Cable",
+      "item.uranium.cable_e": "Cable",
+      "item.uranium.cable_i": "Cable",
+      "item.uranium.cable_l": "Cable",
+      "item.uranium.cable_lc": "Cable",
+      "item.uranium.cable_lcc": "Cable",
+      "item.uranium.cable_lt": "Cable",
+      "item.uranium.cable_ltc": "Cable",
+      "item.uranium.cable_t": "Cable",
+      "item.uranium.cable_tc": "Cable",
+      "item.uranium.cable_tx": "Cable",
+      "item.uranium.cable_txc": "Cable",
+      "item.uranium.cable_txcc": "Cable",
+      "item.uranium.cable_x": "Cable",
+      "item.uranium.cable_xc": "Cable",
+      "item.uranium.cable_f": "Cable",
+      "item.uranium.cable_s": "Cable"
     }
   },
   "metadata": {
@@ -460,6 +1494,7 @@
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/uranium/UraniumMod.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml"
     ]
@@ -474,6 +1509,33 @@
       {
         "name": "plomb",
         "children": []
+      },
+      {
+        "name": "cables",
+        "children": [
+          {
+            "name": "cables",
+            "children": []
+          },
+          {
+            "name": "procedure",
+            "children": [
+              {
+                "name": "Model_Updater",
+                "children": [
+                  {
+                    "name": "SubModel",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "FE",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
