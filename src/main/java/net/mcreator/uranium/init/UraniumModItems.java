@@ -36,6 +36,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> PEPITEDEPLOMB;
 	public static final DeferredItem<Item> BLOCKDEPLOMB;
 	public static final DeferredItem<Item> MINERAIDEPLOMB;
+	public static final DeferredItem<Item> GROSSEBATTERIE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -49,6 +50,7 @@ public class UraniumModItems {
 		PEPITEDEPLOMB = register("pepitedeplomb", PepitedeplombItem::new);
 		BLOCKDEPLOMB = block(UraniumModBlocks.BLOCKDEPLOMB);
 		MINERAIDEPLOMB = block(UraniumModBlocks.MINERAIDEPLOMB);
+		GROSSEBATTERIE = block(UraniumModBlocks.GROSSEBATTERIE);
 	}
 
 	// Start of user code block custom items

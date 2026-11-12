@@ -344,6 +344,23 @@
         ]
       },
       "path": "~/plomb"
+    },
+    {
+      "name": "Grossebatterie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grossebatterie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/grossebatterie.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie.json",
+          "src/main/resources/assets/uranium/blockstates/grossebatterie.json",
+          "src/main/resources/assets/uranium/models/item/grossebatterie.json",
+          "src/main/resources/assets/uranium/items/grossebatterie.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -378,24 +395,25 @@
       "item.uranium.lingotdeplomb": "Lingot de plomb",
       "item.uranium.pepitedeplomb": "Pepite de plomb",
       "item.uranium.blockdeplomb": "Block de plomb",
-      "item.uranium.mineraideplomb": "Minerai de plomb"
+      "item.uranium.mineraideplomb": "Minerai de plomb",
+      "item.uranium.grossebatterie": "Grossebatterie"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
-      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java"
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
