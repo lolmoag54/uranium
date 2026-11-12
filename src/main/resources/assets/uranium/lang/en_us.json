@@ -6,9 +6,14 @@
   "item.uranium.depleteduranium": "Depleted uranium",
   "item.uranium.enricheduranium": "Enriched uranium",
   "item.uranium.yellowcake": "Yellowcake",
-  "item.uranium.rawuranium": "Raw uranium",
   "fluid.uranium.sulfuricacid": "Sulfuricacid",
   "block.uranium.sulfuricacid": "Sulfuricacid",
   "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
-  "fluid_type.uranium.sulfuricacid": "Sulfuricacid"
+  "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
+  "item.uranium.rawuranium": "Rawuranium",
+  "item.uranium.fluoride": "Fluoride",
+  "item.uranium.lingotdeplomb": "Lingot de plomb",
+  "item.uranium.pepitedeplomb": "Pepite de plomb",
+  "item.uranium.blockdeplomb": "Block de plomb",
+  "item.uranium.mineraideplomb": "Minerai de plomb"
 }

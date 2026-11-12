@@ -275,6 +275,75 @@
         ]
       },
       "path": "~/centrifuge"
+    },
+    {
+      "name": "Lingotdeplomb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lingotdeplomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/lingotdeplomb.json",
+          "src/main/java/net/mcreator/uranium/item/LingotdeplombItem.java",
+          "src/main/resources/assets/uranium/items/lingotdeplomb.json"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Pepitedeplomb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepitedeplomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/pepitedeplomb.json",
+          "src/main/resources/assets/uranium/items/pepitedeplomb.json",
+          "src/main/java/net/mcreator/uranium/item/PepitedeplombItem.java"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Blockdeplomb",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockdeplomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/blockdeplomb.json",
+          "src/main/resources/assets/uranium/models/item/blockdeplomb.json",
+          "src/main/resources/assets/uranium/models/block/blockdeplomb.json",
+          "src/main/java/net/mcreator/uranium/block/BlockdeplombBlock.java",
+          "src/main/resources/assets/uranium/blockstates/blockdeplomb.json",
+          "src/main/resources/assets/uranium/items/blockdeplomb.json"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Mineraideplomb",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mineraideplomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/worldgen/placed_feature/mineraideplomb.json",
+          "src/main/resources/assets/uranium/items/mineraideplomb.json",
+          "src/main/java/net/mcreator/uranium/block/MineraideplombBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/mineraideplomb.json",
+          "src/main/resources/assets/uranium/blockstates/mineraideplomb.json",
+          "src/main/resources/data/uranium/neoforge/biome_modifier/mineraideplomb_biome_modifier.json",
+          "src/main/resources/data/uranium/worldgen/configured_feature/mineraideplomb.json",
+          "src/main/resources/assets/uranium/models/block/mineraideplomb.json",
+          "src/main/resources/assets/uranium/models/item/mineraideplomb.json"
+        ]
+      },
+      "path": "~/plomb"
     }
   ],
   "variable_elements": [],
@@ -305,7 +374,11 @@
       "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
       "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
       "item.uranium.rawuranium": "Rawuranium",
-      "item.uranium.fluoride": "Fluoride"
+      "item.uranium.fluoride": "Fluoride",
+      "item.uranium.lingotdeplomb": "Lingot de plomb",
+      "item.uranium.pepitedeplomb": "Pepite de plomb",
+      "item.uranium.blockdeplomb": "Block de plomb",
+      "item.uranium.mineraideplomb": "Minerai de plomb"
     }
   },
   "metadata": {
@@ -330,6 +403,10 @@
     "children": [
       {
         "name": "centrifuge",
+        "children": []
+      },
+      {
+        "name": "plomb",
         "children": []
       }
     ]
