@@ -1,0 +1,8 @@
+{
+  "parent": "uranium:custom/centrifugeuse",
+  "textures": {
+    "all": "uranium:block/eteint",
+    "particle": "uranium:block/allume",
+    "0": "uranium:block/eteint"
+  }
+}

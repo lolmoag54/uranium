@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": ""
+      }
+    },
+    "off": {
+      "name": "off",
+      "map": {
+        "0": "allume"
+      }
+    },
+    "on": {
+      "name": "on",
+      "map": {
+        "0": "eteint"
+      }
+    }
+  }
+}
