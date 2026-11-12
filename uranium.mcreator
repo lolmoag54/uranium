@@ -22,14 +22,14 @@
       "registry_name": "centrifuge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/block/centrifuge.json",
           "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
-          "src/main/resources/assets/uranium/models/block/centrifuge_0.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/centrifuge.json",
+          "src/main/resources/assets/uranium/items/centrifuge.json",
           "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
           "src/main/resources/assets/uranium/models/item/centrifuge.json",
           "src/main/resources/assets/uranium/blockstates/centrifuge.json",
-          "src/main/resources/assets/uranium/items/centrifuge.json"
+          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/centrifuge_0.json"
         ]
       },
       "path": "~/centrifuge"
@@ -243,6 +243,38 @@
           "src/main/resources/assets/uranium/models/item/fluoride.json"
         ]
       }
+    },
+    {
+      "name": "Progressbarcentrifugegui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progressbarcentrifugegui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ProgressbarcentrifugeguiProcedure.java"
+        ]
+      },
+      "path": "~/centrifuge"
     }
   ],
   "variable_elements": [],
@@ -280,9 +312,9 @@
     "files": [
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",

@@ -71,6 +71,20 @@
           "y": 49,
           "locked": false
         }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "public.png",
+          "spritesCount": 9,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "Progressbarcentrifugegui"
+          },
+          "x": 195,
+          "y": 71,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

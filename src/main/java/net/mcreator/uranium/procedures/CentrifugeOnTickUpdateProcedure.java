@@ -6,7 +6,10 @@ import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
@@ -17,6 +20,20 @@ public class CentrifugeOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.YELLOWCAKE.get()) {
 			UraniumcentrifugerecipeProcedure.execute(world, x, y, z, blockstate);
+		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.AIR.asItem()) {
+			{
+				int _value = 0;
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("centrifugation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("on") instanceof BooleanProperty _booleanProp)
+					world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
+			}
 		}
 	}
 

@@ -3,6 +3,7 @@ package net.mcreator.uranium.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.Identifier;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.renderer.RenderPipelines;
@@ -11,6 +12,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 
 import net.mcreator.uranium.world.inventory.CentrifugeguiMenu;
+import net.mcreator.uranium.procedures.ProgressbarcentrifugeguiProcedure;
 import net.mcreator.uranium.init.UraniumModScreens;
 
 import com.mojang.blaze3d.platform.InputConstants;
@@ -21,6 +23,7 @@ public class CentrifugeguiScreen extends AbstractContainerScreen<CentrifugeguiMe
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final Identifier BACKGROUND = Identifier.parse("uranium:textures/screens/centrifugegui.png");
+	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/public.png");
 
 	public CentrifugeguiScreen(CentrifugeguiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text, 174, 149);
@@ -46,6 +49,7 @@ public class CentrifugeguiScreen extends AbstractContainerScreen<CentrifugeguiMe
 	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 68, this.topPos + 25, 0, Mth.clamp((int) ProgressbarcentrifugeguiProcedure.execute(world, x, y, z) * 16, 0, 128), 32, 16, 32, 144);
 	}
 
 	@Override

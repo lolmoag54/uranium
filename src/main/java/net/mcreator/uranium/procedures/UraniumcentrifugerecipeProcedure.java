@@ -30,12 +30,19 @@ public class UraniumcentrifugerecipeProcedure {
 				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() <= 63 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == Blocks.AIR.asItem()
 						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == UraniumModItems.DEPLETEDURANIUM.get())) {
 			{
+				int _value = 0;
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				BlockState _bs = world.getBlockState(_pos);
+				if (_bs.getBlock().getStateDefinition().getProperty("centrifugation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+			}
+			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("on") instanceof BooleanProperty _booleanProp)
 					world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 			}
-			if ((getPropertyByName(blockstate, "centrifugation") instanceof IntegerProperty _getip15 ? blockstate.getValue(_getip15) : -1) == 400) {
+			if ((getPropertyByName(blockstate, "centrifugation") instanceof IntegerProperty _getip16 ? blockstate.getValue(_getip16) : -1) == 400) {
 				if (world instanceof ServerLevel _serverLevel) {
 					BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_be instanceof Container _container) {
@@ -76,22 +83,29 @@ public class UraniumcentrifugerecipeProcedure {
 					if (_bs.getBlock().getStateDefinition().getProperty("centrifugation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-			} else {
+			} else if ((getPropertyByName(blockstate, "centrifugation") instanceof IntegerProperty _getip27 ? blockstate.getValue(_getip27) : -1) < 400
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.AIR.asItem()) {
 				{
-					int _value = (getPropertyByName(blockstate, "centrifugation") instanceof IntegerProperty _getip26 ? blockstate.getValue(_getip26) : -1) + 10;
+					int _value = 0;
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("centrifugation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-			}
-		}
-		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.AIR.asItem()) {
-			{
-				BlockPos _pos = BlockPos.containing(x, y, z);
-				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("on") instanceof BooleanProperty _booleanProp)
-					world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
+				{
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("on") instanceof BooleanProperty _booleanProp)
+						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
+				}
+			} else {
+				{
+					int _value = (getPropertyByName(blockstate, "centrifugation") instanceof IntegerProperty _getip33 ? blockstate.getValue(_getip33) : -1) + 10;
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("centrifugation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+				}
 			}
 		}
 	}
