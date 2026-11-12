@@ -361,6 +361,53 @@
           "src/main/resources/assets/uranium/items/grossebatterie.json"
         ]
       }
+    },
+    {
+      "name": "SolarpanelOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solarpanel_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/SolarpanelOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Solarpanel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solarpanel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/solarpanel.json",
+          "src/main/resources/assets/uranium/models/block/solarpanel.json",
+          "src/main/resources/assets/uranium/items/solarpanel.json",
+          "src/main/resources/data/uranium/loot_table/blocks/solarpanel.json",
+          "src/main/java/net/mcreator/uranium/block/SolarpanelBlock.java",
+          "src/main/resources/assets/uranium/blockstates/solarpanel.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -396,24 +443,25 @@
       "item.uranium.pepitedeplomb": "Pepite de plomb",
       "item.uranium.blockdeplomb": "Block de plomb",
       "item.uranium.mineraideplomb": "Minerai de plomb",
-      "item.uranium.grossebatterie": "Grossebatterie"
+      "item.uranium.grossebatterie": "Grossebatterie",
+      "item.uranium.solarpanel": "Solar panel"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {

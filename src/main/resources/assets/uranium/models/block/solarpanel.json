@@ -1,0 +1,8 @@
+{
+  "parent": "uranium:custom/solarpanel",
+  "textures": {
+    "all": "uranium:block/block_de_plomb",
+    "particle": "uranium:block/block_de_plomb",
+    "0": "uranium:block/"
+  }
+}

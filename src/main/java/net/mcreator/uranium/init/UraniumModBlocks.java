@@ -22,6 +22,7 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> BLOCKDEPLOMB;
 	public static final DeferredBlock<Block> MINERAIDEPLOMB;
 	public static final DeferredBlock<Block> GROSSEBATTERIE;
+	public static final DeferredBlock<Block> SOLARPANEL;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -29,6 +30,7 @@ public class UraniumModBlocks {
 		BLOCKDEPLOMB = register("blockdeplomb", BlockdeplombBlock::new);
 		MINERAIDEPLOMB = register("mineraideplomb", MineraideplombBlock::new);
 		GROSSEBATTERIE = register("grossebatterie", GrossebatterieBlock::new);
+		SOLARPANEL = register("solarpanel", SolarpanelBlock::new);
 	}
 
 	// Start of user code block custom blocks
