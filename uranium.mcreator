@@ -229,6 +229,20 @@
         ]
       },
       "path": "~/centrifuge"
+    },
+    {
+      "name": "Fluoride",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluoride",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/fluoride.json",
+          "src/main/java/net/mcreator/uranium/item/FluorideItem.java",
+          "src/main/resources/assets/uranium/models/item/fluoride.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -258,7 +272,8 @@
       "block.uranium.sulfuricacid": "Sulfuricacid",
       "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
       "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
-      "item.uranium.rawuranium": "Rawuranium"
+      "item.uranium.rawuranium": "Rawuranium",
+      "item.uranium.fluoride": "Fluoride"
     }
   },
   "metadata": {
