@@ -1,5 +1,5 @@
 {
-  "parent": "uranium:block/mineraideplomb",
+  "parent": "uranium:block/grossebatterie",
   "display": {
     "thirdperson": {
       "rotation": [

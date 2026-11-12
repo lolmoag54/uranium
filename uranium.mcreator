@@ -80,9 +80,9 @@
       "registry_name": "enricheduranium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/enricheduranium.json",
+          "src/main/resources/assets/uranium/items/enricheduranium.json",
           "src/main/java/net/mcreator/uranium/item/EnricheduraniumItem.java",
-          "src/main/resources/assets/uranium/items/enricheduranium.json"
+          "src/main/resources/assets/uranium/models/item/enricheduranium.json"
         ]
       }
     },
@@ -94,9 +94,9 @@
       "registry_name": "yellowcake",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/yellowcake.json",
+          "src/main/java/net/mcreator/uranium/item/YellowcakeItem.java",
           "src/main/resources/assets/uranium/models/item/yellowcake.json",
-          "src/main/java/net/mcreator/uranium/item/YellowcakeItem.java"
+          "src/main/resources/assets/uranium/items/yellowcake.json"
         ]
       }
     },
@@ -143,13 +143,13 @@
       "registry_name": "sulfuricacid",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/sulfuricacid_bucket.json",
           "src/main/java/net/mcreator/uranium/fluid/types/SulfuricacidFluidType.java",
-          "src/main/java/net/mcreator/uranium/block/SulfuricacidBlock.java",
-          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
-          "src/main/java/net/mcreator/uranium/item/SulfuricacidItem.java",
           "src/main/resources/assets/uranium/blockstates/sulfuricacid.json",
+          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
           "src/main/resources/assets/uranium/models/block/sulfuricacid.json",
+          "src/main/java/net/mcreator/uranium/block/SulfuricacidBlock.java",
+          "src/main/resources/assets/uranium/items/sulfuricacid_bucket.json",
+          "src/main/java/net/mcreator/uranium/item/SulfuricacidItem.java",
           "src/main/java/net/mcreator/uranium/client/fluid/SulfuricacidFluidExtension.java"
         ]
       }
@@ -187,11 +187,11 @@
       "metadata": {
         "files": [
           "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json",
-          "src/main/resources/assets/uranium/blockstates/rawuranium.json",
-          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
+          "src/main/resources/assets/uranium/models/block/rawuranium.json",
           "src/main/resources/assets/uranium/models/item/rawuranium.json",
-          "src/main/resources/assets/uranium/items/rawuranium.json",
-          "src/main/resources/assets/uranium/models/block/rawuranium.json"
+          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
+          "src/main/resources/assets/uranium/blockstates/rawuranium.json",
+          "src/main/resources/assets/uranium/items/rawuranium.json"
         ]
       }
     },
@@ -328,14 +328,14 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:replaceable": [
-      "~Sulfuricacid@CUSTOM:Sulfuricacid"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~Centrifuge@CUSTOM:Centrifuge"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~Sulfuricacid@CUSTOM:Sulfuricacid"
     ]
   },
   "tab_element_order": {},

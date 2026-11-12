@@ -1,0 +1,10 @@
+{
+  "parent": "uranium:custom/batterie",
+  "textures": {
+    "all": "uranium:block/hewe",
+    "particle": "uranium:block/hewe",
+    "0": "uranium:block/texture",
+    "2": "uranium:block/1",
+    "3": "uranium:block/342"
+  }
+}
