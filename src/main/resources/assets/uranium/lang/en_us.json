@@ -1,1 +1,14 @@
-{}
+{
+  "item.uranium.steel": "Steel",
+  "item.uranium.centrifuge": "Centrifuge",
+  "gui.uranium.centrifugegui.label_centrifuge": "centrifuge",
+  "item_group.uranium.uraniumcreativetab": "Uranium",
+  "item.uranium.depleteduranium": "Depleted uranium",
+  "item.uranium.enricheduranium": "Enriched uranium",
+  "item.uranium.yellowcake": "Yellowcake",
+  "fluid.uranium.sulfuricacid": "Sulfuricacid",
+  "block.uranium.sulfuricacid": "Sulfuricacid",
+  "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
+  "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
+  "item.uranium.rawuranium": "Rawuranium"
+}

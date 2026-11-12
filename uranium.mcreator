@@ -22,14 +22,14 @@
       "registry_name": "centrifuge",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
           "src/main/resources/assets/uranium/models/block/centrifuge.json",
-          "src/main/resources/assets/uranium/items/centrifuge.json",
+          "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
+          "src/main/resources/assets/uranium/models/block/centrifuge_0.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
           "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
           "src/main/resources/assets/uranium/models/item/centrifuge.json",
           "src/main/resources/assets/uranium/blockstates/centrifuge.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
-          "src/main/resources/assets/uranium/models/block/centrifuge_0.json"
+          "src/main/resources/assets/uranium/items/centrifuge.json"
         ]
       },
       "path": "~/centrifuge"
@@ -80,9 +80,9 @@
       "registry_name": "enricheduranium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/enricheduranium.json",
+          "src/main/resources/assets/uranium/models/item/enricheduranium.json",
           "src/main/java/net/mcreator/uranium/item/EnricheduraniumItem.java",
-          "src/main/resources/assets/uranium/models/item/enricheduranium.json"
+          "src/main/resources/assets/uranium/items/enricheduranium.json"
         ]
       }
     },
@@ -94,9 +94,9 @@
       "registry_name": "yellowcake",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/YellowcakeItem.java",
+          "src/main/resources/assets/uranium/items/yellowcake.json",
           "src/main/resources/assets/uranium/models/item/yellowcake.json",
-          "src/main/resources/assets/uranium/items/yellowcake.json"
+          "src/main/java/net/mcreator/uranium/item/YellowcakeItem.java"
         ]
       }
     },
@@ -143,13 +143,13 @@
       "registry_name": "sulfuricacid",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/fluid/types/SulfuricacidFluidType.java",
-          "src/main/resources/assets/uranium/blockstates/sulfuricacid.json",
-          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
-          "src/main/resources/assets/uranium/models/block/sulfuricacid.json",
-          "src/main/java/net/mcreator/uranium/block/SulfuricacidBlock.java",
           "src/main/resources/assets/uranium/items/sulfuricacid_bucket.json",
+          "src/main/java/net/mcreator/uranium/fluid/types/SulfuricacidFluidType.java",
+          "src/main/java/net/mcreator/uranium/block/SulfuricacidBlock.java",
+          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
           "src/main/java/net/mcreator/uranium/item/SulfuricacidItem.java",
+          "src/main/resources/assets/uranium/blockstates/sulfuricacid.json",
+          "src/main/resources/assets/uranium/models/block/sulfuricacid.json",
           "src/main/java/net/mcreator/uranium/client/fluid/SulfuricacidFluidExtension.java"
         ]
       }
@@ -187,13 +187,48 @@
       "metadata": {
         "files": [
           "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json",
-          "src/main/resources/assets/uranium/models/block/rawuranium.json",
-          "src/main/resources/assets/uranium/models/item/rawuranium.json",
-          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
           "src/main/resources/assets/uranium/blockstates/rawuranium.json",
-          "src/main/resources/assets/uranium/items/rawuranium.json"
+          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
+          "src/main/resources/assets/uranium/models/item/rawuranium.json",
+          "src/main/resources/assets/uranium/items/rawuranium.json",
+          "src/main/resources/assets/uranium/models/block/rawuranium.json"
         ]
       }
+    },
+    {
+      "name": "Uraniumcentrifugerecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumcentrifugerecipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/UraniumcentrifugerecipeProcedure.java"
+        ]
+      },
+      "path": "~/centrifuge"
     }
   ],
   "variable_elements": [],
@@ -230,9 +265,9 @@
     "files": [
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
-      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
