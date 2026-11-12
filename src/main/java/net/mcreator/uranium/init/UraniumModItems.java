@@ -16,7 +16,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.uranium.item.*;
+import net.mcreator.uranium.item.YellowcakeItem;
+import net.mcreator.uranium.item.SulfuricacidItem;
+import net.mcreator.uranium.item.SteelItem;
+import net.mcreator.uranium.item.EnricheduraniumItem;
+import net.mcreator.uranium.item.DepleteduraniumItem;
 import net.mcreator.uranium.UraniumMod;
 
 import java.util.function.Function;

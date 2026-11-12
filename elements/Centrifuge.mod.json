@@ -262,11 +262,6 @@
         "name": "CUSTOM:centrifugation",
         "type": "integer",
         "value": 0
-      },
-      {
-        "name": "CUSTOM:light",
-        "type": "logic",
-        "value": false
       }
     ],
     "name": "Centrifuge",

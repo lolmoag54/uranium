@@ -46,7 +46,6 @@ import com.mojang.serialization.MapCodec;
 public class CentrifugeBlock extends FallingBlock implements EntityBlock {
 	public static final BooleanProperty ON = BooleanProperty.create("on");
 	public static final IntegerProperty CENTRIFUGATION = IntegerProperty.create("centrifugation", 0, 400);
-	public static final BooleanProperty LIGHT = BooleanProperty.create("light");
 	private static final VoxelShape SHAPE = Shapes.or(box(6, 1, 6, 10, 2, 10), box(6, 19, 6, 10, 21, 10), box(6, 3, 6, 10, 19, 10), box(2, 0, 3, 4, 2, 5), box(3, 1, 4, 13, 2, 5), box(4, 2, 5, 12, 3, 11), box(3, 18, 4, 13, 19, 12),
 			box(3, 1, 11, 13, 2, 12), box(12, 0, 3, 14, 2, 5), box(2, 0, 11, 4, 2, 13), box(12, 0, 11, 14, 2, 13), box(3, 1, 5, 4, 2, 11), box(12, 1, 5, 13, 2, 11), box(1, 20, 7, 6, 21, 8), box(10, 20, 7, 11, 23, 8), box(1, 2, 7, 2, 20, 8),
 			box(2, 2, 7, 5, 3, 8));
@@ -68,7 +67,7 @@ public class CentrifugeBlock extends FallingBlock implements EntityBlock {
 						() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.place")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.hit")),
 						() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.fall"))))
 				.strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
-		this.registerDefaultState(this.stateDefinition.any().setValue(ON, false).setValue(CENTRIFUGATION, 0).setValue(LIGHT, false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(ON, false).setValue(CENTRIFUGATION, 0));
 	}
 
 	@Override
@@ -94,7 +93,7 @@ public class CentrifugeBlock extends FallingBlock implements EntityBlock {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(ON, CENTRIFUGATION, LIGHT);
+		builder.add(ON, CENTRIFUGATION);
 	}
 
 	@Override
@@ -102,7 +101,7 @@ public class CentrifugeBlock extends FallingBlock implements EntityBlock {
 		BlockState state = super.getStateForPlacement(context);
 		if (state == null)
 			return null;
-		return state.setValue(ON, false).setValue(CENTRIFUGATION, 0).setValue(LIGHT, false);
+		return state.setValue(ON, false).setValue(CENTRIFUGATION, 0);
 	}
 
 	@Override
