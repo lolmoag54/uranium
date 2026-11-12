@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.uranium.block.entity.SolarpannelBlockEntity;
 import net.mcreator.uranium.block.entity.CentrifugeBlockEntity;
 import net.mcreator.uranium.UraniumMod;
 
@@ -23,6 +24,7 @@ import net.mcreator.uranium.UraniumMod;
 public class UraniumModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, UraniumMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CentrifugeBlockEntity>> CENTRIFUGE = register("centrifuge", UraniumModBlocks.CENTRIFUGE, CentrifugeBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SolarpannelBlockEntity>> SOLARPANNEL = register("solarpannel", UraniumModBlocks.SOLARPANNEL, SolarpannelBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,5 +35,7 @@ public class UraniumModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CENTRIFUGE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, CENTRIFUGE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, SOLARPANNEL.get(), WorldlyContainerWrapper::new);
 	}
 }

@@ -11,5 +11,6 @@
   "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
   "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
   "item.uranium.rawuranium": "Rawuranium",
-  "item.uranium.fluoride": "Fluoride"
+  "item.uranium.fluoride": "Fluoride",
+  "item.uranium.solarpannel": "Solarpannel"
 }

@@ -32,6 +32,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> SULFURICACID_BUCKET;
 	public static final DeferredItem<Item> RAWURANIUM;
 	public static final DeferredItem<Item> FLUORIDE;
+	public static final DeferredItem<Item> SOLARPANNEL;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -41,6 +42,7 @@ public class UraniumModItems {
 		SULFURICACID_BUCKET = register("sulfuricacid_bucket", SulfuricacidItem::new);
 		RAWURANIUM = block(UraniumModBlocks.RAWURANIUM);
 		FLUORIDE = register("fluoride", FluorideItem::new);
+		SOLARPANNEL = block(UraniumModBlocks.SOLARPANNEL);
 	}
 
 	// Start of user code block custom items

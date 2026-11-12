@@ -275,6 +275,54 @@
         ]
       },
       "path": "~/centrifuge"
+    },
+    {
+      "name": "SolarpannelOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solarpannel_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/SolarpannelOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Solarpannel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solarpannel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/solarpannel.json",
+          "src/main/resources/data/uranium/loot_table/blocks/solarpannel.json",
+          "src/main/java/net/mcreator/uranium/block/SolarpannelBlock.java",
+          "src/main/resources/assets/uranium/models/block/solarpannel.json",
+          "src/main/java/net/mcreator/uranium/block/entity/SolarpannelBlockEntity.java",
+          "src/main/resources/assets/uranium/items/solarpannel.json",
+          "src/main/resources/assets/uranium/blockstates/solarpannel.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -305,7 +353,8 @@
       "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
       "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
       "item.uranium.rawuranium": "Rawuranium",
-      "item.uranium.fluoride": "Fluoride"
+      "item.uranium.fluoride": "Fluoride",
+      "item.uranium.solarpannel": "Solarpannel"
     }
   },
   "metadata": {

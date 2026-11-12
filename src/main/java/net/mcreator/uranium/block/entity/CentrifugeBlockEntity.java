@@ -1,5 +1,7 @@
 package net.mcreator.uranium.block.entity;
 
+import net.neoforged.neoforge.transfer.energy.SimpleEnergyHandler;
+
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.block.state.BlockState;
@@ -40,6 +42,7 @@ public class CentrifugeBlockEntity extends RandomizableContainerBlockEntity impl
 		if (!this.tryLoadLootTable(valueInput))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
 		ContainerHelper.loadAllItems(valueInput, this.stacks);
+		valueInput.child("energyStorage").ifPresent(input -> energyStorage.deserialize(input));
 	}
 
 	@Override
@@ -47,6 +50,7 @@ public class CentrifugeBlockEntity extends RandomizableContainerBlockEntity impl
 		super.saveAdditional(valueOutput);
 		if (!this.trySaveLootTable(valueOutput))
 			ContainerHelper.saveAllItems(valueOutput, this.stacks);
+		energyStorage.serialize(valueOutput.child("energyStorage"));
 	}
 
 	@Override
@@ -115,5 +119,17 @@ public class CentrifugeBlockEntity extends RandomizableContainerBlockEntity impl
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
+	}
+
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(50000, 1000, 1000, 0) {
+		@Override
+		protected void onEnergyChanged(int previousAmount) {
+			setChanged();
+			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
+		}
+	};
+
+	public SimpleEnergyHandler getEnergyStorage() {
+		return energyStorage;
 	}
 }
