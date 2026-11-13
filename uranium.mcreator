@@ -1585,6 +1585,58 @@
         ]
       },
       "path": "~/Uranium"
+    },
+    {
+      "name": "Blocklingo",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocklingo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/blocklingo.json"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Lingoblock",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lingoblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/lingoblock.json"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Lingopepite",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lingopepite",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/lingopepite.json"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Pepitelingo",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepitelingo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/pepitelingo.json"
+        ]
+      },
+      "path": "~/plomb"
     }
   ],
   "variable_elements": [
@@ -1695,18 +1747,18 @@
     "files": [
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
-      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
+      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
       "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java"
     ]
   },
   "foldersRoot": {
