@@ -24,6 +24,7 @@ public class UraniumModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, UraniumMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CentrifugeBlockEntity>> CENTRIFUGE = register("centrifuge", UraniumModBlocks.CENTRIFUGE, CentrifugeBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GrossebatterieBlockEntity>> GROSSEBATTERIE = register("grossebatterie", UraniumModBlocks.GROSSEBATTERIE, GrossebatterieBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SolarpanelBlockEntity>> SOLARPANEL = register("solarpanel", UraniumModBlocks.SOLARPANEL, SolarpanelBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CableBlockEntity>> CABLE = register("cable", UraniumModBlocks.CABLE, CableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CableEBlockEntity>> CABLE_E = register("cable_e", UraniumModBlocks.CABLE_E, CableEBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CableIBlockEntity>> CABLE_I = register("cable_i", UraniumModBlocks.CABLE_I, CableIBlockEntity::new);
@@ -54,6 +55,8 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, CENTRIFUGE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, GROSSEBATTERIE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, GROSSEBATTERIE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, SOLARPANEL.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, SOLARPANEL.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CABLE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, CABLE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CABLE_E.get(), WorldlyContainerWrapper::new);

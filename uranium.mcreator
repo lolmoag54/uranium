@@ -22,14 +22,14 @@
       "registry_name": "centrifuge",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
+          "src/main/resources/assets/uranium/items/centrifuge.json",
+          "src/main/resources/assets/uranium/models/block/centrifuge_0.json",
+          "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
           "src/main/resources/assets/uranium/models/block/centrifuge.json",
           "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
-          "src/main/resources/assets/uranium/models/block/centrifuge_0.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
-          "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
           "src/main/resources/assets/uranium/models/item/centrifuge.json",
-          "src/main/resources/assets/uranium/blockstates/centrifuge.json",
-          "src/main/resources/assets/uranium/items/centrifuge.json"
+          "src/main/resources/assets/uranium/blockstates/centrifuge.json"
         ]
       },
       "path": "~/centrifuge"
@@ -401,12 +401,13 @@
       "registry_name": "solarpanel",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/models/item/solarpanel.json",
+          "src/main/resources/assets/uranium/models/block/solarpanel.json",
+          "src/main/resources/assets/uranium/items/solarpanel.json",
           "src/main/resources/data/uranium/loot_table/blocks/solarpanel.json",
           "src/main/java/net/mcreator/uranium/block/SolarpanelBlock.java",
-          "src/main/resources/assets/uranium/models/block/solarpanel.json",
-          "src/main/resources/assets/uranium/models/item/solarpanel.json",
           "src/main/resources/assets/uranium/blockstates/solarpanel.json",
-          "src/main/resources/assets/uranium/items/solarpanel.json"
+          "src/main/java/net/mcreator/uranium/block/entity/SolarpanelBlockEntity.java"
         ]
       }
     },
@@ -1438,6 +1439,67 @@
           "src/main/resources/data/uranium/advancement/welcometo.json"
         ]
       }
+    },
+    {
+      "name": "SolarpanelBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solarpanel_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/SolarpanelBlockAddedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CentrifugeBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifuge_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CentrifugeBlockAddedProcedure.java"
+        ]
+      },
+      "path": "~/centrifuge"
     }
   ],
   "variable_elements": [
@@ -1543,20 +1605,20 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
+      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
-      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
-      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
