@@ -12,6 +12,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.uranium.network.UraniumModVariables;
+
 public class CableForgeEnergyMainProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double extractEast = 0;
@@ -49,7 +51,7 @@ public class CableForgeEnergyMainProcedure {
 			nbtWestTagName = "cablesFCopperWest";
 			nbtUpTagName = "cablesFCopperUp";
 			nbtDownTagName = "cablesFCopperDown";
-			if (extractEast == 0) {
+			if (UraniumModVariables.MapVariables.get(world).forgeFlow == 0) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);

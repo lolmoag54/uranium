@@ -30,7 +30,7 @@ public class SolarpanelBlock extends Block implements EntityBlock {
 	private static final VoxelShape SHAPE = Shapes.or(box(0, 0, 0, 16, 12, 16), box(0, 13.5, 0, 16, 14.5, 16), box(7, 1, 7, 9, 14, 9));
 
 	public SolarpanelBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
+		super(properties.sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
 	}
 
 	@Override

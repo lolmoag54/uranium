@@ -13,11 +13,7 @@ public class SolarpanelBlockAddedProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null) {
-				_blockEntity.getPersistentData().putBoolean("cablesFCopperEast", true);
 				_blockEntity.getPersistentData().putBoolean("cablesFCopperDown", true);
-				_blockEntity.getPersistentData().putBoolean("cablesFCopperNorth", true);
-				_blockEntity.getPersistentData().putBoolean("cablesFCopperWest", true);
-				_blockEntity.getPersistentData().putBoolean("cablesFCopperSouth", true);
 			}
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);

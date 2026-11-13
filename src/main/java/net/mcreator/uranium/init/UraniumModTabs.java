@@ -28,6 +28,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ENRICHEDURANIUM.get());
 				tabData.accept(UraniumModItems.YELLOWCAKE.get());
 				tabData.accept(UraniumModItems.SULFURICACID_BUCKET.get());
+				tabData.accept(UraniumModBlocks.GROSSEBATTERIE.get().asItem());
 				tabData.accept(UraniumModBlocks.SOLARPANEL.get().asItem());
 				tabData.accept(UraniumModBlocks.CABLE.get().asItem());
 			}).build());

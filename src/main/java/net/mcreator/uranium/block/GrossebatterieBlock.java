@@ -21,6 +21,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.uranium.procedures.GrossebatterieOnTickUpdateProcedure;
+import net.mcreator.uranium.procedures.GrossebatterieBlockAddedProcedure;
 import net.mcreator.uranium.block.entity.GrossebatterieBlockEntity;
 
 public class GrossebatterieBlock extends Block implements EntityBlock {
@@ -54,6 +55,7 @@ public class GrossebatterieBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
+		GrossebatterieBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

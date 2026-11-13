@@ -113,7 +113,7 @@ public class UraniumModVariables {
 			return instance;
 		}, instance -> instance.save(new CompoundTag(), level.registryAccess())));
 		boolean _syncDirty = false;
-		public double forgeFlow = 0;
+		public double forgeFlow = 0.0;
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			forgeFlow = nbt.getDoubleOr("forgeFlow", 0);

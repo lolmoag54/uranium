@@ -67,8 +67,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/uranium/item/DepleteduraniumItem.java",
-          "src/main/resources/assets/uranium/models/item/depleteduranium.json",
-          "src/main/resources/assets/uranium/items/depleteduranium.json"
+          "src/main/resources/assets/uranium/items/depleteduranium.json",
+          "src/main/resources/assets/uranium/models/item/depleteduranium.json"
         ]
       }
     },
@@ -80,8 +80,8 @@
       "registry_name": "enricheduranium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/enricheduranium.json",
           "src/main/java/net/mcreator/uranium/item/EnricheduraniumItem.java",
+          "src/main/resources/assets/uranium/models/item/enricheduranium.json",
           "src/main/resources/assets/uranium/items/enricheduranium.json"
         ]
       }
@@ -143,14 +143,14 @@
       "registry_name": "sulfuricacid",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/uranium/client/fluid/SulfuricacidFluidExtension.java",
           "src/main/resources/assets/uranium/items/sulfuricacid_bucket.json",
           "src/main/java/net/mcreator/uranium/fluid/types/SulfuricacidFluidType.java",
           "src/main/java/net/mcreator/uranium/block/SulfuricacidBlock.java",
-          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
           "src/main/java/net/mcreator/uranium/item/SulfuricacidItem.java",
           "src/main/resources/assets/uranium/blockstates/sulfuricacid.json",
-          "src/main/resources/assets/uranium/models/block/sulfuricacid.json",
-          "src/main/java/net/mcreator/uranium/client/fluid/SulfuricacidFluidExtension.java"
+          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
+          "src/main/resources/assets/uranium/models/block/sulfuricacid.json"
         ]
       }
     },
@@ -186,12 +186,12 @@
       "registry_name": "rawuranium",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json",
-          "src/main/resources/assets/uranium/blockstates/rawuranium.json",
-          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
           "src/main/resources/assets/uranium/models/item/rawuranium.json",
+          "src/main/resources/assets/uranium/models/block/rawuranium.json",
+          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
           "src/main/resources/assets/uranium/items/rawuranium.json",
-          "src/main/resources/assets/uranium/models/block/rawuranium.json"
+          "src/main/resources/assets/uranium/blockstates/rawuranium.json",
+          "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json"
         ]
       }
     },
@@ -238,9 +238,9 @@
       "registry_name": "fluoride",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/fluoride.json",
           "src/main/java/net/mcreator/uranium/item/FluorideItem.java",
-          "src/main/resources/assets/uranium/models/item/fluoride.json"
+          "src/main/resources/assets/uranium/models/item/fluoride.json",
+          "src/main/resources/assets/uranium/items/fluoride.json"
         ]
       }
     },
@@ -285,8 +285,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/items/lingotdeplomb.json",
-          "src/main/resources/assets/uranium/models/item/lingotdeplomb.json",
-          "src/main/java/net/mcreator/uranium/item/LingotdeplombItem.java"
+          "src/main/java/net/mcreator/uranium/item/LingotdeplombItem.java",
+          "src/main/resources/assets/uranium/models/item/lingotdeplomb.json"
         ]
       },
       "path": "~/plomb"
@@ -299,9 +299,9 @@
       "registry_name": "pepitedeplomb",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/models/item/pepitedeplomb.json",
           "src/main/resources/assets/uranium/items/pepitedeplomb.json",
-          "src/main/java/net/mcreator/uranium/item/PepitedeplombItem.java",
-          "src/main/resources/assets/uranium/models/item/pepitedeplomb.json"
+          "src/main/java/net/mcreator/uranium/item/PepitedeplombItem.java"
         ]
       },
       "path": "~/plomb"
@@ -315,11 +315,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/models/item/blockdeplomb.json",
+          "src/main/resources/assets/uranium/blockstates/blockdeplomb.json",
+          "src/main/java/net/mcreator/uranium/block/BlockdeplombBlock.java",
           "src/main/resources/assets/uranium/items/blockdeplomb.json",
           "src/main/resources/assets/uranium/models/block/blockdeplomb.json",
-          "src/main/java/net/mcreator/uranium/block/BlockdeplombBlock.java",
-          "src/main/resources/data/uranium/loot_table/blocks/blockdeplomb.json",
-          "src/main/resources/assets/uranium/blockstates/blockdeplomb.json"
+          "src/main/resources/data/uranium/loot_table/blocks/blockdeplomb.json"
         ]
       },
       "path": "~/plomb"
@@ -332,15 +332,15 @@
       "registry_name": "mineraideplomb",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/uranium/block/MineraideplombBlock.java",
+          "src/main/resources/data/uranium/worldgen/placed_feature/mineraideplomb.json",
+          "src/main/resources/assets/uranium/items/mineraideplomb.json",
+          "src/main/resources/data/uranium/loot_table/blocks/mineraideplomb.json",
           "src/main/resources/assets/uranium/blockstates/mineraideplomb.json",
           "src/main/resources/assets/uranium/models/block/mineraideplomb.json",
-          "src/main/resources/assets/uranium/items/mineraideplomb.json",
           "src/main/resources/data/uranium/neoforge/biome_modifier/mineraideplomb_biome_modifier.json",
-          "src/main/resources/data/uranium/loot_table/blocks/mineraideplomb.json",
-          "src/main/resources/data/uranium/worldgen/placed_feature/mineraideplomb.json",
-          "src/main/java/net/mcreator/uranium/block/MineraideplombBlock.java",
-          "src/main/resources/data/uranium/worldgen/configured_feature/mineraideplomb.json",
-          "src/main/resources/assets/uranium/models/item/mineraideplomb.json"
+          "src/main/resources/assets/uranium/models/item/mineraideplomb.json",
+          "src/main/resources/data/uranium/worldgen/configured_feature/mineraideplomb.json"
         ]
       },
       "path": "~/plomb"
@@ -1500,6 +1500,54 @@
         ]
       },
       "path": "~/centrifuge"
+    },
+    {
+      "name": "GrossebatterieBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grossebatterie_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/GrossebatterieBlockAddedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ForgeFlowTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_flow_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ForgeFlowTimerProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1507,31 +1555,11 @@
       "name": "forgeFlow",
       "type": "number",
       "scope": "map",
-      "value": "0"
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Centrifuge@CUSTOM:Centrifuge",
-      "~Cable@CUSTOM:Cable",
-      "~CableTXCC@CUSTOM:CableTXCC",
-      "~CableTX@CUSTOM:CableTX",
-      "~CableLT@CUSTOM:CableLT",
-      "~CableLTC@CUSTOM:CableLTC",
-      "~CableXC@CUSTOM:CableXC",
-      "~CableL@CUSTOM:CableL",
-      "~CableI@CUSTOM:CableI",
-      "~CableTC@CUSTOM:CableTC",
-      "~CableE@CUSTOM:CableE",
-      "~CableF@CUSTOM:CableF",
-      "~CableS@CUSTOM:CableS",
-      "~CableT@CUSTOM:CableT",
-      "~CableLC@CUSTOM:CableLC",
-      "~CableLCC@CUSTOM:CableLCC",
-      "~CableTXC@CUSTOM:CableTXC",
-      "~CableX@CUSTOM:CableX"
-    ],
     "BLOCKS:fe_system:cables/f/copper": [
       "CUSTOM:Cable",
       "CUSTOM:CableE",
@@ -1551,11 +1579,33 @@
       "CUSTOM:CableF",
       "CUSTOM:CableS"
     ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CableS@CUSTOM:CableS",
+      "~CableF@CUSTOM:CableF",
+      "~CableXC@CUSTOM:CableXC",
+      "~CableX@CUSTOM:CableX",
+      "~CableTXCC@CUSTOM:CableTXCC",
+      "~CableTXC@CUSTOM:CableTXC",
+      "~CableTX@CUSTOM:CableTX",
+      "~CableTC@CUSTOM:CableTC",
+      "~CableT@CUSTOM:CableT",
+      "~CableLTC@CUSTOM:CableLTC",
+      "~CableLT@CUSTOM:CableLT",
+      "~CableLCC@CUSTOM:CableLCC",
+      "~CableLC@CUSTOM:CableLC",
+      "~CableL@CUSTOM:CableL",
+      "~CableI@CUSTOM:CableI",
+      "~CableE@CUSTOM:CableE",
+      "~Cable@CUSTOM:Cable",
+      "~Solarpanel@CUSTOM:Solarpanel",
+      "~Grossebatterie@CUSTOM:Grossebatterie",
+      "~Centrifuge@CUSTOM:Centrifuge"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~Centrifuge@CUSTOM:Centrifuge"
+    ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
-    ],
-    "BLOCKS:minecraft:needs_diamond_tool": [
-      "~Centrifuge@CUSTOM:Centrifuge"
     ]
   },
   "tab_element_order": {},

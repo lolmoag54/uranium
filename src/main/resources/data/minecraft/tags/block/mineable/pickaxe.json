@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "uranium:grossebatterie",
     "uranium:cable_t",
     "uranium:cable_txc",
     "uranium:cable_x",
@@ -8,16 +9,17 @@
     "uranium:cable_xc",
     "uranium:cable_lt",
     "uranium:cable_ltc",
-    "uranium:cable_e",
     "uranium:cable_lcc",
-    "uranium:cable",
+    "uranium:cable_e",
     "uranium:cable_tc",
+    "uranium:cable",
     "uranium:cable_f",
     "uranium:cable_i",
     "uranium:cable_txcc",
-    "uranium:cable_l",
     "uranium:cable_lc",
+    "uranium:cable_l",
     "uranium:centrifuge",
-    "uranium:cable_s"
+    "uranium:cable_s",
+    "uranium:solarpanel"
   ]
 }
