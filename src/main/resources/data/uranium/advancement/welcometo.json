@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:block/stone",
+    "background": "uranium:screens/background",
     "icon": {
       "id": "uranium:enricheduranium"
     },
@@ -17,10 +17,7 @@
   },
   "criteria": {
     "welcometo_0": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {
-        "to": "minecraft:overworld"
-      }
+      "trigger": "minecraft:tick"
     }
   }
 }

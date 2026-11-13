@@ -12,7 +12,7 @@
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "letscentrifuge_1": {
@@ -30,5 +30,5 @@
       }
     }
   },
-  "parent": "uranium:letscentrifuge"
+  "parent": "uranium:welcometo"
 }

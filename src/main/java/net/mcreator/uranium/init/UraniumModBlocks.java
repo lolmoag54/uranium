@@ -40,6 +40,7 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> CABLE_XC;
 	public static final DeferredBlock<Block> CABLE_F;
 	public static final DeferredBlock<Block> CABLE_S;
+	public static final DeferredBlock<Block> RAWURANIUM_DEEPSLATE;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -65,6 +66,7 @@ public class UraniumModBlocks {
 		CABLE_XC = register("cable_xc", CableXCBlock::new);
 		CABLE_F = register("cable_f", CableFBlock::new);
 		CABLE_S = register("cable_s", CableSBlock::new);
+		RAWURANIUM_DEEPSLATE = register("rawuranium_deepslate", RawuraniumDeepslateBlock::new);
 	}
 
 	// Start of user code block custom blocks

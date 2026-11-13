@@ -9,10 +9,10 @@
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Pepite de plomb",
+    "name": "Lead Nugget",
     "rarity": "COMMON",
     "creativeTabs": [
-      "MATERIALS"
+      "CUSTOM:Uraniumcreativetab"
     ],
     "stackSize": 64,
     "enchantability": 0,

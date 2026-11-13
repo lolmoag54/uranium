@@ -10,12 +10,12 @@
   "block.uranium.sulfuricacid": "Sulfuricacid",
   "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
   "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
-  "item.uranium.rawuranium": "Rawuranium",
+  "item.uranium.rawuranium": "Raw uranium ore",
   "item.uranium.fluoride": "Fluoride",
-  "item.uranium.lingotdeplomb": "Lingot de plomb",
-  "item.uranium.pepitedeplomb": "Pepite de plomb",
-  "item.uranium.blockdeplomb": "Block de plomb",
-  "item.uranium.mineraideplomb": "Minerai de plomb",
+  "item.uranium.lingotdeplomb": "Lead ingot",
+  "item.uranium.pepitedeplomb": "Lead Nugget",
+  "item.uranium.blockdeplomb": "Lead Block",
+  "item.uranium.mineraideplomb": "Lead Ore",
   "item.uranium.grossebatterie": "heavy batterie",
   "item.uranium.solarpanel": "Solar panel",
   "item.uranium.cable": "Cable",
@@ -38,5 +38,6 @@
   "advancements.letscentrifuge.title": "let's centrifuge",
   "advancements.letscentrifuge.descr": "craft a centrifuge",
   "advancements.welcometo.descr": "thank for using our mod",
-  "advancements.welcometo.title": "Welcome to"
+  "advancements.welcometo.title": "Welcome to",
+  "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore"
 }

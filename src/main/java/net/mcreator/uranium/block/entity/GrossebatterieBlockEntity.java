@@ -118,7 +118,7 @@ public class GrossebatterieBlockEntity extends RandomizableContainerBlockEntity 
 		return true;
 	}
 
-	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(1000000, 100000, 100000, 0) {
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(1000000, 50, 50, 0) {
 		@Override
 		protected void onEnergyChanged(int previousAmount) {
 			setChanged();

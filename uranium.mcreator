@@ -12,7 +12,8 @@
           "src/main/resources/assets/uranium/models/item/steel.json",
           "src/main/java/net/mcreator/uranium/item/SteelItem.java"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Centrifuge",
@@ -56,7 +57,8 @@
       "registry_name": "uraniumcreativetab",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Depleteduranium",
@@ -70,7 +72,8 @@
           "src/main/resources/assets/uranium/items/depleteduranium.json",
           "src/main/resources/assets/uranium/models/item/depleteduranium.json"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Enricheduranium",
@@ -84,7 +87,8 @@
           "src/main/resources/assets/uranium/models/item/enricheduranium.json",
           "src/main/resources/assets/uranium/items/enricheduranium.json"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Yellowcake",
@@ -98,7 +102,8 @@
           "src/main/resources/assets/uranium/models/item/yellowcake.json",
           "src/main/java/net/mcreator/uranium/item/YellowcakeItem.java"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "CentrifugeOnTickUpdate",
@@ -152,7 +157,8 @@
           "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
           "src/main/resources/assets/uranium/models/block/sulfuricacid.json"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Yellowcakerecipe",
@@ -164,7 +170,8 @@
         "files": [
           "src/main/resources/data/uranium/recipe/yellowcakerecipe.json"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Enricheduraniumrecipe",
@@ -176,7 +183,8 @@
         "files": [
           "src/main/resources/data/uranium/recipe/enricheduraniumrecipe.json"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Rawuranium",
@@ -193,7 +201,8 @@
           "src/main/resources/assets/uranium/blockstates/rawuranium.json",
           "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Uraniumcentrifugerecipe",
@@ -242,7 +251,8 @@
           "src/main/resources/assets/uranium/models/item/fluoride.json",
           "src/main/resources/assets/uranium/items/fluoride.json"
         ]
-      }
+      },
+      "path": "~/Uranium"
     },
     {
       "name": "Progressbarcentrifugegui",
@@ -361,7 +371,8 @@
           "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
           "src/main/java/net/mcreator/uranium/block/entity/GrossebatterieBlockEntity.java"
         ]
-      }
+      },
+      "path": "~/batterie"
     },
     {
       "name": "SolarpanelOnTickUpdate",
@@ -391,7 +402,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/SolarpanelOnTickUpdateProcedure.java"
         ]
-      }
+      },
+      "path": "~/panneau solaire"
     },
     {
       "name": "Solarpanel",
@@ -409,7 +421,8 @@
           "src/main/resources/assets/uranium/blockstates/solarpanel.json",
           "src/main/java/net/mcreator/uranium/block/entity/SolarpanelBlockEntity.java"
         ]
-      }
+      },
+      "path": "~/panneau solaire"
     },
     {
       "name": "GrossebatterieOnTickUpdate",
@@ -439,7 +452,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/GrossebatterieOnTickUpdateProcedure.java"
         ]
-      }
+      },
+      "path": "~/batterie"
     },
     {
       "name": "CableOnTickUpdate",
@@ -1426,7 +1440,8 @@
         "files": [
           "src/main/resources/data/uranium/advancement/letscentrifuge.json"
         ]
-      }
+      },
+      "path": "~/achievement"
     },
     {
       "name": "Welcometo",
@@ -1438,7 +1453,8 @@
         "files": [
           "src/main/resources/data/uranium/advancement/welcometo.json"
         ]
-      }
+      },
+      "path": "~/achievement"
     },
     {
       "name": "SolarpanelBlockAdded",
@@ -1468,7 +1484,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/SolarpanelBlockAddedProcedure.java"
         ]
-      }
+      },
+      "path": "~/panneau solaire"
     },
     {
       "name": "CentrifugeBlockAdded",
@@ -1529,7 +1546,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/GrossebatterieBlockAddedProcedure.java"
         ]
-      }
+      },
+      "path": "~/batterie"
     },
     {
       "name": "ForgeFlowTimer",
@@ -1547,7 +1565,26 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/ForgeFlowTimerProcedure.java"
         ]
-      }
+      },
+      "path": "~/Procedures_utiles"
+    },
+    {
+      "name": "RawuraniumDeepslate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rawuranium_deepslate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/rawuranium_deepslate.json",
+          "src/main/java/net/mcreator/uranium/block/RawuraniumDeepslateBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/rawuranium_deepslate.json",
+          "src/main/resources/assets/uranium/blockstates/rawuranium_deepslate.json",
+          "src/main/resources/assets/uranium/models/item/rawuranium_deepslate.json",
+          "src/main/resources/assets/uranium/models/block/rawuranium_deepslate.json"
+        ]
+      },
+      "path": "~/Uranium"
     }
   ],
   "variable_elements": [
@@ -1580,6 +1617,10 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Solarpanel@CUSTOM:Solarpanel",
+      "~Cable@CUSTOM:Cable",
+      "~Grossebatterie@CUSTOM:Grossebatterie",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
       "~CableXC@CUSTOM:CableXC",
@@ -1595,17 +1636,13 @@
       "~CableLC@CUSTOM:CableLC",
       "~CableL@CUSTOM:CableL",
       "~CableI@CUSTOM:CableI",
-      "~CableE@CUSTOM:CableE",
-      "~Cable@CUSTOM:Cable",
-      "~Solarpanel@CUSTOM:Solarpanel",
-      "~Grossebatterie@CUSTOM:Grossebatterie",
-      "~Centrifuge@CUSTOM:Centrifuge"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~CableE@CUSTOM:CableE"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~Centrifuge@CUSTOM:Centrifuge"
     ]
   },
   "tab_element_order": {},
@@ -1622,12 +1659,12 @@
       "block.uranium.sulfuricacid": "Sulfuricacid",
       "item.uranium.sulfuricacid_bucket": "Sulfuricacid Bucket",
       "fluid_type.uranium.sulfuricacid": "Sulfuricacid",
-      "item.uranium.rawuranium": "Rawuranium",
+      "item.uranium.rawuranium": "Raw uranium ore",
       "item.uranium.fluoride": "Fluoride",
-      "item.uranium.lingotdeplomb": "Lingot de plomb",
-      "item.uranium.pepitedeplomb": "Pepite de plomb",
-      "item.uranium.blockdeplomb": "Block de plomb",
-      "item.uranium.mineraideplomb": "Minerai de plomb",
+      "item.uranium.lingotdeplomb": "Lead ingot",
+      "item.uranium.pepitedeplomb": "Lead Nugget",
+      "item.uranium.blockdeplomb": "Lead Block",
+      "item.uranium.mineraideplomb": "Lead Ore",
       "item.uranium.grossebatterie": "heavy batterie",
       "item.uranium.solarpanel": "Solar panel",
       "item.uranium.cable": "Cable",
@@ -1650,7 +1687,8 @@
       "advancements.letscentrifuge.title": "let\u0027s centrifuge",
       "advancements.letscentrifuge.descr": "craft a centrifuge",
       "advancements.welcometo.descr": "thank for using our mod",
-      "advancements.welcometo.title": "Welcome to"
+      "advancements.welcometo.title": "Welcome to",
+      "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore"
     }
   },
   "metadata": {
@@ -1708,6 +1746,26 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Procedures_utiles",
+        "children": []
+      },
+      {
+        "name": "panneau solaire",
+        "children": []
+      },
+      {
+        "name": "Uranium",
+        "children": []
+      },
+      {
+        "name": "batterie",
+        "children": []
+      },
+      {
+        "name": "achievement",
+        "children": []
       }
     ]
   },

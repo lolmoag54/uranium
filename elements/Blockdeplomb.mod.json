@@ -38,7 +38,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Block de plomb",
+    "name": "Lead Block",
     "specialInformation": {
       "fixedValue": []
     },
@@ -51,7 +51,7 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "BUILDING_BLOCKS"
+      "CUSTOM:Uraniumcreativetab"
     ],
     "destroyTool": "Not specified",
     "customDrop": "",

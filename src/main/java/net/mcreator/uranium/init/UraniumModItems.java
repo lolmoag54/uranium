@@ -55,6 +55,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> CABLE_XC;
 	public static final DeferredItem<Item> CABLE_F;
 	public static final DeferredItem<Item> CABLE_S;
+	public static final DeferredItem<Item> RAWURANIUM_DEEPSLATE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -87,6 +88,7 @@ public class UraniumModItems {
 		CABLE_XC = block(UraniumModBlocks.CABLE_XC);
 		CABLE_F = block(UraniumModBlocks.CABLE_F);
 		CABLE_S = block(UraniumModBlocks.CABLE_S);
+		RAWURANIUM_DEEPSLATE = block(UraniumModBlocks.RAWURANIUM_DEEPSLATE);
 	}
 
 	// Start of user code block custom items

@@ -2,7 +2,7 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "raw_uranium",
+    "texture": "coal_ore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -38,7 +38,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Rawuranium",
+    "name": "Raw uranium ore",
     "specialInformation": {
       "fixedValue": []
     },

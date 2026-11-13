@@ -9,10 +9,10 @@
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Lingot de plomb",
+    "name": "Lead ingot",
     "rarity": "COMMON",
     "creativeTabs": [
-      "MATERIALS"
+      "CUSTOM:Uraniumcreativetab"
     ],
     "stackSize": 64,
     "enchantability": 0,
