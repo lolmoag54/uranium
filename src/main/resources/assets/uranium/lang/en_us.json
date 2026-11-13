@@ -34,5 +34,9 @@
   "item.uranium.cable_x": "Cable",
   "item.uranium.cable_xc": "Cable",
   "item.uranium.cable_f": "Cable",
-  "item.uranium.cable_s": "Cable"
+  "item.uranium.cable_s": "Cable",
+  "advancements.letscentrifuge.title": "let's centrifuge",
+  "advancements.letscentrifuge.descr": "craft a centrifuge",
+  "advancements.welcometo.descr": "thank for using our mod",
+  "advancements.welcometo.title": "Welcome to"
 }

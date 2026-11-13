@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:block/stone",
+    "icon": {
+      "id": "uranium:enricheduranium"
+    },
+    "title": {
+      "translate": "advancements.welcometo.title"
+    },
+    "description": {
+      "translate": "advancements.welcometo.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "welcometo_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  }
+}

@@ -68,7 +68,9 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      "CUSTOM:Uraniumcreativetab"
+    ],
     "destroyTool": "Not specified",
     "customDrop": "",
     "dropAmount": 1,

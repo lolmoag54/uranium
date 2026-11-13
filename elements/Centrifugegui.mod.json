@@ -85,6 +85,20 @@
           "y": 71,
           "locked": false
         }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "public.png",
+          "spritesCount": 9,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "Centrifugeenergyprocedure"
+          },
+          "x": 132,
+          "y": 89,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
