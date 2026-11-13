@@ -353,13 +353,13 @@
       "registry_name": "grossebatterie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/grossebatterie.json",
+          "src/main/resources/data/uranium/loot_table/blocks/grossebatterie.json",
           "src/main/resources/assets/uranium/blockstates/grossebatterie.json",
           "src/main/resources/assets/uranium/models/block/grossebatterie.json",
-          "src/main/resources/data/uranium/loot_table/blocks/grossebatterie.json",
           "src/main/resources/assets/uranium/models/item/grossebatterie.json",
-          "src/main/java/net/mcreator/uranium/block/entity/GrossebatterieBlockEntity.java",
-          "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java"
+          "src/main/resources/assets/uranium/items/grossebatterie.json",
+          "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/GrossebatterieBlockEntity.java"
         ]
       }
     },

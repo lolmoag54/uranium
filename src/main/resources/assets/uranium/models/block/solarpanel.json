@@ -3,6 +3,6 @@
   "textures": {
     "all": "uranium:block/block_de_plomb",
     "particle": "uranium:block/block_de_plomb",
-    "0": "uranium:block/"
+    "1": "uranium:block/"
   }
 }
