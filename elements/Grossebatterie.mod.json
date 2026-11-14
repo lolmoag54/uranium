@@ -56,7 +56,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Grossebatterie",
+    "name": "heavy batterie",
     "specialInformation": {
       "fixedValue": []
     },
@@ -68,8 +68,10 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
-    "destroyTool": "Not specified",
+    "creativeTabs": [
+      "CUSTOM:Uraniumcreativetab"
+    ],
+    "destroyTool": "pickaxe",
     "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
@@ -81,7 +83,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": true,
     "lightOpacity": 0,
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -89,7 +91,7 @@
       "fixedValue": 15.0
     },
     "colorOnMap": "DEFAULT",
-    "noteBlockInstrument": "harp",
+    "noteBlockInstrument": "iron_xylophone",
     "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -103,7 +105,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "soundOnStep": "GROUND",
+    "soundOnStep": "METAL",
     "isCustomSoundType": false,
     "breakSound": "",
     "fallSound": "",
@@ -114,14 +116,14 @@
       "fixedValue": 0.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 99,
@@ -129,14 +131,16 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 400000,
-    "energyMaxReceive": 200,
-    "energyMaxExtract": 200,
+    "energyCapacity": 1000000,
+    "energyMaxReceive": 50,
+    "energyMaxExtract": 50,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": "GrossebatterieBlockAdded",
+    "onTickUpdate": "GrossebatterieOnTickUpdate",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

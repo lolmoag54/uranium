@@ -38,7 +38,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Minerai de plomb",
+    "name": "Lead Ore",
     "specialInformation": {
       "fixedValue": []
     },
@@ -51,7 +51,7 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "DECORATIONS"
+      "CUSTOM:Uraniumcreativetab"
     ],
     "destroyTool": "Not specified",
     "customDrop": "CUSTOM:Lingotdeplomb",

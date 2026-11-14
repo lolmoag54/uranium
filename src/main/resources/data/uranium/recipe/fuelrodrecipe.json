@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " a "
+  ],
+  "key": {
+    "a": "uranium:steel",
+    "b": "uranium:fuelpellet"
+  },
+  "result": {
+    "id": "uranium:fuelrod",
+    "count": 1
+  }
+}

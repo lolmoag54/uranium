@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "uranium:depleteduranium",
+    "uranium:depleteduranium"
+  ],
+  "result": {
+    "id": "uranium:depleteduraniumingot",
+    "count": 1
+  }
+}

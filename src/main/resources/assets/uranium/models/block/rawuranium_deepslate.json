@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/deepslate_coal_ore",
+    "up": "uranium:block/deepslate_coal_ore",
+    "north": "uranium:block/deepslate_coal_ore",
+    "east": "uranium:block/deepslate_coal_ore",
+    "south": "uranium:block/deepslate_coal_ore",
+    "west": "uranium:block/deepslate_coal_ore",
+    "particle": "uranium:block/deepslate_coal_ore"
+  }
+}

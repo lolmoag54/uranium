@@ -1,0 +1,8 @@
+{
+  "parent": "uranium:custom/electrical_cable_txc",
+  "textures": {
+    "all": "uranium:block/cable",
+    "particle": "uranium:block/cable",
+    "texture": "uranium:block/cable"
+  }
+}

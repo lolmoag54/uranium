@@ -37,6 +37,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.uranium.world.inventory.CentrifugeguiMenu;
 import net.mcreator.uranium.procedures.CentrifugeOnTickUpdateProcedure;
+import net.mcreator.uranium.procedures.CentrifugeBlockAddedProcedure;
 import net.mcreator.uranium.block.entity.CentrifugeBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -108,6 +109,7 @@ public class CentrifugeBlock extends FallingBlock implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
+		CentrifugeBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

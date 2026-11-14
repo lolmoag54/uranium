@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "uranium:lingotdeplomb"
+  ],
+  "result": {
+    "id": "uranium:pepitedeplomb",
+    "count": 9
+  }
+}

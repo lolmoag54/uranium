@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uranium:block/cable_l"
+    },
+    "facing=east": {
+      "model": "uranium:block/cable_l",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "uranium:block/cable_l",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uranium:block/cable_l",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "uranium:block/cable_l",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "uranium:block/cable_l",
+      "x": 90
+    }
+  }
+}
