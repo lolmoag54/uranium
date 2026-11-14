@@ -5,19 +5,14 @@ package net.mcreator.uranium.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.uranium.UraniumMod;
 
-@EventBusSubscriber
 public class UraniumModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, UraniumMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> URANIUMCREATIVETAB = REGISTRY.register("uraniumcreativetab",
@@ -28,17 +23,23 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ENRICHEDURANIUM.get());
 				tabData.accept(UraniumModItems.YELLOWCAKE.get());
 				tabData.accept(UraniumModItems.SULFURICACID_BUCKET.get());
+				tabData.accept(UraniumModItems.FLUORIDE.get());
+				tabData.accept(UraniumModItems.LINGOTDEPLOMB.get());
+				tabData.accept(UraniumModItems.PEPITEDEPLOMB.get());
+				tabData.accept(UraniumModBlocks.BLOCKDEPLOMB.get().asItem());
+				tabData.accept(UraniumModBlocks.MINERAIDEPLOMB.get().asItem());
+				tabData.accept(UraniumModBlocks.GROSSEBATTERIE.get().asItem());
+				tabData.accept(UraniumModBlocks.SOLARPANEL.get().asItem());
+				tabData.accept(UraniumModBlocks.CABLE.get().asItem());
+				tabData.accept(UraniumModItems.URANIUMPOWDER.get());
+				tabData.accept(UraniumModItems.ENRICHEDURANIUMINGOT.get());
+				tabData.accept(UraniumModItems.DEPLETEDURANIUMINGOT.get());
+				tabData.accept(UraniumModItems.FUELPELLET.get());
+				tabData.accept(UraniumModItems.FUELROD.get());
+				tabData.accept(UraniumModItems.SPENTFUELROD.get());
+				tabData.accept(UraniumModItems.DEPLETEDURANIUMPLATE.get());
+				tabData.accept(UraniumModItems.DEPLETEDURANIUMROUND.get());
+				tabData.accept(UraniumModBlocks.CRUSHER.get().asItem());
+				tabData.accept(UraniumModBlocks.REACTOR.get().asItem());
 			}).build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			tabData.accept(UraniumModItems.LINGOTDEPLOMB.get());
-			tabData.accept(UraniumModItems.PEPITEDEPLOMB.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(UraniumModBlocks.BLOCKDEPLOMB.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(UraniumModBlocks.MINERAIDEPLOMB.get().asItem());
-		}
-	}
 }
