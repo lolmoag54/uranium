@@ -5,7 +5,9 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 9,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:Blockdeplomb"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,

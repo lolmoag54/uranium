@@ -1,14 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "aaa",
-    "aaa",
-    "aaa"
+  "ingredients": [
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb",
+    "uranium:pepitedeplomb"
   ],
-  "key": {
-    "a": "uranium:pepitedeplomb"
-  },
   "result": {
     "id": "uranium:lingotdeplomb",
     "count": 1
