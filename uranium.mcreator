@@ -2171,11 +2171,11 @@
       "registry_name": "poissonchatte",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/poissonchatte_spawn_egg.json",
-          "src/main/resources/assets/uranium/items/poissonchatte_spawn_egg.json",
-          "src/main/resources/data/uranium/neoforge/biome_modifier/poissonchatte_biome_modifier.json",
           "src/main/java/net/mcreator/uranium/client/renderer/PoissonchatteRenderer.java",
-          "src/main/java/net/mcreator/uranium/entity/PoissonchatteEntity.java"
+          "src/main/java/net/mcreator/uranium/entity/PoissonchatteEntity.java",
+          "src/main/resources/assets/uranium/items/poissonchatte_spawn_egg.json",
+          "src/main/resources/assets/uranium/models/item/poissonchatte_spawn_egg.json",
+          "src/main/resources/data/uranium/neoforge/biome_modifier/poissonchatte_biome_modifier.json"
         ]
       },
       "path": "~/mob"
@@ -2261,6 +2261,9 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
+    ],
+    "ENTITIES:minecraft:aquatic": [
+      "~Poissonchatte@CUSTOM:Poissonchatte"
     ]
   },
   "tab_element_order": {},
@@ -2327,21 +2330,21 @@
     "files": [
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
-      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/uranium/UraniumMod.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModModels.java"
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModModels.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
