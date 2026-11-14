@@ -13,7 +13,7 @@
           "src/main/java/net/mcreator/uranium/item/SteelItem.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Steel"
     },
     {
       "name": "Centrifuge",
@@ -2052,7 +2052,6 @@
           "src/main/java/net/mcreator/uranium/block/ReactorBlock.java",
           "src/main/java/net/mcreator/uranium/block/entity/ReactorBlockEntity.java",
           "src/main/resources/assets/uranium/items/reactor.json",
-          "src/main/resources/assets/uranium/models/block/reactor_0.json",
           "src/main/resources/assets/uranium/models/block/reactor.json",
           "src/main/resources/data/uranium/loot_table/blocks/reactor.json",
           "src/main/resources/assets/uranium/models/item/reactor.json"
@@ -2137,6 +2136,32 @@
         ]
       },
       "path": "~/Uranium"
+    },
+    {
+      "name": "NuggettoingotLead",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuggettoingot_lead",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/nuggettoingot_lead.json"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "IngottoblockLead",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ingottoblock_lead",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/ingottoblock_lead.json"
+        ]
+      },
+      "path": "~/plomb"
     }
   ],
   "variable_elements": [
@@ -2261,20 +2286,20 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java"
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
@@ -2333,6 +2358,10 @@
       },
       {
         "name": "achievement",
+        "children": []
+      },
+      {
+        "name": "Steel",
         "children": []
       }
     ]

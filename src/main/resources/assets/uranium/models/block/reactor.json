@@ -1,12 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "uranium:custom/reactor",
   "textures": {
-    "down": "uranium:block/reactor_off",
-    "up": "uranium:block/reactor_off",
-    "north": "uranium:block/reactor_off",
-    "east": "uranium:block/reactor_off",
-    "south": "uranium:block/reactor_off",
-    "west": "uranium:block/reactor_off",
-    "particle": "uranium:block/reactor_off"
+    "all": "uranium:block/reactor_texture",
+    "particle": "uranium:block/reactor_texture",
+    "0": "uranium:block/smooth_stone_texture_je2_be2",
+    "1": "uranium:block/reactor_texture"
   }
 }

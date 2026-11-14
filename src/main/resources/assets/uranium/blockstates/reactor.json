@@ -1,10 +1,27 @@
 {
   "variants": {
-    "on=true": {
-      "model": "uranium:block/reactor_0"
-    },
-    "on=false": {
+    "facing=north": {
       "model": "uranium:block/reactor"
+    },
+    "facing=east": {
+      "model": "uranium:block/reactor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "uranium:block/reactor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uranium:block/reactor",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "uranium:block/reactor",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "uranium:block/reactor",
+      "x": 90
     }
   }
 }
