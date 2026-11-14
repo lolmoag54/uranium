@@ -19,7 +19,6 @@ public class CrusherOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModBlocks.RAWURANIUM.get().asItem()
 				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModBlocks.RAWURANIUM_DEEPSLATE.get().asItem()) {
-			CrusherrecipeProcedure.execute(world, x, y, z);
 		} else {
 			{
 				int _value = 0;
