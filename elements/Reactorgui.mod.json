@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 174,
-    "height": 149,
+    "width": 177,
+    "height": 156,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": -6,
     "renderBgLayer": true,
@@ -25,7 +25,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 159,
-          "y": 71,
+          "y": 74,
           "locked": false
         }
       },
@@ -37,8 +37,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 249,
-          "y": 53,
+          "x": 244,
+          "y": 73,
           "locked": false
         }
       },
@@ -62,14 +62,14 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "public.png",
-          "spritesCount": 9,
+          "sprite": "energy_gauge_sheet_64x64x8.png",
+          "spritesCount": 8,
           "spriteIndex": {
-            "fixedValue": 0.0,
+            "fixedValue": 3.0,
             "name": "Reactorprogressbar"
           },
-          "x": 195,
-          "y": 71,
+          "x": 179,
+          "y": 47,
           "locked": false
         }
       }
@@ -77,9 +77,9 @@
     "gridSettings": {
       "sx": 18,
       "sy": 18,
-      "ox": 11,
-      "oy": 15,
-      "snapOnGrid": true
+      "ox": 6,
+      "oy": 52,
+      "snapOnGrid": false
     }
   }
 }

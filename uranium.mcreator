@@ -366,8 +366,12 @@
           "src/main/resources/data/uranium/loot_table/blocks/grossebatterie.json",
           "src/main/resources/assets/uranium/blockstates/grossebatterie.json",
           "src/main/resources/assets/uranium/models/block/grossebatterie.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_0.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_3.json",
           "src/main/resources/assets/uranium/models/item/grossebatterie.json",
           "src/main/resources/assets/uranium/items/grossebatterie.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_2.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_1.json",
           "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
           "src/main/java/net/mcreator/uranium/block/entity/GrossebatterieBlockEntity.java"
         ]
@@ -2166,6 +2170,7 @@
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~Reactor@CUSTOM:Reactor",
+      "~Grossebatterie@CUSTOM:Grossebatterie",
       "~Crusher@CUSTOM:Crusher",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
@@ -2185,7 +2190,6 @@
       "~CableE@CUSTOM:CableE",
       "~Cable@CUSTOM:Cable",
       "~Solarpanel@CUSTOM:Solarpanel",
-      "~Grossebatterie@CUSTOM:Grossebatterie",
       "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [

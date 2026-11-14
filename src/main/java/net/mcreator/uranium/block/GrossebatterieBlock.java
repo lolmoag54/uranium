@@ -4,6 +4,8 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -12,6 +14,7 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
@@ -25,10 +28,12 @@ import net.mcreator.uranium.procedures.GrossebatterieBlockAddedProcedure;
 import net.mcreator.uranium.block.entity.GrossebatterieBlockEntity;
 
 public class GrossebatterieBlock extends Block implements EntityBlock {
-	private static final VoxelShape SHAPE = Shapes.or(box(0, 0, 0, 16, 16, 16), box(2, 16, 7, 4, 18, 9), box(12, 16, 7, 14, 18, 9));
+	public static final IntegerProperty BATTERIE_LEVEL = IntegerProperty.create("batterie_level", 0, 4);
+	private static final VoxelShape SHAPE = Shapes.or(box(0, 0, 0, 16, 2, 16), box(0, 11, 0, 16, 13, 16), box(1, 2, 0, 15, 11, 16), box(12, 14, 7, 14, 16, 9), box(2, 14, 7, 4, 16, 9), box(1, 13, 6, 5, 14, 10), box(11, 13, 6, 15, 14, 10));
 
 	public GrossebatterieBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
+		this.registerDefaultState(this.stateDefinition.any().setValue(BATTERIE_LEVEL, 0));
 	}
 
 	@Override
@@ -49,6 +54,20 @@ public class GrossebatterieBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
+		builder.add(BATTERIE_LEVEL);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(BATTERIE_LEVEL, 0);
 	}
 
 	@Override

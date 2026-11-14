@@ -23,10 +23,10 @@ public class ReactorguiScreen extends AbstractContainerScreen<ReactorguiMenu> im
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final Identifier BACKGROUND = Identifier.parse("uranium:textures/screens/reactorgui.png");
-	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/public.png");
+	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/energy_gauge_sheet_64x64x8.png");
 
 	public ReactorguiScreen(ReactorguiMenu container, Inventory inventory, Component text) {
-		super(container, inventory, text, 174, 149);
+		super(container, inventory, text, 177, 156);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
@@ -49,7 +49,7 @@ public class ReactorguiScreen extends AbstractContainerScreen<ReactorguiMenu> im
 	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 68, this.topPos + 25, 0, Mth.clamp((int) ReactorprogressbarProcedure.execute(world, x, y, z) * 16, 0, 128), 32, 16, 32, 144);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 54, this.topPos + 5, 0, Mth.clamp((int) ReactorprogressbarProcedure.execute(world, x, y, z) * 64, 0, 448), 64, 64, 64, 512);
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public class ReactorguiScreen extends AbstractContainerScreen<ReactorguiMenu> im
 
 	@Override
 	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.text(this.font, Component.translatable("gui.uranium.reactorgui.label_reactor"), 5, 3, -12829636, false);
+		guiGraphics.text(this.font, Component.translatable("gui.uranium.reactorgui.label_reactor"), 7, 7, -12829636, false);
 	}
 
 	@Override

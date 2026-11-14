@@ -93,12 +93,12 @@ public class ReactorguiMenu extends AbstractContainerMenu implements UraniumModM
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 33, 26) {
+		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 35, 33) {
 			private final int slot = 0;
 			private int x = ReactorguiMenu.this.x;
 			private int y = ReactorguiMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 123, 8) {
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 120, 32) {
 			private final int slot = 1;
 			private int x = ReactorguiMenu.this.x;
 			private int y = ReactorguiMenu.this.y;
@@ -110,9 +110,9 @@ public class ReactorguiMenu extends AbstractContainerMenu implements UraniumModM
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -1 + 8 + sj * 18, -15 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 1 + 8 + sj * 18, -11 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, -1 + 8 + si * 18, -15 + 142));
+			this.addSlot(new Slot(inv, si, 1 + 8 + si * 18, -11 + 142));
 	}
 
 	private void setItemInSlot(int index, ItemResource resource, int amount) {

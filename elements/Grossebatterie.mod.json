@@ -2,19 +2,156 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "hewe",
+    "texture": "batteire_empty",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "batterie:default",
+    "customModelName": "batterie:empty",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "states": [],
+    "states": [
+      {
+        "texture": "batterie_quarter",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "batterie:quarter",
+        "particleTexture": "",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:batterie_level",
+              "type": "integer"
+            },
+            "value": 1
+          }
+        ]
+      },
+      {
+        "texture": "batterie_half",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "batterie:half",
+        "particleTexture": "",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:batterie_level",
+              "type": "integer"
+            },
+            "value": 2
+          }
+        ]
+      },
+      {
+        "texture": "batterie_3quarters",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "batterie:three_quarter",
+        "particleTexture": "",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:batterie_level",
+              "type": "integer"
+            },
+            "value": 3
+          }
+        ]
+      },
+      {
+        "texture": "batterie_full",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "batterie:full",
+        "particleTexture": "",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:batterie_level",
+              "type": "integer"
+            },
+            "value": 4
+          }
+        ]
+      }
+    ],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
@@ -32,30 +169,74 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 16.0,
+        "My": 2.0,
         "Mz": 16.0,
         "subtract": false
       },
       {
-        "mx": 2.0,
-        "my": 16.0,
-        "mz": 7.0,
-        "Mx": 4.0,
-        "My": 18.0,
-        "Mz": 9.0,
+        "mx": 0.0,
+        "my": 11.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 13.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 2.0,
+        "mz": 0.0,
+        "Mx": 15.0,
+        "My": 11.0,
+        "Mz": 16.0,
         "subtract": false
       },
       {
         "mx": 12.0,
-        "my": 16.0,
+        "my": 14.0,
         "mz": 7.0,
         "Mx": 14.0,
-        "My": 18.0,
+        "My": 16.0,
         "Mz": 9.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 14.0,
+        "mz": 7.0,
+        "Mx": 4.0,
+        "My": 16.0,
+        "Mz": 9.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": 13.0,
+        "mz": 6.0,
+        "Mx": 5.0,
+        "My": 14.0,
+        "Mz": 10.0,
+        "subtract": false
+      },
+      {
+        "mx": 11.0,
+        "my": 13.0,
+        "mz": 6.0,
+        "Mx": 15.0,
+        "My": 14.0,
+        "Mz": 10.0,
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 4,
+        "name": "CUSTOM:batterie_level",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "heavy batterie",
     "specialInformation": {
       "fixedValue": []
@@ -133,7 +314,7 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 1000000,
+    "energyCapacity": 500000,
     "energyMaxReceive": 50,
     "energyMaxExtract": 50,
     "isFluidTank": false,

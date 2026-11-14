@@ -1,6 +1,18 @@
 {
   "variants": {
-    "": {
+    "batterie_level=1": {
+      "model": "uranium:block/grossebatterie_0"
+    },
+    "batterie_level=2": {
+      "model": "uranium:block/grossebatterie_1"
+    },
+    "batterie_level=3": {
+      "model": "uranium:block/grossebatterie_2"
+    },
+    "batterie_level=4": {
+      "model": "uranium:block/grossebatterie_3"
+    },
+    "batterie_level=0": {
       "model": "uranium:block/grossebatterie"
     }
   }
