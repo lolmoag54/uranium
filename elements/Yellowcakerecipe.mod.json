@@ -12,15 +12,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:Rawuranium",
-      "CUSTOM:Rawuranium",
-      "CUSTOM:Rawuranium",
-      "CUSTOM:Rawuranium",
+      "CUSTOM:Uraniumpowder",
+      "CUSTOM:Uraniumpowder",
+      "CUSTOM:Uraniumpowder",
+      "CUSTOM:Uraniumpowder",
       "CUSTOM:Sulfuricacid.bucket",
-      "CUSTOM:Rawuranium",
-      "CUSTOM:Rawuranium",
-      "CUSTOM:Rawuranium",
-      "CUSTOM:Rawuranium"
+      "CUSTOM:Uraniumpowder",
+      "CUSTOM:Uraniumpowder",
+      "CUSTOM:Uraniumpowder",
+      "CUSTOM:Uraniumpowder"
     ],
     "recipeReturnStack": "CUSTOM:Yellowcake",
     "name": "yellowcakerecipe",

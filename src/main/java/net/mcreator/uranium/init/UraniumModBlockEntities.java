@@ -42,6 +42,8 @@ public class UraniumModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CableXCBlockEntity>> CABLE_XC = register("cable_xc", UraniumModBlocks.CABLE_XC, CableXCBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CableFBlockEntity>> CABLE_F = register("cable_f", UraniumModBlocks.CABLE_F, CableFBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CableSBlockEntity>> CABLE_S = register("cable_s", UraniumModBlocks.CABLE_S, CableSBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CrusherBlockEntity>> CRUSHER = register("crusher", UraniumModBlocks.CRUSHER, CrusherBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ReactorBlockEntity>> REACTOR = register("reactor", UraniumModBlocks.REACTOR, ReactorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -91,5 +93,9 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, CABLE_F.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CABLE_S.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, CABLE_S.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, CRUSHER.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, CRUSHER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, REACTOR.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, REACTOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 	}
 }

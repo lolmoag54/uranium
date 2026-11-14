@@ -56,6 +56,16 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> CABLE_F;
 	public static final DeferredItem<Item> CABLE_S;
 	public static final DeferredItem<Item> RAWURANIUM_DEEPSLATE;
+	public static final DeferredItem<Item> URANIUMPOWDER;
+	public static final DeferredItem<Item> ENRICHEDURANIUMINGOT;
+	public static final DeferredItem<Item> DEPLETEDURANIUMINGOT;
+	public static final DeferredItem<Item> FUELPELLET;
+	public static final DeferredItem<Item> FUELROD;
+	public static final DeferredItem<Item> SPENTFUELROD;
+	public static final DeferredItem<Item> DEPLETEDURANIUMPLATE;
+	public static final DeferredItem<Item> DEPLETEDURANIUMROUND;
+	public static final DeferredItem<Item> CRUSHER;
+	public static final DeferredItem<Item> REACTOR;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -89,6 +99,16 @@ public class UraniumModItems {
 		CABLE_F = block(UraniumModBlocks.CABLE_F);
 		CABLE_S = block(UraniumModBlocks.CABLE_S);
 		RAWURANIUM_DEEPSLATE = block(UraniumModBlocks.RAWURANIUM_DEEPSLATE);
+		URANIUMPOWDER = register("uraniumpowder", UraniumpowderItem::new);
+		ENRICHEDURANIUMINGOT = register("enricheduraniumingot", EnricheduraniumingotItem::new);
+		DEPLETEDURANIUMINGOT = register("depleteduraniumingot", DepleteduraniumingotItem::new);
+		FUELPELLET = register("fuelpellet", FuelpelletItem::new);
+		FUELROD = register("fuelrod", FuelrodItem::new);
+		SPENTFUELROD = register("spentfuelrod", SpentfuelrodItem::new);
+		DEPLETEDURANIUMPLATE = register("depleteduraniumplate", DepleteduraniumplateItem::new);
+		DEPLETEDURANIUMROUND = register("depleteduraniumround", DepleteduraniumroundItem::new);
+		CRUSHER = block(UraniumModBlocks.CRUSHER, new Item.Properties().stacksTo(16));
+		REACTOR = block(UraniumModBlocks.REACTOR, new Item.Properties().stacksTo(16));
 	}
 
 	// Start of user code block custom items

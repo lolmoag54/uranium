@@ -39,5 +39,17 @@
   "advancements.letscentrifuge.descr": "craft a centrifuge",
   "advancements.welcometo.descr": "thank for using our mod",
   "advancements.welcometo.title": "Welcome to",
-  "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore"
+  "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore",
+  "item.uranium.uraniumpowder": "Uranium powder",
+  "item.uranium.enricheduraniumingot": "Enriched uranium ingot (U-235)",
+  "item.uranium.depleteduraniumingot": "Depleted uranium ingot (U-238)",
+  "item.uranium.fuelpellet": "Uranium fuel pellet",
+  "item.uranium.fuelrod": "Uranium fuel rod",
+  "item.uranium.spentfuelrod": "Spent fuel rod",
+  "item.uranium.depleteduraniumplate": "Depleted uranium armor plate",
+  "item.uranium.depleteduraniumround": "Armor-piercing depleted uranium round",
+  "gui.uranium.crushergui.label_crusher": "Crusher",
+  "gui.uranium.reactorgui.label_reactor": "Reactor",
+  "item.uranium.crusher": "Crusher",
+  "item.uranium.reactor": "Fission reactor"
 }

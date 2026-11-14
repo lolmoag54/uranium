@@ -23,6 +23,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ENRICHEDURANIUM.get());
 				tabData.accept(UraniumModItems.YELLOWCAKE.get());
 				tabData.accept(UraniumModItems.SULFURICACID_BUCKET.get());
+				tabData.accept(UraniumModItems.FLUORIDE.get());
 				tabData.accept(UraniumModItems.LINGOTDEPLOMB.get());
 				tabData.accept(UraniumModItems.PEPITEDEPLOMB.get());
 				tabData.accept(UraniumModBlocks.BLOCKDEPLOMB.get().asItem());
@@ -30,5 +31,15 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModBlocks.GROSSEBATTERIE.get().asItem());
 				tabData.accept(UraniumModBlocks.SOLARPANEL.get().asItem());
 				tabData.accept(UraniumModBlocks.CABLE.get().asItem());
+				tabData.accept(UraniumModItems.URANIUMPOWDER.get());
+				tabData.accept(UraniumModItems.ENRICHEDURANIUMINGOT.get());
+				tabData.accept(UraniumModItems.DEPLETEDURANIUMINGOT.get());
+				tabData.accept(UraniumModItems.FUELPELLET.get());
+				tabData.accept(UraniumModItems.FUELROD.get());
+				tabData.accept(UraniumModItems.SPENTFUELROD.get());
+				tabData.accept(UraniumModItems.DEPLETEDURANIUMPLATE.get());
+				tabData.accept(UraniumModItems.DEPLETEDURANIUMROUND.get());
+				tabData.accept(UraniumModBlocks.CRUSHER.get().asItem());
+				tabData.accept(UraniumModBlocks.REACTOR.get().asItem());
 			}).build());
 }

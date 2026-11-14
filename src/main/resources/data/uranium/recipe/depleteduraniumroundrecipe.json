@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "uranium:depleteduraniumingot",
+    "uranium:steel"
+  ],
+  "result": {
+    "id": "uranium:depleteduraniumround",
+    "count": 8
+  }
+}

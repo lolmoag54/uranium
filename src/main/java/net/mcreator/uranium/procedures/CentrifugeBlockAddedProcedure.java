@@ -14,6 +14,11 @@ public class CentrifugeBlockAddedProcedure {
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null) {
 				_blockEntity.getPersistentData().putBoolean("cablesFCopperDown", true);
+				_blockEntity.getPersistentData().putBoolean("cablesFCopperUp", true);
+				_blockEntity.getPersistentData().putBoolean("cablesFCopperNorth", true);
+				_blockEntity.getPersistentData().putBoolean("cablesFCopperSouth", true);
+				_blockEntity.getPersistentData().putBoolean("cablesFCopperEast", true);
+				_blockEntity.getPersistentData().putBoolean("cablesFCopperWest", true);
 			}
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);

@@ -1585,6 +1585,554 @@
         ]
       },
       "path": "~/Uranium"
+    },
+    {
+      "name": "Uraniumpowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumpowder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/UraniumpowderItem.java",
+          "src/main/resources/assets/uranium/models/item/uraniumpowder.json",
+          "src/main/resources/assets/uranium/items/uraniumpowder.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Enricheduraniumingot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enricheduraniumingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/enricheduraniumingot.json",
+          "src/main/resources/assets/uranium/items/enricheduraniumingot.json",
+          "src/main/java/net/mcreator/uranium/item/EnricheduraniumingotItem.java"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Depleteduraniumingot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleteduraniumingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/depleteduraniumingot.json",
+          "src/main/java/net/mcreator/uranium/item/DepleteduraniumingotItem.java",
+          "src/main/resources/assets/uranium/items/depleteduraniumingot.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Fuelpellet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuelpellet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/FuelpelletItem.java",
+          "src/main/resources/assets/uranium/items/fuelpellet.json",
+          "src/main/resources/assets/uranium/models/item/fuelpellet.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Fuelrod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuelrod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/fuelrod.json",
+          "src/main/resources/assets/uranium/models/item/fuelrod.json",
+          "src/main/java/net/mcreator/uranium/item/FuelrodItem.java"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Spentfuelrod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spentfuelrod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/spentfuelrod.json",
+          "src/main/resources/assets/uranium/models/item/spentfuelrod.json",
+          "src/main/java/net/mcreator/uranium/item/SpentfuelrodItem.java"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Depleteduraniumplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleteduraniumplate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/DepleteduraniumplateItem.java",
+          "src/main/resources/assets/uranium/models/item/depleteduraniumplate.json",
+          "src/main/resources/assets/uranium/items/depleteduraniumplate.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Depleteduraniumround",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleteduraniumround",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/depleteduraniumround.json",
+          "src/main/resources/assets/uranium/models/item/depleteduraniumround.json",
+          "src/main/java/net/mcreator/uranium/item/DepleteduraniumroundItem.java"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Crusherrecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crusherrecipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CrusherrecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "CrusherOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crusherontickupdate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CrusherOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Crusherprogressbar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crusherprogressbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CrusherprogressbarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Crusherpowerbar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crusherpowerbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CrusherpowerbarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Crusherblockadded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crusherblockadded",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CrusherblockaddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "ReactorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorontickupdate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ReactorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Reactorenergyoutput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorenergyoutput",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ReactorenergyoutputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Reactorprogressbar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorprogressbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ReactorprogressbarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Reactorblockadded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorblockadded",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ReactorblockaddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Crushergui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crushergui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/client/gui/CrusherguiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/CrusherguiMenu.java"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Reactorgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/client/gui/ReactorguiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/ReactorguiMenu.java"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Crusher",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crusher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/crusher.json",
+          "src/main/resources/assets/uranium/blockstates/crusher.json",
+          "src/main/resources/assets/uranium/models/block/crusher_0.json",
+          "src/main/resources/assets/uranium/models/block/crusher.json",
+          "src/main/resources/data/uranium/loot_table/blocks/crusher.json",
+          "src/main/java/net/mcreator/uranium/block/CrusherBlock.java",
+          "src/main/resources/assets/uranium/items/crusher.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CrusherBlockEntity.java"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Reactor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/reactor.json",
+          "src/main/java/net/mcreator/uranium/block/ReactorBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/ReactorBlockEntity.java",
+          "src/main/resources/assets/uranium/items/reactor.json",
+          "src/main/resources/assets/uranium/models/block/reactor_0.json",
+          "src/main/resources/assets/uranium/models/block/reactor.json",
+          "src/main/resources/data/uranium/loot_table/blocks/reactor.json",
+          "src/main/resources/assets/uranium/models/item/reactor.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Enricheduraniumingotrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enricheduraniumingotrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/enricheduraniumingotrecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Depleteduraniumingotrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleteduraniumingotrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/depleteduraniumingotrecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Fuelpelletrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuelpelletrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/fuelpelletrecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Fuelrodrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuelrodrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/fuelrodrecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Depleteduraniumplaterecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleteduraniumplaterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/depleteduraniumplaterecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Depleteduraniumroundrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "depleteduraniumroundrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/depleteduraniumroundrecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
     }
   ],
   "variable_elements": [
@@ -1617,10 +2165,8 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Centrifuge@CUSTOM:Centrifuge",
-      "~Solarpanel@CUSTOM:Solarpanel",
-      "~Cable@CUSTOM:Cable",
-      "~Grossebatterie@CUSTOM:Grossebatterie",
+      "~Reactor@CUSTOM:Reactor",
+      "~Crusher@CUSTOM:Crusher",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
       "~CableXC@CUSTOM:CableXC",
@@ -1636,13 +2182,19 @@
       "~CableLC@CUSTOM:CableLC",
       "~CableL@CUSTOM:CableL",
       "~CableI@CUSTOM:CableI",
-      "~CableE@CUSTOM:CableE"
+      "~CableE@CUSTOM:CableE",
+      "~Cable@CUSTOM:Cable",
+      "~Solarpanel@CUSTOM:Solarpanel",
+      "~Grossebatterie@CUSTOM:Grossebatterie",
+      "~Centrifuge@CUSTOM:Centrifuge"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~Reactor@CUSTOM:Reactor",
+      "~Crusher@CUSTOM:Crusher",
+      "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~Centrifuge@CUSTOM:Centrifuge"
     ]
   },
   "tab_element_order": {},
@@ -1688,7 +2240,19 @@
       "advancements.letscentrifuge.descr": "craft a centrifuge",
       "advancements.welcometo.descr": "thank for using our mod",
       "advancements.welcometo.title": "Welcome to",
-      "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore"
+      "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore",
+      "item.uranium.uraniumpowder": "Uranium powder",
+      "item.uranium.enricheduraniumingot": "Enriched uranium ingot (U-235)",
+      "item.uranium.depleteduraniumingot": "Depleted uranium ingot (U-238)",
+      "item.uranium.fuelpellet": "Uranium fuel pellet",
+      "item.uranium.fuelrod": "Uranium fuel rod",
+      "item.uranium.spentfuelrod": "Spent fuel rod",
+      "item.uranium.depleteduraniumplate": "Depleted uranium armor plate",
+      "item.uranium.depleteduraniumround": "Armor-piercing depleted uranium round",
+      "gui.uranium.crushergui.label_crusher": "Crusher",
+      "gui.uranium.reactorgui.label_reactor": "Reactor",
+      "item.uranium.crusher": "Crusher",
+      "item.uranium.reactor": "Fission reactor"
     }
   },
   "metadata": {
