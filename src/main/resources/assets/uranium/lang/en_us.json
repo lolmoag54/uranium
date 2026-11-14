@@ -51,5 +51,7 @@
   "gui.uranium.crushergui.label_crusher": "Crusher",
   "gui.uranium.reactorgui.label_reactor": "Reactor",
   "item.uranium.crusher": "Crusher",
-  "item.uranium.reactor": "Fission reactor"
+  "item.uranium.reactor": "Fission reactor",
+  "entity.uranium.poissonchatte": "Poisson chat mutan ",
+  "item.uranium.poissonchatte_spawn_egg": "Poisson chat mutan  Spawn Egg"
 }

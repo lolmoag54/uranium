@@ -13,6 +13,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
@@ -66,6 +67,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> DEPLETEDURANIUMROUND;
 	public static final DeferredItem<Item> CRUSHER;
 	public static final DeferredItem<Item> REACTOR;
+	public static final DeferredItem<Item> POISSONCHATTE_SPAWN_EGG;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -109,6 +111,7 @@ public class UraniumModItems {
 		DEPLETEDURANIUMROUND = register("depleteduraniumround", DepleteduraniumroundItem::new);
 		CRUSHER = block(UraniumModBlocks.CRUSHER, new Item.Properties().stacksTo(16));
 		REACTOR = block(UraniumModBlocks.REACTOR, new Item.Properties().stacksTo(16));
+		POISSONCHATTE_SPAWN_EGG = register("poissonchatte_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(UraniumModEntities.POISSONCHATTE.get())));
 	}
 
 	// Start of user code block custom items

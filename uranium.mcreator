@@ -8,8 +8,8 @@
       "registry_name": "steel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/steel.json",
           "src/main/resources/assets/uranium/models/item/steel.json",
+          "src/main/resources/assets/uranium/items/steel.json",
           "src/main/java/net/mcreator/uranium/item/SteelItem.java"
         ]
       },
@@ -2162,6 +2162,23 @@
         ]
       },
       "path": "~/plomb"
+    },
+    {
+      "name": "Poissonchatte",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poissonchatte",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/poissonchatte_spawn_egg.json",
+          "src/main/resources/assets/uranium/items/poissonchatte_spawn_egg.json",
+          "src/main/resources/data/uranium/neoforge/biome_modifier/poissonchatte_biome_modifier.json",
+          "src/main/java/net/mcreator/uranium/client/renderer/PoissonchatteRenderer.java",
+          "src/main/java/net/mcreator/uranium/entity/PoissonchatteEntity.java"
+        ]
+      },
+      "path": "~/mob"
     }
   ],
   "variable_elements": [
@@ -2281,25 +2298,30 @@
       "gui.uranium.crushergui.label_crusher": "Crusher",
       "gui.uranium.reactorgui.label_reactor": "Reactor",
       "item.uranium.crusher": "Crusher",
-      "item.uranium.reactor": "Fission reactor"
+      "item.uranium.reactor": "Fission reactor",
+      "entity.uranium.poissonchatte": "Poisson chat mutan ",
+      "item.uranium.poissonchatte_spawn_egg": "Poisson chat mutan  Spawn Egg"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
-      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
+      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModModels.java"
     ]
   },
   "foldersRoot": {
@@ -2362,6 +2384,10 @@
       },
       {
         "name": "Steel",
+        "children": []
+      },
+      {
+        "name": "mob",
         "children": []
       }
     ]

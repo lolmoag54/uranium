@@ -52,6 +52,7 @@ public class UraniumMod {
 		UraniumModBlocks.REGISTRY.register(modEventBus);
 		UraniumModBlockEntities.REGISTRY.register(modEventBus);
 		UraniumModItems.REGISTRY.register(modEventBus);
+		UraniumModEntities.REGISTRY.register(modEventBus);
 		UraniumModTabs.REGISTRY.register(modEventBus);
 		UraniumModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		UraniumModMenus.REGISTRY.register(modEventBus);
