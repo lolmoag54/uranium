@@ -47,7 +47,7 @@ public class LeadcraftingtableGuiScreen extends AbstractContainerScreen<Leadcraf
 	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 100, this.topPos + 34, 0, 128, 32, 16, 32, 144);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 100, this.topPos + 34, 0, 0, 32, 16, 32, 144);
 	}
 
 	@Override

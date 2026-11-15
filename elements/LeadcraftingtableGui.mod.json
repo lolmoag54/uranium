@@ -333,7 +333,7 @@
           "sprite": "public.png",
           "spritesCount": 9,
           "spriteIndex": {
-            "fixedValue": 8.0
+            "fixedValue": 0.0
           },
           "x": 213,
           "y": 71,
