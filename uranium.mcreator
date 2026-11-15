@@ -8,8 +8,8 @@
       "registry_name": "steel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/steel.json",
           "src/main/resources/assets/uranium/items/steel.json",
+          "src/main/resources/assets/uranium/models/item/steel.json",
           "src/main/java/net/mcreator/uranium/item/SteelItem.java"
         ]
       },
@@ -2548,14 +2548,10 @@
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
-      "~Rawuranium@CUSTOM:Rawuranium",
-      "~RawuraniumDeepslate@CUSTOM:RawuraniumDeepslate",
       "~ZicronOre@CUSTOM:ZicronOre",
-      "~Solarpanel@CUSTOM:Solarpanel",
       "~Reactor@CUSTOM:Reactor",
-      "~Centrifuge@CUSTOM:Centrifuge",
       "~Crusher@CUSTOM:Crusher",
-      "~Grossebatterie@CUSTOM:Grossebatterie",
+      "~RawuraniumDeepslate@CUSTOM:RawuraniumDeepslate",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
       "~CableXC@CUSTOM:CableXC",
@@ -2572,14 +2568,18 @@
       "~CableL@CUSTOM:CableL",
       "~CableI@CUSTOM:CableI",
       "~CableE@CUSTOM:CableE",
-      "~Cable@CUSTOM:Cable"
+      "~Cable@CUSTOM:Cable",
+      "~Solarpanel@CUSTOM:Solarpanel",
+      "~Grossebatterie@CUSTOM:Grossebatterie",
+      "~Rawuranium@CUSTOM:Rawuranium",
+      "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~ZicronOre@CUSTOM:ZicronOre",
       "~Reactor@CUSTOM:Reactor",
-      "~Centrifuge@CUSTOM:Centrifuge",
-      "~Crusher@CUSTOM:Crusher"
+      "~Crusher@CUSTOM:Crusher",
+      "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
@@ -2686,6 +2686,7 @@
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModBrewingRecipes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
@@ -2791,6 +2792,10 @@
       {
         "name": "Zicronium",
         "children": []
+      },
+      {
+        "name": "jei recipe",
+        "children": []
       }
     ]
   },
@@ -2805,8 +2810,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
     "currentGenerator": "neoforge-26.1.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.uranium"
   },
   "mcreatorVersion": 202600233518
