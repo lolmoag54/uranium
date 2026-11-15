@@ -4,23 +4,21 @@ import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.arrow.Arrow;
-import net.minecraft.world.entity.monster.RangedAttackMob;
+import net.minecraft.world.entity.projectile.throwableitemprojectile.AbstractThrownPotion;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -28,7 +26,6 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
-import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
@@ -36,13 +33,13 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.uranium.procedures.PoissonchattePlaybackCondition_swimProcedure;
+import net.mcreator.uranium.procedures.PoissonchattePlaybackConditionProcedure;
+import net.mcreator.uranium.procedures.PoissonchatteOnEntityTickUpdateProcedure;
 import net.mcreator.uranium.init.UraniumModEntities;
 
-public class PoissonchatteEntity extends Monster implements RangedAttackMob {
+public class PoissonchatteEntity extends Monster {
 	public final AnimationState animationState0 = new AnimationState();
 	public final AnimationState animationState1 = new AnimationState();
-	public final AnimationState animationState2 = new AnimationState();
-	public final AnimationState animationState3 = new AnimationState();
 
 	public PoissonchatteEntity(EntityType<PoissonchatteEntity> type, Level world) {
 		super(type, world);
@@ -91,25 +88,16 @@ public class PoissonchatteEntity extends Monster implements RangedAttackMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 10, 40));
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 10, 20) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 0.5, true) {
 			@Override
-			protected Vec3 getPosition() {
-				RandomSource random = PoissonchatteEntity.this.getRandom();
-				double dir_x = PoissonchatteEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_y = PoissonchatteEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_z = PoissonchatteEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
-				return new Vec3(dir_x, dir_y, dir_z);
+			protected boolean canPerformAttack(LivingEntity entity) {
+				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 10));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10f) {
-			@Override
-			public boolean canContinueToUse() {
-				return this.canUse();
-			}
-		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(3, new RandomSwimmingGoal(this, 2, 40));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
 	}
 
 	@Override
@@ -124,7 +112,13 @@ public class PoissonchatteEntity extends Monster implements RangedAttackMob {
 
 	@Override
 	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
+		if (damagesource.is(DamageTypes.IN_FIRE))
+			return false;
+		if (damagesource.getDirectEntity() instanceof AbstractThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
+			return false;
 		if (damagesource.is(DamageTypes.DROWN))
+			return false;
+		if (damagesource.is(DamageTypes.FALLING_ANVIL))
 			return false;
 		return super.hurtServer(level, damagesource, amount);
 	}
@@ -134,20 +128,14 @@ public class PoissonchatteEntity extends Monster implements RangedAttackMob {
 		super.tick();
 		if (this.level().isClientSide()) {
 			this.animationState0.animateWhen(PoissonchattePlaybackCondition_swimProcedure.execute(this), this.tickCount);
-			this.animationState1.animateWhen(true, this.tickCount);
-			this.animationState2.animateWhen(true, this.tickCount);
-			this.animationState3.animateWhen(true, this.tickCount);
+			this.animationState1.animateWhen(PoissonchattePlaybackConditionProcedure.execute(this), this.tickCount);
 		}
 	}
 
 	@Override
-	public void performRangedAttack(LivingEntity target, float flval) {
-		Arrow entityarrow = new Arrow(this.level(), this, new ItemStack(Items.ARROW), null);
-		double d0 = target.getY() + target.getEyeHeight() - 1.1;
-		double d1 = target.getX() - this.getX();
-		double d3 = target.getZ() - this.getZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
-		this.level().addFreshEntity(entityarrow);
+	public void baseTick() {
+		super.baseTick();
+		PoissonchatteOnEntityTickUpdateProcedure.execute(this);
 	}
 
 	@Override

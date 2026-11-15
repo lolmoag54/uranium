@@ -1,10 +1,34 @@
 {
   "variants": {
-    "on=true": {
+    "facing=north,on=true": {
       "model": "uranium:block/centrifuge_0"
     },
-    "on=false": {
+    "facing=north,on=false": {
       "model": "uranium:block/centrifuge"
+    },
+    "facing=east,on=true": {
+      "model": "uranium:block/centrifuge_0",
+      "y": 90
+    },
+    "facing=east,on=false": {
+      "model": "uranium:block/centrifuge",
+      "y": 90
+    },
+    "facing=south,on=true": {
+      "model": "uranium:block/centrifuge_0",
+      "y": 180
+    },
+    "facing=south,on=false": {
+      "model": "uranium:block/centrifuge",
+      "y": 180
+    },
+    "facing=west,on=true": {
+      "model": "uranium:block/centrifuge_0",
+      "y": 270
+    },
+    "facing=west,on=false": {
+      "model": "uranium:block/centrifuge",
+      "y": 270
     }
   }
 }

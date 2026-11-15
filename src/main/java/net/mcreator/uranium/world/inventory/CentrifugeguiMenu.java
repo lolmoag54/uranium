@@ -98,7 +98,7 @@ public class CentrifugeguiMenu extends AbstractContainerMenu implements UraniumM
 			private int x = CentrifugeguiMenu.this.x;
 			private int y = CentrifugeguiMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 123, 8) {
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 128, 8) {
 			private final int slot = 1;
 			private int x = CentrifugeguiMenu.this.x;
 			private int y = CentrifugeguiMenu.this.y;
@@ -108,7 +108,7 @@ public class CentrifugeguiMenu extends AbstractContainerMenu implements UraniumM
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 123, 44) {
+		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 128, 43) {
 			private final int slot = 2;
 			private int x = CentrifugeguiMenu.this.x;
 			private int y = CentrifugeguiMenu.this.y;

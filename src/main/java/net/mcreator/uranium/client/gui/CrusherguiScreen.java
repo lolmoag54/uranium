@@ -24,8 +24,8 @@ public class CrusherguiScreen extends AbstractContainerScreen<CrusherguiMenu> im
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final Identifier BACKGROUND = Identifier.parse("uranium:textures/screens/crushergui.png");
-	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/public.png");
-	private static final Identifier SPRITE_1 = Identifier.parse("uranium:textures/screens/public.png");
+	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/crusher_progress_sheet_72x48x9.png");
+	private static final Identifier SPRITE_1 = Identifier.parse("uranium:textures/screens/energy_bar_sheet_16x48x8.png");
 
 	public CrusherguiScreen(CrusherguiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text, 174, 149);
@@ -51,8 +51,8 @@ public class CrusherguiScreen extends AbstractContainerScreen<CrusherguiMenu> im
 	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 68, this.topPos + 25, 0, Mth.clamp((int) CrusherprogressbarProcedure.execute(world, x, y, z) * 16, 0, 128), 32, 16, 32, 144);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 5, this.topPos + 43, 0, Mth.clamp((int) CrusherpowerbarProcedure.execute(world, x, y, z) * 16, 0, 128), 32, 16, 32, 144);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 59, this.topPos + 16, 0, Mth.clamp((int) CrusherprogressbarProcedure.execute(world, x, y, z) * 48, 0, 384), 72, 48, 72, 432);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 5, this.topPos + 16, 0, Mth.clamp((int) CrusherpowerbarProcedure.execute(world, x, y, z) * 48, 0, 336), 16, 48, 16, 384);
 	}
 
 	@Override

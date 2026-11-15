@@ -6,8 +6,10 @@ import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
@@ -16,6 +18,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.Container;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.uranium.init.UraniumModItems;
@@ -83,6 +87,27 @@ public class ReactorOnTickUpdateProcedure {
 					if (_bs.getBlock().getStateDefinition().getProperty("burn") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
+				if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.NORTH) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.687), (y + 1.2), (z + 0.687), 1, 0, 0.05, 0, 0);
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.187), (y + 1.2), (z + 0.687), 1, 0, 0.05, 0, 0);
+				} else if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.SOUTH) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.687), (y + 1.2), (z + 0.313), 1, 0, 0.05, 0, 0);
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.313), (y + 1.2), (z + 0.313), 1, 0, 0.05, 0, 0);
+				} else if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.WEST) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.687), (y + 1.2), (z + 0.187), 1, 0, 0.05, 0, 0);
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.687), (y + 1.2), (z + 0.687), 1, 0, 0.05, 0, 0);
+				} else if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.EAST) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.313), (y + 1.2), (z + 0.813), 1, 0, 0.05, 0, 0);
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (x + 0.313), (y + 1.2), (z + 0.313), 1, 0, 0.05, 0, 0);
+				}
 				ReactorenergyoutputProcedure.execute(world, x, y, z);
 				if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") <= 0) {
 					if (world instanceof ServerLevel _serverLevel) {
@@ -125,5 +150,17 @@ public class ReactorOnTickUpdateProcedure {
 				return ItemUtil.getStack(itemHandler, slot);
 		}
 		return ItemStack.EMPTY;
+	}
+
+	private static Direction getBlockDirection(LevelAccessor world, BlockPos pos) {
+		BlockState blockState = world.getBlockState(pos);
+		Property<?> property = blockState.getBlock().getStateDefinition().getProperty("facing");
+		if (property != null && blockState.getValue(property) instanceof Direction direction)
+			return direction;
+		else if (blockState.hasProperty(BlockStateProperties.AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+		else if (blockState.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+			return Direction.fromAxisAndDirection(blockState.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
 	}
 }

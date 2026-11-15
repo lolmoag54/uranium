@@ -13,13 +13,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "",
-      "CUSTOM:Steel",
+      "CUSTOM:Lingotdeplomb",
       "",
-      "CUSTOM:Fuelpellet",
-      "CUSTOM:Fuelpellet",
-      "CUSTOM:Fuelpellet",
+      "CUSTOM:Enricheduranium",
+      "CUSTOM:Enricheduranium",
+      "CUSTOM:Enricheduranium",
       "",
-      "CUSTOM:Steel",
+      "CUSTOM:Lingotdeplomb",
       ""
     ],
     "recipeReturnStack": "CUSTOM:Fuelrod",

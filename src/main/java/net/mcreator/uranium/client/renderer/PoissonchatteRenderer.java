@@ -45,15 +45,11 @@ public class PoissonchatteRenderer extends MobRenderer<PoissonchatteEntity, Livi
 	private static final class AnimatedModel extends Modelpoisson_chat {
 		private final KeyframeAnimation keyframeAnimation0;
 		private final KeyframeAnimation keyframeAnimation1;
-		private final KeyframeAnimation keyframeAnimation2;
-		private final KeyframeAnimation keyframeAnimation3;
 
 		public AnimatedModel(ModelPart root) {
 			super(root);
 			this.keyframeAnimation0 = safeBake(poisson_chatAnimation.swim);
-			this.keyframeAnimation1 = safeBake(poisson_chatAnimation.crawl);
-			this.keyframeAnimation2 = safeBake(poisson_chatAnimation.attack_swim);
-			this.keyframeAnimation3 = safeBake(poisson_chatAnimation.attack_crawl);
+			this.keyframeAnimation1 = safeBake(poisson_chatAnimation.attack_crawl);
 		}
 
 		private KeyframeAnimation safeBake(AnimationDefinition source) {
@@ -70,8 +66,6 @@ public class PoissonchatteRenderer extends MobRenderer<PoissonchatteEntity, Livi
 			PoissonchatteEntity entity = state.getRenderData(ENTITY_KEY);
 			this.keyframeAnimation0.apply(entity.animationState0, state.ageInTicks, 1f);
 			this.keyframeAnimation1.apply(entity.animationState1, state.ageInTicks, 1f);
-			this.keyframeAnimation2.apply(entity.animationState2, state.ageInTicks, 1f);
-			this.keyframeAnimation3.apply(entity.animationState3, state.ageInTicks, 1f);
 			super.setupAnim(state);
 		}
 	}

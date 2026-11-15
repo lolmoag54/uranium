@@ -121,7 +121,7 @@ public class CentrifugeBlockEntity extends RandomizableContainerBlockEntity impl
 		return true;
 	}
 
-	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(50000, 64, 64, 0) {
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(20000, 64, 64, 0) {
 		@Override
 		protected void onEnergyChanged(int previousAmount) {
 			setChanged();

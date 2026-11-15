@@ -24,7 +24,7 @@ import net.mcreator.uranium.UraniumMod;
 public class UraniumModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, UraniumMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<PoissonchatteEntity>> POISSONCHATTE = register("poissonchatte",
-			EntityType.Builder.<PoissonchatteEntity>of(PoissonchatteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<PoissonchatteEntity>of(PoissonchatteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.notInPeaceful().sized(0.6f, 1.8f));
 

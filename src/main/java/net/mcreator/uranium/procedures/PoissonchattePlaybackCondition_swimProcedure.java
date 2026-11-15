@@ -6,7 +6,7 @@ public class PoissonchattePlaybackCondition_swimProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity.isSwimming()) {
+		if (entity.isSwimming() || entity.isInWater()) {
 			return true;
 		}
 		return false;

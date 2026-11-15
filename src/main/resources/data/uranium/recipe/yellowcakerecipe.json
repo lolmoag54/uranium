@@ -7,11 +7,11 @@
     "aaa"
   ],
   "key": {
-    "a": "uranium:uraniumpowder",
+    "a": "uranium:cruched_rawuranium",
     "b": "uranium:sulfuricacid_bucket"
   },
   "result": {
     "id": "uranium:yellowcake",
-    "count": 8
+    "count": 1
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "uranium:item/depleted_uranium_round"
+    "layer0": "uranium:item/uranium"
   }
 }

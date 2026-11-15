@@ -12,17 +12,20 @@ public class CrusherpowerbarProcedure {
 	public static double execute(LevelAccessor world, double x, double y, double z) {
 		if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 0) {
 			return 0;
-		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 4000) {
+		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 2500) {
 			return 1;
-		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 8000) {
+		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 5000) {
 			return 2;
-		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 12000) {
+		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 7500) {
 			return 3;
-		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 16000) {
+		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 10000) {
 			return 4;
-		} else {
+		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 12500) {
 			return 5;
+		} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 15000) {
+			return 6;
 		}
+		return 7;
 	}
 
 	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {

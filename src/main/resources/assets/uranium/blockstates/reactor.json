@@ -14,14 +14,6 @@
     "facing=west": {
       "model": "uranium:block/reactor",
       "y": 270
-    },
-    "facing=up": {
-      "model": "uranium:block/reactor",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "uranium:block/reactor",
-      "x": 90
     }
   }
 }

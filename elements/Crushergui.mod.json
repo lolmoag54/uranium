@@ -37,7 +37,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 249,
+          "x": 258,
           "y": 53,
           "locked": false
         }
@@ -62,28 +62,28 @@
       {
         "type": "sprite",
         "data": {
-          "sprite": "public.png",
+          "sprite": "crusher_progress_sheet_72x48x9.png",
           "spritesCount": 9,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "Crusherprogressbar"
           },
-          "x": 195,
-          "y": 71,
+          "x": 186,
+          "y": 62,
           "locked": false
         }
       },
       {
         "type": "sprite",
         "data": {
-          "sprite": "public.png",
-          "spritesCount": 9,
+          "sprite": "energy_bar_sheet_16x48x8.png",
+          "spritesCount": 8,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "Crusherpowerbar"
           },
           "x": 132,
-          "y": 89,
+          "y": 62,
           "locked": false
         }
       }

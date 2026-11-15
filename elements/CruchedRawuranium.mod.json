@@ -3,17 +3,15 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "depleted_uranium_plate",
+    "texture": "uranium",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Depleted uranium armor plate",
+    "name": "Cruched Rawuranium",
     "rarity": "COMMON",
-    "creativeTabs": [
-      "CUSTOM:Uraniumcreativetab"
-    ],
+    "creativeTabs": [],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

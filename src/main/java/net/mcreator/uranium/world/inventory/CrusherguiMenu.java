@@ -98,7 +98,7 @@ public class CrusherguiMenu extends AbstractContainerMenu implements UraniumModM
 			private int x = CrusherguiMenu.this.x;
 			private int y = CrusherguiMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 123, 8) {
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 132, 8) {
 			private final int slot = 1;
 			private int x = CrusherguiMenu.this.x;
 			private int y = CrusherguiMenu.this.y;

@@ -33,7 +33,7 @@
           "src/main/resources/assets/uranium/blockstates/centrifuge.json"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/Uranium/centrifuge"
     },
     {
       "name": "Centrifugegui",
@@ -47,7 +47,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/CentrifugeguiMenu.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/Uranium/centrifuge"
     },
     {
       "name": "Uraniumcreativetab",
@@ -138,7 +138,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CentrifugeOnTickUpdateProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/Uranium/centrifuge"
     },
     {
       "name": "Sulfuricacid",
@@ -156,19 +156,6 @@
           "src/main/resources/assets/uranium/blockstates/sulfuricacid.json",
           "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
           "src/main/resources/assets/uranium/models/block/sulfuricacid.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Yellowcakerecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yellowcakerecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/uranium/recipe/yellowcakerecipe.json"
         ]
       },
       "path": "~/Uranium"
@@ -237,7 +224,7 @@
           "src/main/java/net/mcreator/uranium/procedures/UraniumcentrifugerecipeProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/Uranium/centrifuge"
     },
     {
       "name": "Fluoride",
@@ -284,7 +271,7 @@
           "src/main/java/net/mcreator/uranium/procedures/ProgressbarcentrifugeguiProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/Uranium/centrifuge"
     },
     {
       "name": "Lingotdeplomb",
@@ -1432,7 +1419,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/centrifuge"
+      "path": "~/Uranium/centrifuge"
     },
     {
       "name": "Letscentrifuge",
@@ -1520,7 +1507,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CentrifugeBlockAddedProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/Uranium/centrifuge"
     },
     {
       "name": "GrossebatterieBlockAdded",
@@ -1591,66 +1578,6 @@
       "path": "~/Uranium"
     },
     {
-      "name": "Uraniumpowder",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uraniumpowder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/uranium/item/UraniumpowderItem.java",
-          "src/main/resources/assets/uranium/models/item/uraniumpowder.json",
-          "src/main/resources/assets/uranium/items/uraniumpowder.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Enricheduraniumingot",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enricheduraniumingot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/uranium/models/item/enricheduraniumingot.json",
-          "src/main/resources/assets/uranium/items/enricheduraniumingot.json",
-          "src/main/java/net/mcreator/uranium/item/EnricheduraniumingotItem.java"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Depleteduraniumingot",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "depleteduraniumingot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/uranium/models/item/depleteduraniumingot.json",
-          "src/main/java/net/mcreator/uranium/item/DepleteduraniumingotItem.java",
-          "src/main/resources/assets/uranium/items/depleteduraniumingot.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Fuelpellet",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fuelpellet",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/uranium/item/FuelpelletItem.java",
-          "src/main/resources/assets/uranium/items/fuelpellet.json",
-          "src/main/resources/assets/uranium/models/item/fuelpellet.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
       "name": "Fuelrod",
       "type": "item",
       "compiles": true,
@@ -1676,36 +1603,6 @@
           "src/main/resources/assets/uranium/items/spentfuelrod.json",
           "src/main/resources/assets/uranium/models/item/spentfuelrod.json",
           "src/main/java/net/mcreator/uranium/item/SpentfuelrodItem.java"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Depleteduraniumplate",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "depleteduraniumplate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/uranium/item/DepleteduraniumplateItem.java",
-          "src/main/resources/assets/uranium/models/item/depleteduraniumplate.json",
-          "src/main/resources/assets/uranium/items/depleteduraniumplate.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Depleteduraniumround",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "depleteduraniumround",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/uranium/items/depleteduraniumround.json",
-          "src/main/resources/assets/uranium/models/item/depleteduraniumround.json",
-          "src/main/java/net/mcreator/uranium/item/DepleteduraniumroundItem.java"
         ]
       },
       "path": "~/Uranium"
@@ -2030,7 +1927,6 @@
         "files": [
           "src/main/resources/assets/uranium/models/item/crusher.json",
           "src/main/resources/assets/uranium/blockstates/crusher.json",
-          "src/main/resources/assets/uranium/models/block/crusher_0.json",
           "src/main/resources/assets/uranium/models/block/crusher.json",
           "src/main/resources/data/uranium/loot_table/blocks/crusher.json",
           "src/main/java/net/mcreator/uranium/block/CrusherBlock.java",
@@ -2060,45 +1956,6 @@
       "path": "~/Uranium"
     },
     {
-      "name": "Enricheduraniumingotrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enricheduraniumingotrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/uranium/recipe/enricheduraniumingotrecipe.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Depleteduraniumingotrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "depleteduraniumingotrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/uranium/recipe/depleteduraniumingotrecipe.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Fuelpelletrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fuelpelletrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/uranium/recipe/fuelpelletrecipe.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
       "name": "Fuelrodrecipe",
       "type": "recipe",
       "compiles": true,
@@ -2107,32 +1964,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/uranium/recipe/fuelrodrecipe.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Depleteduraniumplaterecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "depleteduraniumplaterecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/uranium/recipe/depleteduraniumplaterecipe.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Depleteduraniumroundrecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "depleteduraniumroundrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/uranium/recipe/depleteduraniumroundrecipe.json"
         ]
       },
       "path": "~/Uranium"
@@ -2178,7 +2009,7 @@
           "src/main/resources/data/uranium/neoforge/biome_modifier/poissonchatte_biome_modifier.json"
         ]
       },
-      "path": "~/mob"
+      "path": "~/mob/catfish"
     },
     {
       "name": "PoissonchattePlaybackCondition_swim",
@@ -2198,7 +2029,74 @@
           "src/main/java/net/mcreator/uranium/procedures/PoissonchattePlaybackCondition_swimProcedure.java"
         ]
       },
-      "path": "~/mob"
+      "path": "~/mob/catfish"
+    },
+    {
+      "name": "PoissonchattePlaybackCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poissonchatte_playback_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/PoissonchattePlaybackConditionProcedure.java"
+        ]
+      },
+      "path": "~/mob/catfish"
+    },
+    {
+      "name": "PoissonchatteOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poissonchatte_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/PoissonchatteOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/mob/catfish"
+    },
+    {
+      "name": "CruchedRawuranium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cruched_rawuranium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/CruchedRawuraniumItem.java",
+          "src/main/resources/assets/uranium/models/item/cruched_rawuranium.json",
+          "src/main/resources/assets/uranium/items/cruched_rawuranium.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Yellowcakerecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellowcakerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/yellowcakerecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
     }
   ],
   "variable_elements": [
@@ -2231,9 +2129,10 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Crusher@CUSTOM:Crusher",
+      "~Centrifuge@CUSTOM:Centrifuge",
       "~Reactor@CUSTOM:Reactor",
       "~Grossebatterie@CUSTOM:Grossebatterie",
-      "~Crusher@CUSTOM:Crusher",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
       "~CableXC@CUSTOM:CableXC",
@@ -2251,13 +2150,12 @@
       "~CableI@CUSTOM:CableI",
       "~CableE@CUSTOM:CableE",
       "~Cable@CUSTOM:Cable",
-      "~Solarpanel@CUSTOM:Solarpanel",
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~Solarpanel@CUSTOM:Solarpanel"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~Reactor@CUSTOM:Reactor",
       "~Crusher@CUSTOM:Crusher",
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Reactor@CUSTOM:Reactor"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
@@ -2310,20 +2208,15 @@
       "advancements.welcometo.descr": "thank for using our mod",
       "advancements.welcometo.title": "Welcome to",
       "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore",
-      "item.uranium.uraniumpowder": "Uranium powder",
-      "item.uranium.enricheduraniumingot": "Enriched uranium ingot (U-235)",
-      "item.uranium.depleteduraniumingot": "Depleted uranium ingot (U-238)",
-      "item.uranium.fuelpellet": "Uranium fuel pellet",
       "item.uranium.fuelrod": "Uranium fuel rod",
       "item.uranium.spentfuelrod": "Spent fuel rod",
-      "item.uranium.depleteduraniumplate": "Depleted uranium armor plate",
-      "item.uranium.depleteduraniumround": "Armor-piercing depleted uranium round",
       "gui.uranium.crushergui.label_crusher": "Crusher",
       "gui.uranium.reactorgui.label_reactor": "Reactor",
       "item.uranium.crusher": "Crusher",
       "item.uranium.reactor": "Fission reactor",
       "entity.uranium.poissonchatte": "mutaded catfish",
-      "item.uranium.poissonchatte_spawn_egg": "mutaded catfish Spawn Egg"
+      "item.uranium.poissonchatte_spawn_egg": "mutaded catfish Spawn Egg",
+      "item.uranium.cruched_rawuranium": "Cruched Rawuranium"
     }
   },
   "metadata": {
@@ -2350,10 +2243,6 @@
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "centrifuge",
-        "children": []
-      },
       {
         "name": "plomb",
         "children": []
@@ -2395,7 +2284,12 @@
       },
       {
         "name": "Uranium",
-        "children": []
+        "children": [
+          {
+            "name": "centrifuge",
+            "children": []
+          }
+        ]
       },
       {
         "name": "batterie",
@@ -2411,7 +2305,12 @@
       },
       {
         "name": "mob",
-        "children": []
+        "children": [
+          {
+            "name": "catfish",
+            "children": []
+          }
+        ]
       }
     ]
   },

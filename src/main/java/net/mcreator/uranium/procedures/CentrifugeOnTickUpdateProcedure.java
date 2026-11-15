@@ -8,6 +8,7 @@ import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,12 +23,14 @@ import net.mcreator.uranium.init.UraniumModItems;
 public class CentrifugeOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.YELLOWCAKE.get()) {
-			if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 40) {
-				if (world instanceof ILevelExtension _ext) {
-					if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z), null) instanceof EnergyHandler _energyHandler) {
-						try (var _tx = Transaction.openRoot()) {
-							_energyHandler.extract(40, _tx);
-							_tx.commit();
+			if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 1000) {
+				if ((getPropertyByName(blockstate, "centrifugation") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 400) {
+					if (world instanceof ILevelExtension _ext) {
+						if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z), null) instanceof EnergyHandler _energyHandler) {
+							try (var _tx = Transaction.openRoot()) {
+								_energyHandler.extract(10000, _tx);
+								_tx.commit();
+							}
 						}
 					}
 				}
@@ -72,5 +75,14 @@ public class CentrifugeOnTickUpdateProcedure {
 				return energyHandler.getAmountAsInt();
 		}
 		return 0;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

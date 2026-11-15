@@ -3,8 +3,8 @@
     "default": {
       "name": "default",
       "map": {
-        "0": "smooth_stone_texture_je2_be2",
-        "1": "reactor_texture"
+        "2": "reactor",
+        "3": "smooth_stone_texture_je2_be2"
       }
     }
   }

@@ -10,44 +10,11 @@
     "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "states": [
-      {
-        "texture": "crusher_on",
-        "textureTop": "",
-        "textureLeft": "",
-        "textureFront": "",
-        "textureRight": "",
-        "textureBack": "",
-        "renderType": 10,
-        "customModelName": "Normal",
-        "particleTexture": "",
-        "hasCustomBoundingBox": false,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 16.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ],
-        "stateMap": [
-          {
-            "property": {
-              "name": "CUSTOM:on",
-              "type": "logic"
-            },
-            "value": true
-          }
-        ]
-      }
-    ],
+    "states": [],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
@@ -71,11 +38,6 @@
       }
     ],
     "customProperties": [
-      {
-        "name": "CUSTOM:on",
-        "type": "logic",
-        "value": false
-      },
       {
         "min": 0,
         "max": 100,

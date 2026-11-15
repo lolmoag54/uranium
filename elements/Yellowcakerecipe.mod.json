@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 8,
+    "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [],
     "cookingBookCategory": "MISC",
@@ -12,15 +12,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:Uraniumpowder",
-      "CUSTOM:Uraniumpowder",
-      "CUSTOM:Uraniumpowder",
-      "CUSTOM:Uraniumpowder",
+      "CUSTOM:CruchedRawuranium",
+      "CUSTOM:CruchedRawuranium",
+      "CUSTOM:CruchedRawuranium",
+      "CUSTOM:CruchedRawuranium",
       "CUSTOM:Sulfuricacid.bucket",
-      "CUSTOM:Uraniumpowder",
-      "CUSTOM:Uraniumpowder",
-      "CUSTOM:Uraniumpowder",
-      "CUSTOM:Uraniumpowder"
+      "CUSTOM:CruchedRawuranium",
+      "CUSTOM:CruchedRawuranium",
+      "CUSTOM:CruchedRawuranium",
+      "CUSTOM:CruchedRawuranium"
     ],
     "recipeReturnStack": "CUSTOM:Yellowcake",
     "name": "yellowcakerecipe",

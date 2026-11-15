@@ -10,7 +10,6 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
@@ -25,24 +24,17 @@ import net.mcreator.uranium.init.UraniumModItems;
 
 public class CrusherrecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 62
-				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.AIR.asItem() || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == UraniumModItems.URANIUMPOWDER.get())
-				&& getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 20) {
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 62 && ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.AIR.asItem()
+				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == UraniumModItems.CRUCHED_RAWURANIUM.get()) && getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 20) {
 			if (world instanceof ILevelExtension _ext) {
 				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z), null) instanceof EnergyHandler _energyHandler) {
 					try (var _tx = Transaction.openRoot()) {
-						_energyHandler.extract(20, _tx);
+						_energyHandler.extract(10000, _tx);
 						_tx.commit();
 					}
 				}
 			}
-			{
-				BlockPos _pos = BlockPos.containing(x, y, z);
-				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("on") instanceof BooleanProperty _booleanProp)
-					world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
-			}
-			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "crushing") instanceof IntegerProperty _getip9 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip9) : -1) >= 100) {
+			if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "crushing") instanceof IntegerProperty _getip8 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip8) : -1) >= 100) {
 				if (world instanceof ServerLevel _serverLevel) {
 					BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_be instanceof Container _container) {
@@ -52,7 +44,7 @@ public class CrusherrecipeProcedure {
 				if (world instanceof ServerLevel _serverLevel) {
 					BlockEntity _be = _serverLevel.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_be instanceof Container _container) {
-						ItemStack _setstack = new ItemStack(UraniumModItems.URANIUMPOWDER.get()).copy();
+						ItemStack _setstack = new ItemStack(UraniumModItems.CRUCHED_RAWURANIUM.get()).copy();
 						_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() + 2);
 						_container.setItem(1, _setstack);
 					}
@@ -66,7 +58,7 @@ public class CrusherrecipeProcedure {
 				}
 			} else {
 				{
-					int _value = (getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "crushing") instanceof IntegerProperty _getip15 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip15) : -1) + 5;
+					int _value = (getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "crushing") instanceof IntegerProperty _getip14 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip14) : -1) + 5;
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("crushing") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -80,12 +72,6 @@ public class CrusherrecipeProcedure {
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("crushing") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-			}
-			{
-				BlockPos _pos = BlockPos.containing(x, y, z);
-				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("on") instanceof BooleanProperty _booleanProp)
-					world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 			}
 		}
 	}
