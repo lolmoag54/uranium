@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "uranium:custom/crusher",
   "textures": {
-    "down": "uranium:block/crusher_off",
-    "up": "uranium:block/crusher_off",
-    "north": "uranium:block/crusher_off",
-    "east": "uranium:block/crusher_off",
-    "south": "uranium:block/crusher_off",
-    "west": "uranium:block/crusher_off",
-    "particle": "uranium:block/crusher_off"
+    "all": "uranium:block/crusher",
+    "particle": "uranium:block/crusher",
+    "0": "uranium:block/crusher"
   }
 }
