@@ -2,19 +2,52 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "reactor",
+    "texture": "reacteur_off",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "reactor:default",
+    "customModelName": "reacteur:off",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "states": [],
+    "states": [
+      {
+        "texture": "reacteur",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "reacteur:on",
+        "particleTexture": "",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "name": "CUSTOM:on",
+              "type": "logic"
+            },
+            "value": true
+          }
+        ]
+      }
+    ],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
@@ -27,303 +60,6 @@
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
-      {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 10.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 9.2,
-        "my": 13.0,
-        "mz": 9.0,
-        "Mx": 14.75,
-        "My": 13.5,
-        "Mz": 14.25,
-        "subtract": false
-      },
-      {
-        "mx": 8.25,
-        "my": 9.0,
-        "mz": 8.0,
-        "Mx": 15.75,
-        "My": 10.0,
-        "Mz": 15.25,
-        "subtract": false
-      },
-      {
-        "mx": 8.3,
-        "my": 10.0,
-        "mz": 8.05,
-        "Mx": 15.7,
-        "My": 10.25,
-        "Mz": 15.2,
-        "subtract": false
-      },
-      {
-        "mx": 8.6,
-        "my": 14.9,
-        "mz": 8.4,
-        "Mx": 15.35,
-        "My": 15.8,
-        "Mz": 14.95,
-        "subtract": false
-      },
-      {
-        "mx": 9.05,
-        "my": 13.5,
-        "mz": 8.8,
-        "Mx": 14.9,
-        "My": 14.0,
-        "Mz": 14.45,
-        "subtract": false
-      },
-      {
-        "mx": 9.2,
-        "my": 12.5,
-        "mz": 9.0,
-        "Mx": 14.75,
-        "My": 13.0,
-        "Mz": 14.25,
-        "subtract": false
-      },
-      {
-        "mx": 8.7,
-        "my": 14.7,
-        "mz": 8.45,
-        "Mx": 15.3,
-        "My": 14.95,
-        "Mz": 14.8,
-        "subtract": false
-      },
-      {
-        "mx": 8.4,
-        "my": 10.25,
-        "mz": 8.15,
-        "Mx": 15.6,
-        "My": 10.5,
-        "Mz": 15.1,
-        "subtract": false
-      },
-      {
-        "mx": 8.5,
-        "my": 10.5,
-        "mz": 8.25,
-        "Mx": 15.5,
-        "My": 10.75,
-        "Mz": 15.0,
-        "subtract": false
-      },
-      {
-        "mx": 8.6,
-        "my": 10.75,
-        "mz": 8.35,
-        "Mx": 15.4,
-        "My": 11.0,
-        "Mz": 14.9,
-        "subtract": false
-      },
-      {
-        "mx": 8.75,
-        "my": 14.3,
-        "mz": 8.5,
-        "Mx": 15.2,
-        "My": 14.8,
-        "Mz": 14.75,
-        "subtract": false
-      },
-      {
-        "mx": 8.85,
-        "my": 14.0,
-        "mz": 8.6,
-        "Mx": 15.1,
-        "My": 14.5,
-        "Mz": 14.65,
-        "subtract": false
-      },
-      {
-        "mx": 9.05,
-        "my": 12.0,
-        "mz": 8.8,
-        "Mx": 14.9,
-        "My": 12.5,
-        "Mz": 14.45,
-        "subtract": false
-      },
-      {
-        "mx": 8.85,
-        "my": 11.5,
-        "mz": 8.6,
-        "Mx": 15.1,
-        "My": 12.0,
-        "Mz": 14.65,
-        "subtract": false
-      },
-      {
-        "mx": 8.75,
-        "my": 11.0,
-        "mz": 8.5,
-        "Mx": 15.2,
-        "My": 11.5,
-        "Mz": 14.75,
-        "subtract": false
-      },
-      {
-        "mx": 8.7,
-        "my": 11.0,
-        "mz": 8.45,
-        "Mx": 15.3,
-        "My": 11.25,
-        "Mz": 14.8,
-        "subtract": false
-      },
-      {
-        "mx": 1.2,
-        "my": 13.0,
-        "mz": 9.0,
-        "Mx": 6.75,
-        "My": 13.5,
-        "Mz": 14.25,
-        "subtract": false
-      },
-      {
-        "mx": 0.25,
-        "my": 9.0,
-        "mz": 8.0,
-        "Mx": 7.75,
-        "My": 10.0,
-        "Mz": 15.25,
-        "subtract": false
-      },
-      {
-        "mx": 0.3,
-        "my": 10.0,
-        "mz": 8.05,
-        "Mx": 7.7,
-        "My": 10.25,
-        "Mz": 15.2,
-        "subtract": false
-      },
-      {
-        "mx": 0.6,
-        "my": 14.9,
-        "mz": 8.4,
-        "Mx": 7.35,
-        "My": 15.8,
-        "Mz": 14.95,
-        "subtract": false
-      },
-      {
-        "mx": 1.05,
-        "my": 13.5,
-        "mz": 8.8,
-        "Mx": 6.9,
-        "My": 14.0,
-        "Mz": 14.45,
-        "subtract": false
-      },
-      {
-        "mx": 1.2,
-        "my": 12.5,
-        "mz": 9.0,
-        "Mx": 6.75,
-        "My": 13.0,
-        "Mz": 14.25,
-        "subtract": false
-      },
-      {
-        "mx": 0.7,
-        "my": 14.7,
-        "mz": 8.45,
-        "Mx": 7.3,
-        "My": 14.95,
-        "Mz": 14.8,
-        "subtract": false
-      },
-      {
-        "mx": 0.4,
-        "my": 10.25,
-        "mz": 8.15,
-        "Mx": 7.6,
-        "My": 10.5,
-        "Mz": 15.1,
-        "subtract": false
-      },
-      {
-        "mx": 0.5,
-        "my": 10.5,
-        "mz": 8.25,
-        "Mx": 7.5,
-        "My": 10.75,
-        "Mz": 15.0,
-        "subtract": false
-      },
-      {
-        "mx": 0.6,
-        "my": 10.75,
-        "mz": 8.35,
-        "Mx": 7.4,
-        "My": 11.0,
-        "Mz": 14.9,
-        "subtract": false
-      },
-      {
-        "mx": 0.75,
-        "my": 14.3,
-        "mz": 8.5,
-        "Mx": 7.2,
-        "My": 14.8,
-        "Mz": 14.75,
-        "subtract": false
-      },
-      {
-        "mx": 0.85,
-        "my": 14.0,
-        "mz": 8.6,
-        "Mx": 7.1,
-        "My": 14.5,
-        "Mz": 14.65,
-        "subtract": false
-      },
-      {
-        "mx": 1.05,
-        "my": 12.0,
-        "mz": 8.8,
-        "Mx": 6.9,
-        "My": 12.5,
-        "Mz": 14.45,
-        "subtract": false
-      },
-      {
-        "mx": 0.85,
-        "my": 11.5,
-        "mz": 8.6,
-        "Mx": 7.1,
-        "My": 12.0,
-        "Mz": 14.65,
-        "subtract": false
-      },
-      {
-        "mx": 0.75,
-        "my": 11.0,
-        "mz": 8.5,
-        "Mx": 7.2,
-        "My": 11.5,
-        "Mz": 14.75,
-        "subtract": false
-      },
-      {
-        "mx": 0.7,
-        "my": 11.0,
-        "mz": 8.45,
-        "Mx": 7.3,
-        "My": 11.25,
-        "Mz": 14.8,
-        "subtract": false
-      },
       {
         "mx": 0.0,
         "my": 0.0,

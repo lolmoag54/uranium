@@ -1,9 +1,8 @@
 {
-  "parent": "uranium:custom/reactor",
+  "parent": "uranium:custom/reacteur",
   "textures": {
-    "all": "uranium:block/reactor",
-    "particle": "uranium:block/reactor",
-    "2": "uranium:block/reactor",
-    "3": "uranium:block/smooth_stone_texture_je2_be2"
+    "all": "uranium:block/reacteur_off",
+    "particle": "uranium:block/reacteur_off",
+    "0": "uranium:block/reacteur_off"
   }
 }

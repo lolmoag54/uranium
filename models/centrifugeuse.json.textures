@@ -3,19 +3,22 @@
     "default": {
       "name": "default",
       "map": {
-        "0": ""
+        "0": "",
+        "1": ""
       }
     },
     "off": {
       "name": "off",
       "map": {
-        "0": "allume"
+        "0": "centrifugeuse_off",
+        "1": ""
       }
     },
     "on": {
       "name": "on",
       "map": {
-        "0": "eteint"
+        "0": "centrifugeuse",
+        "1": ""
       }
     }
   }

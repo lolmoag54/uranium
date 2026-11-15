@@ -1948,6 +1948,7 @@
           "src/main/java/net/mcreator/uranium/block/ReactorBlock.java",
           "src/main/java/net/mcreator/uranium/block/entity/ReactorBlockEntity.java",
           "src/main/resources/assets/uranium/items/reactor.json",
+          "src/main/resources/assets/uranium/models/block/reactor_0.json",
           "src/main/resources/assets/uranium/models/block/reactor.json",
           "src/main/resources/data/uranium/loot_table/blocks/reactor.json",
           "src/main/resources/assets/uranium/models/item/reactor.json"
@@ -2129,9 +2130,9 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Crusher@CUSTOM:Crusher",
-      "~Centrifuge@CUSTOM:Centrifuge",
       "~Reactor@CUSTOM:Reactor",
+      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Crusher@CUSTOM:Crusher",
       "~Grossebatterie@CUSTOM:Grossebatterie",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
@@ -2153,9 +2154,9 @@
       "~Solarpanel@CUSTOM:Solarpanel"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~Crusher@CUSTOM:Crusher",
+      "~Reactor@CUSTOM:Reactor",
       "~Centrifuge@CUSTOM:Centrifuge",
-      "~Reactor@CUSTOM:Reactor"
+      "~Crusher@CUSTOM:Crusher"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
