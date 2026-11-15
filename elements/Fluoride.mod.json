@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "minecraft:yellow_dye",
+    "texture": "fluorite",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/zicron_ore",
+    "up": "uranium:block/zicron_ore",
+    "north": "uranium:block/zicron_ore",
+    "east": "uranium:block/zicron_ore",
+    "south": "uranium:block/zicron_ore",
+    "west": "uranium:block/zicron_ore",
+    "particle": "uranium:block/zicron_ore"
+  }
+}

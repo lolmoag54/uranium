@@ -7,8 +7,8 @@
     " a "
   ],
   "key": {
-    "a": "uranium:lingotdeplomb",
-    "b": "uranium:enricheduranium"
+    "a": "uranium:zicronium",
+    "b": "uranium:uraniumpellet"
   },
   "result": {
     "id": "uranium:fuelrod",

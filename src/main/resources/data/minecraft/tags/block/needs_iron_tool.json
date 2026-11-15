@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "uranium:zicron_ore",
     "uranium:reactor",
     "uranium:crusher",
     "uranium:centrifuge"

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/fluorite_ore_deepslate_top",
+    "up": "uranium:block/fluorite_ore_deepslate_top",
+    "north": "uranium:block/fluorite_ore_deepslate_side",
+    "east": "uranium:block/fluorite_ore_deepslate_side",
+    "south": "uranium:block/fluorite_ore_deepslate_side",
+    "west": "uranium:block/fluorite_ore_deepslate_side",
+    "particle": "uranium:block/fluorite_ore_deepslate_top"
+  }
+}

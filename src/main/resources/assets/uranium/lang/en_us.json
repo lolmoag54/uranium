@@ -54,5 +54,16 @@
   "advancements.letthesunshine.title": "Let the sun shine",
   "advancements.letthesunshine.descr": " place a solar panel",
   "advancements.beginrenewableenergie.title": "Begin renewable energie",
-  "advancements.beginrenewableenergie.descr": "craft an solar pannel"
+  "advancements.beginrenewableenergie.descr": "craft an solar pannel",
+  "item.uranium.fluorite_ore": "Fluorite Ore",
+  "item.uranium.deepslate_fluorite_ore": "Deepslate Fluorite Ore",
+  "item.uranium.uraniumhexafluoride": "Uranium hexafluoride",
+  "item.uranium.fluor": "Fluor",
+  "item.uranium.steel_hammer": "Steel Hammer",
+  "item.uranium.uraniumpellet": "Uranium pellet",
+  "item.uranium.zicronium": "Zicronium",
+  "item.uranium.zicron": "Zicron",
+  "item.uranium.zicron_ore": "Zicron Ore",
+  "advancements.weneeareactornow.title": "We need a reactor now ?",
+  "advancements.weneeareactornow.descr": "craft a reactor"
 }

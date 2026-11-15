@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "uranium:block/fluorite_ore"
+    }
+  }
+}

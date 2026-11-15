@@ -24,7 +24,7 @@ import net.mcreator.uranium.init.UraniumModItems;
 
 public class UraniumcentrifugerecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() <= 64 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.YELLOWCAKE.get()
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() <= 64 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.URANIUMHEXAFLUORIDE.get()
 				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 63 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.AIR.asItem()
 						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == UraniumModItems.ENRICHEDURANIUM.get())
 				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() <= 63 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == Blocks.AIR.asItem()

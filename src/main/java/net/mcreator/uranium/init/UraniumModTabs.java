@@ -43,6 +43,14 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModBlocks.CRUSHER.get().asItem());
 				tabData.accept(UraniumModBlocks.REACTOR.get().asItem());
 				tabData.accept(UraniumModItems.RADIOACTIVEWASTELAND.get());
+				tabData.accept(UraniumModBlocks.FLUORITE_ORE.get().asItem());
+				tabData.accept(UraniumModBlocks.DEEPSLATE_FLUORITE_ORE.get().asItem());
+				tabData.accept(UraniumModItems.URANIUMHEXAFLUORIDE.get());
+				tabData.accept(UraniumModItems.FLUOR.get());
+				tabData.accept(UraniumModItems.STEEL_HAMMER.get());
+				tabData.accept(UraniumModItems.URANIUMPELLET.get());
+				tabData.accept(UraniumModItems.ZICRONIUM.get());
+				tabData.accept(UraniumModItems.ZICRON.get());
 			}).build());
 
 	@SubscribeEvent

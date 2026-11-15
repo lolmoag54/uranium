@@ -64,6 +64,15 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> POISSONCHATTE_SPAWN_EGG;
 	public static final DeferredItem<Item> CRUCHED_RAWURANIUM;
 	public static final DeferredItem<Item> RADIOACTIVEWASTELAND;
+	public static final DeferredItem<Item> FLUORITE_ORE;
+	public static final DeferredItem<Item> DEEPSLATE_FLUORITE_ORE;
+	public static final DeferredItem<Item> URANIUMHEXAFLUORIDE;
+	public static final DeferredItem<Item> FLUOR;
+	public static final DeferredItem<Item> STEEL_HAMMER;
+	public static final DeferredItem<Item> URANIUMPELLET;
+	public static final DeferredItem<Item> ZICRONIUM;
+	public static final DeferredItem<Item> ZICRON;
+	public static final DeferredItem<Item> ZICRON_ORE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -104,6 +113,15 @@ public class UraniumModItems {
 		POISSONCHATTE_SPAWN_EGG = register("poissonchatte_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(UraniumModEntities.POISSONCHATTE.get())));
 		CRUCHED_RAWURANIUM = register("cruched_rawuranium", CruchedRawuraniumItem::new);
 		RADIOACTIVEWASTELAND = register("radioactivewasteland", RadioactivewastelandItem::new);
+		FLUORITE_ORE = block(UraniumModBlocks.FLUORITE_ORE);
+		DEEPSLATE_FLUORITE_ORE = block(UraniumModBlocks.DEEPSLATE_FLUORITE_ORE);
+		URANIUMHEXAFLUORIDE = register("uraniumhexafluoride", UraniumhexafluorideItem::new);
+		FLUOR = register("fluor", FluorItem::new);
+		STEEL_HAMMER = register("steel_hammer", SteelHammerItem::new);
+		URANIUMPELLET = register("uraniumpellet", UraniumpelletItem::new);
+		ZICRONIUM = register("zicronium", ZicroniumItem::new);
+		ZICRON = register("zicron", ZicronItem::new);
+		ZICRON_ORE = block(UraniumModBlocks.ZICRON_ORE);
 	}
 
 	// Start of user code block custom items

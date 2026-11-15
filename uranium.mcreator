@@ -239,7 +239,7 @@
           "src/main/resources/assets/uranium/items/fluoride.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/fluorite"
     },
     {
       "name": "Progressbarcentrifugegui",
@@ -1636,7 +1636,7 @@
           }
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/crusher"
     },
     {
       "name": "CrusherOnTickUpdate",
@@ -1667,7 +1667,7 @@
           }
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/crusher"
     },
     {
       "name": "Crusherprogressbar",
@@ -1699,7 +1699,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/crusher"
     },
     {
       "name": "Crusherpowerbar",
@@ -1731,7 +1731,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/crusher"
     },
     {
       "name": "Crusherblockadded",
@@ -1762,7 +1762,7 @@
           }
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/crusher"
     },
     {
       "name": "ReactorOnTickUpdate",
@@ -1793,7 +1793,7 @@
           }
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/reactor"
     },
     {
       "name": "Reactorenergyoutput",
@@ -1824,7 +1824,7 @@
           }
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/reactor"
     },
     {
       "name": "Reactorprogressbar",
@@ -1856,7 +1856,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/reactor"
     },
     {
       "name": "Reactorblockadded",
@@ -1887,7 +1887,7 @@
           }
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/reactor"
     },
     {
       "name": "Crushergui",
@@ -1901,7 +1901,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/CrusherguiMenu.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/crusher"
     },
     {
       "name": "Reactorgui",
@@ -1915,7 +1915,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/ReactorguiMenu.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/reactor"
     },
     {
       "name": "Crusher",
@@ -1934,7 +1934,7 @@
           "src/main/java/net/mcreator/uranium/block/entity/CrusherBlockEntity.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/crusher"
     },
     {
       "name": "Reactor",
@@ -1954,7 +1954,7 @@
           "src/main/resources/assets/uranium/models/item/reactor.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/Uranium/reactor"
     },
     {
       "name": "Fuelrodrecipe",
@@ -2112,7 +2112,7 @@
           "src/main/resources/data/uranium/worldgen/configured_feature/sulfuricwasteland_tree.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/dimension_biome"
     },
     {
       "name": "Radioactivewasteland",
@@ -2136,7 +2136,7 @@
           "src/main/resources/assets/uranium/items/radioactivewasteland.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/dimension_biome"
     },
     {
       "name": "Letthesunshine",
@@ -2160,6 +2160,217 @@
       "metadata": {
         "files": [
           "src/main/resources/data/uranium/advancement/beginrenewableenergie.json"
+        ]
+      },
+      "path": "~/achievement"
+    },
+    {
+      "name": "FluoriteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/fluorite_ore.json",
+          "src/main/resources/assets/uranium/blockstates/fluorite_ore.json",
+          "src/main/java/net/mcreator/uranium/block/FluoriteOreBlock.java",
+          "src/main/resources/assets/uranium/items/fluorite_ore.json",
+          "src/main/resources/assets/uranium/models/block/fluorite_ore.json",
+          "src/main/resources/data/uranium/loot_table/blocks/fluorite_ore.json"
+        ]
+      },
+      "path": "~/Uranium/fluorite"
+    },
+    {
+      "name": "DeepslateFluoriteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_fluorite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/deepslate_fluorite_ore.json",
+          "src/main/resources/data/uranium/loot_table/blocks/deepslate_fluorite_ore.json",
+          "src/main/resources/assets/uranium/models/block/deepslate_fluorite_ore.json",
+          "src/main/java/net/mcreator/uranium/block/DeepslateFluoriteOreBlock.java",
+          "src/main/resources/assets/uranium/items/deepslate_fluorite_ore.json",
+          "src/main/resources/assets/uranium/blockstates/deepslate_fluorite_ore.json"
+        ]
+      },
+      "path": "~/Uranium/fluorite"
+    },
+    {
+      "name": "Uraniumhexafluoride",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumhexafluoride",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/uraniumhexafluoride.json",
+          "src/main/java/net/mcreator/uranium/item/UraniumhexafluorideItem.java",
+          "src/main/resources/assets/uranium/models/item/uraniumhexafluoride.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Fluor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/fluor.json",
+          "src/main/java/net/mcreator/uranium/item/FluorItem.java",
+          "src/main/resources/assets/uranium/items/fluor.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Fluorrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/advancement/recipes/fluorrecipe.json",
+          "src/main/resources/data/uranium/recipe/fluorrecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "UraniumhexafluorideRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumhexafluoride_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/uranium_hexafluoride_recipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "SteelHammer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/SteelHammerItem.java",
+          "src/main/resources/assets/uranium/items/steel_hammer.json",
+          "src/main/resources/assets/uranium/models/item/steel_hammer.json"
+        ]
+      },
+      "path": "~/Steel"
+    },
+    {
+      "name": "Uraniumpellet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uraniumpellet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/uraniumpellet.json",
+          "src/main/java/net/mcreator/uranium/item/UraniumpelletItem.java",
+          "src/main/resources/assets/uranium/items/uraniumpellet.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Test",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/test.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Zicronium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zicronium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/zicronium.json",
+          "src/main/java/net/mcreator/uranium/item/ZicroniumItem.java",
+          "src/main/resources/assets/uranium/models/item/zicronium.json"
+        ]
+      },
+      "path": "~/Zicronium"
+    },
+    {
+      "name": "Zicron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zicron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/ZicronItem.java",
+          "src/main/resources/assets/uranium/items/zicron.json",
+          "src/main/resources/assets/uranium/models/item/zicron.json"
+        ]
+      },
+      "path": "~/Zicronium"
+    },
+    {
+      "name": "Zicroniumrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zicroniumrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/advancement/recipes/zicroniumrecipe.json",
+          "src/main/resources/data/uranium/recipe/zicroniumrecipe.json"
+        ]
+      },
+      "path": "~/Zicronium"
+    },
+    {
+      "name": "ZicronOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zicron_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/zicron_ore.json",
+          "src/main/resources/assets/uranium/items/zicron_ore.json",
+          "src/main/resources/assets/uranium/blockstates/zicron_ore.json",
+          "src/main/resources/assets/uranium/models/block/zicron_ore.json",
+          "src/main/java/net/mcreator/uranium/block/ZicronOreBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/zicron_ore.json"
+        ]
+      },
+      "path": "~/Zicronium"
+    },
+    {
+      "name": "Weneeareactornow",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weneeareactornow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/advancement/weneeareactornow.json"
         ]
       },
       "path": "~/achievement"
@@ -2195,6 +2406,9 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Rawuranium@CUSTOM:Rawuranium",
+      "~RawuraniumDeepslate@CUSTOM:RawuraniumDeepslate",
+      "~ZicronOre@CUSTOM:ZicronOre",
       "~Solarpanel@CUSTOM:Solarpanel",
       "~Reactor@CUSTOM:Reactor",
       "~Centrifuge@CUSTOM:Centrifuge",
@@ -2219,6 +2433,7 @@
       "~Cable@CUSTOM:Cable"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~ZicronOre@CUSTOM:ZicronOre",
       "~Reactor@CUSTOM:Reactor",
       "~Centrifuge@CUSTOM:Centrifuge",
       "~Crusher@CUSTOM:Crusher"
@@ -2241,6 +2456,9 @@
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Radioactivewasteland@Blocks.DIRT#0",
       "~Radioactivewasteland@Blocks.GRASS"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~SteelHammer@CUSTOM:SteelHammer"
     ]
   },
   "tab_element_order": {},
@@ -2301,7 +2519,18 @@
       "advancements.letthesunshine.title": "Let the sun shine",
       "advancements.letthesunshine.descr": " place a solar panel",
       "advancements.beginrenewableenergie.title": "Begin renewable energie",
-      "advancements.beginrenewableenergie.descr": "craft an solar pannel"
+      "advancements.beginrenewableenergie.descr": "craft an solar pannel",
+      "item.uranium.fluorite_ore": "Fluorite Ore",
+      "item.uranium.deepslate_fluorite_ore": "Deepslate Fluorite Ore",
+      "item.uranium.uraniumhexafluoride": "Uranium hexafluoride",
+      "item.uranium.fluor": "Fluor",
+      "item.uranium.steel_hammer": "Steel Hammer",
+      "item.uranium.uraniumpellet": "Uranium pellet",
+      "item.uranium.zicronium": "Zicronium",
+      "item.uranium.zicron": "Zicron",
+      "item.uranium.zicron_ore": "Zicron Ore",
+      "advancements.weneeareactornow.title": "We need a reactor now ?",
+      "advancements.weneeareactornow.descr": "craft a reactor"
     }
   },
   "metadata": {
@@ -2373,6 +2602,18 @@
           {
             "name": "centrifuge",
             "children": []
+          },
+          {
+            "name": "fluorite",
+            "children": []
+          },
+          {
+            "name": "reactor",
+            "children": []
+          },
+          {
+            "name": "crusher",
+            "children": []
           }
         ]
       },
@@ -2396,6 +2637,14 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "dimension_biome",
+        "children": []
+      },
+      {
+        "name": "Zicronium",
+        "children": []
       }
     ]
   },

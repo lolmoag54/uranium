@@ -44,6 +44,9 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> CRUSHER;
 	public static final DeferredBlock<Block> REACTOR;
 	public static final DeferredBlock<Block> RADIOACTIVEWASTELAND_PORTAL;
+	public static final DeferredBlock<Block> FLUORITE_ORE;
+	public static final DeferredBlock<Block> DEEPSLATE_FLUORITE_ORE;
+	public static final DeferredBlock<Block> ZICRON_ORE;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -73,6 +76,9 @@ public class UraniumModBlocks {
 		CRUSHER = register("crusher", CrusherBlock::new);
 		REACTOR = register("reactor", ReactorBlock::new);
 		RADIOACTIVEWASTELAND_PORTAL = register("radioactivewasteland_portal", RadioactivewastelandPortalBlock::new);
+		FLUORITE_ORE = register("fluorite_ore", FluoriteOreBlock::new);
+		DEEPSLATE_FLUORITE_ORE = register("deepslate_fluorite_ore", DeepslateFluoriteOreBlock::new);
+		ZICRON_ORE = register("zicron_ore", ZicronOreBlock::new);
 	}
 
 	// Start of user code block custom blocks

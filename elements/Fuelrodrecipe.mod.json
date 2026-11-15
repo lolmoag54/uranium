@@ -13,13 +13,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "",
-      "CUSTOM:Lingotdeplomb",
+      "CUSTOM:Zicronium",
       "",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium",
+      "CUSTOM:Uraniumpellet",
+      "CUSTOM:Uraniumpellet",
+      "CUSTOM:Uraniumpellet",
       "",
-      "CUSTOM:Lingotdeplomb",
+      "CUSTOM:Zicronium",
       ""
     ],
     "recipeReturnStack": "CUSTOM:Fuelrod",

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "uranium:fluor",
+    "b": "uranium:yellowcake"
+  },
+  "result": {
+    "id": "uranium:uraniumhexafluoride",
+    "count": 1
+  }
+}

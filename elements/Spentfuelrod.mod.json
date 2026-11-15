@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "spent_fuel_rod",
+    "texture": "uranium_fuel_rod_empty",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

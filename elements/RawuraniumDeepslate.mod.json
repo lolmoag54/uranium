@@ -53,7 +53,7 @@
     "creativeTabs": [
       "CUSTOM:Uraniumcreativetab"
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
@@ -87,7 +87,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "soundOnStep": "GROUND",
+    "soundOnStep": "STONE",
     "isCustomSoundType": false,
     "breakSound": "",
     "fallSound": "",
@@ -98,7 +98,7 @@
       "fixedValue": 0.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
+    "vanillaToolTier": "DIAMOND",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
