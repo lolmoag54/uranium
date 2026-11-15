@@ -43,6 +43,7 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> RAWURANIUM_DEEPSLATE;
 	public static final DeferredBlock<Block> CRUSHER;
 	public static final DeferredBlock<Block> REACTOR;
+	public static final DeferredBlock<Block> RADIOACTIVEWASTELAND_PORTAL;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -71,6 +72,7 @@ public class UraniumModBlocks {
 		RAWURANIUM_DEEPSLATE = register("rawuranium_deepslate", RawuraniumDeepslateBlock::new);
 		CRUSHER = register("crusher", CrusherBlock::new);
 		REACTOR = register("reactor", ReactorBlock::new);
+		RADIOACTIVEWASTELAND_PORTAL = register("radioactivewasteland_portal", RadioactivewastelandPortalBlock::new);
 	}
 
 	// Start of user code block custom blocks

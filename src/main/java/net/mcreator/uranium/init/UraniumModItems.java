@@ -63,6 +63,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> REACTOR;
 	public static final DeferredItem<Item> POISSONCHATTE_SPAWN_EGG;
 	public static final DeferredItem<Item> CRUCHED_RAWURANIUM;
+	public static final DeferredItem<Item> RADIOACTIVEWASTELAND;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -102,6 +103,7 @@ public class UraniumModItems {
 		REACTOR = block(UraniumModBlocks.REACTOR, new Item.Properties().stacksTo(16));
 		POISSONCHATTE_SPAWN_EGG = register("poissonchatte_spawn_egg", properties -> new SpawnEggItem(properties.spawnEgg(UraniumModEntities.POISSONCHATTE.get())));
 		CRUCHED_RAWURANIUM = register("cruched_rawuranium", CruchedRawuraniumItem::new);
+		RADIOACTIVEWASTELAND = register("radioactivewasteland", RadioactivewastelandItem::new);
 	}
 
 	// Start of user code block custom items

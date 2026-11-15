@@ -48,5 +48,11 @@
   "item.uranium.reactor": "Fission reactor",
   "entity.uranium.poissonchatte": "mutaded catfish",
   "item.uranium.poissonchatte_spawn_egg": "mutaded catfish Spawn Egg",
-  "item.uranium.cruched_rawuranium": "Cruched Rawuranium"
+  "item.uranium.cruched_rawuranium": "Cruched Rawuranium",
+  "biome.uranium.sulfuricwasteland": "Sulfuricwasteland",
+  "item.uranium.radioactivewasteland": "Radioactivewasteland Portal Igniter",
+  "advancements.letthesunshine.title": "Let the sun shine",
+  "advancements.letthesunshine.descr": " place a solar panel",
+  "advancements.beginrenewableenergie.title": "Begin renewable energie",
+  "advancements.beginrenewableenergie.descr": "craft an solar pannel"
 }

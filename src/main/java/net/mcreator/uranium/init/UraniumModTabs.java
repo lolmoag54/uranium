@@ -42,6 +42,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.SPENTFUELROD.get());
 				tabData.accept(UraniumModBlocks.CRUSHER.get().asItem());
 				tabData.accept(UraniumModBlocks.REACTOR.get().asItem());
+				tabData.accept(UraniumModItems.RADIOACTIVEWASTELAND.get());
 			}).build());
 
 	@SubscribeEvent

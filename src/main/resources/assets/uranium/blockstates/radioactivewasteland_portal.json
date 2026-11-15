@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "uranium:block/radioactivewasteland_portal_ew"
+    },
+    "axis=x": {
+      "model": "uranium:block/radioactivewasteland_portal_ns"
+    }
+  }
+}

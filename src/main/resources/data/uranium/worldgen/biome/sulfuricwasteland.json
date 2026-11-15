@@ -1,0 +1,65 @@
+{
+  "has_precipitation": false,
+  "temperature": 1,
+  "downfall": 0,
+  "effects": {
+    "foliage_color": -7235439,
+    "grass_color": -7235439,
+    "water_color": -13484750
+  },
+  "attributes": {
+    "minecraft:visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "ash"
+        },
+        "probability": 0.005
+      }
+    ],
+    "minecraft:visual/sky_color": -9140876,
+    "minecraft:visual/fog_color": -6641255,
+    "minecraft:visual/water_fog_color": -6834538
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "uranium:poissonchatte",
+        "weight": 20,
+        "minCount": 3,
+        "maxCount": 5
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "uranium:sulfuricwasteland_tree"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}

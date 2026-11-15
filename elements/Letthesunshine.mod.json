@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Let the sun shine",
+    "achievementDescription": " place a solar panel",
+    "achievementIcon": "CUSTOM:Solarpanel",
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": "CUSTOM:Beginrenewableenergie",
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"block_placed\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:Solarpanel</field></block></value></block><shadow type=\"custom_trigger\"></shadow></next></block></xml>"
+  }
+}

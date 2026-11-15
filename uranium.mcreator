@@ -2098,6 +2098,71 @@
         ]
       },
       "path": "~/Uranium"
+    },
+    {
+      "name": "Sulfuricwasteland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfuricwasteland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/worldgen/biome/sulfuricwasteland.json",
+          "src/main/resources/data/uranium/worldgen/placed_feature/sulfuricwasteland_tree.json",
+          "src/main/resources/data/uranium/worldgen/configured_feature/sulfuricwasteland_tree.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Radioactivewasteland",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactivewasteland",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/world/teleporter/RadioactivewastelandPortalShape.java",
+          "src/main/resources/data/uranium/timeline/radioactivewasteland_effects.json",
+          "src/main/resources/assets/uranium/blockstates/radioactivewasteland_portal.json",
+          "src/main/java/net/mcreator/uranium/world/teleporter/RadioactivewastelandTeleporter.java",
+          "src/main/java/net/mcreator/uranium/block/RadioactivewastelandPortalBlock.java",
+          "src/main/resources/data/uranium/dimension_type/radioactivewasteland.json",
+          "src/main/resources/data/uranium/dimension/radioactivewasteland.json",
+          "src/main/resources/assets/uranium/models/item/radioactivewasteland.json",
+          "src/main/resources/assets/uranium/models/block/radioactivewasteland_portal_ew.json",
+          "src/main/java/net/mcreator/uranium/item/RadioactivewastelandItem.java",
+          "src/main/resources/assets/uranium/models/block/radioactivewasteland_portal_ns.json",
+          "src/main/resources/assets/uranium/items/radioactivewasteland.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Letthesunshine",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "letthesunshine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/advancement/letthesunshine.json"
+        ]
+      },
+      "path": "~/achievement"
+    },
+    {
+      "name": "Beginrenewableenergie",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beginrenewableenergie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/advancement/beginrenewableenergie.json"
+        ]
+      },
+      "path": "~/achievement"
     }
   ],
   "variable_elements": [
@@ -2130,6 +2195,7 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Solarpanel@CUSTOM:Solarpanel",
       "~Reactor@CUSTOM:Reactor",
       "~Centrifuge@CUSTOM:Centrifuge",
       "~Crusher@CUSTOM:Crusher",
@@ -2150,8 +2216,7 @@
       "~CableL@CUSTOM:CableL",
       "~CableI@CUSTOM:CableI",
       "~CableE@CUSTOM:CableE",
-      "~Cable@CUSTOM:Cable",
-      "~Solarpanel@CUSTOM:Solarpanel"
+      "~Cable@CUSTOM:Cable"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~Reactor@CUSTOM:Reactor",
@@ -2163,6 +2228,19 @@
     ],
     "ENTITIES:minecraft:aquatic": [
       "~Poissonchatte@CUSTOM:Poissonchatte"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~Sulfuricwasteland@CUSTOM:Sulfuricwasteland"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft_mesa": [
+      "~Sulfuricwasteland@CUSTOM:Sulfuricwasteland"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~Sulfuricwasteland@CUSTOM:Sulfuricwasteland"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Radioactivewasteland@Blocks.DIRT#0",
+      "~Radioactivewasteland@Blocks.GRASS"
     ]
   },
   "tab_element_order": {},
@@ -2217,7 +2295,13 @@
       "item.uranium.reactor": "Fission reactor",
       "entity.uranium.poissonchatte": "mutaded catfish",
       "item.uranium.poissonchatte_spawn_egg": "mutaded catfish Spawn Egg",
-      "item.uranium.cruched_rawuranium": "Cruched Rawuranium"
+      "item.uranium.cruched_rawuranium": "Cruched Rawuranium",
+      "biome.uranium.sulfuricwasteland": "Sulfuricwasteland",
+      "item.uranium.radioactivewasteland": "Radioactivewasteland Portal Igniter",
+      "advancements.letthesunshine.title": "Let the sun shine",
+      "advancements.letthesunshine.descr": " place a solar panel",
+      "advancements.beginrenewableenergie.title": "Begin renewable energie",
+      "advancements.beginrenewableenergie.descr": "craft an solar pannel"
     }
   },
   "metadata": {
