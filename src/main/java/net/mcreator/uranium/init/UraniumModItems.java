@@ -73,6 +73,8 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> ZICRONIUM;
 	public static final DeferredItem<Item> ZICRON;
 	public static final DeferredItem<Item> ZICRON_ORE;
+	public static final DeferredItem<Item> REINFORCEDCONCRETE;
+	public static final DeferredItem<Item> LEADCRAFTINGTABLE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -122,6 +124,8 @@ public class UraniumModItems {
 		ZICRONIUM = register("zicronium", ZicroniumItem::new);
 		ZICRON = register("zicron", ZicronItem::new);
 		ZICRON_ORE = block(UraniumModBlocks.ZICRON_ORE);
+		REINFORCEDCONCRETE = block(UraniumModBlocks.REINFORCEDCONCRETE);
+		LEADCRAFTINGTABLE = block(UraniumModBlocks.LEADCRAFTINGTABLE);
 	}
 
 	// Start of user code block custom items

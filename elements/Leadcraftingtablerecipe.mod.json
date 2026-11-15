@@ -11,11 +11,11 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": "CUSTOM:Enricheduranium",
+    "smithingInputStack": "Blocks.CRAFTING_TABLE",
     "smithingInputAdditionStack": "CUSTOM:Lingotdeplomb",
-    "smithingInputTemplateStack": "CUSTOM:SteelHammer",
-    "smithingReturnStack": "CUSTOM:Uraniumpellet",
-    "name": "test",
+    "smithingInputTemplateStack": "CUSTOM:Lingotdeplomb",
+    "smithingReturnStack": "CUSTOM:Leadcraftingtable",
+    "name": "leadcraftingtablerecipe",
     "namespace": "mod"
   }
 }

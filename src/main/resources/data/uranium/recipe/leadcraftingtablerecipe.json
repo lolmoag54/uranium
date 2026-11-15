@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "uranium:lingotdeplomb",
+  "base": "minecraft:crafting_table",
+  "addition": "uranium:lingotdeplomb",
+  "result": {
+    "id": "uranium:leadcraftingtable"
+  }
+}

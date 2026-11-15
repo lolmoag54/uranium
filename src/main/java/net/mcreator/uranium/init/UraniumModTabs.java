@@ -51,6 +51,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.URANIUMPELLET.get());
 				tabData.accept(UraniumModItems.ZICRONIUM.get());
 				tabData.accept(UraniumModItems.ZICRON.get());
+				tabData.accept(UraniumModBlocks.REINFORCEDCONCRETE.get().asItem());
 			}).build());
 
 	@SubscribeEvent

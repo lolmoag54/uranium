@@ -7,11 +7,11 @@
     "aaa"
   ],
   "key": {
-    "a": "uranium:fluor",
-    "b": "uranium:yellowcake"
+    "a": "minecraft:iron_bars",
+    "b": "minecraft:gray_concrete"
   },
   "result": {
-    "id": "uranium:uraniumhexafluoride",
+    "id": "uranium:reinforcedconcrete",
     "count": 1
   }
 }

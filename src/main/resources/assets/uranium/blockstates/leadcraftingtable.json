@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uranium:block/leadcraftingtable"
+    },
+    "facing=east": {
+      "model": "uranium:block/leadcraftingtable",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "uranium:block/leadcraftingtable",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uranium:block/leadcraftingtable",
+      "y": 270
+    }
+  }
+}

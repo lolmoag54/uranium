@@ -11,6 +11,7 @@
     "uranium:cable",
     "uranium:cable_f",
     "uranium:cable_i",
+    "uranium:reinforcedconcrete",
     "uranium:cable_lc",
     "uranium:cable_l",
     "uranium:crusher",
@@ -24,6 +25,7 @@
     "uranium:cable_xc",
     "uranium:cable_ltc",
     "uranium:cable_txcc",
+    "uranium:leadcraftingtable",
     "uranium:rawuranium",
     "uranium:solarpanel"
   ]

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/lead_crafting_table_bottom",
+    "up": "uranium:block/lead_crafting_table_top",
+    "north": "uranium:block/lead_crafting_table_front",
+    "east": "uranium:block/lead_crafting_table_side",
+    "south": "uranium:block/lead_crafting_table_front",
+    "west": "uranium:block/lead_crafting_table_side",
+    "particle": "uranium:block/lead_crafting_table_bottom"
+  }
+}

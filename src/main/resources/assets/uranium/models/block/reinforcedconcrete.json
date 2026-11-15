@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/reinforced_concrete",
+    "up": "uranium:block/reinforced_concrete",
+    "north": "uranium:block/reinforced_concrete",
+    "east": "uranium:block/reinforced_concrete",
+    "south": "uranium:block/reinforced_concrete",
+    "west": "uranium:block/reinforced_concrete",
+    "particle": "uranium:block/reinforced_concrete"
+  }
+}

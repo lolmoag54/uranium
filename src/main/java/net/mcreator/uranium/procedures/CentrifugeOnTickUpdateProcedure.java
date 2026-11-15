@@ -22,7 +22,7 @@ import net.mcreator.uranium.init.UraniumModItems;
 
 public class CentrifugeOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.YELLOWCAKE.get()) {
+		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.URANIUMHEXAFLUORIDE.get()) {
 			if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 1000) {
 				if ((getPropertyByName(blockstate, "centrifugation") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 400) {
 					if (world instanceof ILevelExtension _ext) {

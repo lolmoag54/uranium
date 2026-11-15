@@ -47,6 +47,8 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> FLUORITE_ORE;
 	public static final DeferredBlock<Block> DEEPSLATE_FLUORITE_ORE;
 	public static final DeferredBlock<Block> ZICRON_ORE;
+	public static final DeferredBlock<Block> REINFORCEDCONCRETE;
+	public static final DeferredBlock<Block> LEADCRAFTINGTABLE;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -79,6 +81,8 @@ public class UraniumModBlocks {
 		FLUORITE_ORE = register("fluorite_ore", FluoriteOreBlock::new);
 		DEEPSLATE_FLUORITE_ORE = register("deepslate_fluorite_ore", DeepslateFluoriteOreBlock::new);
 		ZICRON_ORE = register("zicron_ore", ZicronOreBlock::new);
+		REINFORCEDCONCRETE = register("reinforcedconcrete", ReinforcedconcreteBlock::new);
+		LEADCRAFTINGTABLE = register("leadcraftingtable", LeadcraftingtableBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -2252,7 +2252,7 @@
       "registry_name": "uraniumhexafluoride_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_hexafluoride_recipe.json"
+          "src/main/java/net/mcreator/uranium/recipe/brewing/UraniumhexafluorideRecipeBrewingRecipe.java"
         ]
       },
       "path": "~/Uranium"
@@ -2283,19 +2283,6 @@
           "src/main/resources/assets/uranium/models/item/uraniumpellet.json",
           "src/main/java/net/mcreator/uranium/item/UraniumpelletItem.java",
           "src/main/resources/assets/uranium/items/uraniumpellet.json"
-        ]
-      },
-      "path": "~/Uranium"
-    },
-    {
-      "name": "Test",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/uranium/recipe/test.json"
         ]
       },
       "path": "~/Uranium"
@@ -2374,6 +2361,159 @@
         ]
       },
       "path": "~/achievement"
+    },
+    {
+      "name": "UraniumPelletRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_pellet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/uranium_pellet_recipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Reinforcedconcrete",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcedconcrete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/reinforcedconcrete.json",
+          "src/main/resources/data/uranium/loot_table/blocks/reinforcedconcrete.json",
+          "src/main/java/net/mcreator/uranium/block/ReinforcedconcreteBlock.java",
+          "src/main/resources/assets/uranium/models/item/reinforcedconcrete.json",
+          "src/main/resources/assets/uranium/blockstates/reinforcedconcrete.json",
+          "src/main/resources/assets/uranium/models/block/reinforcedconcrete.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "Reinforcedconcreterecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcedconcreterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/advancement/recipes/reinforcedconcreterecipe.json",
+          "src/main/resources/data/uranium/recipe/reinforcedconcreterecipe.json"
+        ]
+      },
+      "path": "~/Uranium"
+    },
+    {
+      "name": "LeadcraftingtableGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leadcraftingtable_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/client/gui/LeadcraftingtableGuiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/LeadcraftingtableGuiMenu.java"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Reactorcraftingrecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorcraftingrecipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ReactorcraftingrecipeProcedure.java"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "LeadcraftingtableOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leadcraftingtable_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/LeadcraftingtableOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Leadcraftingtable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leadcraftingtable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/LeadcraftingtableBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/leadcraftingtable.json",
+          "src/main/resources/assets/uranium/models/block/leadcraftingtable.json",
+          "src/main/java/net/mcreator/uranium/block/LeadcraftingtableBlock.java",
+          "src/main/resources/assets/uranium/items/leadcraftingtable.json",
+          "src/main/resources/data/uranium/loot_table/blocks/leadcraftingtable.json",
+          "src/main/resources/assets/uranium/models/item/leadcraftingtable.json"
+        ]
+      },
+      "path": "~/plomb"
+    },
+    {
+      "name": "Leadcraftingtablerecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leadcraftingtablerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/leadcraftingtablerecipe.json"
+        ]
+      },
+      "path": "~/plomb"
     }
   ],
   "variable_elements": [
@@ -2406,6 +2546,8 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
+      "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
       "~Rawuranium@CUSTOM:Rawuranium",
       "~RawuraniumDeepslate@CUSTOM:RawuraniumDeepslate",
       "~ZicronOre@CUSTOM:ZicronOre",
@@ -2433,6 +2575,7 @@
       "~Cable@CUSTOM:Cable"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~ZicronOre@CUSTOM:ZicronOre",
       "~Reactor@CUSTOM:Reactor",
       "~Centrifuge@CUSTOM:Centrifuge",
@@ -2530,7 +2673,10 @@
       "item.uranium.zicron": "Zicron",
       "item.uranium.zicron_ore": "Zicron Ore",
       "advancements.weneeareactornow.title": "We need a reactor now ?",
-      "advancements.weneeareactornow.descr": "craft a reactor"
+      "advancements.weneeareactornow.descr": "craft a reactor",
+      "item.uranium.reinforcedconcrete": "Reinforced concrete",
+      "gui.uranium.leadcraftingtable_gui.label_lead_crafting_table": "lead crafting table",
+      "item.uranium.leadcraftingtable": "Lead crafting table"
     }
   },
   "metadata": {

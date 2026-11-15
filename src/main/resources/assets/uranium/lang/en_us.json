@@ -65,5 +65,8 @@
   "item.uranium.zicron": "Zicron",
   "item.uranium.zicron_ore": "Zicron Ore",
   "advancements.weneeareactornow.title": "We need a reactor now ?",
-  "advancements.weneeareactornow.descr": "craft a reactor"
+  "advancements.weneeareactornow.descr": "craft a reactor",
+  "item.uranium.reinforcedconcrete": "Reinforced concrete",
+  "gui.uranium.leadcraftingtable_gui.label_lead_crafting_table": "lead crafting table",
+  "item.uranium.leadcraftingtable": "Lead crafting table"
 }

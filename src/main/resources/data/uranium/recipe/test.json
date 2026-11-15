@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "template": "uranium:steel_hammer",
-  "base": "uranium:enricheduranium",
-  "addition": "uranium:lingotdeplomb",
-  "result": {
-    "id": "uranium:uraniumpellet"
-  }
-}

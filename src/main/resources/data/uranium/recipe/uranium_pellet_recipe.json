@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bca",
+    "aaa"
+  ],
+  "key": {
+    "a": "uranium:lingotdeplomb",
+    "b": "uranium:steel_hammer",
+    "c": "uranium:enricheduranium"
+  },
+  "result": {
+    "id": "uranium:uraniumpellet",
+    "count": 1
+  }
+}

@@ -2,7 +2,7 @@
   "_fv": 89,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Brewing",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [],
@@ -11,18 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "recipeSlots": [
-      "CUSTOM:Fluor",
-      "CUSTOM:Fluor",
-      "CUSTOM:Fluor",
-      "CUSTOM:Fluor",
-      "CUSTOM:Yellowcake",
-      "CUSTOM:Fluor",
-      "CUSTOM:Fluor",
-      "CUSTOM:Fluor",
-      "CUSTOM:Fluor"
-    ],
-    "recipeReturnStack": "CUSTOM:Uraniumhexafluoride",
+    "brewingInputStack": "CUSTOM:Yellowcake",
+    "brewingIngredientStack": "CUSTOM:Fluor",
+    "brewingReturnStack": "CUSTOM:Uraniumhexafluoride",
     "name": "uranium_hexafluoride_recipe",
     "namespace": "mod"
   }

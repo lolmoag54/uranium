@@ -17,6 +17,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.uranium.world.inventory.ReactorguiMenu;
+import net.mcreator.uranium.world.inventory.LeadcraftingtableGuiMenu;
 import net.mcreator.uranium.world.inventory.CrusherguiMenu;
 import net.mcreator.uranium.world.inventory.CentrifugeguiMenu;
 import net.mcreator.uranium.network.MenuStateUpdateMessage;
@@ -29,6 +30,7 @@ public class UraniumModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<CentrifugeguiMenu>> CENTRIFUGEGUI = REGISTRY.register("centrifugegui", () -> IMenuTypeExtension.create(CentrifugeguiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CrusherguiMenu>> CRUSHERGUI = REGISTRY.register("crushergui", () -> IMenuTypeExtension.create(CrusherguiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ReactorguiMenu>> REACTORGUI = REGISTRY.register("reactorgui", () -> IMenuTypeExtension.create(ReactorguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<LeadcraftingtableGuiMenu>> LEADCRAFTINGTABLE_GUI = REGISTRY.register("leadcraftingtable_gui", () -> IMenuTypeExtension.create(LeadcraftingtableGuiMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
