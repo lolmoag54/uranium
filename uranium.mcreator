@@ -82,7 +82,9 @@
             "type": "world"
           }
         ],
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/FluidpushProcedure.java"
+        ]
       },
       "path": "~/cooling"
     },
@@ -111,7 +113,9 @@
             "type": "world"
           }
         ],
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/FluidpumptickProcedure.java"
+        ]
       },
       "path": "~/cooling"
     },
@@ -140,7 +144,9 @@
             "type": "world"
           }
         ],
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/FluidpipeaddedProcedure.java"
+        ]
       },
       "path": "~/cooling"
     },
@@ -169,7 +175,9 @@
             "type": "world"
           }
         ],
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/FluidtankaddedProcedure.java"
+        ]
       },
       "path": "~/cooling"
     },
@@ -198,7 +206,9 @@
             "type": "world"
           }
         ],
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/FluidpumpaddedProcedure.java"
+        ]
       },
       "path": "~/cooling"
     },
@@ -227,7 +237,9 @@
             "type": "world"
           }
         ],
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/ReactorcoolingProcedure.java"
+        ]
       },
       "path": "~/cooling"
     },
@@ -239,6 +251,10 @@
       "registry_name": "centrifugecooling",
       "metadata": {
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"
@@ -254,13 +270,11 @@
           {
             "name": "world",
             "type": "world"
-          },
-          {
-            "name": "blockstate",
-            "type": "blockstate"
           }
         ],
-        "files": []
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CentrifugecoolingProcedure.java"
+        ]
       },
       "path": "~/cooling"
     },
