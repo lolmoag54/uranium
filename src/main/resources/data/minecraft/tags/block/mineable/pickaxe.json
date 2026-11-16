@@ -24,7 +24,10 @@
     "uranium:reactor",
     "uranium:cable_xc",
     "uranium:cable_ltc",
+    "uranium:fluidpipe",
+    "uranium:fluidtank",
     "uranium:cable_txcc",
+    "uranium:fluidpump",
     "uranium:leadcraftingtable",
     "uranium:solarpanel",
     "uranium:rawuranium"

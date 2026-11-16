@@ -22,7 +22,7 @@ import net.mcreator.uranium.init.UraniumModItems;
 
 public class ReactorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!world.isClientSide()) {
+		if (!world.isClientSide() && getBlockNBTNumber(world, BlockPos.containing(x, y, z), "scram") == 0) {
 			if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") <= 0) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.FUELROD.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 62
 						&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.AIR.asItem()

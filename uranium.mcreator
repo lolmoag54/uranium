@@ -1,6 +1,270 @@
 {
   "mod_elements": [
     {
+      "name": "Fluidpipe",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidpipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/fluidpipe.json",
+          "src/main/java/net/mcreator/uranium/block/FluidpipeBlock.java",
+          "src/main/resources/assets/uranium/blockstates/fluidpipe.json",
+          "src/main/resources/assets/uranium/models/block/fluidpipe.json",
+          "src/main/resources/assets/uranium/items/fluidpipe.json",
+          "src/main/java/net/mcreator/uranium/block/entity/FluidpipeBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/fluidpipe.json"
+        ]
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Fluidtank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidtank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/FluidtankBlock.java",
+          "src/main/resources/assets/uranium/blockstates/fluidtank.json",
+          "src/main/resources/assets/uranium/models/item/fluidtank.json",
+          "src/main/resources/data/uranium/loot_table/blocks/fluidtank.json",
+          "src/main/java/net/mcreator/uranium/block/entity/FluidtankBlockEntity.java",
+          "src/main/resources/assets/uranium/items/fluidtank.json",
+          "src/main/resources/assets/uranium/models/block/fluidtank.json"
+        ]
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Fluidpump",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidpump",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/fluidpump.json",
+          "src/main/java/net/mcreator/uranium/block/FluidpumpBlock.java",
+          "src/main/resources/assets/uranium/blockstates/fluidpump.json",
+          "src/main/resources/data/uranium/loot_table/blocks/fluidpump.json",
+          "src/main/java/net/mcreator/uranium/block/entity/FluidpumpBlockEntity.java",
+          "src/main/resources/assets/uranium/items/fluidpump.json",
+          "src/main/resources/assets/uranium/models/block/fluidpump.json"
+        ]
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Fluidpush",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidpush",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Fluidpumptick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidpumptick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Fluidpipeadded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidpipeadded",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Fluidtankadded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidtankadded",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Fluidpumpadded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluidpumpadded",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Reactorcooling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorcooling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/cooling"
+    },
+    {
+      "name": "Centrifugecooling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centrifugecooling",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          },
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ],
+        "files": []
+      },
+      "path": "~/cooling"
+    },
+    {
       "name": "Steel",
       "type": "item",
       "compiles": true,
@@ -2546,6 +2810,9 @@
       "CUSTOM:CableS"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Fluidpump@CUSTOM:Fluidpump",
+      "~Fluidtank@CUSTOM:Fluidtank",
+      "~Fluidpipe@CUSTOM:Fluidpipe",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
       "~ZicronOre@CUSTOM:ZicronOre",
@@ -2626,6 +2893,9 @@
       "item.uranium.mineraideplomb": "Lead Ore",
       "item.uranium.grossebatterie": "heavy batterie",
       "item.uranium.solarpanel": "Solar panel",
+      "item.uranium.fluidpipe": "Fluidpipe",
+      "item.uranium.fluidtank": "Fluidtank",
+      "item.uranium.fluidpump": "Fluidpump",
       "item.uranium.cable": "Cable",
       "item.uranium.cable_e": "Cable",
       "item.uranium.cable_i": "Cable",
@@ -2795,6 +3065,10 @@
       },
       {
         "name": "jei recipe",
+        "children": []
+      },
+      {
+        "name": "cooling",
         "children": []
       }
     ]

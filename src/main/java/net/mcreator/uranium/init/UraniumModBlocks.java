@@ -16,6 +16,9 @@ import java.util.function.Function;
 
 public class UraniumModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(UraniumMod.MODID);
+	public static final DeferredBlock<Block> FLUIDPIPE;
+	public static final DeferredBlock<Block> FLUIDTANK;
+	public static final DeferredBlock<Block> FLUIDPUMP;
 	public static final DeferredBlock<Block> CENTRIFUGE;
 	public static final DeferredBlock<Block> SULFURICACID;
 	public static final DeferredBlock<Block> RAWURANIUM;
@@ -50,6 +53,9 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> REINFORCEDCONCRETE;
 	public static final DeferredBlock<Block> LEADCRAFTINGTABLE;
 	static {
+		FLUIDPIPE = register("fluidpipe", FluidpipeBlock::new);
+		FLUIDTANK = register("fluidtank", FluidtankBlock::new);
+		FLUIDPUMP = register("fluidpump", FluidpumpBlock::new);
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
 		RAWURANIUM = register("rawuranium", RawuraniumBlock::new);

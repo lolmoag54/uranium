@@ -25,6 +25,9 @@ import java.util.function.Function;
 @EventBusSubscriber
 public class UraniumModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(UraniumMod.MODID);
+	public static final DeferredItem<Item> FLUIDPIPE;
+	public static final DeferredItem<Item> FLUIDTANK;
+	public static final DeferredItem<Item> FLUIDPUMP;
 	public static final DeferredItem<Item> STEEL;
 	public static final DeferredItem<Item> CENTRIFUGE;
 	public static final DeferredItem<Item> DEPLETEDURANIUM;
@@ -76,6 +79,9 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> REINFORCEDCONCRETE;
 	public static final DeferredItem<Item> LEADCRAFTINGTABLE;
 	static {
+		FLUIDPIPE = block(UraniumModBlocks.FLUIDPIPE);
+		FLUIDTANK = block(UraniumModBlocks.FLUIDTANK);
+		FLUIDPUMP = block(UraniumModBlocks.FLUIDPUMP);
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
 		DEPLETEDURANIUM = register("depleteduranium", DepleteduraniumItem::new);

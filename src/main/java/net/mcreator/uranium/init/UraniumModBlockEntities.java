@@ -22,6 +22,9 @@ import net.mcreator.uranium.UraniumMod;
 @EventBusSubscriber
 public class UraniumModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, UraniumMod.MODID);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FluidpipeBlockEntity>> FLUIDPIPE = register("fluidpipe", UraniumModBlocks.FLUIDPIPE, FluidpipeBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FluidtankBlockEntity>> FLUIDTANK = register("fluidtank", UraniumModBlocks.FLUIDTANK, FluidtankBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FluidpumpBlockEntity>> FLUIDPUMP = register("fluidpump", UraniumModBlocks.FLUIDPUMP, FluidpumpBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CentrifugeBlockEntity>> CENTRIFUGE = register("centrifuge", UraniumModBlocks.CENTRIFUGE, CentrifugeBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GrossebatterieBlockEntity>> GROSSEBATTERIE = register("grossebatterie", UraniumModBlocks.GROSSEBATTERIE, GrossebatterieBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SolarpanelBlockEntity>> SOLARPANEL = register("solarpanel", UraniumModBlocks.SOLARPANEL, SolarpanelBlockEntity::new);
@@ -54,6 +57,12 @@ public class UraniumModBlockEntities {
 
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+		event.registerBlockEntity(Capabilities.Item.BLOCK, FLUIDPIPE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, FLUIDPIPE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, FLUIDTANK.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, FLUIDTANK.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, FLUIDPUMP.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, FLUIDPUMP.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CENTRIFUGE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, CENTRIFUGE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, GROSSEBATTERIE.get(), WorldlyContainerWrapper::new);

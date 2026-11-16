@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/cable",
+    "up": "uranium:block/cable",
+    "north": "uranium:block/cable",
+    "east": "uranium:block/cable",
+    "south": "uranium:block/cable",
+    "west": "uranium:block/cable",
+    "particle": "uranium:block/cable"
+  }
+}

@@ -22,6 +22,9 @@ public class UraniumModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, UraniumMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> URANIUMCREATIVETAB = REGISTRY.register("uraniumcreativetab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.uranium.uraniumcreativetab")).icon(() -> new ItemStack(UraniumModItems.ENRICHEDURANIUM.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(UraniumModBlocks.FLUIDPIPE.get().asItem());
+				tabData.accept(UraniumModBlocks.FLUIDTANK.get().asItem());
+				tabData.accept(UraniumModBlocks.FLUIDPUMP.get().asItem());
 				tabData.accept(UraniumModItems.STEEL.get());
 				tabData.accept(UraniumModBlocks.CENTRIFUGE.get().asItem());
 				tabData.accept(UraniumModItems.DEPLETEDURANIUM.get());
