@@ -32,6 +32,12 @@ authors="MCreator"
     side="BOTH"
 
 
+[[dependencies.uranium]]
+    modId="jei"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 # Start of user code block dependencies configuration
