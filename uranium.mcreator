@@ -2701,8 +2701,7 @@
       "registry_name": "uranium_armor_helmet_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_helmet_recipe.json",
-          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_helmet_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_helmet_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"
@@ -2715,8 +2714,7 @@
       "registry_name": "uranium_armor_chestplate_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_chestplate_recipe.json",
-          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_chestplate_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_chestplate_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"
@@ -2729,8 +2727,7 @@
       "registry_name": "uranium_armor_leggings_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_leggings_recipe.json",
-          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_leggings_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_leggings_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"
@@ -2743,8 +2740,7 @@
       "registry_name": "uranium_armor_boots_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_boots_recipe.json",
-          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_boots_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_boots_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"

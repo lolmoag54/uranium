@@ -5,9 +5,7 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [
-      "CUSTOM:UraniumIngot"
-    ],
+    "unlockingItems": [],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -17,12 +15,12 @@
       "",
       "",
       "",
-      "CUSTOM:UraniumIngot",
+      "CUSTOM:Enricheduranium",
       "",
-      "CUSTOM:UraniumIngot",
-      "CUSTOM:UraniumIngot",
+      "CUSTOM:Enricheduranium",
+      "CUSTOM:Enricheduranium",
       "",
-      "CUSTOM:UraniumIngot"
+      "CUSTOM:Enricheduranium"
     ],
     "recipeReturnStack": "CUSTOM:UraniumArmor.boots",
     "name": "uranium_armor_boots_recipe",
