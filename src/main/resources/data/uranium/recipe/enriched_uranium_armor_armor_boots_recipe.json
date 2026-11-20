@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": "uranium:uranium_armor_boots",
+  "addition": "uranium:insulateduranium",
+  "result": {
+    "id": "uranium:enriched_uranium_armor_armor_boots"
+  }
+}

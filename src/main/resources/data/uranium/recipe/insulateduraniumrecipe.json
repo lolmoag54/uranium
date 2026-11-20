@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "uranium:lingotdeplomb",
+  "base": "uranium:enricheduranium",
+  "addition": "uranium:lingotdeplomb",
+  "result": {
+    "id": "uranium:insulateduranium"
+  }
+}

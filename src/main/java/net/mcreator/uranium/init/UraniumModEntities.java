@@ -1,6 +1,3 @@
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.mcreator.uranium.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -18,6 +15,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.uranium.entity.PoissonchatteEntity;
+import net.mcreator.uranium.entity.CrystalstagEntity;
 import net.mcreator.uranium.UraniumMod;
 
 @EventBusSubscriber
@@ -26,7 +24,15 @@ public class UraniumModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<PoissonchatteEntity>> POISSONCHATTE = register("poissonchatte",
 			EntityType.Builder.<PoissonchatteEntity>of(PoissonchatteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
-					.notInPeaceful().sized(0.6f, 1.8f));
+					.notInPeaceful().sized(0.6f, 1.8f)
+
+	);
+	public static final DeferredHolder<EntityType<?>, EntityType<CrystalstagEntity>> CRYSTALSTAG = register("crystalstag",
+			EntityType.Builder.<CrystalstagEntity>of(CrystalstagEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(2f, 2f)
+
+	);
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -37,10 +43,12 @@ public class UraniumModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		PoissonchatteEntity.init(event);
+		CrystalstagEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(POISSONCHATTE.get(), PoissonchatteEntity.createAttributes().build());
+		event.put(CRYSTALSTAG.get(), CrystalstagEntity.createAttributes().build());
 	}
 }

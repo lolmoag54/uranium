@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "uranium:enriched_uranium_armor_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "uranium:enriched_uranium_armor_armor"
+      }
+    ]
+  }
+}

@@ -20,7 +20,6 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> SULFURICACID;
 	public static final DeferredBlock<Block> RAWURANIUM;
 	public static final DeferredBlock<Block> BLOCKDEPLOMB;
-	public static final DeferredBlock<Block> MINERAIDEPLOMB;
 	public static final DeferredBlock<Block> GROSSEBATTERIE;
 	public static final DeferredBlock<Block> SOLARPANEL;
 	public static final DeferredBlock<Block> CABLE;
@@ -49,12 +48,12 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> ZICRON_ORE;
 	public static final DeferredBlock<Block> REINFORCEDCONCRETE;
 	public static final DeferredBlock<Block> LEADCRAFTINGTABLE;
+	public static final DeferredBlock<Block> LEADORE;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
 		RAWURANIUM = register("rawuranium", RawuraniumBlock::new);
 		BLOCKDEPLOMB = register("blockdeplomb", BlockdeplombBlock::new);
-		MINERAIDEPLOMB = register("mineraideplomb", MineraideplombBlock::new);
 		GROSSEBATTERIE = register("grossebatterie", GrossebatterieBlock::new);
 		SOLARPANEL = register("solarpanel", SolarpanelBlock::new);
 		CABLE = register("cable", CableBlock::new);
@@ -83,6 +82,7 @@ public class UraniumModBlocks {
 		ZICRON_ORE = register("zicron_ore", ZicronOreBlock::new);
 		REINFORCEDCONCRETE = register("reinforcedconcrete", ReinforcedconcreteBlock::new);
 		LEADCRAFTINGTABLE = register("leadcraftingtable", LeadcraftingtableBlock::new);
+		LEADORE = register("leadore", LeadoreBlock::new);
 	}
 
 	// Start of user code block custom blocks
