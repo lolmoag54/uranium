@@ -51,31 +51,12 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ZICRONIUM.get());
 				tabData.accept(UraniumModItems.ZICRON.get());
 				tabData.accept(UraniumModBlocks.REINFORCEDCONCRETE.get().asItem());
-				tabData.accept(UraniumModBlocks.LEADORE.get().asItem());
-				tabData.accept(UraniumModItems.URANIUM_ARMOR_HELMET.get());
-				tabData.accept(UraniumModItems.URANIUM_ARMOR_CHESTPLATE.get());
-				tabData.accept(UraniumModItems.URANIUM_ARMOR_LEGGINGS.get());
-				tabData.accept(UraniumModItems.URANIUM_ARMOR_BOOTS.get());
-				tabData.accept(UraniumModItems.INSULATEDURANIUM.get());
-				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_HELMET.get());
-				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_CHESTPLATE.get());
-				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS.get());
-				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS.get());
-				tabData.accept(UraniumModBlocks.WINDTURBINE.get().asItem());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(UraniumModItems.POISSONCHATTE_SPAWN_EGG.get());
-			tabData.accept(UraniumModItems.CRYSTALSTAGSPAWNEGG.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(UraniumModItems.URANIUM_PICKAXE.get());
-			tabData.accept(UraniumModItems.URANIUM_AXE.get());
-			tabData.accept(UraniumModItems.URANIUM_SHOVEL.get());
-			tabData.accept(UraniumModItems.URANIUM_HOE.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(UraniumModItems.URANIUM_SWORD.get());
 		}
 	}
 }

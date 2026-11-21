@@ -1,4 +1,6 @@
 repositories {
+<<<<<<< HEAD
+=======
   exclusiveContent {
     forRepository {
       maven {
@@ -19,6 +21,7 @@ dependencies {
 
 
 repositories {
+>>>>>>> branch 'master' of https://github.com/lolmoag54/uranium
   maven {
     name = "Progwml6's maven"
     url = "https://dvs1.progwml6.com/files/maven/"

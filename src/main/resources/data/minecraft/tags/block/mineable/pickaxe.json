@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "uranium:grossebatterie",
-    "uranium:windturbine",
     "uranium:zicron_ore",
     "uranium:cable_tx",
     "uranium:cable_lt",
@@ -25,8 +24,6 @@
     "uranium:reactor",
     "uranium:cable_xc",
     "uranium:cable_ltc",
-    "uranium:blockdeplomb",
-    "uranium:leadore",
     "uranium:cable_txcc",
     "uranium:leadcraftingtable",
     "uranium:solarpanel",

@@ -1,3 +1,6 @@
+/*
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
 package net.mcreator.uranium.init;
 
 import net.neoforged.neoforge.transfer.fluid.BucketResourceHandler;
@@ -71,23 +74,6 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> ZICRON_ORE;
 	public static final DeferredItem<Item> REINFORCEDCONCRETE;
 	public static final DeferredItem<Item> LEADCRAFTINGTABLE;
-	public static final DeferredItem<Item> LEADORE;
-	public static final DeferredItem<Item> URANIUM_PICKAXE;
-	public static final DeferredItem<Item> URANIUM_AXE;
-	public static final DeferredItem<Item> URANIUM_SWORD;
-	public static final DeferredItem<Item> URANIUM_SHOVEL;
-	public static final DeferredItem<Item> URANIUM_HOE;
-	public static final DeferredItem<Item> URANIUM_ARMOR_HELMET;
-	public static final DeferredItem<Item> URANIUM_ARMOR_CHESTPLATE;
-	public static final DeferredItem<Item> URANIUM_ARMOR_LEGGINGS;
-	public static final DeferredItem<Item> URANIUM_ARMOR_BOOTS;
-	public static final DeferredItem<Item> INSULATEDURANIUM;
-	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_HELMET;
-	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_CHESTPLATE;
-	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS;
-	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS;
-	public static final DeferredItem<Item> CRYSTALSTAGSPAWNEGG;
-	public static final DeferredItem<Item> WINDTURBINE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -138,23 +124,6 @@ public class UraniumModItems {
 		ZICRON_ORE = block(UraniumModBlocks.ZICRON_ORE);
 		REINFORCEDCONCRETE = block(UraniumModBlocks.REINFORCEDCONCRETE);
 		LEADCRAFTINGTABLE = block(UraniumModBlocks.LEADCRAFTINGTABLE);
-		LEADORE = block(UraniumModBlocks.LEADORE);
-		URANIUM_PICKAXE = register("uranium_pickaxe", UraniumPickaxeItem::new);
-		URANIUM_AXE = register("uranium_axe", UraniumAxeItem::new);
-		URANIUM_SWORD = register("uranium_sword", UraniumSwordItem::new);
-		URANIUM_SHOVEL = register("uranium_shovel", UraniumShovelItem::new);
-		URANIUM_HOE = register("uranium_hoe", UraniumHoeItem::new);
-		URANIUM_ARMOR_HELMET = register("uranium_armor_helmet", UraniumArmorItem.Helmet::new);
-		URANIUM_ARMOR_CHESTPLATE = register("uranium_armor_chestplate", UraniumArmorItem.Chestplate::new);
-		URANIUM_ARMOR_LEGGINGS = register("uranium_armor_leggings", UraniumArmorItem.Leggings::new);
-		URANIUM_ARMOR_BOOTS = register("uranium_armor_boots", UraniumArmorItem.Boots::new);
-		INSULATEDURANIUM = register("insulateduranium", InsulateduraniumItem::new);
-		ENRICHED_URANIUM_ARMOR_ARMOR_HELMET = register("enriched_uranium_armor_armor_helmet", Enriched_uranium_armorArmorItem.Helmet::new);
-		ENRICHED_URANIUM_ARMOR_ARMOR_CHESTPLATE = register("enriched_uranium_armor_armor_chestplate", Enriched_uranium_armorArmorItem.Chestplate::new);
-		ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS = register("enriched_uranium_armor_armor_leggings", Enriched_uranium_armorArmorItem.Leggings::new);
-		ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS = register("enriched_uranium_armor_armor_boots", Enriched_uranium_armorArmorItem.Boots::new);
-		CRYSTALSTAGSPAWNEGG = register("crystalstagspawnegg", CrystalstagspawneggItem::new);
-		WINDTURBINE = block(UraniumModBlocks.WINDTURBINE);
 	}
 
 	// Start of user code block custom items

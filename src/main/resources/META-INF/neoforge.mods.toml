@@ -33,12 +33,6 @@ authors="MCreator"
 
 
 [[dependencies.uranium]]
-    modId="geckolib"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.uranium]]
     modId="jei"
     type="optional"
     versionRange="[0,)"
