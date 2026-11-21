@@ -33,7 +33,6 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.LINGOTDEPLOMB.get());
 				tabData.accept(UraniumModItems.PEPITEDEPLOMB.get());
 				tabData.accept(UraniumModBlocks.BLOCKDEPLOMB.get().asItem());
-				tabData.accept(UraniumModBlocks.MINERAIDEPLOMB.get().asItem());
 				tabData.accept(UraniumModBlocks.GROSSEBATTERIE.get().asItem());
 				tabData.accept(UraniumModBlocks.SOLARPANEL.get().asItem());
 				tabData.accept(UraniumModBlocks.CABLE.get().asItem());

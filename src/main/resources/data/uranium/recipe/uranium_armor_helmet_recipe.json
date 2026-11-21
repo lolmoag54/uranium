@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": "uranium:deleted_mod_element"
+  },
+  "result": {
+    "id": "uranium:uranium_armor_helmet",
+    "count": 1
+  }
+}

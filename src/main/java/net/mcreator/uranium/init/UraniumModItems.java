@@ -36,7 +36,6 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> LINGOTDEPLOMB;
 	public static final DeferredItem<Item> PEPITEDEPLOMB;
 	public static final DeferredItem<Item> BLOCKDEPLOMB;
-	public static final DeferredItem<Item> MINERAIDEPLOMB;
 	public static final DeferredItem<Item> GROSSEBATTERIE;
 	public static final DeferredItem<Item> SOLARPANEL;
 	public static final DeferredItem<Item> CABLE;
@@ -87,7 +86,6 @@ public class UraniumModItems {
 		LINGOTDEPLOMB = register("lingotdeplomb", LingotdeplombItem::new);
 		PEPITEDEPLOMB = register("pepitedeplomb", PepitedeplombItem::new);
 		BLOCKDEPLOMB = block(UraniumModBlocks.BLOCKDEPLOMB);
-		MINERAIDEPLOMB = block(UraniumModBlocks.MINERAIDEPLOMB);
 		GROSSEBATTERIE = block(UraniumModBlocks.GROSSEBATTERIE);
 		SOLARPANEL = block(UraniumModBlocks.SOLARPANEL);
 		CABLE = block(UraniumModBlocks.CABLE);

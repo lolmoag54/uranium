@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": "uranium:deleted_mod_element",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "uranium:uranium_pickaxe",
+    "count": 1
+  }
+}

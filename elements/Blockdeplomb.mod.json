@@ -53,7 +53,7 @@
     "creativeTabs": [
       "CUSTOM:Uraniumcreativetab"
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
@@ -98,7 +98,7 @@
       "fixedValue": 0.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],

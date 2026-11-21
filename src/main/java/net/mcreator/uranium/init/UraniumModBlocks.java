@@ -20,7 +20,6 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> SULFURICACID;
 	public static final DeferredBlock<Block> RAWURANIUM;
 	public static final DeferredBlock<Block> BLOCKDEPLOMB;
-	public static final DeferredBlock<Block> MINERAIDEPLOMB;
 	public static final DeferredBlock<Block> GROSSEBATTERIE;
 	public static final DeferredBlock<Block> SOLARPANEL;
 	public static final DeferredBlock<Block> CABLE;
@@ -54,7 +53,6 @@ public class UraniumModBlocks {
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
 		RAWURANIUM = register("rawuranium", RawuraniumBlock::new);
 		BLOCKDEPLOMB = register("blockdeplomb", BlockdeplombBlock::new);
-		MINERAIDEPLOMB = register("mineraideplomb", MineraideplombBlock::new);
 		GROSSEBATTERIE = register("grossebatterie", GrossebatterieBlock::new);
 		SOLARPANEL = register("solarpanel", SolarpanelBlock::new);
 		CABLE = register("cable", CableBlock::new);
