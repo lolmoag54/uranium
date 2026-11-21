@@ -1,27 +1,4 @@
 repositories {
-<<<<<<< HEAD
-=======
-  exclusiveContent {
-    forRepository {
-      maven {
-        name = 'GeckoLib'
-        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
-      }
-    }
-    filter {
-      includeGroupAndSubgroups('com.geckolib')
-    }
-  }
-}
-
-dependencies {
-  implementation 'com.geckolib:geckolib-neoforge-26.1.2:5.5.2'
-  interfaceInjectionData 'com.geckolib:geckolib-neoforge-26.1.2:5.5.2'
-}
-
-
-repositories {
->>>>>>> branch 'master' of https://github.com/lolmoag54/uranium
   maven {
     name = "Progwml6's maven"
     url = "https://dvs1.progwml6.com/files/maven/"

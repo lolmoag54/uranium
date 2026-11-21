@@ -1,6 +1,3 @@
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.mcreator.uranium.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -26,7 +23,9 @@ public class UraniumModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<PoissonchatteEntity>> POISSONCHATTE = register("poissonchatte",
 			EntityType.Builder.<PoissonchatteEntity>of(PoissonchatteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
-					.notInPeaceful().sized(0.6f, 1.8f));
+					.notInPeaceful().sized(0.6f, 1.8f)
+
+	);
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
