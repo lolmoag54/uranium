@@ -32,7 +32,7 @@
         "condition": "WindturbineConditionDeLectureFast"
       }
     ],
-    "itemTexture": "uranium",
+    "itemTexture": "minecraft:blue_egg",
     "particleTexture": "",
     "blockSetType": "OAK",
     "leavesParticleChance": 0.0,
