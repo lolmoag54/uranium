@@ -42,7 +42,7 @@ public class UraniumModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CrusherBlockEntity>> CRUSHER = register("crusher", UraniumModBlocks.CRUSHER, CrusherBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ReactorBlockEntity>> REACTOR = register("reactor", UraniumModBlocks.REACTOR, ReactorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<LeadcraftingtableBlockEntity>> LEADCRAFTINGTABLE = register("leadcraftingtable", UraniumModBlocks.LEADCRAFTINGTABLE, LeadcraftingtableBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WindturbineTileEntity>> WINDTURBINE = register("windturbine", UraniumModBlocks.WINDTURBINE, WindturbineTileEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WindturbineBlockEntity>> WINDTURBINE = register("windturbine", UraniumModBlocks.WINDTURBINE, WindturbineBlockEntity::new);
 
 	private static <T extends BlockEntity> DeferredHolder<BlockEntityType<?>, BlockEntityType<T>> register(String registryname, DeferredHolder<Block, Block> block, BlockEntityType.BlockEntitySupplier<T> supplier) {
 		return REGISTRY.register(registryname, () -> new BlockEntityType(supplier, block.get()));
@@ -96,5 +96,6 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, REACTOR.get(), (blockEntity, side) -> ((ReactorBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, LEADCRAFTINGTABLE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, WINDTURBINE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, WINDTURBINE.get(), (blockEntity, side) -> ((WindturbineBlockEntity) blockEntity).getEnergyStorage());
 	}
 }

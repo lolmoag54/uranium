@@ -15,7 +15,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.uranium.item.*;
-import net.mcreator.uranium.block.display.WindturbineDisplayItem;
 import net.mcreator.uranium.UraniumMod;
 
 import java.util.function.Function;
@@ -155,7 +154,7 @@ public class UraniumModItems {
 		ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS = register("enriched_uranium_armor_armor_leggings", Enriched_uranium_armorArmorItem.Leggings::new);
 		ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS = register("enriched_uranium_armor_armor_boots", Enriched_uranium_armorArmorItem.Boots::new);
 		CRYSTALSTAGSPAWNEGG = register("crystalstagspawnegg", CrystalstagspawneggItem::new);
-		WINDTURBINE = register("windturbine", properties -> new WindturbineDisplayItem(UraniumModBlocks.WINDTURBINE.get(), properties));
+		WINDTURBINE = block(UraniumModBlocks.WINDTURBINE);
 	}
 
 	// Start of user code block custom items

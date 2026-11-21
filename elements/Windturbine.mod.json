@@ -1,21 +1,41 @@
 {
   "_fv": 89,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
-    "texture": "eolienne",
+    "texture": "eolienne_allumee",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
+    "renderType": 4,
+    "customModelName": "Modeleolienne",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": true,
-    "itemTexture": "",
+    "states": [],
+    "animations": [
+      {
+        "animation": "CUSTOM:eolienneAnimation.slow",
+        "speed": 1.0,
+        "condition": "WindturbineConditionDeLectureSlow"
+      },
+      {
+        "animation": "CUSTOM:eolienneAnimation.medium",
+        "speed": 2.0,
+        "condition": "WindturbineConditionDeLectureMedium"
+      },
+      {
+        "animation": "CUSTOM:eolienneAnimation.fast",
+        "speed": 3.0,
+        "condition": "WindturbineConditionDeLectureFast"
+      }
+    ],
+    "itemTexture": "uranium",
     "particleTexture": "",
+    "blockSetType": "OAK",
+    "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -33,6 +53,15 @@
         "subtract": false
       }
     ],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 2,
+        "name": "CUSTOM:vent",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Wind turbine",
     "specialInformation": {
       "fixedValue": []
@@ -41,19 +70,25 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
     "creativeTabs": [
       "CUSTOM:Uraniumcreativetab"
     ],
     "destroyTool": "pickaxe",
     "customDrop": "",
     "dropAmount": 1,
+    "xpAmountMin": 0,
+    "xpAmountMax": 0,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
+    "hasCustomOpacity": true,
     "lightOpacity": 0,
-    "material": "",
     "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
@@ -62,48 +97,57 @@
       "fixedValue": 15.0
     },
     "colorOnMap": "DEFAULT",
+    "noteBlockInstrument": "harp",
     "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "strippingResult": "",
+    "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 3.0,
-    "reactionToPushing": "DESTROY",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
     "soundOnStep": "METAL",
+    "isCustomSoundType": false,
     "breakSound": "",
     "fallSound": "",
     "hitSound": "",
     "placeSound": "",
     "stepSound": "",
-    "luminance": 0,
+    "luminance": {
+      "fixedValue": 0.0
+    },
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "IRON",
+    "isBonemealable": false,
+    "sensitiveToVibration": false,
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 10,
-    "energyMaxReceive": 300,
+    "energyCapacity": 0,
+    "energyMaxReceive": 0,
     "energyMaxExtract": 300,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onBlockAdded": "WindturbineQuandLeBlocEstAjoute",
-    "onTickUpdate": "WindturbineLorsDeLaMiseAJourDuTick",
+    "onTickUpdate": "Windpower",
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       "TAG:stone_ore_replaceables"
@@ -112,10 +156,6 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "geckolib_block.geo.json",
-    "displaySettings": "geckolib_block.json",
-    "vanillaToolTier": "IRON",
-    "blockstateList": []
+    "maxGenerateHeight": 64
   }
 }

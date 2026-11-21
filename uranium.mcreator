@@ -2701,7 +2701,8 @@
       "registry_name": "uranium_armor_helmet_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_helmet_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_helmet_recipe.json",
+          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_helmet_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"
@@ -2714,7 +2715,8 @@
       "registry_name": "uranium_armor_chestplate_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_chestplate_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_chestplate_recipe.json",
+          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_chestplate_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"
@@ -2727,7 +2729,8 @@
       "registry_name": "uranium_armor_leggings_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_leggings_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_leggings_recipe.json",
+          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_leggings_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"
@@ -2740,7 +2743,8 @@
       "registry_name": "uranium_armor_boots_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_boots_recipe.json"
+          "src/main/resources/data/uranium/recipe/uranium_armor_boots_recipe.json",
+          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_boots_recipe.json"
         ]
       },
       "path": "~/Uranium/armor"
@@ -3029,28 +3033,6 @@
       "path": "~/Uranium"
     },
     {
-      "name": "Windturbine",
-      "type": "animatedblock",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "windturbine",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/uranium/block/renderer/WindturbineDisplayItemRenderer.java",
-          "src/main/resources/assets/uranium/blockstates/windturbine.json",
-          "src/main/resources/assets/uranium/models/item/windturbine.json",
-          "src/main/java/net/mcreator/uranium/block/model/WindturbineBlockModel.java",
-          "src/main/java/net/mcreator/uranium/block/entity/WindturbineTileEntity.java",
-          "src/main/resources/assets/uranium/models/custom/windturbine_particle.json",
-          "src/main/java/net/mcreator/uranium/block/WindturbineBlock.java",
-          "src/main/resources/assets/uranium/items/windturbine.json",
-          "src/main/java/net/mcreator/uranium/block/model/WindturbineDisplayModel.java",
-          "src/main/java/net/mcreator/uranium/block/display/WindturbineDisplayItem.java",
-          "src/main/java/net/mcreator/uranium/block/renderer/WindturbineTileRenderer.java"
-        ]
-      }
-    },
-    {
       "name": "WindturbineQuandLeBlocEstAjoute",
       "type": "procedure",
       "compiles": true,
@@ -3140,6 +3122,118 @@
         ]
       },
       "path": "~/Uranium/centrifuge"
+    },
+    {
+      "name": "WindturbineConditionDeLectureMedium",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windturbine_condition_de_lecture_medium",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/WindturbineConditionDeLectureMediumProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WindturbineConditionDeLectureSlow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windturbine_condition_de_lecture_slow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/WindturbineConditionDeLectureSlowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WindturbineConditionDeLectureFast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windturbine_condition_de_lecture_fast",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/WindturbineConditionDeLectureFastProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Windturbine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windturbine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/windturbine.json",
+          "src/main/resources/assets/uranium/models/item/windturbine.json",
+          "src/main/java/net/mcreator/uranium/block/WindturbineBlock.java",
+          "src/main/resources/assets/uranium/items/windturbine.json",
+          "src/main/java/net/mcreator/uranium/block/entity/WindturbineBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/windturbine.json",
+          "src/main/java/net/mcreator/uranium/client/renderer/block/WindturbineRenderer.java",
+          "src/main/resources/assets/uranium/models/block/windturbine.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3223,7 +3317,6 @@
       "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~Windturbine@CUSTOM:Windturbine",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~ZicronOre@CUSTOM:ZicronOre",
@@ -3233,6 +3326,9 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
+    ],
+    "ENTITIES:minecraft:aquatic": [
+      "~Poissonchatte@CUSTOM:Poissonchatte"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~Sulfuricwasteland@CUSTOM:Sulfuricwasteland"
@@ -3280,9 +3376,6 @@
     "ITEMS:minecraft:foot_armor": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.boots",
       "~UraniumArmor@CUSTOM:UraniumArmor.boots"
-    ],
-    "ENTITIES:minecraft:aquatic": [
-      "~Poissonchatte@CUSTOM:Poissonchatte"
     ]
   },
   "tab_element_order": {},
@@ -3375,13 +3468,11 @@
       "item.uranium.enriched_uranium_armor_armor_chestplate": "insulated Uranium Armor Chestplate",
       "item.uranium.enriched_uranium_armor_armor_helmet": "insulated Uranium Armor Helmet",
       "item.uranium.crystalstagspawnegg": "Crystal stag spawn egg",
-      "block.uranium.windturbine": "Wind turbine",
       "item.uranium.windturbine": "Wind turbine"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/block/listener/ClientListener.java",
       "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/EntityAnimationFactory.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",

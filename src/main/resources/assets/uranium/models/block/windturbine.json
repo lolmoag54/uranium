@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "uranium:block/eolienne_allumee",
+    "particle": "uranium:block/eolienne_allumee"
+  }
+}
