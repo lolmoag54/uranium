@@ -61,6 +61,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_CHESTPLATE.get());
 				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS.get());
 				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS.get());
+				tabData.accept(UraniumModBlocks.WINDTURBINE.get().asItem());
 			}).build());
 
 	@SubscribeEvent

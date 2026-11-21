@@ -3027,6 +3027,119 @@
         ]
       },
       "path": "~/Uranium"
+    },
+    {
+      "name": "Windturbine",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windturbine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/renderer/WindturbineDisplayItemRenderer.java",
+          "src/main/resources/assets/uranium/blockstates/windturbine.json",
+          "src/main/resources/assets/uranium/models/item/windturbine.json",
+          "src/main/java/net/mcreator/uranium/block/model/WindturbineBlockModel.java",
+          "src/main/java/net/mcreator/uranium/block/entity/WindturbineTileEntity.java",
+          "src/main/resources/assets/uranium/models/custom/windturbine_particle.json",
+          "src/main/java/net/mcreator/uranium/block/WindturbineBlock.java",
+          "src/main/resources/assets/uranium/items/windturbine.json",
+          "src/main/java/net/mcreator/uranium/block/model/WindturbineDisplayModel.java",
+          "src/main/java/net/mcreator/uranium/block/display/WindturbineDisplayItem.java",
+          "src/main/java/net/mcreator/uranium/block/renderer/WindturbineTileRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "WindturbineQuandLeBlocEstAjoute",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windturbine_quand_le_bloc_est_ajoute",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/WindturbineQuandLeBlocEstAjouteProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Windpower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windpower",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/WindpowerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WindturbineLorsDeLaMiseAJourDuTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windturbine_lors_de_la_mise_a_jour_du_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/WindturbineLorsDeLaMiseAJourDuTickProcedure.java"
+        ]
+      },
+      "path": "~/Uranium/centrifuge"
     }
   ],
   "variable_elements": [
@@ -3058,7 +3171,27 @@
       "CUSTOM:CableF",
       "CUSTOM:CableS"
     ],
+    "ITEMS:uranium:uranium_pickaxe_repair_items": [
+      "~UraniumPickaxe@CUSTOM:UraniumIngot"
+    ],
+    "ITEMS:uranium:uranium_axe_repair_items": [
+      "~UraniumAxe@CUSTOM:UraniumIngot"
+    ],
+    "ITEMS:uranium:uranium_sword_repair_items": [
+      "~UraniumSword@CUSTOM:UraniumIngot"
+    ],
+    "ITEMS:uranium:uranium_shovel_repair_items": [
+      "~UraniumShovel@CUSTOM:UraniumIngot"
+    ],
+    "ITEMS:uranium:uranium_hoe_repair_items": [
+      "~UraniumHoe@CUSTOM:UraniumIngot"
+    ],
+    "ITEMS:uranium:uranium_armor_repair_items": [],
+    "ITEMS:uranium:enriched_uranium_armor_armor_repair_items": [
+      "~Enriched_uranium_armorArmor@CUSTOM:Enricheduranium"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Windturbine@CUSTOM:Windturbine",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
@@ -3090,6 +3223,7 @@
       "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~Windturbine@CUSTOM:Windturbine",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~ZicronOre@CUSTOM:ZicronOre",
@@ -3099,9 +3233,6 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
-    ],
-    "ENTITIES:minecraft:aquatic": [
-      "~Poissonchatte@CUSTOM:Poissonchatte"
     ],
     "BIOMES:minecraft:has_structure/mineshaft": [
       "~Sulfuricwasteland@CUSTOM:Sulfuricwasteland"
@@ -3119,22 +3250,21 @@
     "ITEMS:minecraft:enchantable/durability": [
       "~SteelHammer@CUSTOM:SteelHammer"
     ],
-    "ITEMS:uranium:uranium_pickaxe_repair_items": [
-      "~UraniumPickaxe@CUSTOM:UraniumIngot"
+    "ITEMS:minecraft:pickaxes": [
+      "~UraniumPickaxe@CUSTOM:UraniumPickaxe"
     ],
-    "ITEMS:uranium:uranium_axe_repair_items": [
-      "~UraniumAxe@CUSTOM:UraniumIngot"
+    "ITEMS:minecraft:axes": [
+      "~UraniumAxe@CUSTOM:UraniumAxe"
     ],
-    "ITEMS:uranium:uranium_sword_repair_items": [
-      "~UraniumSword@CUSTOM:UraniumIngot"
+    "ITEMS:minecraft:swords": [
+      "~UraniumSword@CUSTOM:UraniumSword"
     ],
-    "ITEMS:uranium:uranium_shovel_repair_items": [
-      "~UraniumShovel@CUSTOM:UraniumIngot"
+    "ITEMS:minecraft:shovels": [
+      "~UraniumShovel@CUSTOM:UraniumShovel"
     ],
-    "ITEMS:uranium:uranium_hoe_repair_items": [
-      "~UraniumHoe@CUSTOM:UraniumIngot"
+    "ITEMS:minecraft:hoes": [
+      "~UraniumHoe@CUSTOM:UraniumHoe"
     ],
-    "ITEMS:uranium:uranium_armor_repair_items": [],
     "ITEMS:minecraft:head_armor": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.helmet",
       "~UraniumArmor@CUSTOM:UraniumArmor.helmet"
@@ -3151,23 +3281,8 @@
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.boots",
       "~UraniumArmor@CUSTOM:UraniumArmor.boots"
     ],
-    "ITEMS:minecraft:pickaxes": [
-      "~UraniumPickaxe@CUSTOM:UraniumPickaxe"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~UraniumSword@CUSTOM:UraniumSword"
-    ],
-    "ITEMS:minecraft:hoes": [
-      "~UraniumHoe@CUSTOM:UraniumHoe"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~UraniumAxe@CUSTOM:UraniumAxe"
-    ],
-    "ITEMS:minecraft:shovels": [
-      "~UraniumShovel@CUSTOM:UraniumShovel"
-    ],
-    "ITEMS:uranium:enriched_uranium_armor_armor_repair_items": [
-      "~Enriched_uranium_armorArmor@CUSTOM:Enricheduranium"
+    "ENTITIES:minecraft:aquatic": [
+      "~Poissonchatte@CUSTOM:Poissonchatte"
     ]
   },
   "tab_element_order": {},
@@ -3259,11 +3374,14 @@
       "item.uranium.enriched_uranium_armor_armor_leggings": "insulated Uranium Armor Leggings",
       "item.uranium.enriched_uranium_armor_armor_chestplate": "insulated Uranium Armor Chestplate",
       "item.uranium.enriched_uranium_armor_armor_helmet": "insulated Uranium Armor Helmet",
-      "item.uranium.crystalstagspawnegg": "Crystal stag spawn egg"
+      "item.uranium.crystalstagspawnegg": "Crystal stag spawn egg",
+      "block.uranium.windturbine": "Wind turbine",
+      "item.uranium.windturbine": "Wind turbine"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/uranium/block/listener/ClientListener.java",
       "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/EntityAnimationFactory.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",

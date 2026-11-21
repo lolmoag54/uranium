@@ -11,6 +11,6 @@ public class UraniumSwordItem extends Item {
 	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 3072, 18f, 0, 84, TagKey.create(Registries.ITEM, Identifier.parse("uranium:uranium_sword_repair_items")));
 
 	public UraniumSwordItem(Item.Properties properties) {
-		super(properties.sword(TOOL_MATERIAL, 35f, 6f));
+		super(properties.sword(TOOL_MATERIAL, 23f, 14f));
 	}
 }

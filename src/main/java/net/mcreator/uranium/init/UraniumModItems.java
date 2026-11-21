@@ -15,6 +15,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.uranium.item.*;
+import net.mcreator.uranium.block.display.WindturbineDisplayItem;
 import net.mcreator.uranium.UraniumMod;
 
 import java.util.function.Function;
@@ -87,6 +88,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS;
 	public static final DeferredItem<Item> CRYSTALSTAGSPAWNEGG;
+	public static final DeferredItem<Item> WINDTURBINE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -153,6 +155,7 @@ public class UraniumModItems {
 		ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS = register("enriched_uranium_armor_armor_leggings", Enriched_uranium_armorArmorItem.Leggings::new);
 		ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS = register("enriched_uranium_armor_armor_boots", Enriched_uranium_armorArmorItem.Boots::new);
 		CRYSTALSTAGSPAWNEGG = register("crystalstagspawnegg", CrystalstagspawneggItem::new);
+		WINDTURBINE = register("windturbine", properties -> new WindturbineDisplayItem(UraniumModBlocks.WINDTURBINE.get(), properties));
 	}
 
 	// Start of user code block custom items

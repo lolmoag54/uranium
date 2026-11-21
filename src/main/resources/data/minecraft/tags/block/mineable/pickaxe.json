@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "uranium:grossebatterie",
+    "uranium:windturbine",
     "uranium:zicron_ore",
     "uranium:cable_tx",
     "uranium:cable_lt",

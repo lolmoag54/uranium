@@ -12,6 +12,6 @@ public class UraniumHoeItem extends HoeItem {
 	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 3072, 18f, 0, 84, TagKey.create(Registries.ITEM, Identifier.parse("uranium:uranium_hoe_repair_items")));
 
 	public UraniumHoeItem(Item.Properties properties) {
-		super(TOOL_MATERIAL, 5f, 14f, properties);
+		super(TOOL_MATERIAL, 23f, 14f, properties);
 	}
 }

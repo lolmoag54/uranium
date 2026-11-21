@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uranium:custom/windturbine_particle"
+    },
+    "facing=east": {
+      "model": "uranium:custom/windturbine_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "uranium:custom/windturbine_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uranium:custom/windturbine_particle",
+      "y": 270
+    }
+  }
+}
