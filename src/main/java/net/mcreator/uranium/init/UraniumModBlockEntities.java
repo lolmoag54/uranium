@@ -43,6 +43,24 @@ public class UraniumModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ReactorBlockEntity>> REACTOR = register("reactor", UraniumModBlocks.REACTOR, ReactorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<LeadcraftingtableBlockEntity>> LEADCRAFTINGTABLE = register("leadcraftingtable", UraniumModBlocks.LEADCRAFTINGTABLE, LeadcraftingtableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WindturbineBlockEntity>> WINDTURBINE = register("windturbine", UraniumModBlocks.WINDTURBINE, WindturbineBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeBlockEntity>> COOLANTPIPE = register("coolantpipe", UraniumModBlocks.COOLANTPIPE, CoolantpipeBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeEBlockEntity>> COOLANTPIPEE = register("coolantpipee", UraniumModBlocks.COOLANTPIPEE, CoolantpipeEBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeIBlockEntity>> COOLANTPIPEI = register("coolantpipei", UraniumModBlocks.COOLANTPIPEI, CoolantpipeIBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeLBlockEntity>> COOLANTPIPEL = register("coolantpipel", UraniumModBlocks.COOLANTPIPEL, CoolantpipeLBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeLCBlockEntity>> COOLANTPIPELC = register("coolantpipelc", UraniumModBlocks.COOLANTPIPELC, CoolantpipeLCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeLCCBlockEntity>> COOLANTPIPELCC = register("coolantpipelcc", UraniumModBlocks.COOLANTPIPELCC, CoolantpipeLCCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeLTBlockEntity>> COOLANTPIPELT = register("coolantpipelt", UraniumModBlocks.COOLANTPIPELT, CoolantpipeLTBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeLTCBlockEntity>> COOLANTPIPELTC = register("coolantpipeltc", UraniumModBlocks.COOLANTPIPELTC, CoolantpipeLTCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeTBlockEntity>> COOLANTPIPET = register("coolantpipet", UraniumModBlocks.COOLANTPIPET, CoolantpipeTBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeTCBlockEntity>> COOLANTPIPETC = register("coolantpipetc", UraniumModBlocks.COOLANTPIPETC, CoolantpipeTCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeTXBlockEntity>> COOLANTPIPETX = register("coolantpipetx", UraniumModBlocks.COOLANTPIPETX, CoolantpipeTXBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeTXCBlockEntity>> COOLANTPIPETXC = register("coolantpipetxc", UraniumModBlocks.COOLANTPIPETXC, CoolantpipeTXCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeTXCCBlockEntity>> COOLANTPIPETXCC = register("coolantpipetxcc", UraniumModBlocks.COOLANTPIPETXCC, CoolantpipeTXCCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeXBlockEntity>> COOLANTPIPEX = register("coolantpipex", UraniumModBlocks.COOLANTPIPEX, CoolantpipeXBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeXCBlockEntity>> COOLANTPIPEXC = register("coolantpipexc", UraniumModBlocks.COOLANTPIPEXC, CoolantpipeXCBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeFBlockEntity>> COOLANTPIPEF = register("coolantpipef", UraniumModBlocks.COOLANTPIPEF, CoolantpipeFBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeSBlockEntity>> COOLANTPIPES = register("coolantpipes", UraniumModBlocks.COOLANTPIPES, CoolantpipeSBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WaterpumpBlockEntity>> WATERPUMP = register("waterpump", UraniumModBlocks.WATERPUMP, WaterpumpBlockEntity::new);
 
 	private static <T extends BlockEntity> DeferredHolder<BlockEntityType<?>, BlockEntityType<T>> register(String registryname, DeferredHolder<Block, Block> block, BlockEntityType.BlockEntitySupplier<T> supplier) {
 		return REGISTRY.register(registryname, () -> new BlockEntityType(supplier, block.get()));
@@ -97,5 +115,23 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Item.BLOCK, LEADCRAFTINGTABLE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, WINDTURBINE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, WINDTURBINE.get(), (blockEntity, side) -> ((WindturbineBlockEntity) blockEntity).getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPEE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPEI.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPEL.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPELC.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPELCC.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPELT.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPELTC.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPET.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPETC.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPETX.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPETXC.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPETXCC.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPEX.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPEXC.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPEF.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPES.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, WATERPUMP.get(), WorldlyContainerWrapper::new);
 	}
 }

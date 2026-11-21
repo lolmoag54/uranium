@@ -50,6 +50,24 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> LEADCRAFTINGTABLE;
 	public static final DeferredBlock<Block> LEADORE;
 	public static final DeferredBlock<Block> WINDTURBINE;
+	public static final DeferredBlock<Block> COOLANTPIPE;
+	public static final DeferredBlock<Block> COOLANTPIPEE;
+	public static final DeferredBlock<Block> COOLANTPIPEI;
+	public static final DeferredBlock<Block> COOLANTPIPEL;
+	public static final DeferredBlock<Block> COOLANTPIPELC;
+	public static final DeferredBlock<Block> COOLANTPIPELCC;
+	public static final DeferredBlock<Block> COOLANTPIPELT;
+	public static final DeferredBlock<Block> COOLANTPIPELTC;
+	public static final DeferredBlock<Block> COOLANTPIPET;
+	public static final DeferredBlock<Block> COOLANTPIPETC;
+	public static final DeferredBlock<Block> COOLANTPIPETX;
+	public static final DeferredBlock<Block> COOLANTPIPETXC;
+	public static final DeferredBlock<Block> COOLANTPIPETXCC;
+	public static final DeferredBlock<Block> COOLANTPIPEX;
+	public static final DeferredBlock<Block> COOLANTPIPEXC;
+	public static final DeferredBlock<Block> COOLANTPIPEF;
+	public static final DeferredBlock<Block> COOLANTPIPES;
+	public static final DeferredBlock<Block> WATERPUMP;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -85,6 +103,24 @@ public class UraniumModBlocks {
 		LEADCRAFTINGTABLE = register("leadcraftingtable", LeadcraftingtableBlock::new);
 		LEADORE = register("leadore", LeadoreBlock::new);
 		WINDTURBINE = register("windturbine", WindturbineBlock::new);
+		COOLANTPIPE = register("coolantpipe", CoolantpipeBlock::new);
+		COOLANTPIPEE = register("coolantpipee", CoolantpipeEBlock::new);
+		COOLANTPIPEI = register("coolantpipei", CoolantpipeIBlock::new);
+		COOLANTPIPEL = register("coolantpipel", CoolantpipeLBlock::new);
+		COOLANTPIPELC = register("coolantpipelc", CoolantpipeLCBlock::new);
+		COOLANTPIPELCC = register("coolantpipelcc", CoolantpipeLCCBlock::new);
+		COOLANTPIPELT = register("coolantpipelt", CoolantpipeLTBlock::new);
+		COOLANTPIPELTC = register("coolantpipeltc", CoolantpipeLTCBlock::new);
+		COOLANTPIPET = register("coolantpipet", CoolantpipeTBlock::new);
+		COOLANTPIPETC = register("coolantpipetc", CoolantpipeTCBlock::new);
+		COOLANTPIPETX = register("coolantpipetx", CoolantpipeTXBlock::new);
+		COOLANTPIPETXC = register("coolantpipetxc", CoolantpipeTXCBlock::new);
+		COOLANTPIPETXCC = register("coolantpipetxcc", CoolantpipeTXCCBlock::new);
+		COOLANTPIPEX = register("coolantpipex", CoolantpipeXBlock::new);
+		COOLANTPIPEXC = register("coolantpipexc", CoolantpipeXCBlock::new);
+		COOLANTPIPEF = register("coolantpipef", CoolantpipeFBlock::new);
+		COOLANTPIPES = register("coolantpipes", CoolantpipeSBlock::new);
+		WATERPUMP = register("waterpump", WaterpumpBlock::new);
 	}
 
 	// Start of user code block custom blocks

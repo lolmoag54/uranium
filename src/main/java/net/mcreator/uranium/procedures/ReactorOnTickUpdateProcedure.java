@@ -22,7 +22,8 @@ import net.mcreator.uranium.init.UraniumModItems;
 
 public class ReactorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!world.isClientSide()) {
+		RcreactorlogicProcedure.execute(world, x, y, z);
+		if (!world.isClientSide() && !getBlockNBTLogic(world, BlockPos.containing(x, y, z), "rcScram")) {
 			if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") <= 0) {
 				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.FUELROD.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 62
 						&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.AIR.asItem()
@@ -109,6 +110,13 @@ public class ReactorOnTickUpdateProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBooleanOr(tag, false);
+		return false;
 	}
 
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {

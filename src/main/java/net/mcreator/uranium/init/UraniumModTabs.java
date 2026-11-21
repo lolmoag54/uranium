@@ -62,6 +62,8 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_LEGGINGS.get());
 				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS.get());
 				tabData.accept(UraniumModBlocks.WINDTURBINE.get().asItem());
+				tabData.accept(UraniumModBlocks.COOLANTPIPE.get().asItem());
+				tabData.accept(UraniumModBlocks.WATERPUMP.get().asItem());
 			}).build());
 
 	@SubscribeEvent

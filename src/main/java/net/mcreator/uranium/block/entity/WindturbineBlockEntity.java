@@ -122,7 +122,7 @@ public class WindturbineBlockEntity extends RandomizableContainerBlockEntity imp
 		return true;
 	}
 
-	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(0, 0, 300, 0) {
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(10000, 50, 300, 0) {
 		@Override
 		protected void onEnergyChanged(int previousAmount) {
 			setChanged();

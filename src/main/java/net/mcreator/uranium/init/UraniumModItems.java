@@ -88,6 +88,24 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS;
 	public static final DeferredItem<Item> CRYSTALSTAGSPAWNEGG;
 	public static final DeferredItem<Item> WINDTURBINE;
+	public static final DeferredItem<Item> COOLANTPIPE;
+	public static final DeferredItem<Item> COOLANTPIPEE;
+	public static final DeferredItem<Item> COOLANTPIPEI;
+	public static final DeferredItem<Item> COOLANTPIPEL;
+	public static final DeferredItem<Item> COOLANTPIPELC;
+	public static final DeferredItem<Item> COOLANTPIPELCC;
+	public static final DeferredItem<Item> COOLANTPIPELT;
+	public static final DeferredItem<Item> COOLANTPIPELTC;
+	public static final DeferredItem<Item> COOLANTPIPET;
+	public static final DeferredItem<Item> COOLANTPIPETC;
+	public static final DeferredItem<Item> COOLANTPIPETX;
+	public static final DeferredItem<Item> COOLANTPIPETXC;
+	public static final DeferredItem<Item> COOLANTPIPETXCC;
+	public static final DeferredItem<Item> COOLANTPIPEX;
+	public static final DeferredItem<Item> COOLANTPIPEXC;
+	public static final DeferredItem<Item> COOLANTPIPEF;
+	public static final DeferredItem<Item> COOLANTPIPES;
+	public static final DeferredItem<Item> WATERPUMP;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -155,6 +173,24 @@ public class UraniumModItems {
 		ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS = register("enriched_uranium_armor_armor_boots", Enriched_uranium_armorArmorItem.Boots::new);
 		CRYSTALSTAGSPAWNEGG = register("crystalstagspawnegg", CrystalstagspawneggItem::new);
 		WINDTURBINE = block(UraniumModBlocks.WINDTURBINE);
+		COOLANTPIPE = block(UraniumModBlocks.COOLANTPIPE);
+		COOLANTPIPEE = block(UraniumModBlocks.COOLANTPIPEE);
+		COOLANTPIPEI = block(UraniumModBlocks.COOLANTPIPEI);
+		COOLANTPIPEL = block(UraniumModBlocks.COOLANTPIPEL);
+		COOLANTPIPELC = block(UraniumModBlocks.COOLANTPIPELC);
+		COOLANTPIPELCC = block(UraniumModBlocks.COOLANTPIPELCC);
+		COOLANTPIPELT = block(UraniumModBlocks.COOLANTPIPELT);
+		COOLANTPIPELTC = block(UraniumModBlocks.COOLANTPIPELTC);
+		COOLANTPIPET = block(UraniumModBlocks.COOLANTPIPET);
+		COOLANTPIPETC = block(UraniumModBlocks.COOLANTPIPETC);
+		COOLANTPIPETX = block(UraniumModBlocks.COOLANTPIPETX);
+		COOLANTPIPETXC = block(UraniumModBlocks.COOLANTPIPETXC);
+		COOLANTPIPETXCC = block(UraniumModBlocks.COOLANTPIPETXCC);
+		COOLANTPIPEX = block(UraniumModBlocks.COOLANTPIPEX);
+		COOLANTPIPEXC = block(UraniumModBlocks.COOLANTPIPEXC);
+		COOLANTPIPEF = block(UraniumModBlocks.COOLANTPIPEF);
+		COOLANTPIPES = block(UraniumModBlocks.COOLANTPIPES);
+		WATERPUMP = block(UraniumModBlocks.WATERPUMP);
 	}
 
 	// Start of user code block custom items

@@ -16,6 +16,7 @@ import net.mcreator.uranium.init.UraniumModBlocks;
 
 public class CrusherOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		RcthermalcrusherProcedure.execute(world, x, y, z);
 		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModBlocks.RAWURANIUM.get().asItem()
 				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModBlocks.RAWURANIUM_DEEPSLATE.get().asItem()) {
 			CrusherrecipeProcedure.execute(world, x, y, z);

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uranium:block/coolantpipelt"
+    },
+    "facing=east": {
+      "model": "uranium:block/coolantpipelt",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "uranium:block/coolantpipelt",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uranium:block/coolantpipelt",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "uranium:block/coolantpipelt",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "uranium:block/coolantpipelt",
+      "x": 90
+    }
+  }
+}

@@ -373,7 +373,7 @@
           "src/main/java/net/mcreator/uranium/procedures/SolarpanelOnTickUpdateProcedure.java"
         ]
       },
-      "path": "~/panneau solaire"
+      "path": "~/energy/panneau solaire"
     },
     {
       "name": "Solarpanel",
@@ -392,7 +392,7 @@
           "src/main/java/net/mcreator/uranium/block/entity/SolarpanelBlockEntity.java"
         ]
       },
-      "path": "~/panneau solaire"
+      "path": "~/energy/panneau solaire"
     },
     {
       "name": "GrossebatterieOnTickUpdate",
@@ -1455,7 +1455,7 @@
           "src/main/java/net/mcreator/uranium/procedures/SolarpanelBlockAddedProcedure.java"
         ]
       },
-      "path": "~/panneau solaire"
+      "path": "~/energy/panneau solaire"
     },
     {
       "name": "CentrifugeBlockAdded",
@@ -1772,7 +1772,7 @@
           }
         ]
       },
-      "path": "~/Uranium/reactor"
+      "path": "~/energy/reactor"
     },
     {
       "name": "Reactorenergyoutput",
@@ -1803,7 +1803,7 @@
           }
         ]
       },
-      "path": "~/Uranium/reactor"
+      "path": "~/energy/reactor"
     },
     {
       "name": "Reactorprogressbar",
@@ -1835,7 +1835,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Uranium/reactor"
+      "path": "~/energy/reactor"
     },
     {
       "name": "Reactorblockadded",
@@ -1866,7 +1866,7 @@
           }
         ]
       },
-      "path": "~/Uranium/reactor"
+      "path": "~/energy/reactor"
     },
     {
       "name": "Crushergui",
@@ -1894,7 +1894,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/ReactorguiMenu.java"
         ]
       },
-      "path": "~/Uranium/reactor"
+      "path": "~/energy/reactor"
     },
     {
       "name": "Crusher",
@@ -1933,7 +1933,7 @@
           "src/main/resources/assets/uranium/models/item/reactor.json"
         ]
       },
-      "path": "~/Uranium/reactor"
+      "path": "~/energy/reactor"
     },
     {
       "name": "Fuelrodrecipe",
@@ -3060,7 +3060,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/WindturbineQuandLeBlocEstAjouteProcedure.java"
         ]
-      }
+      },
+      "path": "~/energy/wind_turbine"
     },
     {
       "name": "Windpower",
@@ -3090,7 +3091,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/WindpowerProcedure.java"
         ]
-      }
+      },
+      "path": "~/energy/wind_turbine"
     },
     {
       "name": "WindturbineLorsDeLaMiseAJourDuTick",
@@ -3152,7 +3154,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/WindturbineConditionDeLectureMediumProcedure.java"
         ]
-      }
+      },
+      "path": "~/energy/wind_turbine"
     },
     {
       "name": "WindturbineConditionDeLectureSlow",
@@ -3183,7 +3186,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/WindturbineConditionDeLectureSlowProcedure.java"
         ]
-      }
+      },
+      "path": "~/energy/wind_turbine"
     },
     {
       "name": "WindturbineConditionDeLectureFast",
@@ -3214,7 +3218,8 @@
         "files": [
           "src/main/java/net/mcreator/uranium/procedures/WindturbineConditionDeLectureFastProcedure.java"
         ]
-      }
+      },
+      "path": "~/energy/wind_turbine"
     },
     {
       "name": "Windturbine",
@@ -3233,7 +3238,1467 @@
           "src/main/java/net/mcreator/uranium/client/renderer/block/WindturbineRenderer.java",
           "src/main/resources/assets/uranium/models/block/windturbine.json"
         ]
-      }
+      },
+      "path": "~/energy/wind_turbine"
+    },
+    {
+      "name": "Rcgaugesteam",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcgaugesteam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcgaugesteamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcgaugeheat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcgaugeheat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcgaugeheatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcgaugefuel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcgaugefuel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcgaugefuelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcbarfuel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcbarfuel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcbarfuelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcbartank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcbartank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcbartankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcbarheat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcbarheat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcbarheatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcbarwater",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcbarwater",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcbarwaterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcdepthbar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcdepthbar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcdepthbarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcventmark",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcventmark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcventmarkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcstatus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcstatus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcstatusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcsteamd1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcsteamd1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/Rcsteamd1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcsteamd2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcsteamd2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/Rcsteamd2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcheatd1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcheatd1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/Rcheatd1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcheatd2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcheatd2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/Rcheatd2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcfueld1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcfueld1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/Rcfueld1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcfueld2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcfueld2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/Rcfueld2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcfueld3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcfueld3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/Rcfueld3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcscram",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcscram",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcscramProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcventauto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcventauto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcventautoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcventopen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcventopen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcventopenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcventclosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcventclosed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcventclosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcdepthplus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcdepthplus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcdepthplusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcdepthminus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcdepthminus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcdepthminusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcdismantle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcdismantle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcdismantleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcwaterintake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcwaterintake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcwaterintakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcmeltdown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcmeltdown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcmeltdownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcreactorlogic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcreactorlogic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcreactorlogicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Rcpipetick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcpipetick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcpipetickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Rcpumptick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcpumptick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcpumptickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Rcmachinethermal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcmachinethermal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcmachinethermalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Rcthermalcrusher",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcthermalcrusher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcthermalcrusherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Rcthermalcentrifuge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcthermalcentrifuge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcthermalcentrifugeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Rcpipeshape",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcpipeshape",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcpipeshapeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Rcpipeupdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcpipeupdate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcpipeupdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Reactorcontrolgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactorcontrolgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/world/inventory/ReactorcontrolguiMenu.java",
+          "src/main/java/net/mcreator/uranium/network/ReactorcontrolguiButtonMessage.java",
+          "src/main/java/net/mcreator/uranium/client/gui/ReactorcontrolguiScreen.java"
+        ]
+      },
+      "path": "~/energy/reactor"
+    },
+    {
+      "name": "Coolantpipe",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipe.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipe.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipe.json",
+          "src/main/resources/assets/uranium/items/coolantpipe.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeBlock.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipe.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeE",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipee",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/coolantpipee.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipee.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipee.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeEBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeEBlock.java",
+          "src/main/resources/assets/uranium/models/block/coolantpipee.json",
+          "src/main/resources/assets/uranium/items/coolantpipee.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeI",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipei",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeIBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipei.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipei.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeIBlock.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipei.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipei.json",
+          "src/main/resources/assets/uranium/items/coolantpipei.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeL",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/coolantpipel.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/coolantpipel.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipel.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipel.json",
+          "src/main/resources/assets/uranium/items/coolantpipel.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeLC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipelc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLCBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLCBlock.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipelc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelc.json",
+          "src/main/resources/assets/uranium/items/coolantpipelc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipelc.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipelc.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeLCC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipelcc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/coolantpipelcc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLCCBlockEntity.java",
+          "src/main/resources/assets/uranium/items/coolantpipelcc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelcc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLCCBlock.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipelcc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipelcc.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeLT",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipelt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLTBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelt.json",
+          "src/main/resources/assets/uranium/items/coolantpipelt.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipelt.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipelt.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLTBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipelt.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeLTC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipeltc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/coolantpipeltc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipeltc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLTCBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLTCBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipeltc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipeltc.json",
+          "src/main/resources/assets/uranium/items/coolantpipeltc.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeT",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/coolantpipet.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipet.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeTBlock.java",
+          "src/main/resources/assets/uranium/models/block/coolantpipet.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipet.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipet.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeTC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipetc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/coolantpipetc.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipetc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipetc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTCBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipetc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeTCBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetc.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeTX",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipetx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeTXBlock.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipetx.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipetx.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipetx.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetx.json",
+          "src/main/resources/assets/uranium/items/coolantpipetx.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeTXC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipetxc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXCBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeTXCBlock.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipetxc.json",
+          "src/main/resources/assets/uranium/items/coolantpipetxc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetxc.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipetxc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipetxc.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeTXCC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipetxcc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXCCBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipetxcc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetxcc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeTXCCBlock.java",
+          "src/main/resources/assets/uranium/items/coolantpipetxcc.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipetxcc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipetxcc.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeX",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipex",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/coolantpipex.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeXBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/coolantpipex.json",
+          "src/main/resources/assets/uranium/items/coolantpipex.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipex.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeXBlock.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipex.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeXC",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipexc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/coolantpipexc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeXCBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipexc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipexc.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipexc.json",
+          "src/main/resources/assets/uranium/items/coolantpipexc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeXCBlockEntity.java"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeF",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipef",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/block/coolantpipef.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipef.json",
+          "src/main/resources/assets/uranium/items/coolantpipef.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeFBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeFBlock.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipef.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipef.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "CoolantpipeS",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpipes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipes.json",
+          "src/main/resources/assets/uranium/items/coolantpipes.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipes.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipes.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeSBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeSBlock.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipes.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Waterpump",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waterpump",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Coolantpiperecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolantpiperecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/coolantpiperecipe.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "Waterpumprecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waterpumprecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/waterpumprecipe.json"
+        ]
+      },
+      "path": "~/coolant"
+    },
+    {
+      "name": "UraniumTechTree",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "uranium_tech_tree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/UraniumTechTree.java"
+        ]
+      },
+      "path": "~/Procedures_utiles"
     }
   ],
   "variable_elements": [
@@ -3276,6 +4741,23 @@
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~Windturbine@CUSTOM:Windturbine",
+      "~CoolantpipeS@CUSTOM:CoolantpipeS",
+      "~CoolantpipeF@CUSTOM:CoolantpipeF",
+      "~CoolantpipeXC@CUSTOM:CoolantpipeXC",
+      "~CoolantpipeX@CUSTOM:CoolantpipeX",
+      "~CoolantpipeTXCC@CUSTOM:CoolantpipeTXCC",
+      "~CoolantpipeTXC@CUSTOM:CoolantpipeTXC",
+      "~CoolantpipeTX@CUSTOM:CoolantpipeTX",
+      "~CoolantpipeTC@CUSTOM:CoolantpipeTC",
+      "~CoolantpipeT@CUSTOM:CoolantpipeT",
+      "~CoolantpipeLTC@CUSTOM:CoolantpipeLTC",
+      "~CoolantpipeLT@CUSTOM:CoolantpipeLT",
+      "~CoolantpipeLCC@CUSTOM:CoolantpipeLCC",
+      "~CoolantpipeLC@CUSTOM:CoolantpipeLC",
+      "~CoolantpipeL@CUSTOM:CoolantpipeL",
+      "~CoolantpipeI@CUSTOM:CoolantpipeI",
+      "~CoolantpipeE@CUSTOM:CoolantpipeE",
+      "~Coolantpipe@CUSTOM:Coolantpipe",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
@@ -3304,7 +4786,8 @@
       "~Grossebatterie@CUSTOM:Grossebatterie",
       "~Blockdeplomb@CUSTOM:Blockdeplomb",
       "~Rawuranium@CUSTOM:Rawuranium",
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Waterpump@CUSTOM:Waterpump"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~Leadore@CUSTOM:Leadore",
@@ -3458,7 +4941,46 @@
       "item.uranium.enriched_uranium_armor_armor_chestplate": "insulated Uranium Armor Chestplate",
       "item.uranium.enriched_uranium_armor_armor_helmet": "insulated Uranium Armor Helmet",
       "item.uranium.crystalstagspawnegg": "Crystal stag spawn egg",
-      "item.uranium.windturbine": "Wind turbine"
+      "item.uranium.windturbine": "Wind turbine",
+      "item.uranium.coolantpipe": "Coolant pipe",
+      "item.uranium.waterpump": "Water pump",
+      "gui.uranium.reactorcontrolgui.label_reactor_control": "REACTOR CONTROL",
+      "gui.uranium.reactorcontrolgui.label_steam": "Steam",
+      "gui.uranium.reactorcontrolgui.label_heat": "Heat",
+      "gui.uranium.reactorcontrolgui.label_fuel": "Fuel",
+      "gui.uranium.reactorcontrolgui.label_bar_fuel": "Fuel",
+      "gui.uranium.reactorcontrolgui.label_bar_tank": "Tank",
+      "gui.uranium.reactorcontrolgui.label_bar_heat": "Heat",
+      "gui.uranium.reactorcontrolgui.label_bar_water": "H2O",
+      "gui.uranium.reactorcontrolgui.label_fuel_rod": "Fuel rod",
+      "gui.uranium.reactorcontrolgui.label_spent": "Spent",
+      "gui.uranium.reactorcontrolgui.label_water_in": "Water",
+      "gui.uranium.reactorcontrolgui.label_bucket_out": "Bucket",
+      "gui.uranium.reactorcontrolgui.label_vent": "Steam vent",
+      "gui.uranium.reactorcontrolgui.button_vent_auto": "Auto",
+      "gui.uranium.reactorcontrolgui.button_vent_open": "Open",
+      "gui.uranium.reactorcontrolgui.button_vent_closed": "Closed",
+      "gui.uranium.reactorcontrolgui.button_scram": "SCRAM",
+      "gui.uranium.reactorcontrolgui.button_dismantle": "Dismantle",
+      "gui.uranium.reactorcontrolgui.label_depth": "Insertion depth",
+      "gui.uranium.reactorcontrolgui.button_depth_minus": "-",
+      "gui.uranium.reactorcontrolgui.button_depth_plus": "+",
+      "item.uranium.coolantpipee": "Coolant pipe",
+      "item.uranium.coolantpipei": "Coolant pipe",
+      "item.uranium.coolantpipel": "Coolant pipe",
+      "item.uranium.coolantpipelc": "Coolant pipe",
+      "item.uranium.coolantpipelcc": "Coolant pipe",
+      "item.uranium.coolantpipelt": "Coolant pipe",
+      "item.uranium.coolantpipeltc": "Coolant pipe",
+      "item.uranium.coolantpipet": "Coolant pipe",
+      "item.uranium.coolantpipetc": "Coolant pipe",
+      "item.uranium.coolantpipetx": "Coolant pipe",
+      "item.uranium.coolantpipetxc": "Coolant pipe",
+      "item.uranium.coolantpipetxcc": "Coolant pipe",
+      "item.uranium.coolantpipex": "Coolant pipe",
+      "item.uranium.coolantpipexc": "Coolant pipe",
+      "item.uranium.coolantpipef": "Coolant pipe",
+      "item.uranium.coolantpipes": "Coolant pipe"
     }
   },
   "metadata": {
@@ -3524,10 +5046,6 @@
         "children": []
       },
       {
-        "name": "panneau solaire",
-        "children": []
-      },
-      {
         "name": "Uranium",
         "children": [
           {
@@ -3536,10 +5054,6 @@
           },
           {
             "name": "fluorite",
-            "children": []
-          },
-          {
-            "name": "reactor",
             "children": []
           },
           {
@@ -3588,6 +5102,27 @@
       {
         "name": "jei recipe",
         "children": []
+      },
+      {
+        "name": "coolant",
+        "children": []
+      },
+      {
+        "name": "energy",
+        "children": [
+          {
+            "name": "panneau solaire",
+            "children": []
+          },
+          {
+            "name": "reactor",
+            "children": []
+          },
+          {
+            "name": "wind_turbine",
+            "children": []
+          }
+        ]
       }
     ]
   },
