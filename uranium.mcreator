@@ -3265,21 +3265,11 @@
       "CUSTOM:CableF",
       "CUSTOM:CableS"
     ],
-    "ITEMS:uranium:uranium_pickaxe_repair_items": [
-      "~UraniumPickaxe@CUSTOM:UraniumIngot"
-    ],
-    "ITEMS:uranium:uranium_axe_repair_items": [
-      "~UraniumAxe@CUSTOM:UraniumIngot"
-    ],
-    "ITEMS:uranium:uranium_sword_repair_items": [
-      "~UraniumSword@CUSTOM:UraniumIngot"
-    ],
-    "ITEMS:uranium:uranium_shovel_repair_items": [
-      "~UraniumShovel@CUSTOM:UraniumIngot"
-    ],
-    "ITEMS:uranium:uranium_hoe_repair_items": [
-      "~UraniumHoe@CUSTOM:UraniumIngot"
-    ],
+    "ITEMS:uranium:uranium_pickaxe_repair_items": [],
+    "ITEMS:uranium:uranium_axe_repair_items": [],
+    "ITEMS:uranium:uranium_sword_repair_items": [],
+    "ITEMS:uranium:uranium_shovel_repair_items": [],
+    "ITEMS:uranium:uranium_hoe_repair_items": [],
     "ITEMS:uranium:uranium_armor_repair_items": [],
     "ITEMS:uranium:enriched_uranium_armor_armor_repair_items": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enricheduranium"
@@ -3346,21 +3336,6 @@
     "ITEMS:minecraft:enchantable/durability": [
       "~SteelHammer@CUSTOM:SteelHammer"
     ],
-    "ITEMS:minecraft:pickaxes": [
-      "~UraniumPickaxe@CUSTOM:UraniumPickaxe"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~UraniumAxe@CUSTOM:UraniumAxe"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~UraniumSword@CUSTOM:UraniumSword"
-    ],
-    "ITEMS:minecraft:shovels": [
-      "~UraniumShovel@CUSTOM:UraniumShovel"
-    ],
-    "ITEMS:minecraft:hoes": [
-      "~UraniumHoe@CUSTOM:UraniumHoe"
-    ],
     "ITEMS:minecraft:head_armor": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.helmet",
       "~UraniumArmor@CUSTOM:UraniumArmor.helmet"
@@ -3376,6 +3351,21 @@
     "ITEMS:minecraft:foot_armor": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.boots",
       "~UraniumArmor@CUSTOM:UraniumArmor.boots"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~UraniumPickaxe@CUSTOM:UraniumPickaxe"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~UraniumSword@CUSTOM:UraniumSword"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~UraniumAxe@CUSTOM:UraniumAxe"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~UraniumHoe@CUSTOM:UraniumHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~UraniumShovel@CUSTOM:UraniumShovel"
     ]
   },
   "tab_element_order": {},
