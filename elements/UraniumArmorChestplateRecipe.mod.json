@@ -5,22 +5,24 @@
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
-    "unlockingItems": [],
+    "unlockingItems": [
+      "CUSTOM:UraniumIngot"
+    ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:Enricheduranium",
+      "CUSTOM:UraniumIngot",
       "",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium",
-      "CUSTOM:Enricheduranium"
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot"
     ],
     "recipeReturnStack": "CUSTOM:UraniumArmor.body",
     "name": "uranium_armor_chestplate_recipe",
