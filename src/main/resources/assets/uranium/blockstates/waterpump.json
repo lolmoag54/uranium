@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "uranium:block/waterpump"
+    },
+    "facing=east": {
+      "model": "uranium:block/waterpump",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "uranium:block/waterpump",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uranium:block/waterpump",
+      "y": 270
     }
   }
 }

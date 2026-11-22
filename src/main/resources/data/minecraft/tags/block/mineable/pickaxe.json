@@ -27,9 +27,9 @@
     "uranium:coolantpipeltc",
     "uranium:crusher",
     "uranium:coolantpipee",
+    "uranium:centrifuge",
     "uranium:coolantpipef",
     "uranium:coolantpipe",
-    "uranium:centrifuge",
     "uranium:cable_s",
     "uranium:coolantpipetxc",
     "uranium:cable_t",
@@ -45,8 +45,8 @@
     "uranium:cable_txcc",
     "uranium:coolantpipelc",
     "uranium:leadcraftingtable",
-    "uranium:coolantpipetc",
     "uranium:waterpump",
+    "uranium:coolantpipetc",
     "uranium:solarpanel",
     "uranium:rawuranium"
   ]

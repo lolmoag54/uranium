@@ -3,22 +3,22 @@
     "default": {
       "name": "default",
       "map": {
-        "0": "",
-        "1": ""
+        "2": "",
+        "3": ""
       }
     },
     "off": {
       "name": "off",
       "map": {
-        "0": "centrifugeuse_off",
-        "1": ""
+        "2": "centrifugeuse_off",
+        "3": "centrifugeuse_off"
       }
     },
     "on": {
       "name": "on",
       "map": {
-        "0": "centrifugeuse",
-        "1": ""
+        "2": "centrifugeuse",
+        "3": "centrifugeuse"
       }
     }
   }

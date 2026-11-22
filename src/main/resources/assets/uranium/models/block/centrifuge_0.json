@@ -3,7 +3,7 @@
   "textures": {
     "all": "uranium:block/centrifugeuse",
     "particle": "uranium:block/centrifugeuse_off",
-    "0": "uranium:block/centrifugeuse",
-    "1": "uranium:block/"
+    "2": "uranium:block/centrifugeuse",
+    "3": "uranium:block/centrifugeuse"
   }
 }

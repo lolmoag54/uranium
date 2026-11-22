@@ -2,6 +2,9 @@ package net.mcreator.uranium.block;
 
 import net.neoforged.neoforge.common.util.DeferredSoundType;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -57,9 +60,11 @@ public class CentrifugeBlock extends FallingBlock implements EntityBlock {
 	}
 
 	public CentrifugeBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.break")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.step")),
-				() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.place")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.hit")),
-				() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.fall")))).strength(1f, 10f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.IRON_XYLOPHONE));
+		super(properties
+				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.break")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.step")),
+						() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.place")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.hit")),
+						() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.fall"))))
+				.strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(ON, false).setValue(CENTRIFUGATION, 0));
 	}
 
@@ -71,6 +76,11 @@ public class CentrifugeBlock extends FallingBlock implements EntityBlock {
 	@Override
 	public int getLightDampening(BlockState state) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override

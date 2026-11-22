@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "uranium:custom/pompe_a_eau",
   "textures": {
-    "down": "uranium:block/waterpump_side",
-    "up": "uranium:block/waterpump_top",
-    "north": "uranium:block/waterpump_side",
-    "east": "uranium:block/waterpump_side",
-    "south": "uranium:block/waterpump_side",
-    "west": "uranium:block/waterpump_side",
-    "particle": "uranium:block/waterpump_side"
+    "all": "uranium:block/pompe_usee",
+    "particle": "uranium:block/pompe_usee",
+    "0": "uranium:block/pompe_usee"
   }
 }

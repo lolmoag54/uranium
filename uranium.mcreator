@@ -4657,7 +4657,15 @@
       "locked_code": false,
       "registry_name": "waterpump",
       "metadata": {
-        "files": []
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/waterpump.json",
+          "src/main/resources/assets/uranium/models/item/waterpump.json",
+          "src/main/resources/assets/uranium/items/waterpump.json",
+          "src/main/java/net/mcreator/uranium/block/WaterpumpBlock.java",
+          "src/main/resources/assets/uranium/blockstates/waterpump.json",
+          "src/main/resources/assets/uranium/models/block/waterpump.json",
+          "src/main/java/net/mcreator/uranium/block/entity/WaterpumpBlockEntity.java"
+        ]
       },
       "path": "~/coolant"
     },
@@ -4740,6 +4748,8 @@
       "~Enriched_uranium_armorArmor@CUSTOM:Enricheduranium"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Waterpump@CUSTOM:Waterpump",
+      "~Centrifuge@CUSTOM:Centrifuge",
       "~Windturbine@CUSTOM:Windturbine",
       "~CoolantpipeS@CUSTOM:CoolantpipeS",
       "~CoolantpipeF@CUSTOM:CoolantpipeF",
@@ -4785,17 +4795,15 @@
       "~Solarpanel@CUSTOM:Solarpanel",
       "~Grossebatterie@CUSTOM:Grossebatterie",
       "~Blockdeplomb@CUSTOM:Blockdeplomb",
-      "~Rawuranium@CUSTOM:Rawuranium",
-      "~Centrifuge@CUSTOM:Centrifuge",
-      "~Waterpump@CUSTOM:Waterpump"
+      "~Rawuranium@CUSTOM:Rawuranium"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~Centrifuge@CUSTOM:Centrifuge",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~ZicronOre@CUSTOM:ZicronOre",
       "~Reactor@CUSTOM:Reactor",
-      "~Crusher@CUSTOM:Crusher",
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~Crusher@CUSTOM:Crusher"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
