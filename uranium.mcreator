@@ -5488,8 +5488,8 @@
       "registry_name": "rochesteril",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/rochesteril.json",
           "src/main/java/net/mcreator/uranium/item/RochesterilItem.java",
+          "src/main/resources/assets/uranium/models/item/rochesteril.json",
           "src/main/resources/assets/uranium/items/rochesteril.json"
         ]
       },
@@ -6038,26 +6038,26 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/EntityAnimationFactory.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
+      "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBrewingRecipes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModModels.java",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java"
     ]
   },
   "foldersRoot": {

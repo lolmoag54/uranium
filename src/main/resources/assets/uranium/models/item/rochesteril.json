@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "uranium:item/roche_steril"
+    "layer0": "uranium:item/fertilised_rock_powder"
   }
 }
