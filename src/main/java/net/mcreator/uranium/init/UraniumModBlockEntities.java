@@ -61,6 +61,9 @@ public class UraniumModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeFBlockEntity>> COOLANTPIPEF = register("coolantpipef", UraniumModBlocks.COOLANTPIPEF, CoolantpipeFBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolantpipeSBlockEntity>> COOLANTPIPES = register("coolantpipes", UraniumModBlocks.COOLANTPIPES, CoolantpipeSBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WaterpumpBlockEntity>> WATERPUMP = register("waterpump", UraniumModBlocks.WATERPUMP, WaterpumpBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolingpoolBlockEntity>> COOLINGPOOL = register("coolingpool", UraniumModBlocks.COOLINGPOOL, CoolingpoolBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ReprocessingplantBlockEntity>> REPROCESSINGPLANT = register("reprocessingplant", UraniumModBlocks.REPROCESSINGPLANT, ReprocessingplantBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CalcinationfurnaceBlockEntity>> CALCINATIONFURNACE = register("calcinationfurnace", UraniumModBlocks.CALCINATIONFURNACE, CalcinationfurnaceBlockEntity::new);
 
 	private static <T extends BlockEntity> DeferredHolder<BlockEntityType<?>, BlockEntityType<T>> register(String registryname, DeferredHolder<Block, Block> block, BlockEntityType.BlockEntitySupplier<T> supplier) {
 		return REGISTRY.register(registryname, () -> new BlockEntityType(supplier, block.get()));
@@ -133,5 +136,10 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPEF.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPES.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, WATERPUMP.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLINGPOOL.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Item.BLOCK, REPROCESSINGPLANT.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, REPROCESSINGPLANT.get(), (blockEntity, side) -> ((ReprocessingplantBlockEntity) blockEntity).getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, CALCINATIONFURNACE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, CALCINATIONFURNACE.get(), (blockEntity, side) -> ((CalcinationfurnaceBlockEntity) blockEntity).getEnergyStorage());
 	}
 }

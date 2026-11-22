@@ -4707,6 +4707,629 @@
         ]
       },
       "path": "~/Procedures_utiles"
+    },
+    {
+      "name": "Rcpooltick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcpooltick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcpooltickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rcpoolprogress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcpoolprogress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcpoolprogressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rcpoolwater",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcpoolwater",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcpoolwaterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rcreptick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcreptick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcreptickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rcrepprogress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcrepprogress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcrepprogressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rcreppower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcreppower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcreppowerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rccalctick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rccalctick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RccalctickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rccalcprogress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rccalcprogress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RccalcprogressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Rccalcpower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rccalcpower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RccalcpowerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Cooledspentfuelrod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooledspentfuelrod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/cooledspentfuelrod.json",
+          "src/main/java/net/mcreator/uranium/item/CooledspentfuelrodItem.java",
+          "src/main/resources/assets/uranium/items/cooledspentfuelrod.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Nitricacid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nitricacid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/NitricacidItem.java",
+          "src/main/resources/assets/uranium/models/item/nitricacid.json",
+          "src/main/resources/assets/uranium/items/nitricacid.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Tbpsolvent",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tbpsolvent",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/tbpsolvent.json",
+          "src/main/java/net/mcreator/uranium/item/TbpsolventItem.java",
+          "src/main/resources/assets/uranium/items/tbpsolvent.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Oxalicacid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oxalicacid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/oxalicacid.json",
+          "src/main/resources/assets/uranium/models/item/oxalicacid.json",
+          "src/main/java/net/mcreator/uranium/item/OxalicacidItem.java"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Plutoniumnitrate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plutoniumnitrate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/PlutoniumnitrateItem.java",
+          "src/main/resources/assets/uranium/items/plutoniumnitrate.json",
+          "src/main/resources/assets/uranium/models/item/plutoniumnitrate.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Fissionwaste",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fissionwaste",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/FissionwasteItem.java",
+          "src/main/resources/assets/uranium/models/item/fissionwaste.json",
+          "src/main/resources/assets/uranium/items/fissionwaste.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Plutoniumdioxide",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plutoniumdioxide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/PlutoniumdioxideItem.java",
+          "src/main/resources/assets/uranium/items/plutoniumdioxide.json",
+          "src/main/resources/assets/uranium/models/item/plutoniumdioxide.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Moxfuelrod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moxfuelrod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/moxfuelrod.json",
+          "src/main/java/net/mcreator/uranium/item/MoxfuelrodItem.java",
+          "src/main/resources/assets/uranium/models/item/moxfuelrod.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Plutoniumcore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plutoniumcore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/PlutoniumcoreItem.java",
+          "src/main/resources/assets/uranium/models/item/plutoniumcore.json",
+          "src/main/resources/assets/uranium/items/plutoniumcore.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Coolingpool",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolingpool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/block/coolingpool.json",
+          "src/main/java/net/mcreator/uranium/block/CoolingpoolBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolingpoolBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/coolingpool.json",
+          "src/main/resources/assets/uranium/items/coolingpool.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolingpool.json",
+          "src/main/resources/assets/uranium/blockstates/coolingpool.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Reprocessingplant",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reprocessingplant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/blockstates/reprocessingplant.json",
+          "src/main/resources/assets/uranium/models/item/reprocessingplant.json",
+          "src/main/resources/assets/uranium/items/reprocessingplant.json",
+          "src/main/resources/data/uranium/loot_table/blocks/reprocessingplant.json",
+          "src/main/java/net/mcreator/uranium/block/entity/ReprocessingplantBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/reprocessingplant.json",
+          "src/main/java/net/mcreator/uranium/block/ReprocessingplantBlock.java"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Calcinationfurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcinationfurnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/block/calcinationfurnace.json",
+          "src/main/resources/assets/uranium/items/calcinationfurnace.json",
+          "src/main/resources/assets/uranium/models/item/calcinationfurnace.json",
+          "src/main/java/net/mcreator/uranium/block/CalcinationfurnaceBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CalcinationfurnaceBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/calcinationfurnace.json",
+          "src/main/resources/assets/uranium/blockstates/calcinationfurnace.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Coolingpoolgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolingpoolgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/world/inventory/CoolingpoolguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/CoolingpoolguiScreen.java"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Reprocessingplantgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reprocessingplantgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/world/inventory/ReprocessingplantguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/ReprocessingplantguiScreen.java"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Calcinationfurnacegui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcinationfurnacegui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/world/inventory/CalcinationfurnaceguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/CalcinationfurnaceguiScreen.java"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Nitricacidrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nitricacidrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/nitricacidrecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Tbpsolventrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tbpsolventrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/tbpsolventrecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Oxalicacidrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oxalicacidrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/oxalicacidrecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Moxfuelrodrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moxfuelrodrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/moxfuelrodrecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Plutoniumcorerecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plutoniumcorerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/plutoniumcorerecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Coolingpoolrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coolingpoolrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/coolingpoolrecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Reprocessingplantrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reprocessingplantrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/reprocessingplantrecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
+    },
+    {
+      "name": "Calcinationfurnacerecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calcinationfurnacerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/recipe/calcinationfurnacerecipe.json"
+        ]
+      },
+      "path": "~/plutonium"
     }
   ],
   "variable_elements": [
@@ -4748,9 +5371,10 @@
       "~Enriched_uranium_armorArmor@CUSTOM:Enricheduranium"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Calcinationfurnace@CUSTOM:Calcinationfurnace",
+      "~Reprocessingplant@CUSTOM:Reprocessingplant",
+      "~Coolingpool@CUSTOM:Coolingpool",
       "~Waterpump@CUSTOM:Waterpump",
-      "~Centrifuge@CUSTOM:Centrifuge",
-      "~Windturbine@CUSTOM:Windturbine",
       "~CoolantpipeS@CUSTOM:CoolantpipeS",
       "~CoolantpipeF@CUSTOM:CoolantpipeF",
       "~CoolantpipeXC@CUSTOM:CoolantpipeXC",
@@ -4768,6 +5392,7 @@
       "~CoolantpipeI@CUSTOM:CoolantpipeI",
       "~CoolantpipeE@CUSTOM:CoolantpipeE",
       "~Coolantpipe@CUSTOM:Coolantpipe",
+      "~Windturbine@CUSTOM:Windturbine",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
@@ -4795,15 +5420,19 @@
       "~Solarpanel@CUSTOM:Solarpanel",
       "~Grossebatterie@CUSTOM:Grossebatterie",
       "~Blockdeplomb@CUSTOM:Blockdeplomb",
-      "~Rawuranium@CUSTOM:Rawuranium"
+      "~Rawuranium@CUSTOM:Rawuranium",
+      "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Calcinationfurnace@CUSTOM:Calcinationfurnace",
+      "~Reprocessingplant@CUSTOM:Reprocessingplant",
+      "~Coolingpool@CUSTOM:Coolingpool",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~ZicronOre@CUSTOM:ZicronOre",
       "~Reactor@CUSTOM:Reactor",
-      "~Crusher@CUSTOM:Crusher"
+      "~Crusher@CUSTOM:Crusher",
+      "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
@@ -4827,6 +5456,21 @@
     "ITEMS:minecraft:enchantable/durability": [
       "~SteelHammer@CUSTOM:SteelHammer"
     ],
+    "ITEMS:minecraft:pickaxes": [
+      "~UraniumPickaxe@CUSTOM:UraniumPickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~UraniumAxe@CUSTOM:UraniumAxe"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~UraniumSword@CUSTOM:UraniumSword"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~UraniumShovel@CUSTOM:UraniumShovel"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~UraniumHoe@CUSTOM:UraniumHoe"
+    ],
     "ITEMS:minecraft:head_armor": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.helmet",
       "~UraniumArmor@CUSTOM:UraniumArmor.helmet"
@@ -4842,21 +5486,6 @@
     "ITEMS:minecraft:foot_armor": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.boots",
       "~UraniumArmor@CUSTOM:UraniumArmor.boots"
-    ],
-    "ITEMS:minecraft:pickaxes": [
-      "~UraniumPickaxe@CUSTOM:UraniumPickaxe"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~UraniumSword@CUSTOM:UraniumSword"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~UraniumAxe@CUSTOM:UraniumAxe"
-    ],
-    "ITEMS:minecraft:hoes": [
-      "~UraniumHoe@CUSTOM:UraniumHoe"
-    ],
-    "ITEMS:minecraft:shovels": [
-      "~UraniumShovel@CUSTOM:UraniumShovel"
     ]
   },
   "tab_element_order": {},
@@ -4988,7 +5617,48 @@
       "item.uranium.coolantpipex": "Coolant pipe",
       "item.uranium.coolantpipexc": "Coolant pipe",
       "item.uranium.coolantpipef": "Coolant pipe",
-      "item.uranium.coolantpipes": "Coolant pipe"
+      "item.uranium.coolantpipes": "Coolant pipe",
+      "item.uranium.cooledspentfuelrod": "Cooled spent fuel rod",
+      "item.uranium.nitricacid": "Nitric acid",
+      "item.uranium.tbpsolvent": "TBP solvent",
+      "item.uranium.oxalicacid": "Oxalic acid",
+      "item.uranium.plutoniumnitrate": "Plutonium nitrate",
+      "item.uranium.fissionwaste": "Fission waste",
+      "item.uranium.plutoniumdioxide": "Plutonium dioxide",
+      "item.uranium.moxfuelrod": "MOX fuel rod",
+      "item.uranium.plutoniumcore": "Plutonium core",
+      "item.uranium.coolingpool": "Cooling pool",
+      "item.uranium.reprocessingplant": "Reprocessing plant",
+      "item.uranium.calcinationfurnace": "Calcination furnace",
+      "gui.uranium.coolingpoolgui.label_title": "COOLING POOL",
+      "gui.uranium.coolingpoolgui.label_h2o": "H2O",
+      "gui.uranium.coolingpoolgui.label_in": "Spent",
+      "gui.uranium.coolingpoolgui.label_out": "Cooled",
+      "gui.uranium.reprocessingplantgui.label_title": "REPROCESSING PLANT",
+      "gui.uranium.reprocessingplantgui.label_fe": "FE",
+      "gui.uranium.reprocessingplantgui.label_in0": "Rod",
+      "gui.uranium.reprocessingplantgui.label_in1": "HNO3",
+      "gui.uranium.reprocessingplantgui.label_in2": "TBP",
+      "gui.uranium.reprocessingplantgui.label_out0": "Pu",
+      "gui.uranium.reprocessingplantgui.label_out1": "U",
+      "gui.uranium.reprocessingplantgui.label_out2": "Waste",
+      "gui.uranium.calcinationfurnacegui.label_title": "CALCINATION FURNACE",
+      "gui.uranium.calcinationfurnacegui.label_fe": "FE",
+      "gui.uranium.calcinationfurnacegui.label_in0": "Nitrate",
+      "gui.uranium.calcinationfurnacegui.label_in1": "Oxalic",
+      "gui.uranium.calcinationfurnacegui.label_out0": "PuO2",
+      "item.uranium.cooledspentfuelrod.description_0": "Left to decay in a cooling pool.",
+      "item.uranium.nitricacid.description_0": "Dissolves spent fuel (PUREX process).",
+      "item.uranium.tbpsolvent.description_1": "Separates uranium, plutonium and waste.",
+      "item.uranium.tbpsolvent.description_0": "Tributyl phosphate in kerosene.",
+      "item.uranium.oxalicacid.description_0": "Precipitates plutonium as oxalate.",
+      "item.uranium.plutoniumnitrate.description_1": "Precipitate and calcine it.",
+      "item.uranium.plutoniumnitrate.description_0": "Plutonium nitrate solution.",
+      "item.uranium.fissionwaste.description_0": "Highly radioactive.",
+      "item.uranium.plutoniumdioxide.description_1": "For MOX fuel or cores.",
+      "item.uranium.plutoniumdioxide.description_0": "PuO2 powder.",
+      "item.uranium.moxfuelrod.description_0": "Reactor fuel: +50% power, runs hotter.",
+      "item.uranium.plutoniumcore.description_0": "Fissile core."
     }
   },
   "metadata": {
@@ -5131,6 +5801,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "plutonium",
+        "children": []
       }
     ]
   },

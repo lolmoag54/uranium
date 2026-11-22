@@ -26,7 +26,8 @@ public class ReactorenergyoutputProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			send = receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z), (int) ((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15), Direction.UP);
+			send = receiveEnergySimulate(world, BlockPos.containing(x, y - 1, z),
+					(int) (((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15) * (1 + 0.5 * getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcMox"))), Direction.UP);
 			if (world instanceof ILevelExtension _ext) {
 				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y - 1, z), Direction.UP) instanceof EnergyHandler _energyHandler) {
 					try (var _tx = Transaction.openRoot()) {
@@ -47,7 +48,8 @@ public class ReactorenergyoutputProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			send = receiveEnergySimulate(world, BlockPos.containing(x, y + 1, z), (int) ((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15), Direction.DOWN);
+			send = receiveEnergySimulate(world, BlockPos.containing(x, y + 1, z),
+					(int) (((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15) * (1 + 0.5 * getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcMox"))), Direction.DOWN);
 			if (world instanceof ILevelExtension _ext) {
 				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y + 1, z), Direction.DOWN) instanceof EnergyHandler _energyHandler) {
 					try (var _tx = Transaction.openRoot()) {
@@ -68,7 +70,8 @@ public class ReactorenergyoutputProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			send = receiveEnergySimulate(world, BlockPos.containing(x, y, z - 1), (int) ((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15), Direction.SOUTH);
+			send = receiveEnergySimulate(world, BlockPos.containing(x, y, z - 1),
+					(int) (((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15) * (1 + 0.5 * getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcMox"))), Direction.SOUTH);
 			if (world instanceof ILevelExtension _ext) {
 				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z - 1), Direction.SOUTH) instanceof EnergyHandler _energyHandler) {
 					try (var _tx = Transaction.openRoot()) {
@@ -89,7 +92,8 @@ public class ReactorenergyoutputProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			send = receiveEnergySimulate(world, BlockPos.containing(x, y, z + 1), (int) ((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15), Direction.NORTH);
+			send = receiveEnergySimulate(world, BlockPos.containing(x, y, z + 1),
+					(int) (((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15) * (1 + 0.5 * getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcMox"))), Direction.NORTH);
 			if (world instanceof ILevelExtension _ext) {
 				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z + 1), Direction.NORTH) instanceof EnergyHandler _energyHandler) {
 					try (var _tx = Transaction.openRoot()) {
@@ -110,7 +114,8 @@ public class ReactorenergyoutputProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			send = receiveEnergySimulate(world, BlockPos.containing(x + 1, y, z), (int) ((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15), Direction.WEST);
+			send = receiveEnergySimulate(world, BlockPos.containing(x + 1, y, z),
+					(int) (((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15) * (1 + 0.5 * getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcMox"))), Direction.WEST);
 			if (world instanceof ILevelExtension _ext) {
 				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x + 1, y, z), Direction.WEST) instanceof EnergyHandler _energyHandler) {
 					try (var _tx = Transaction.openRoot()) {
@@ -131,7 +136,8 @@ public class ReactorenergyoutputProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			send = receiveEnergySimulate(world, BlockPos.containing(x - 1, y, z), (int) ((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15), Direction.EAST);
+			send = receiveEnergySimulate(world, BlockPos.containing(x - 1, y, z),
+					(int) (((64 * (15 - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcDepth"))) / 15) * (1 + 0.5 * getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcMox"))), Direction.EAST);
 			if (world instanceof ILevelExtension _ext) {
 				if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x - 1, y, z), Direction.EAST) instanceof EnergyHandler _energyHandler) {
 					try (var _tx = Transaction.openRoot()) {

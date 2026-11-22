@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": "uranium:reinforcedconcrete",
+    "b": "uranium:steel",
+    "c": "minecraft:water_bucket"
+  },
+  "result": {
+    "id": "uranium:coolingpool",
+    "count": 1
+  }
+}

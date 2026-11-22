@@ -1,11 +1,14 @@
 {
   "replace": false,
   "values": [
+    "uranium:calcinationfurnace",
     "uranium:leadore",
     "uranium:zicron_ore",
+    "uranium:coolingpool",
     "uranium:reactor",
     "uranium:crusher",
     "uranium:leadcraftingtable",
-    "uranium:centrifuge"
+    "uranium:centrifuge",
+    "uranium:reprocessingplant"
   ]
 }

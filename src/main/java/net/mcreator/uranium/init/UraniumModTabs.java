@@ -64,6 +64,18 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModBlocks.WINDTURBINE.get().asItem());
 				tabData.accept(UraniumModBlocks.COOLANTPIPE.get().asItem());
 				tabData.accept(UraniumModBlocks.WATERPUMP.get().asItem());
+				tabData.accept(UraniumModItems.COOLEDSPENTFUELROD.get());
+				tabData.accept(UraniumModItems.NITRICACID.get());
+				tabData.accept(UraniumModItems.TBPSOLVENT.get());
+				tabData.accept(UraniumModItems.OXALICACID.get());
+				tabData.accept(UraniumModItems.PLUTONIUMNITRATE.get());
+				tabData.accept(UraniumModItems.FISSIONWASTE.get());
+				tabData.accept(UraniumModItems.PLUTONIUMDIOXIDE.get());
+				tabData.accept(UraniumModItems.MOXFUELROD.get());
+				tabData.accept(UraniumModItems.PLUTONIUMCORE.get());
+				tabData.accept(UraniumModBlocks.COOLINGPOOL.get().asItem());
+				tabData.accept(UraniumModBlocks.REPROCESSINGPLANT.get().asItem());
+				tabData.accept(UraniumModBlocks.CALCINATIONFURNACE.get().asItem());
 			}).build());
 
 	@SubscribeEvent

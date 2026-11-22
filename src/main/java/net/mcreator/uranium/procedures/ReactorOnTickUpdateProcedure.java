@@ -23,9 +23,35 @@ import net.mcreator.uranium.init.UraniumModItems;
 public class ReactorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		RcreactorlogicProcedure.execute(world, x, y, z);
+		if (!world.isClientSide() && getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") <= 0) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.MOXFUELROD.get()) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null) {
+						_blockEntity.getPersistentData().putDouble("rcMox", 1);
+					}
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.FUELROD.get()) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null) {
+						_blockEntity.getPersistentData().putDouble("rcMox", 0);
+					}
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
+		}
 		if (!world.isClientSide() && !getBlockNBTLogic(world, BlockPos.containing(x, y, z), "rcScram")) {
 			if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "burnTime") <= 0) {
-				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.FUELROD.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 62
+				if (((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.FUELROD.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.MOXFUELROD.get()) && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 62
 						&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.AIR.asItem()
 								|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == UraniumModItems.SPENTFUELROD.get())) {
 					if (world instanceof ServerLevel _serverLevel) {
@@ -112,13 +138,6 @@ public class ReactorOnTickUpdateProcedure {
 		}
 	}
 
-	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
-		BlockEntity blockEntity = world.getBlockEntity(pos);
-		if (blockEntity != null)
-			return blockEntity.getPersistentData().getBooleanOr(tag, false);
-		return false;
-	}
-
 	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity != null)
@@ -133,5 +152,12 @@ public class ReactorOnTickUpdateProcedure {
 				return ItemUtil.getStack(itemHandler, slot);
 		}
 		return ItemStack.EMPTY;
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBooleanOr(tag, false);
+		return false;
 	}
 }

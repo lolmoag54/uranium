@@ -106,6 +106,18 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> COOLANTPIPEF;
 	public static final DeferredItem<Item> COOLANTPIPES;
 	public static final DeferredItem<Item> WATERPUMP;
+	public static final DeferredItem<Item> COOLEDSPENTFUELROD;
+	public static final DeferredItem<Item> NITRICACID;
+	public static final DeferredItem<Item> TBPSOLVENT;
+	public static final DeferredItem<Item> OXALICACID;
+	public static final DeferredItem<Item> PLUTONIUMNITRATE;
+	public static final DeferredItem<Item> FISSIONWASTE;
+	public static final DeferredItem<Item> PLUTONIUMDIOXIDE;
+	public static final DeferredItem<Item> MOXFUELROD;
+	public static final DeferredItem<Item> PLUTONIUMCORE;
+	public static final DeferredItem<Item> COOLINGPOOL;
+	public static final DeferredItem<Item> REPROCESSINGPLANT;
+	public static final DeferredItem<Item> CALCINATIONFURNACE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -191,6 +203,18 @@ public class UraniumModItems {
 		COOLANTPIPEF = block(UraniumModBlocks.COOLANTPIPEF);
 		COOLANTPIPES = block(UraniumModBlocks.COOLANTPIPES);
 		WATERPUMP = block(UraniumModBlocks.WATERPUMP);
+		COOLEDSPENTFUELROD = register("cooledspentfuelrod", CooledspentfuelrodItem::new);
+		NITRICACID = register("nitricacid", NitricacidItem::new);
+		TBPSOLVENT = register("tbpsolvent", TbpsolventItem::new);
+		OXALICACID = register("oxalicacid", OxalicacidItem::new);
+		PLUTONIUMNITRATE = register("plutoniumnitrate", PlutoniumnitrateItem::new);
+		FISSIONWASTE = register("fissionwaste", FissionwasteItem::new);
+		PLUTONIUMDIOXIDE = register("plutoniumdioxide", PlutoniumdioxideItem::new);
+		MOXFUELROD = register("moxfuelrod", MoxfuelrodItem::new);
+		PLUTONIUMCORE = register("plutoniumcore", PlutoniumcoreItem::new);
+		COOLINGPOOL = block(UraniumModBlocks.COOLINGPOOL, new Item.Properties().stacksTo(16));
+		REPROCESSINGPLANT = block(UraniumModBlocks.REPROCESSINGPLANT, new Item.Properties().stacksTo(16));
+		CALCINATIONFURNACE = block(UraniumModBlocks.CALCINATIONFURNACE, new Item.Properties().stacksTo(16));
 	}
 
 	// Start of user code block custom items

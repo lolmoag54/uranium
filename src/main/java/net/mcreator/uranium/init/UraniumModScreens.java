@@ -8,11 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.uranium.client.gui.ReactorguiScreen;
-import net.mcreator.uranium.client.gui.ReactorcontrolguiScreen;
-import net.mcreator.uranium.client.gui.LeadcraftingtableGuiScreen;
-import net.mcreator.uranium.client.gui.CrusherguiScreen;
-import net.mcreator.uranium.client.gui.CentrifugeguiScreen;
+import net.mcreator.uranium.client.gui.*;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class UraniumModScreens {
@@ -23,6 +19,9 @@ public class UraniumModScreens {
 		event.register(UraniumModMenus.REACTORGUI.get(), ReactorguiScreen::new);
 		event.register(UraniumModMenus.LEADCRAFTINGTABLE_GUI.get(), LeadcraftingtableGuiScreen::new);
 		event.register(UraniumModMenus.REACTORCONTROLGUI.get(), ReactorcontrolguiScreen::new);
+		event.register(UraniumModMenus.COOLINGPOOLGUI.get(), CoolingpoolguiScreen::new);
+		event.register(UraniumModMenus.REPROCESSINGPLANTGUI.get(), ReprocessingplantguiScreen::new);
+		event.register(UraniumModMenus.CALCINATIONFURNACEGUI.get(), CalcinationfurnaceguiScreen::new);
 	}
 
 	public interface ScreenAccessor {

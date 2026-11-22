@@ -16,11 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.uranium.world.inventory.ReactorguiMenu;
-import net.mcreator.uranium.world.inventory.ReactorcontrolguiMenu;
-import net.mcreator.uranium.world.inventory.LeadcraftingtableGuiMenu;
-import net.mcreator.uranium.world.inventory.CrusherguiMenu;
-import net.mcreator.uranium.world.inventory.CentrifugeguiMenu;
+import net.mcreator.uranium.world.inventory.*;
 import net.mcreator.uranium.network.MenuStateUpdateMessage;
 import net.mcreator.uranium.UraniumMod;
 
@@ -33,6 +29,9 @@ public class UraniumModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<ReactorguiMenu>> REACTORGUI = REGISTRY.register("reactorgui", () -> IMenuTypeExtension.create(ReactorguiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<LeadcraftingtableGuiMenu>> LEADCRAFTINGTABLE_GUI = REGISTRY.register("leadcraftingtable_gui", () -> IMenuTypeExtension.create(LeadcraftingtableGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ReactorcontrolguiMenu>> REACTORCONTROLGUI = REGISTRY.register("reactorcontrolgui", () -> IMenuTypeExtension.create(ReactorcontrolguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CoolingpoolguiMenu>> COOLINGPOOLGUI = REGISTRY.register("coolingpoolgui", () -> IMenuTypeExtension.create(CoolingpoolguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ReprocessingplantguiMenu>> REPROCESSINGPLANTGUI = REGISTRY.register("reprocessingplantgui", () -> IMenuTypeExtension.create(ReprocessingplantguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CalcinationfurnaceguiMenu>> CALCINATIONFURNACEGUI = REGISTRY.register("calcinationfurnacegui", () -> IMenuTypeExtension.create(CalcinationfurnaceguiMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ab",
+    " c"
+  ],
+  "key": {
+    "a": "minecraft:air",
+    "b": "minecraft:air",
+    "c": "minecraft:glass_bottle"
+  },
+  "result": {
+    "id": "uranium:tbpsolvent",
+    "count": 2
+  }
+}

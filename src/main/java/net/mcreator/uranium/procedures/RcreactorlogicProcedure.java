@@ -91,7 +91,7 @@ public class RcreactorlogicProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
-			h = (h + p * 0.3) - c;
+			h = (h + p * (0.3 + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcMox") * 0.1)) - c;
 			if (h < 0) {
 				h = 0;
 			}

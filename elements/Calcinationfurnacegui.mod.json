@@ -1,0 +1,199 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "rc_m_calc.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 125,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_title",
+          "text": {
+            "fixedValue": "CALCINATION FURNACE"
+          },
+          "color": {
+            "value": -3550246,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 133,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "rc_bar_energy.png",
+          "spritesCount": 21,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "Rccalcpower"
+          },
+          "x": 135,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fe",
+          "text": {
+            "fixedValue": "FE"
+          },
+          "color": {
+            "value": -3550246,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 137,
+          "y": 108,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Plutoniumnitrate"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_in0",
+          "text": {
+            "fixedValue": "Nitrate"
+          },
+          "color": {
+            "value": -3550246,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 179,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Oxalicacid"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_in1",
+          "text": {
+            "fixedValue": "Oxalic"
+          },
+          "color": {
+            "value": -3550246,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 179,
+          "y": 93,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "rc_arrow.png",
+          "spritesCount": 9,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "Rccalcprogress"
+          },
+          "x": 217,
+          "y": 76,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 269,
+          "y": 75,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_out0",
+          "text": {
+            "fixedValue": "PuO2"
+          },
+          "color": {
+            "value": -3550246,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 267,
+          "y": 95,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 6,
+      "oy": 52,
+      "snapOnGrid": false
+    }
+  }
+}

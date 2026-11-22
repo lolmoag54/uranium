@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:Reinforcedconcrete",
+      "CUSTOM:Steel",
+      "CUSTOM:Reinforcedconcrete",
+      "CUSTOM:Reinforcedconcrete",
+      "Items.WATER_BUCKET",
+      "CUSTOM:Reinforcedconcrete",
+      "CUSTOM:Reinforcedconcrete",
+      "CUSTOM:Reinforcedconcrete",
+      "CUSTOM:Reinforcedconcrete"
+    ],
+    "recipeReturnStack": "CUSTOM:Coolingpool",
+    "name": "coolingpoolrecipe",
+    "namespace": "mod"
+  }
+}
