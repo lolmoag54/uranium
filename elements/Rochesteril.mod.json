@@ -12,7 +12,7 @@
     "name": "Rocky residue",
     "rarity": "COMMON",
     "creativeTabs": [
-      "CUSTOM:Uraniumcreativetab"
+      "CUSTOM:Radiumcreativetab"
     ],
     "stackSize": 64,
     "enchantability": 0,
