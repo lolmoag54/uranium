@@ -50,6 +50,8 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> LEADCRAFTINGTABLE;
 	public static final DeferredBlock<Block> LEADORE;
 	public static final DeferredBlock<Block> WINDTURBINE;
+	public static final DeferredBlock<Block> PECHBLENDEMINERAI;
+	public static final DeferredBlock<Block> SEPARATEUR;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -85,6 +87,8 @@ public class UraniumModBlocks {
 		LEADCRAFTINGTABLE = register("leadcraftingtable", LeadcraftingtableBlock::new);
 		LEADORE = register("leadore", LeadoreBlock::new);
 		WINDTURBINE = register("windturbine", WindturbineBlock::new);
+		PECHBLENDEMINERAI = register("pechblendeminerai", PechblendemineraiBlock::new);
+		SEPARATEUR = register("separateur", SeparateurBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -63,6 +63,15 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS.get());
 				tabData.accept(UraniumModBlocks.WINDTURBINE.get().asItem());
 			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RADIUM = REGISTRY.register("radium",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.uranium.radium")).icon(() -> new ItemStack(UraniumModItems.PECHBLENDE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(UraniumModItems.PECHBLENDE.get());
+				tabData.accept(UraniumModBlocks.PECHBLENDEMINERAI.get().asItem());
+				tabData.accept(UraniumModItems.PECHBLENDEBROYER.get());
+				tabData.accept(UraniumModItems.CONCENTRERDEPENCHBLENDE.get());
+				tabData.accept(UraniumModBlocks.SEPARATEUR.get().asItem());
+				tabData.accept(UraniumModItems.ROCHESTERIL.get());
+			}).withSearchBar().withTabsBefore(URANIUMCREATIVETAB.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

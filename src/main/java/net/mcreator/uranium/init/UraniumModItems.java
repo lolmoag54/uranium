@@ -89,6 +89,12 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS;
 	public static final DeferredItem<Item> CRYSTALSTAGSPAWNEGG;
 	public static final DeferredItem<Item> WINDTURBINE;
+	public static final DeferredItem<Item> PECHBLENDE;
+	public static final DeferredItem<Item> PECHBLENDEMINERAI;
+	public static final DeferredItem<Item> PECHBLENDEBROYER;
+	public static final DeferredItem<Item> CONCENTRERDEPENCHBLENDE;
+	public static final DeferredItem<Item> SEPARATEUR;
+	public static final DeferredItem<Item> ROCHESTERIL;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -156,6 +162,12 @@ public class UraniumModItems {
 		ENRICHED_URANIUM_ARMOR_ARMOR_BOOTS = register("enriched_uranium_armor_armor_boots", Enriched_uranium_armorArmorItem.Boots::new);
 		CRYSTALSTAGSPAWNEGG = register("crystalstagspawnegg", CrystalstagspawneggItem::new);
 		WINDTURBINE = register("windturbine", properties -> new WindturbineDisplayItem(UraniumModBlocks.WINDTURBINE.get(), properties));
+		PECHBLENDE = register("pechblende", PechblendeItem::new);
+		PECHBLENDEMINERAI = block(UraniumModBlocks.PECHBLENDEMINERAI);
+		PECHBLENDEBROYER = register("pechblendebroyer", PechblendebroyerItem::new);
+		CONCENTRERDEPENCHBLENDE = register("concentrerdepenchblende", ConcentrerdepenchblendeItem::new);
+		SEPARATEUR = block(UraniumModBlocks.SEPARATEUR);
+		ROCHESTERIL = register("rochesteril", RochesterilItem::new);
 	}
 
 	// Start of user code block custom items
