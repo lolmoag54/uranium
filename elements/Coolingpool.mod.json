@@ -59,7 +59,7 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "CUSTOM:Uraniumcreativetab"
+      "CUSTOM:Polonium"
     ],
     "destroyTool": "pickaxe",
     "customDrop": "",

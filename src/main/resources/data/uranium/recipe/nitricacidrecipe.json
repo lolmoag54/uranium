@@ -1,16 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "aa",
-    " b",
-    " c"
+  "ingredients": [
+    "minecraft:gunpowder",
+    "minecraft:gunpowder",
+    "uranium:sulfuricacid_bucket",
+    "minecraft:glass_bottle"
   ],
-  "key": {
-    "a": "minecraft:gunpowder",
-    "b": "uranium:sulfuricacid_bucket",
-    "c": "minecraft:glass_bottle"
-  },
   "result": {
     "id": "uranium:nitricacid",
     "count": 2

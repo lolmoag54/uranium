@@ -1,16 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "aa",
-    " b",
-    " c"
+  "ingredients": [
+    "minecraft:sugar",
+    "minecraft:sugar",
+    "uranium:nitricacid",
+    "minecraft:glass_bottle"
   ],
-  "key": {
-    "a": "minecraft:sugar",
-    "b": "uranium:nitricacid",
-    "c": "minecraft:glass_bottle"
-  },
   "result": {
     "id": "uranium:oxalicacid",
     "count": 2

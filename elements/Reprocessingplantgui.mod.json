@@ -6,7 +6,7 @@
     "width": 176,
     "height": 166,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
+    "inventoryOffsetY": 2,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [

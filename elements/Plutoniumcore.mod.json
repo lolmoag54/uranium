@@ -12,7 +12,7 @@
     "name": "Plutonium core",
     "rarity": "COMMON",
     "creativeTabs": [
-      "CUSTOM:Uraniumcreativetab"
+      "CUSTOM:Polonium"
     ],
     "stackSize": 16,
     "enchantability": 0,

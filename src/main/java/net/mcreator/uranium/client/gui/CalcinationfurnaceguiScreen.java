@@ -52,9 +52,9 @@ public class CalcinationfurnaceguiScreen extends AbstractContainerScreen<Calcina
 	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + -1, this.topPos + 0, 0, 0, 1, 1, -1, -1);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 9, this.topPos + 20, 0, Mth.clamp((int) RccalcpowerProcedure.execute(world, x, y, z) * 1, 0, -2), 1, 1, -1, -1);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_2, this.leftPos + 91, this.topPos + 39, 0, Mth.clamp((int) RccalcprogressProcedure.execute(world, x, y, z) * 1, 0, -2), 1, 1, -1, -1);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + -1, this.topPos + 0, 0, 0, 176, 176, 176, 176);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 9, this.topPos + 20, 0, Mth.clamp((int) RccalcpowerProcedure.execute(world, x, y, z) * 50, 0, 1000), 50, 50, 50, 1050);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_2, this.leftPos + 91, this.topPos + 39, 0, Mth.clamp((int) RccalcprogressProcedure.execute(world, x, y, z) * 38, 0, 304), 38, 38, 38, 342);
 	}
 
 	@Override

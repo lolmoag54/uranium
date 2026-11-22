@@ -64,6 +64,9 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModBlocks.WINDTURBINE.get().asItem());
 				tabData.accept(UraniumModBlocks.COOLANTPIPE.get().asItem());
 				tabData.accept(UraniumModBlocks.WATERPUMP.get().asItem());
+			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> POLONIUM = REGISTRY.register("polonium",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.uranium.polonium")).icon(() -> new ItemStack(UraniumModItems.PLUTONIUMCORE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(UraniumModItems.COOLEDSPENTFUELROD.get());
 				tabData.accept(UraniumModItems.NITRICACID.get());
 				tabData.accept(UraniumModItems.TBPSOLVENT.get());
@@ -76,7 +79,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModBlocks.COOLINGPOOL.get().asItem());
 				tabData.accept(UraniumModBlocks.REPROCESSINGPLANT.get().asItem());
 				tabData.accept(UraniumModBlocks.CALCINATIONFURNACE.get().asItem());
-			}).build());
+			}).withTabsBefore(URANIUMCREATIVETAB.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

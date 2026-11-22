@@ -5330,6 +5330,17 @@
         ]
       },
       "path": "~/plutonium"
+    },
+    {
+      "name": "Polonium",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polonium",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/plutonium"
     }
   ],
   "variable_elements": [
@@ -5374,6 +5385,11 @@
       "~Calcinationfurnace@CUSTOM:Calcinationfurnace",
       "~Reprocessingplant@CUSTOM:Reprocessingplant",
       "~Coolingpool@CUSTOM:Coolingpool",
+      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Crusher@CUSTOM:Crusher",
+      "~Reactor@CUSTOM:Reactor",
+      "~Solarpanel@CUSTOM:Solarpanel",
+      "~Windturbine@CUSTOM:Windturbine",
       "~Waterpump@CUSTOM:Waterpump",
       "~CoolantpipeS@CUSTOM:CoolantpipeS",
       "~CoolantpipeF@CUSTOM:CoolantpipeF",
@@ -5392,13 +5408,10 @@
       "~CoolantpipeI@CUSTOM:CoolantpipeI",
       "~CoolantpipeE@CUSTOM:CoolantpipeE",
       "~Coolantpipe@CUSTOM:Coolantpipe",
-      "~Windturbine@CUSTOM:Windturbine",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
       "~ZicronOre@CUSTOM:ZicronOre",
-      "~Reactor@CUSTOM:Reactor",
-      "~Crusher@CUSTOM:Crusher",
       "~RawuraniumDeepslate@CUSTOM:RawuraniumDeepslate",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
@@ -5417,22 +5430,20 @@
       "~CableI@CUSTOM:CableI",
       "~CableE@CUSTOM:CableE",
       "~Cable@CUSTOM:Cable",
-      "~Solarpanel@CUSTOM:Solarpanel",
       "~Grossebatterie@CUSTOM:Grossebatterie",
       "~Blockdeplomb@CUSTOM:Blockdeplomb",
-      "~Rawuranium@CUSTOM:Rawuranium",
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~Rawuranium@CUSTOM:Rawuranium"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~Calcinationfurnace@CUSTOM:Calcinationfurnace",
       "~Reprocessingplant@CUSTOM:Reprocessingplant",
       "~Coolingpool@CUSTOM:Coolingpool",
+      "~Centrifuge@CUSTOM:Centrifuge",
+      "~Crusher@CUSTOM:Crusher",
+      "~Reactor@CUSTOM:Reactor",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
-      "~ZicronOre@CUSTOM:ZicronOre",
-      "~Reactor@CUSTOM:Reactor",
-      "~Crusher@CUSTOM:Crusher",
-      "~Centrifuge@CUSTOM:Centrifuge"
+      "~ZicronOre@CUSTOM:ZicronOre"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
@@ -5658,7 +5669,8 @@
       "item.uranium.plutoniumdioxide.description_1": "For MOX fuel or cores.",
       "item.uranium.plutoniumdioxide.description_0": "PuO2 powder.",
       "item.uranium.moxfuelrod.description_0": "Reactor fuel: +50% power, runs hotter.",
-      "item.uranium.plutoniumcore.description_0": "Fissile core."
+      "item.uranium.plutoniumcore.description_0": "Fissile core.",
+      "item_group.uranium.polonium": "Polonium"
     }
   },
   "metadata": {

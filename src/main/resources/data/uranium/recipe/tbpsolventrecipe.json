@@ -2,14 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ab",
-    "ab",
-    " c"
+    "aa",
+    "aa",
+    " b"
   ],
   "key": {
-    "a": "minecraft:air",
-    "b": "minecraft:air",
-    "c": "minecraft:glass_bottle"
+    "a": "uranium:nitricacid",
+    "b": "minecraft:glass_bottle"
   },
   "result": {
     "id": "uranium:tbpsolvent",

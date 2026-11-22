@@ -10,7 +10,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       "Items.GUNPOWDER",
       "Items.GUNPOWDER",
