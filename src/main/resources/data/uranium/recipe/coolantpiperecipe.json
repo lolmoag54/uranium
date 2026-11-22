@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "   ",
+    "aaa"
+  ],
+  "key": {
+    "a": "uranium:steel"
+  },
+  "result": {
+    "id": "uranium:coolantpipe",
+    "count": 6
+  }
+}

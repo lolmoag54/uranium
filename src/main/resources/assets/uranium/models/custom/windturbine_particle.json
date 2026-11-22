@@ -1,6 +1,0 @@
-{
-  "parent": "uranium:displaysettings/geckolib_block",
-  "textures": {
-    "particle": "uranium:block/eolienne"
-  }
-}

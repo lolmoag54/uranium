@@ -1,0 +1,8 @@
+{
+  "parent": "uranium:custom/pompe_a_eau",
+  "textures": {
+    "all": "uranium:block/pompe_usee",
+    "particle": "uranium:block/pompe_usee",
+    "0": "uranium:block/pompe_usee"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "uranium:block/reprocessingplant"
+    },
+    "facing=east": {
+      "model": "uranium:block/reprocessingplant",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "uranium:block/reprocessingplant",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "uranium:block/reprocessingplant",
+      "y": 270
+    }
+  }
+}

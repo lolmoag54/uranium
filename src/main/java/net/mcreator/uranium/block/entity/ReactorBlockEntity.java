@@ -20,7 +20,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.uranium.world.inventory.ReactorguiMenu;
+import net.mcreator.uranium.world.inventory.ReactorcontrolguiMenu;
 import net.mcreator.uranium.init.UraniumModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -30,7 +30,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class ReactorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(2, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(4, ItemStack.EMPTY);
 
 	public ReactorBlockEntity(BlockPos position, BlockState state) {
 		super(UraniumModBlockEntities.REACTOR.get(), position, state);
@@ -83,7 +83,7 @@ public class ReactorBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new ReactorguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new ReactorcontrolguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

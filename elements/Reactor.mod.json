@@ -57,7 +57,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -152,9 +152,9 @@
       "fixedValue": 7.0
     },
     "hasInventory": true,
-    "guiBoundTo": "Reactorgui",
+    "guiBoundTo": "Reactorcontrolgui",
     "openGUIOnRightClick": true,
-    "inventorySize": 2,
+    "inventorySize": 4,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

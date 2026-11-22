@@ -1,0 +1,8 @@
+{
+  "parent": "uranium:custom/electrical_cable_f",
+  "textures": {
+    "all": "uranium:block/tuyaut",
+    "particle": "uranium:block/tuyaut",
+    "texture": "uranium:block/tuyaut"
+  }
+}

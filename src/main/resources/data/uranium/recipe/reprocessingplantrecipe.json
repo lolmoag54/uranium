@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": "uranium:steel",
+    "b": "uranium:reinforcedconcrete",
+    "c": "uranium:zicronium",
+    "d": "uranium:centrifuge"
+  },
+  "result": {
+    "id": "uranium:reprocessingplant",
+    "count": 1
+  }
+}

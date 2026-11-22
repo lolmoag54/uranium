@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:gunpowder",
+    "minecraft:gunpowder",
+    "uranium:sulfuricacid_bucket",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "uranium:nitricacid",
+    "count": 2
+  }
+}

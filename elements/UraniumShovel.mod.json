@@ -5,7 +5,7 @@
     "toolType": "Spade",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "uranium_shovel",
+    "texture": "fa16457b-7ff1-442a-b733-4c73cbd37d91-removebg-preview",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
@@ -25,9 +25,7 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "repairItems": [
-      "CUSTOM:UraniumIngot"
-    ],
+    "repairItems": [],
     "immuneToFire": false,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],

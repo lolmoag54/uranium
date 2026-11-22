@@ -5,6 +5,12 @@
       "map": {
         "texture": "cable"
       }
+    },
+    "coolant": {
+      "name": "coolant",
+      "map": {
+        "texture": "tuyaut"
+      }
     }
   }
 }

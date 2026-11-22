@@ -1,6 +1,6 @@
 {
-  "parent": "uranium:displaysettings/geckolib_block",
+  "parent": "item/generated",
   "textures": {
-    "particle": "uranium:block/eolienne"
+    "layer0": "uranium:item/desert_turbine"
   }
 }

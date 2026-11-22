@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa",
+    " b"
+  ],
+  "key": {
+    "a": "uranium:nitricacid",
+    "b": "minecraft:glass_bottle"
+  },
+  "result": {
+    "id": "uranium:tbpsolvent",
+    "count": 2
+  }
+}

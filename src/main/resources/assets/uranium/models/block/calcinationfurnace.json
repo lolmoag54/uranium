@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/plutonium_calc_side",
+    "up": "uranium:block/plutonium_calc_top",
+    "north": "uranium:block/plutonium_calc_front",
+    "east": "uranium:block/plutonium_calc_side",
+    "south": "uranium:block/plutonium_calc_side",
+    "west": "uranium:block/plutonium_calc_side",
+    "particle": "uranium:block/plutonium_calc_side"
+  }
+}

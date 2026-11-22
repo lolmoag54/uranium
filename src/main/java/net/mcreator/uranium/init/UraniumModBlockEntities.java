@@ -96,5 +96,6 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, REACTOR.get(), (blockEntity, side) -> ((ReactorBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, LEADCRAFTINGTABLE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, WINDTURBINE.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, WINDTURBINE.get(), (blockEntity, side) -> ((WindturbineTileEntity) blockEntity).getEnergyStorage());
 	}
 }

@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "Items.SUGAR",
+      "Items.SUGAR",
+      "",
+      "",
+      "CUSTOM:Nitricacid",
+      "",
+      "",
+      "Items.GLASS_BOTTLE",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:Oxalicacid",
+    "name": "oxalicacidrecipe",
+    "namespace": "mod"
+  }
+}

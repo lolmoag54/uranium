@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": "uranium:zicronium",
+    "b": "uranium:plutoniumdioxide",
+    "c": "uranium:depleteduranium"
+  },
+  "result": {
+    "id": "uranium:moxfuelrod",
+    "count": 1
+  }
+}

@@ -5,7 +5,7 @@
     "toolType": "Hoe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "uranium_hoe",
+    "texture": "77773ab1-f059-4bc1-b5a8-9c27d76e0c58-removebg-preview",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
@@ -25,9 +25,7 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "repairItems": [
-      "CUSTOM:UraniumIngot"
-    ],
+    "repairItems": [],
     "immuneToFire": false,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],

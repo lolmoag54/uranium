@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "uranium:item/uranium_pickaxe"
+    "layer0": "uranium:item/2391d99e-22eb-4943-9280-e4971ecc5f31"
   }
 }

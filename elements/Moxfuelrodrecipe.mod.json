@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:Zicronium",
+      "",
+      "CUSTOM:Plutoniumdioxide",
+      "CUSTOM:Depleteduranium",
+      "CUSTOM:Plutoniumdioxide",
+      "",
+      "CUSTOM:Zicronium",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:Moxfuelrod",
+    "name": "moxfuelrodrecipe",
+    "namespace": "mod"
+  }
+}

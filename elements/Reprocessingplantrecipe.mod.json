@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:Steel",
+      "CUSTOM:Reinforcedconcrete",
+      "CUSTOM:Steel",
+      "CUSTOM:Zicronium",
+      "CUSTOM:Centrifuge",
+      "CUSTOM:Zicronium",
+      "CUSTOM:Steel",
+      "CUSTOM:Reinforcedconcrete",
+      "CUSTOM:Steel"
+    ],
+    "recipeReturnStack": "CUSTOM:Reprocessingplant",
+    "name": "reprocessingplantrecipe",
+    "namespace": "mod"
+  }
+}

@@ -5,7 +5,7 @@
     "toolType": "Axe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "uranium_axe",
+    "texture": "40f1a052-2305-41d7-978f-e74e7a6e80b4-removebg-preview",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
@@ -25,9 +25,7 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "repairItems": [
-      "CUSTOM:UraniumIngot"
-    ],
+    "repairItems": [],
     "immuneToFire": false,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],

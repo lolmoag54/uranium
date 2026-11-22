@@ -5,7 +5,7 @@
     "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "uranium_pickaxe",
+    "texture": "2391d99e-22eb-4943-9280-e4971ecc5f31",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
@@ -25,9 +25,7 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "repairItems": [
-      "CUSTOM:UraniumIngot"
-    ],
+    "repairItems": [],
     "immuneToFire": false,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "uranium:steel",
+    "b": "uranium:lingotdeplomb",
+    "c": "uranium:plutoniumdioxide"
+  },
+  "result": {
+    "id": "uranium:plutoniumcore",
+    "count": 1
+  }
+}

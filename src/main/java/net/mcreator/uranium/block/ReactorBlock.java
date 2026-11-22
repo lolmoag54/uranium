@@ -34,7 +34,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.uranium.world.inventory.ReactorguiMenu;
+import net.mcreator.uranium.world.inventory.ReactorcontrolguiMenu;
 import net.mcreator.uranium.procedures.ReactorblockaddedProcedure;
 import net.mcreator.uranium.procedures.ReactorOnTickUpdateProcedure;
 import net.mcreator.uranium.block.entity.ReactorBlockEntity;
@@ -131,7 +131,7 @@ public class ReactorBlock extends FallingBlock implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new ReactorguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new ReactorcontrolguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}
