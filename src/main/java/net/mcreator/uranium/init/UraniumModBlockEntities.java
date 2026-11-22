@@ -64,6 +64,7 @@ public class UraniumModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CoolingpoolBlockEntity>> COOLINGPOOL = register("coolingpool", UraniumModBlocks.COOLINGPOOL, CoolingpoolBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ReprocessingplantBlockEntity>> REPROCESSINGPLANT = register("reprocessingplant", UraniumModBlocks.REPROCESSINGPLANT, ReprocessingplantBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CalcinationfurnaceBlockEntity>> CALCINATIONFURNACE = register("calcinationfurnace", UraniumModBlocks.CALCINATIONFURNACE, CalcinationfurnaceBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SplitterBlockEntity>> SPLITTER = register("splitter", UraniumModBlocks.SPLITTER, SplitterBlockEntity::new);
 
 	private static <T extends BlockEntity> DeferredHolder<BlockEntityType<?>, BlockEntityType<T>> register(String registryname, DeferredHolder<Block, Block> block, BlockEntityType.BlockEntitySupplier<T> supplier) {
 		return REGISTRY.register(registryname, () -> new BlockEntityType(supplier, block.get()));
@@ -141,5 +142,7 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, REPROCESSINGPLANT.get(), (blockEntity, side) -> ((ReprocessingplantBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CALCINATIONFURNACE.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, CALCINATIONFURNACE.get(), (blockEntity, side) -> ((CalcinationfurnaceBlockEntity) blockEntity).getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, SPLITTER.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, SPLITTER.get(), (blockEntity, side) -> ((SplitterBlockEntity) blockEntity).getEnergyStorage());
 	}
 }

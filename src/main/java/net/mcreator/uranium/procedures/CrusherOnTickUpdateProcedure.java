@@ -12,6 +12,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.uranium.init.UraniumModItems;
 import net.mcreator.uranium.init.UraniumModBlocks;
 
 public class CrusherOnTickUpdateProcedure {
@@ -20,6 +21,8 @@ public class CrusherOnTickUpdateProcedure {
 		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModBlocks.RAWURANIUM.get().asItem()
 				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModBlocks.RAWURANIUM_DEEPSLATE.get().asItem()) {
 			CrusherrecipeProcedure.execute(world, x, y, z);
+		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.PENCHBLENDE.get()) {
+			CrucherrecipepitchblendeProcedure.execute(world, x, y, z);
 		} else {
 			{
 				int _value = 0;

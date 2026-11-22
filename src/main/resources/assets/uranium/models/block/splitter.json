@@ -1,0 +1,8 @@
+{
+  "parent": "uranium:custom/separateur",
+  "textures": {
+    "all": "uranium:block/separateur_usee",
+    "particle": "uranium:block/separateur_usee",
+    "0": "uranium:block/separateur_usee"
+  }
+}

@@ -22,6 +22,7 @@ public class UraniumModScreens {
 		event.register(UraniumModMenus.COOLINGPOOLGUI.get(), CoolingpoolguiScreen::new);
 		event.register(UraniumModMenus.REPROCESSINGPLANTGUI.get(), ReprocessingplantguiScreen::new);
 		event.register(UraniumModMenus.CALCINATIONFURNACEGUI.get(), CalcinationfurnaceguiScreen::new);
+		event.register(UraniumModMenus.SPLITTERGUI.get(), SplitterguiScreen::new);
 	}
 
 	public interface ScreenAccessor {

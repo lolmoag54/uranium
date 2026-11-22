@@ -64,6 +64,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModBlocks.WINDTURBINE.get().asItem());
 				tabData.accept(UraniumModBlocks.COOLANTPIPE.get().asItem());
 				tabData.accept(UraniumModBlocks.WATERPUMP.get().asItem());
+				tabData.accept(UraniumModItems.ROCHESTERIL.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> POLONIUM = REGISTRY.register("polonium",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.uranium.polonium")).icon(() -> new ItemStack(UraniumModItems.PLUTONIUMCORE.get())).displayItems((parameters, tabData) -> {
@@ -80,6 +81,14 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModBlocks.REPROCESSINGPLANT.get().asItem());
 				tabData.accept(UraniumModBlocks.CALCINATIONFURNACE.get().asItem());
 			}).withTabsBefore(URANIUMCREATIVETAB.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RADIUMCREATIVETAB = REGISTRY.register("radiumcreativetab",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.uranium.radiumcreativetab")).icon(() -> new ItemStack(UraniumModItems.PENCHBLENDE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(UraniumModItems.PENCHBLENDE.get());
+				tabData.accept(UraniumModBlocks.PENCHBLENDEORE.get().asItem());
+				tabData.accept(UraniumModBlocks.SPLITTER.get().asItem());
+				tabData.accept(UraniumModItems.PITCHBLENDECONCENTRATE.get());
+				tabData.accept(UraniumModItems.POWDEREDFERTILIZEDSOIL.get());
+			}).withTabsBefore(POLONIUM.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

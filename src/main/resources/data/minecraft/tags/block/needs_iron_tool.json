@@ -3,8 +3,10 @@
   "values": [
     "uranium:calcinationfurnace",
     "uranium:leadore",
+    "uranium:penchblendeore",
     "uranium:zicron_ore",
     "uranium:coolingpool",
+    "uranium:splitter",
     "uranium:reactor",
     "uranium:crusher",
     "uranium:leadcraftingtable",

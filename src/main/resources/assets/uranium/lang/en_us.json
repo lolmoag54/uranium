@@ -167,5 +167,21 @@
   "item.uranium.plutoniumdioxide.description_0": "PuO2 powder.",
   "item.uranium.moxfuelrod.description_0": "Reactor fuel: +50% power, runs hotter.",
   "item.uranium.plutoniumcore.description_0": "Fissile core.",
-  "item_group.uranium.polonium": "Polonium"
+  "item_group.uranium.polonium": "Polonium",
+  "item.uranium.penchblende": "Pitchblende",
+  "item.uranium.penchblendeore": "Pitchblende ore",
+  "item.uranium.splitter": "Splitter",
+  "item.uranium.pitchblendeconcentrate": "Pitchblendeconcentrate",
+  "item.uranium.powderedfertilizedsoil": "Powderedfertilizedsoil",
+  "item_group.uranium.radiumcreativetab": "Radiumcreativetab",
+  "item.uranium.rochesteril": "Rocky residue",
+  "gui.uranium.splittergui.label_title": "MINERAL SEPARATOR",
+  "gui.uranium.splittergui.label_fe": "FE",
+  "gui.uranium.splittergui.label_temp": "T",
+  "gui.uranium.splittergui.label_h2o": "H2O",
+  "gui.uranium.splittergui.label_in": "Powder",
+  "gui.uranium.splittergui.label_out0": "Conc.",
+  "gui.uranium.splittergui.label_out1": "Rock",
+  "item.uranium.rochesteril.description_1": "May still be slightly radioactive.",
+  "item.uranium.rochesteril.description_0": "Mining waste."
 }

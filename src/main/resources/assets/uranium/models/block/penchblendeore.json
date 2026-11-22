@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "uranium:block/fractured_uraninite",
+    "up": "uranium:block/fractured_uraninite",
+    "north": "uranium:block/fractured_uraninite",
+    "east": "uranium:block/fractured_uraninite",
+    "south": "uranium:block/fractured_uraninite",
+    "west": "uranium:block/fractured_uraninite",
+    "particle": "uranium:block/fractured_uraninite"
+  }
+}

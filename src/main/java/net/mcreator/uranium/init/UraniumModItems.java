@@ -118,6 +118,12 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> COOLINGPOOL;
 	public static final DeferredItem<Item> REPROCESSINGPLANT;
 	public static final DeferredItem<Item> CALCINATIONFURNACE;
+	public static final DeferredItem<Item> PENCHBLENDE;
+	public static final DeferredItem<Item> PENCHBLENDEORE;
+	public static final DeferredItem<Item> SPLITTER;
+	public static final DeferredItem<Item> PITCHBLENDECONCENTRATE;
+	public static final DeferredItem<Item> POWDEREDFERTILIZEDSOIL;
+	public static final DeferredItem<Item> ROCHESTERIL;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -215,6 +221,12 @@ public class UraniumModItems {
 		COOLINGPOOL = block(UraniumModBlocks.COOLINGPOOL, new Item.Properties().stacksTo(16));
 		REPROCESSINGPLANT = block(UraniumModBlocks.REPROCESSINGPLANT, new Item.Properties().stacksTo(16));
 		CALCINATIONFURNACE = block(UraniumModBlocks.CALCINATIONFURNACE, new Item.Properties().stacksTo(16));
+		PENCHBLENDE = register("penchblende", PenchblendeItem::new);
+		PENCHBLENDEORE = block(UraniumModBlocks.PENCHBLENDEORE);
+		SPLITTER = block(UraniumModBlocks.SPLITTER);
+		PITCHBLENDECONCENTRATE = register("pitchblendeconcentrate", PitchblendeconcentrateItem::new);
+		POWDEREDFERTILIZEDSOIL = register("powderedfertilizedsoil", PowderedfertilizedsoilItem::new);
+		ROCHESTERIL = register("rochesteril", RochesterilItem::new);
 	}
 
 	// Start of user code block custom items

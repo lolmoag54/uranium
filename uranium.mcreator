@@ -33,7 +33,7 @@
           "src/main/resources/assets/uranium/blockstates/centrifuge.json"
         ]
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "Centrifugegui",
@@ -47,7 +47,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/CentrifugeguiMenu.java"
         ]
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "Uraniumcreativetab",
@@ -138,7 +138,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CentrifugeOnTickUpdateProcedure.java"
         ]
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "Sulfuricacid",
@@ -224,7 +224,7 @@
           "src/main/java/net/mcreator/uranium/procedures/UraniumcentrifugerecipeProcedure.java"
         ]
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "Fluoride",
@@ -271,7 +271,7 @@
           "src/main/java/net/mcreator/uranium/procedures/ProgressbarcentrifugeguiProcedure.java"
         ]
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "Lingotdeplomb",
@@ -1398,7 +1398,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "Letscentrifuge",
@@ -1486,7 +1486,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CentrifugeBlockAddedProcedure.java"
         ]
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "GrossebatterieBlockAdded",
@@ -1615,7 +1615,7 @@
           }
         ]
       },
-      "path": "~/Uranium/crusher"
+      "path": "~/crusher"
     },
     {
       "name": "CrusherOnTickUpdate",
@@ -1646,7 +1646,7 @@
           }
         ]
       },
-      "path": "~/Uranium/crusher"
+      "path": "~/crusher"
     },
     {
       "name": "Crusherprogressbar",
@@ -1678,7 +1678,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Uranium/crusher"
+      "path": "~/crusher"
     },
     {
       "name": "Crusherpowerbar",
@@ -1710,7 +1710,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Uranium/crusher"
+      "path": "~/crusher"
     },
     {
       "name": "Crusherblockadded",
@@ -1741,7 +1741,7 @@
           }
         ]
       },
-      "path": "~/Uranium/crusher"
+      "path": "~/crusher"
     },
     {
       "name": "ReactorOnTickUpdate",
@@ -1880,7 +1880,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/CrusherguiMenu.java"
         ]
       },
-      "path": "~/Uranium/crusher"
+      "path": "~/crusher"
     },
     {
       "name": "Reactorgui",
@@ -1913,7 +1913,7 @@
           "src/main/java/net/mcreator/uranium/block/entity/CrusherBlockEntity.java"
         ]
       },
-      "path": "~/Uranium/crusher"
+      "path": "~/crusher"
     },
     {
       "name": "Reactor",
@@ -3123,7 +3123,7 @@
           "src/main/java/net/mcreator/uranium/procedures/WindturbineLorsDeLaMiseAJourDuTickProcedure.java"
         ]
       },
-      "path": "~/Uranium/centrifuge"
+      "path": "~/centrifuge"
     },
     {
       "name": "WindturbineConditionDeLectureMedium",
@@ -5341,6 +5341,349 @@
         "files": []
       },
       "path": "~/plutonium"
+    },
+    {
+      "name": "Penchblende",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "penchblende",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/PenchblendeItem.java",
+          "src/main/resources/assets/uranium/items/penchblende.json",
+          "src/main/resources/assets/uranium/models/item/penchblende.json"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Penchblendeore",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "penchblendeore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/penchblendeore.json",
+          "src/main/resources/assets/uranium/blockstates/penchblendeore.json",
+          "src/main/resources/assets/uranium/models/block/penchblendeore.json",
+          "src/main/resources/data/uranium/loot_table/blocks/penchblendeore.json",
+          "src/main/resources/assets/uranium/items/penchblendeore.json",
+          "src/main/java/net/mcreator/uranium/block/PenchblendeoreBlock.java"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Splitter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splitter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/block/splitter.json",
+          "src/main/java/net/mcreator/uranium/block/entity/SplitterBlockEntity.java",
+          "src/main/java/net/mcreator/uranium/block/SplitterBlock.java",
+          "src/main/resources/assets/uranium/items/splitter.json",
+          "src/main/resources/data/uranium/loot_table/blocks/splitter.json",
+          "src/main/resources/assets/uranium/blockstates/splitter.json",
+          "src/main/resources/assets/uranium/models/item/splitter.json"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Pitchblendeconcentrate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pitchblendeconcentrate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/PitchblendeconcentrateItem.java",
+          "src/main/resources/assets/uranium/items/pitchblendeconcentrate.json",
+          "src/main/resources/assets/uranium/models/item/pitchblendeconcentrate.json"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Powderedfertilizedsoil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powderedfertilizedsoil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/powderedfertilizedsoil.json",
+          "src/main/java/net/mcreator/uranium/item/PowderedfertilizedsoilItem.java",
+          "src/main/resources/assets/uranium/models/item/powderedfertilizedsoil.json"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Radiumcreativetab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiumcreativetab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Crucherrecipepitchblende",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crucherrecipepitchblende",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/CrucherrecipepitchblendeProcedure.java"
+        ]
+      },
+      "path": "~/crusher"
+    },
+    {
+      "name": "Splittergui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "splittergui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/world/inventory/SplitterguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/SplitterguiScreen.java"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rochesteril",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rochesteril",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/rochesteril.json",
+          "src/main/java/net/mcreator/uranium/item/RochesterilItem.java",
+          "src/main/resources/assets/uranium/items/rochesteril.json"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcthermalsplit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcthermalsplit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcthermalsplitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcsplittick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcsplittick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcsplittickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcsplitprogress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcsplitprogress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcsplitprogressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcsplitpower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcsplitpower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcsplitpowerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcsplitheat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcsplitheat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcsplitheatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcsplitwater",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcsplitwater",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcsplitwaterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Radium"
     }
   ],
   "variable_elements": [
@@ -5382,14 +5725,11 @@
       "~Enriched_uranium_armorArmor@CUSTOM:Enricheduranium"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Splitter@CUSTOM:Splitter",
+      "~Penchblendeore@CUSTOM:Penchblendeore",
       "~Calcinationfurnace@CUSTOM:Calcinationfurnace",
       "~Reprocessingplant@CUSTOM:Reprocessingplant",
       "~Coolingpool@CUSTOM:Coolingpool",
-      "~Centrifuge@CUSTOM:Centrifuge",
-      "~Crusher@CUSTOM:Crusher",
-      "~Reactor@CUSTOM:Reactor",
-      "~Solarpanel@CUSTOM:Solarpanel",
-      "~Windturbine@CUSTOM:Windturbine",
       "~Waterpump@CUSTOM:Waterpump",
       "~CoolantpipeS@CUSTOM:CoolantpipeS",
       "~CoolantpipeF@CUSTOM:CoolantpipeF",
@@ -5408,10 +5748,13 @@
       "~CoolantpipeI@CUSTOM:CoolantpipeI",
       "~CoolantpipeE@CUSTOM:CoolantpipeE",
       "~Coolantpipe@CUSTOM:Coolantpipe",
+      "~Windturbine@CUSTOM:Windturbine",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
       "~Reinforcedconcrete@CUSTOM:Reinforcedconcrete",
       "~ZicronOre@CUSTOM:ZicronOre",
+      "~Reactor@CUSTOM:Reactor",
+      "~Crusher@CUSTOM:Crusher",
       "~RawuraniumDeepslate@CUSTOM:RawuraniumDeepslate",
       "~CableS@CUSTOM:CableS",
       "~CableF@CUSTOM:CableF",
@@ -5430,20 +5773,24 @@
       "~CableI@CUSTOM:CableI",
       "~CableE@CUSTOM:CableE",
       "~Cable@CUSTOM:Cable",
+      "~Solarpanel@CUSTOM:Solarpanel",
       "~Grossebatterie@CUSTOM:Grossebatterie",
       "~Blockdeplomb@CUSTOM:Blockdeplomb",
-      "~Rawuranium@CUSTOM:Rawuranium"
+      "~Rawuranium@CUSTOM:Rawuranium",
+      "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~Splitter@CUSTOM:Splitter",
+      "~Penchblendeore@CUSTOM:Penchblendeore",
       "~Calcinationfurnace@CUSTOM:Calcinationfurnace",
       "~Reprocessingplant@CUSTOM:Reprocessingplant",
       "~Coolingpool@CUSTOM:Coolingpool",
-      "~Centrifuge@CUSTOM:Centrifuge",
-      "~Crusher@CUSTOM:Crusher",
-      "~Reactor@CUSTOM:Reactor",
       "~Leadore@CUSTOM:Leadore",
       "~Leadcraftingtable@CUSTOM:Leadcraftingtable",
-      "~ZicronOre@CUSTOM:ZicronOre"
+      "~ZicronOre@CUSTOM:ZicronOre",
+      "~Reactor@CUSTOM:Reactor",
+      "~Crusher@CUSTOM:Crusher",
+      "~Centrifuge@CUSTOM:Centrifuge"
     ],
     "BLOCKS:minecraft:replaceable": [
       "~Sulfuricacid@CUSTOM:Sulfuricacid"
@@ -5670,7 +6017,23 @@
       "item.uranium.plutoniumdioxide.description_0": "PuO2 powder.",
       "item.uranium.moxfuelrod.description_0": "Reactor fuel: +50% power, runs hotter.",
       "item.uranium.plutoniumcore.description_0": "Fissile core.",
-      "item_group.uranium.polonium": "Polonium"
+      "item_group.uranium.polonium": "Polonium",
+      "item.uranium.penchblende": "Pitchblende",
+      "item.uranium.penchblendeore": "Pitchblende ore",
+      "item.uranium.splitter": "Splitter",
+      "item.uranium.pitchblendeconcentrate": "Pitchblendeconcentrate",
+      "item.uranium.powderedfertilizedsoil": "Powderedfertilizedsoil",
+      "item_group.uranium.radiumcreativetab": "Radiumcreativetab",
+      "item.uranium.rochesteril": "Rocky residue",
+      "gui.uranium.splittergui.label_title": "MINERAL SEPARATOR",
+      "gui.uranium.splittergui.label_fe": "FE",
+      "gui.uranium.splittergui.label_temp": "T",
+      "gui.uranium.splittergui.label_h2o": "H2O",
+      "gui.uranium.splittergui.label_in": "Powder",
+      "gui.uranium.splittergui.label_out0": "Conc.",
+      "gui.uranium.splittergui.label_out1": "Rock",
+      "item.uranium.rochesteril.description_1": "May still be slightly radioactive.",
+      "item.uranium.rochesteril.description_0": "Mining waste."
     }
   },
   "metadata": {
@@ -5739,15 +6102,7 @@
         "name": "Uranium",
         "children": [
           {
-            "name": "centrifuge",
-            "children": []
-          },
-          {
             "name": "fluorite",
-            "children": []
-          },
-          {
-            "name": "crusher",
             "children": []
           },
           {
@@ -5816,6 +6171,18 @@
       },
       {
         "name": "plutonium",
+        "children": []
+      },
+      {
+        "name": "Radium",
+        "children": []
+      },
+      {
+        "name": "centrifuge",
+        "children": []
+      },
+      {
+        "name": "crusher",
         "children": []
       }
     ]
