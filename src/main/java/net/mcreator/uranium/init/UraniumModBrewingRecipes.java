@@ -29,6 +29,11 @@ public class UraniumModBrewingRecipes implements IModPlugin {
 		ItemStack potion2 = new ItemStack(Items.POTION);
 		List<ItemStack> ingredientStack = new ArrayList<>();
 		List<ItemStack> inputStack = new ArrayList<>();
+		ingredientStack.add(new ItemStack(UraniumModItems.FLUORIDE.get()));
+		inputStack.add(new ItemStack(UraniumModItems.EMPTYVIAL.get()));
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(UraniumModItems.FLUOR.get()), Identifier.parse("uranium:fluorrecipe")));
+		inputStack.clear();
+		ingredientStack.clear();
 		ingredientStack.add(new ItemStack(UraniumModItems.FLUOR.get()));
 		inputStack.add(new ItemStack(UraniumModItems.YELLOWCAKE.get()));
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(UraniumModItems.URANIUMHEXAFLUORIDE.get()), Identifier.parse("uranium:uraniumhexafluoride_recipe")));

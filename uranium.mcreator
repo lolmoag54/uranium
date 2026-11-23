@@ -2217,8 +2217,7 @@
       "registry_name": "fluorrecipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/advancement/recipes/fluorrecipe.json",
-          "src/main/resources/data/uranium/recipe/fluorrecipe.json"
+          "src/main/java/net/mcreator/uranium/recipe/brewing/FluorrecipeBrewingRecipe.java"
         ]
       },
       "path": "~/Uranium"
@@ -5693,6 +5692,7 @@
       "registry_name": "closedindustrialprocessingunit",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/uranium/block/entity/ClosedindustrialprocessingunitBlockEntity.java",
           "src/main/resources/assets/uranium/items/closedindustrialprocessingunit.json",
           "src/main/resources/assets/uranium/blockstates/closedindustrialprocessingunit.json",
           "src/main/resources/assets/uranium/models/block/closedindustrialprocessingunit.json",
@@ -5712,11 +5712,246 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/uranium/block/CrystallizerBlock.java",
-          "src/main/resources/assets/uranium/models/block/crystallizer.json",
+          "src/main/resources/assets/uranium/items/crystallizer.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CrystallizerBlockEntity.java",
           "src/main/resources/data/uranium/loot_table/blocks/crystallizer.json",
           "src/main/resources/assets/uranium/blockstates/crystallizer.json",
-          "src/main/resources/assets/uranium/items/crystallizer.json",
-          "src/main/resources/assets/uranium/models/item/crystallizer.json"
+          "src/main/resources/assets/uranium/models/item/crystallizer.json",
+          "src/main/resources/assets/uranium/models/block/crystallizer.json"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Crystallizergui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallizergui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/world/inventory/CrystallizerguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/CrystallizerguiScreen.java"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Cipugui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cipugui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/client/gui/CipuguiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/CipuguiMenu.java"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcxtaltick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcxtaltick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcxtaltickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcxtalprogress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcxtalprogress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcxtalprogressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcciputick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcciputick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcciputickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Rcciputprogress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcciputprogress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/RcciputprogressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number"
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Radiferouscrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiferouscrystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/RadiferouscrystalItem.java",
+          "src/main/resources/assets/uranium/models/item/radiferouscrystal.json",
+          "src/main/resources/assets/uranium/items/radiferouscrystal.json"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Emptyvial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emptyvial",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/emptyvial.json",
+          "src/main/resources/assets/uranium/models/item/emptyvial.json",
+          "src/main/java/net/mcreator/uranium/item/EmptyvialItem.java"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "EmptyvialEvenementAuClicDroitDansLair",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emptyvial_evenement_au_clic_droit_dans_lair",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/EmptyvialEvenementAuClicDroitDansLairProcedure.java"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Watervial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watervial",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/watervial.json",
+          "src/main/resources/assets/uranium/models/item/watervial.json",
+          "src/main/java/net/mcreator/uranium/item/WatervialItem.java"
         ]
       },
       "path": "~/Radium"
@@ -6077,31 +6312,40 @@
       "gui.uranium.centrifugegui.label_title": "CENTRIFUGE",
       "gui.uranium.crushergui.label_title": "CRUSHER",
       "gui.uranium.crushergui.label_fe": "FE",
-      "item.uranium.crystallizer": "Crystallizer"
+      "item.uranium.crystallizer": "Crystallizer",
+      "gui.uranium.crystallizergui.label_title": "CRYSTALLIZER",
+      "gui.uranium.crystallizergui.label_fe": "FE",
+      "gui.uranium.crystallizergui.label_in0": "Vial",
+      "gui.uranium.crystallizergui.label_in1": "powder",
+      "gui.uranium.cipugui.label_title": "INDUSTRIAL UNIT",
+      "gui.uranium.cipugui.label_fe": "FE",
+      "item.uranium.radiferouscrystal": "Radiferous crystal",
+      "item.uranium.emptyvial": "Empty vial",
+      "item.uranium.watervial": "Water vial"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/init/EntityAnimationFactory.java",
       "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
+      "src/main/java/net/mcreator/uranium/init/EntityAnimationFactory.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBrewingRecipes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModModels.java",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModModels.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java"
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {

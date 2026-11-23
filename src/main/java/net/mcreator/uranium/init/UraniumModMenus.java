@@ -33,6 +33,8 @@ public class UraniumModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<ReprocessingplantguiMenu>> REPROCESSINGPLANTGUI = REGISTRY.register("reprocessingplantgui", () -> IMenuTypeExtension.create(ReprocessingplantguiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CalcinationfurnaceguiMenu>> CALCINATIONFURNACEGUI = REGISTRY.register("calcinationfurnacegui", () -> IMenuTypeExtension.create(CalcinationfurnaceguiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SplitterguiMenu>> SPLITTERGUI = REGISTRY.register("splittergui", () -> IMenuTypeExtension.create(SplitterguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CrystallizerguiMenu>> CRYSTALLIZERGUI = REGISTRY.register("crystallizergui", () -> IMenuTypeExtension.create(CrystallizerguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CipuguiMenu>> CIPUGUI = REGISTRY.register("cipugui", () -> IMenuTypeExtension.create(CipuguiMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

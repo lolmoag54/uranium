@@ -65,6 +65,9 @@ public class UraniumModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ReprocessingplantBlockEntity>> REPROCESSINGPLANT = register("reprocessingplant", UraniumModBlocks.REPROCESSINGPLANT, ReprocessingplantBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CalcinationfurnaceBlockEntity>> CALCINATIONFURNACE = register("calcinationfurnace", UraniumModBlocks.CALCINATIONFURNACE, CalcinationfurnaceBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SplitterBlockEntity>> SPLITTER = register("splitter", UraniumModBlocks.SPLITTER, SplitterBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ClosedindustrialprocessingunitBlockEntity>> CLOSEDINDUSTRIALPROCESSINGUNIT = register("closedindustrialprocessingunit", UraniumModBlocks.CLOSEDINDUSTRIALPROCESSINGUNIT,
+			ClosedindustrialprocessingunitBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CrystallizerBlockEntity>> CRYSTALLIZER = register("crystallizer", UraniumModBlocks.CRYSTALLIZER, CrystallizerBlockEntity::new);
 
 	private static <T extends BlockEntity> DeferredHolder<BlockEntityType<?>, BlockEntityType<T>> register(String registryname, DeferredHolder<Block, Block> block, BlockEntityType.BlockEntitySupplier<T> supplier) {
 		return REGISTRY.register(registryname, () -> new BlockEntityType(supplier, block.get()));
@@ -144,5 +147,9 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, CALCINATIONFURNACE.get(), (blockEntity, side) -> ((CalcinationfurnaceBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, SPLITTER.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, SPLITTER.get(), (blockEntity, side) -> ((SplitterBlockEntity) blockEntity).getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, CLOSEDINDUSTRIALPROCESSINGUNIT.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, CLOSEDINDUSTRIALPROCESSINGUNIT.get(), (blockEntity, side) -> ((ClosedindustrialprocessingunitBlockEntity) blockEntity).getEnergyStorage());
+		event.registerBlockEntity(Capabilities.Item.BLOCK, CRYSTALLIZER.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, CRYSTALLIZER.get(), (blockEntity, side) -> ((CrystallizerBlockEntity) blockEntity).getEnergyStorage());
 	}
 }
