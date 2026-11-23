@@ -125,6 +125,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> POWDEREDFERTILIZEDSOIL;
 	public static final DeferredItem<Item> ROCHESTERIL;
 	public static final DeferredItem<Item> CLOSEDINDUSTRIALPROCESSINGUNIT;
+	public static final DeferredItem<Item> CRYSTALLIZER;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -229,6 +230,7 @@ public class UraniumModItems {
 		POWDEREDFERTILIZEDSOIL = register("powderedfertilizedsoil", PowderedfertilizedsoilItem::new);
 		ROCHESTERIL = register("rochesteril", RochesterilItem::new);
 		CLOSEDINDUSTRIALPROCESSINGUNIT = block(UraniumModBlocks.CLOSEDINDUSTRIALPROCESSINGUNIT);
+		CRYSTALLIZER = block(UraniumModBlocks.CRYSTALLIZER);
 	}
 
 	// Start of user code block custom items

@@ -188,5 +188,6 @@
   "gui.uranium.centrifugegui.label_fe": "FE",
   "gui.uranium.centrifugegui.label_title": "CENTRIFUGE",
   "gui.uranium.crushergui.label_title": "CRUSHER",
-  "gui.uranium.crushergui.label_fe": "FE"
+  "gui.uranium.crushergui.label_fe": "FE",
+  "item.uranium.crystallizer": "Crystallizer"
 }

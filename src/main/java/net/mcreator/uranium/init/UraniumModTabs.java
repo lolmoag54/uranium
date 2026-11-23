@@ -89,6 +89,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.POWDEREDFERTILIZEDSOIL.get());
 				tabData.accept(UraniumModItems.ROCHESTERIL.get());
 				tabData.accept(UraniumModBlocks.CLOSEDINDUSTRIALPROCESSINGUNIT.get().asItem());
+				tabData.accept(UraniumModBlocks.CRYSTALLIZER.get().asItem());
 			}).withTabsBefore(POLONIUM.getId()).build());
 
 	@SubscribeEvent

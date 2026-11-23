@@ -5702,6 +5702,24 @@
         ]
       },
       "path": "~/Radium"
+    },
+    {
+      "name": "Crystallizer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/block/CrystallizerBlock.java",
+          "src/main/resources/assets/uranium/models/block/crystallizer.json",
+          "src/main/resources/data/uranium/loot_table/blocks/crystallizer.json",
+          "src/main/resources/assets/uranium/blockstates/crystallizer.json",
+          "src/main/resources/assets/uranium/items/crystallizer.json",
+          "src/main/resources/assets/uranium/models/item/crystallizer.json"
+        ]
+      },
+      "path": "~/Radium"
     }
   ],
   "variable_elements": [
@@ -6058,31 +6076,32 @@
       "gui.uranium.centrifugegui.label_fe": "FE",
       "gui.uranium.centrifugegui.label_title": "CENTRIFUGE",
       "gui.uranium.crushergui.label_title": "CRUSHER",
-      "gui.uranium.crushergui.label_fe": "FE"
+      "gui.uranium.crushergui.label_fe": "FE",
+      "item.uranium.crystallizer": "Crystallizer"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/EntityAnimationFactory.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
+      "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBrewingRecipes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModModels.java",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java"
     ]
   },
   "foldersRoot": {
