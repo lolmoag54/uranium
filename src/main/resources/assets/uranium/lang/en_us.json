@@ -183,5 +183,6 @@
   "gui.uranium.splittergui.label_out0": "Conc.",
   "gui.uranium.splittergui.label_out1": "Rock",
   "item.uranium.rochesteril.description_1": "May still be slightly radioactive.",
-  "item.uranium.rochesteril.description_0": "Mining waste."
+  "item.uranium.rochesteril.description_0": "Mining waste.",
+  "item.uranium.closedindustrialprocessingunit": "Closed industrial processing unit"
 }

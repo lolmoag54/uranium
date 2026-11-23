@@ -1,0 +1,8 @@
+{
+  "parent": "uranium:custom/reacteur_cuve",
+  "textures": {
+    "all": "uranium:block/separateur_usee",
+    "particle": "uranium:block/separateur_usee",
+    "0": "uranium:block/reacteur_inox_use"
+  }
+}

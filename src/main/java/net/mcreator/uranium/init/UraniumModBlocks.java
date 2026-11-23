@@ -73,6 +73,7 @@ public class UraniumModBlocks {
 	public static final DeferredBlock<Block> CALCINATIONFURNACE;
 	public static final DeferredBlock<Block> PENCHBLENDEORE;
 	public static final DeferredBlock<Block> SPLITTER;
+	public static final DeferredBlock<Block> CLOSEDINDUSTRIALPROCESSINGUNIT;
 	static {
 		CENTRIFUGE = register("centrifuge", CentrifugeBlock::new);
 		SULFURICACID = register("sulfuricacid", SulfuricacidBlock::new);
@@ -131,6 +132,7 @@ public class UraniumModBlocks {
 		CALCINATIONFURNACE = register("calcinationfurnace", CalcinationfurnaceBlock::new);
 		PENCHBLENDEORE = register("penchblendeore", PenchblendeoreBlock::new);
 		SPLITTER = register("splitter", SplitterBlock::new);
+		CLOSEDINDUSTRIALPROCESSINGUNIT = register("closedindustrialprocessingunit", ClosedindustrialprocessingunitBlock::new);
 	}
 
 	// Start of user code block custom blocks
