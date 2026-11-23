@@ -36,7 +36,7 @@ public class CentrifugeguiMenu extends AbstractContainerMenu implements UraniumM
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 6)
+			if (!this.containsKey(key) && this.size() >= 8)
 				return null;
 			return super.put(key, value);
 		}
@@ -93,12 +93,12 @@ public class CentrifugeguiMenu extends AbstractContainerMenu implements UraniumM
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 33, 26) {
+		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 66, 37) {
 			private final int slot = 0;
 			private int x = CentrifugeguiMenu.this.x;
 			private int y = CentrifugeguiMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 128, 8) {
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 126, 27) {
 			private final int slot = 1;
 			private int x = CentrifugeguiMenu.this.x;
 			private int y = CentrifugeguiMenu.this.y;
@@ -108,7 +108,7 @@ public class CentrifugeguiMenu extends AbstractContainerMenu implements UraniumM
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 128, 43) {
+		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 126, 49) {
 			private final int slot = 2;
 			private int x = CentrifugeguiMenu.this.x;
 			private int y = CentrifugeguiMenu.this.y;
@@ -120,9 +120,9 @@ public class CentrifugeguiMenu extends AbstractContainerMenu implements UraniumM
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -1 + 8 + sj * 18, -15 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, -1 + 8 + si * 18, -15 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
 	}
 
 	private void setItemInSlot(int index, ItemResource resource, int amount) {

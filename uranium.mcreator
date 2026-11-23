@@ -6054,7 +6054,11 @@
       "gui.uranium.splittergui.label_out1": "Rock",
       "item.uranium.rochesteril.description_1": "May still be slightly radioactive.",
       "item.uranium.rochesteril.description_0": "Mining waste.",
-      "item.uranium.closedindustrialprocessingunit": "Closed industrial processing unit"
+      "item.uranium.closedindustrialprocessingunit": "Closed industrial processing unit",
+      "gui.uranium.centrifugegui.label_fe": "FE",
+      "gui.uranium.centrifugegui.label_title": "CENTRIFUGE",
+      "gui.uranium.crushergui.label_title": "CRUSHER",
+      "gui.uranium.crushergui.label_fe": "FE"
     }
   },
   "metadata": {

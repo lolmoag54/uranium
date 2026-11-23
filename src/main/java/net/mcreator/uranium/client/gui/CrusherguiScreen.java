@@ -12,8 +12,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 
 import net.mcreator.uranium.world.inventory.CrusherguiMenu;
+import net.mcreator.uranium.procedures.RcreppowerProcedure;
 import net.mcreator.uranium.procedures.CrusherprogressbarProcedure;
-import net.mcreator.uranium.procedures.CrusherpowerbarProcedure;
 import net.mcreator.uranium.init.UraniumModScreens;
 
 import com.mojang.blaze3d.platform.InputConstants;
@@ -24,11 +24,12 @@ public class CrusherguiScreen extends AbstractContainerScreen<CrusherguiMenu> im
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final Identifier BACKGROUND = Identifier.parse("uranium:textures/screens/crushergui.png");
-	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/crusher_progress_sheet_72x48x9.png");
-	private static final Identifier SPRITE_1 = Identifier.parse("uranium:textures/screens/energy_bar_sheet_16x48x8.png");
+	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/rc_m_crush.png");
+	private static final Identifier SPRITE_1 = Identifier.parse("uranium:textures/screens/rc_bar_energy.png");
+	private static final Identifier SPRITE_2 = Identifier.parse("uranium:textures/screens/rc_arrow.png");
 
 	public CrusherguiScreen(CrusherguiMenu container, Inventory inventory, Component text) {
-		super(container, inventory, text, 174, 149);
+		super(container, inventory, text, 176, 166);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
@@ -51,8 +52,9 @@ public class CrusherguiScreen extends AbstractContainerScreen<CrusherguiMenu> im
 	public void extractBackground(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + 59, this.topPos + 16, 0, Mth.clamp((int) CrusherprogressbarProcedure.execute(world, x, y, z) * 48, 0, 384), 72, 48, 72, 432);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 5, this.topPos + 16, 0, Mth.clamp((int) CrusherpowerbarProcedure.execute(world, x, y, z) * 48, 0, 336), 16, 48, 16, 384);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + -1, this.topPos + 0, 0, 0, 176, 176, 176, 176);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 7, this.topPos + 20, 0, Mth.clamp((int) RcreppowerProcedure.execute(world, x, y, z) * 50, 0, 1000), 50, 50, 50, 1050);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_2, this.leftPos + 85, this.topPos + 37, 0, Mth.clamp((int) CrusherprogressbarProcedure.execute(world, x, y, z) * 38, 0, 304), 38, 38, 38, 342);
 	}
 
 	@Override
@@ -67,7 +69,8 @@ public class CrusherguiScreen extends AbstractContainerScreen<CrusherguiMenu> im
 
 	@Override
 	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.text(this.font, Component.translatable("gui.uranium.crushergui.label_crusher"), 5, 3, -12829636, false);
+		guiGraphics.text(this.font, Component.translatable("gui.uranium.crushergui.label_title"), 7, 5, -3550246, false);
+		guiGraphics.text(this.font, Component.translatable("gui.uranium.crushergui.label_fe"), 8, 71, -3550246, false);
 	}
 
 	@Override
