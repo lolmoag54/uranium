@@ -1,6 +1,10 @@
 {
   "parent": "item/generated",
   "textures": {
+<<<<<<< HEAD
     "layer0": "uranium:item/calibrated_sculk_sensor_amethyst"
+=======
+    "layer0": "uranium:item/texure_a_faire"
+>>>>>>> branch 'master' of https://github.com/lolmoag54/uranium
   }
 }

@@ -37,7 +37,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 120,
+        "name": "CUSTOM:crystallizing",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Crystallizer",
     "specialInformation": {
       "fixedValue": []
@@ -65,7 +73,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": true,
     "lightOpacity": 0,
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -105,22 +113,30 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "Crystallizergui",
+    "openGUIOnRightClick": true,
+    "inventorySize": 3,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "inventoryOutSlotIDs": [
+      2
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1
+    ],
+    "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 400000,
+    "energyCapacity": 20000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": "Crusherblockadded",
+    "onTickUpdate": "Rcxtaltick",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -3,7 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
+<<<<<<< HEAD
     "texture": "calibrated_sculk_sensor_amethyst",
+=======
+    "texture": "texure_a_faire",
+>>>>>>> branch 'master' of https://github.com/lolmoag54/uranium
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

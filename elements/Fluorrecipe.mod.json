@@ -2,19 +2,20 @@
   "_fv": 89,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smelting",
+    "recipeType": "Brewing",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
       "CUSTOM:Fluoride"
     ],
     "cookingBookCategory": "MISC",
-    "xpReward": 1.0,
+    "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": "CUSTOM:Fluoride",
-    "smeltingReturnStack": "CUSTOM:Fluor",
+    "brewingInputStack": "CUSTOM:Emptyvial",
+    "brewingIngredientStack": "CUSTOM:Fluoride",
+    "brewingReturnStack": "CUSTOM:Fluor",
     "name": "fluorrecipe",
     "namespace": "mod"
   }

@@ -12,45 +12,45 @@ public class RcsplitpowerProcedure {
 	public static double execute(LevelAccessor world, double x, double y, double z) {
 		double v = 0;
 		v = getEnergyStored(world, BlockPos.containing(x, y, z), null);
-		if (v < 20000) {
+		if (v < 0) {
 			return 0;
-		} else if (v < 40000) {
+		} else if (v < 1000) {
 			return 1;
-		} else if (v < 60000) {
+		} else if (v < 2000) {
 			return 2;
-		} else if (v < 80000) {
+		} else if (v < 3000) {
 			return 3;
-		} else if (v < 100000) {
+		} else if (v < 4000) {
 			return 4;
-		} else if (v < 120000) {
+		} else if (v < 5000) {
 			return 5;
-		} else if (v < 140000) {
+		} else if (v < 6000) {
 			return 6;
-		} else if (v < 160000) {
+		} else if (v < 7000) {
 			return 7;
-		} else if (v < 180000) {
+		} else if (v < 8000) {
 			return 8;
-		} else if (v < 200000) {
+		} else if (v < 9000) {
 			return 9;
-		} else if (v < 220000) {
+		} else if (v < 10000) {
 			return 10;
-		} else if (v < 240000) {
+		} else if (v < 11000) {
 			return 11;
-		} else if (v < 260000) {
+		} else if (v < 12000) {
 			return 12;
-		} else if (v < 280000) {
+		} else if (v < 13000) {
 			return 13;
-		} else if (v < 300000) {
+		} else if (v < 14000) {
 			return 14;
-		} else if (v < 320000) {
+		} else if (v < 15000) {
 			return 15;
-		} else if (v < 340000) {
+		} else if (v < 16000) {
 			return 16;
-		} else if (v < 360000) {
+		} else if (v < 17000) {
 			return 17;
-		} else if (v < 380000) {
+		} else if (v < 18000) {
 			return 18;
-		} else if (v < 400000) {
+		} else if (v < 19000) {
 			return 19;
 		}
 		return 20;

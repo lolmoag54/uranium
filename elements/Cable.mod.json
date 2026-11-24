@@ -2,14 +2,14 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "cable",
+    "texture": "electrical_cable_worn",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "electrical_cable_n:default",
+    "customModelName": "electrical_cable:default",
     "rotationMode": 2,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -38,7 +38,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Cable",
+    "name": "wire",
     "specialInformation": {
       "fixedValue": []
     },

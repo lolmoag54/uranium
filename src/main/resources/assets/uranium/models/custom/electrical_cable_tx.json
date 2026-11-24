@@ -1,4 +1,6 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "texture_size": [
     32,
     32
@@ -29,57 +31,56 @@
         "north": {
           "uv": [
             8,
-            0,
-            0,
-            3
+            0.5,
+            14,
+            3.5
           ],
-          "rotation": 180,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "east": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "south": {
           "uv": [
-            0,
-            3,
-            8,
-            0
+            10,
+            4.5,
+            16,
+            7.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "west": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "up": {
           "uv": [
-            0,
-            3,
-            8,
-            0
+            9,
+            4.5,
+            15,
+            7.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "down": {
           "uv": [
-            0,
-            0,
-            8,
-            3
+            9.5,
+            2,
+            15.5,
+            5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         }
       }
     },
@@ -107,50 +108,48 @@
       "faces": {
         "north": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "east": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            12,
+            2,
+            13.5,
+            5
           ],
-          "rotation": 90,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "west": {
           "uv": [
-            5.5,
-            3,
+            9,
             2.5,
+            10.5,
             5.5
           ],
-          "rotation": 90,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "up": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            12.5,
+            0.5,
+            15.5,
+            2
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "down": {
           "uv": [
+            8,
             2.5,
-            3,
-            5.5,
-            5.5
+            11,
+            4
           ],
-          "texture": "#texture"
+          "texture": "#1"
         }
       }
     },
@@ -178,49 +177,48 @@
       "faces": {
         "north": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            12,
+            4,
+            15,
+            5.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "east": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            13,
+            4.5,
+            16,
+            6
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "south": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            8.5,
+            5,
+            11.5,
+            6.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "west": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            9.5,
+            5,
+            12.5,
+            6.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "up": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "rotation": 180,
-          "texture": "#texture"
+          "texture": "#1"
         }
       }
     }
@@ -275,7 +273,7 @@
     "firstperson_lefthand": {
       "rotation": [
         0,
-        225,
+        -135,
         0
       ],
       "scale": [
@@ -299,7 +297,7 @@
     "gui": {
       "rotation": [
         30,
-        225,
+        -135,
         0
       ],
       "scale": [

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "pipe_worn": "pipe_worn"
+      }
+    }
+  }
+}

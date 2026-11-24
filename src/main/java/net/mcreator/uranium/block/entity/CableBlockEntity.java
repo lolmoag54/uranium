@@ -89,7 +89,7 @@ public class CableBlockEntity extends RandomizableContainerBlockEntity implement
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Cable");
+		return Component.literal("wire");
 	}
 
 	@Override

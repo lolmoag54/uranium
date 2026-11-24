@@ -37,7 +37,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 80,
+        "name": "CUSTOM:processing",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Closed industrial processing unit",
     "specialInformation": {
       "fixedValue": []
@@ -65,7 +73,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": true,
     "lightOpacity": 0,
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -105,22 +113,29 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "Cipugui",
+    "openGUIOnRightClick": true,
+    "inventorySize": 2,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "inventoryOutSlotIDs": [
+      1
+    ],
+    "inventoryInSlotIDs": [
+      0
+    ],
+    "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 400000,
+    "energyCapacity": 20000,
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": "Crusherblockadded",
+    "onTickUpdate": "Rcciputick",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

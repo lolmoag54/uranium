@@ -89,7 +89,7 @@ public class CableLTCBlockEntity extends RandomizableContainerBlockEntity implem
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Cable");
+		return Component.literal("wire");
 	}
 
 	@Override

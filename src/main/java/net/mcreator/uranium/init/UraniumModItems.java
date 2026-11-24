@@ -127,7 +127,6 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> CLOSEDINDUSTRIALPROCESSINGUNIT;
 	public static final DeferredItem<Item> CRYSTALLIZER;
 	public static final DeferredItem<Item> FLASK;
-	public static final DeferredItem<Item> RADIFEROUSCRYSTAL;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -234,7 +233,6 @@ public class UraniumModItems {
 		CLOSEDINDUSTRIALPROCESSINGUNIT = block(UraniumModBlocks.CLOSEDINDUSTRIALPROCESSINGUNIT);
 		CRYSTALLIZER = block(UraniumModBlocks.CRYSTALLIZER);
 		FLASK = register("flask", FlaskItem::new);
-		RADIFEROUSCRYSTAL = register("radiferouscrystal", RadiferouscrystalItem::new);
 	}
 
 	// Start of user code block custom items
