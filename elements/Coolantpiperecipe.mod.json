@@ -12,15 +12,15 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "CUSTOM:Steel",
-      "CUSTOM:Steel",
-      "CUSTOM:Steel",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_INGOT",
       "",
       "",
       "",
-      "CUSTOM:Steel",
-      "CUSTOM:Steel",
-      "CUSTOM:Steel"
+      "Items.COPPER_INGOT",
+      "Items.COPPER_INGOT",
+      "Items.COPPER_INGOT"
     ],
     "recipeReturnStack": "CUSTOM:Coolantpipe",
     "name": "coolantpiperecipe",
