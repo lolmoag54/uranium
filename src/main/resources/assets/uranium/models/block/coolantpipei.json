@@ -1,8 +1,8 @@
 {
-  "parent": "uranium:custom/electrical_cable_i",
+  "parent": "uranium:custom/pipe_i",
   "textures": {
-    "all": "uranium:block/tuyaut",
-    "particle": "uranium:block/tuyaut",
-    "texture": "uranium:block/tuyaut"
+    "all": "uranium:block/pipe_worn",
+    "particle": "uranium:block/pipe_worn",
+    "pipe_worn": "uranium:block/pipe_worn"
   }
 }

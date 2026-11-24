@@ -1,0 +1,1640 @@
+{
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    32,
+    32
+  ],
+  "elements": [
+    {
+      "name": "joint",
+      "from": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "to": [
+        11.5,
+        11.5,
+        11.5
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10,
+            2.5,
+            13.5,
+            6
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            12.5,
+            0,
+            16,
+            3.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            10.5,
+            3.5,
+            14,
+            7
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            10,
+            0.5,
+            13.5,
+            4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            11.5,
+            4,
+            15,
+            7.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            8.5,
+            3,
+            12,
+            6.5
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        5,
+        11,
+        6.7574
+      ],
+      "to": [
+        11,
+        15.5,
+        9.2426
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          13.25,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            4,
+            5,
+            6.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            5.5,
+            0,
+            6.7425,
+            2.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            1.5,
+            0.5,
+            4.5,
+            2.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            0.5,
+            3,
+            1.7425,
+            5.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            4,
+            0,
+            7,
+            1.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            3.5,
+            0,
+            6.5,
+            1.2425
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        6.7574,
+        11,
+        5
+      ],
+      "to": [
+        9.2426,
+        15.5,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          13.25,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2.5,
+            4,
+            3.7425,
+            6.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            5,
+            4.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            1,
+            3,
+            2.2425,
+            5.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            4,
+            3.5,
+            7,
+            5.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            1,
+            2,
+            2.2425,
+            5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            2,
+            4.5,
+            3.2425,
+            7.5
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        5,
+        11,
+        6.7574
+      ],
+      "to": [
+        11,
+        15.5,
+        9.2426
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "y",
+        "origin": [
+          8,
+          13.25,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            4.5,
+            7,
+            6.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            0.5,
+            3.5,
+            1.7425,
+            5.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            1,
+            1.5,
+            4,
+            3.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            6,
+            0,
+            7.2425,
+            2.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            5,
+            3.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            2.5,
+            6.5,
+            5.5,
+            7.7425
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        5,
+        11,
+        6.7574
+      ],
+      "to": [
+        11,
+        15.5,
+        9.2426
+      ],
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [
+          8,
+          13.25,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            1.5,
+            0.5,
+            4.5,
+            2.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            3.5,
+            4,
+            4.7425,
+            6.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            1.5,
+            0,
+            4.5,
+            2.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            6,
+            4,
+            7.2425,
+            6.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            0.5,
+            3,
+            3.5,
+            4.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            3,
+            0.5,
+            6,
+            1.7425
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        4.6,
+        13,
+        6.5917
+      ],
+      "to": [
+        11.4,
+        14,
+        9.4083
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          13.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            2,
+            11.4,
+            2.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            10.5,
+            4,
+            11.9085,
+            4.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            9.5,
+            4,
+            12.9,
+            4.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            11.5,
+            0,
+            12.9085,
+            0.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            8.5,
+            1,
+            11.9,
+            2.4085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            12.5,
+            2.5,
+            15.9,
+            3.9085
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        6.5917,
+        13,
+        4.6
+      ],
+      "to": [
+        9.4083,
+        14,
+        11.4
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          13.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            0,
+            13.4085,
+            0.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            9.5,
+            4,
+            12.9,
+            4.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            11,
+            0,
+            12.4085,
+            0.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            11.5,
+            7,
+            14.9,
+            7.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            12,
+            3.5,
+            13.4085,
+            6.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            12,
+            0,
+            13.4085,
+            3.4
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        4.6,
+        13,
+        6.5917
+      ],
+      "to": [
+        11.4,
+        14,
+        9.4083
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "y",
+        "origin": [
+          8,
+          13.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.5,
+            3.5,
+            11.9,
+            4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            11,
+            1,
+            12.4085,
+            1.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            10,
+            4.5,
+            13.4,
+            5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            9,
+            4,
+            10.4085,
+            4.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            12,
+            1.5,
+            15.4,
+            2.9085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            10.5,
+            4,
+            13.9,
+            5.4085
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        4.6,
+        13,
+        6.5917
+      ],
+      "to": [
+        11.4,
+        14,
+        9.4083
+      ],
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [
+          8,
+          13.5,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            10.5,
+            2,
+            13.9,
+            2.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            11.5,
+            0.5,
+            12.9085,
+            1
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            8,
+            5.5,
+            11.4,
+            6
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            8.5,
+            6.5,
+            9.9085,
+            7
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            12,
+            3.5,
+            15.4,
+            4.9085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            9,
+            6,
+            12.4,
+            7.4085
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "flange",
+      "from": [
+        4.25,
+        14.5,
+        4.25
+      ],
+      "to": [
+        11.75,
+        16,
+        11.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            4.5,
+            15.75,
+            5.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            8.5,
+            7,
+            12.25,
+            7.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            8.5,
+            2.5,
+            12.25,
+            3.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            10.5,
+            1.5,
+            14.25,
+            2.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            11,
+            3.5,
+            14.75,
+            7.25
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            11.5,
+            2,
+            15.25,
+            5.75
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        11,
+        5,
+        6.7574
+      ],
+      "to": [
+        15.5,
+        11,
+        9.2426
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          13.25,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            1,
+            4.25,
+            4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            1.5,
+            3,
+            2.7425,
+            6
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            2.5,
+            1,
+            4.75,
+            4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            6.5,
+            2.5,
+            7.7425,
+            5.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            3.5,
+            2.5,
+            5.75,
+            3.7425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            5,
+            6.5,
+            7.25,
+            7.7425
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        11,
+        6.7574,
+        5
+      ],
+      "to": [
+        15.5,
+        9.2426,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          13.25,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            5,
+            2.25,
+            6.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            2,
+            3,
+            5,
+            4.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            2,
+            3,
+            4.25,
+            4.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            1.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            5.5,
+            3.5,
+            7.75,
+            6.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            5,
+            4,
+            7.25,
+            7
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        11,
+        5,
+        6.7574
+      ],
+      "to": [
+        15.5,
+        11,
+        9.2426
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "x",
+        "origin": [
+          13.25,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            5.5,
+            1.5,
+            7.75,
+            4.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            5.2425,
+            5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            3,
+            5,
+            5.25,
+            8
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            6.5,
+            1.5,
+            7.7425,
+            4.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            1,
+            5.5,
+            3.25,
+            6.7425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            5.5,
+            1.5,
+            7.75,
+            2.7425
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "pipe",
+      "from": [
+        11,
+        5,
+        6.7574
+      ],
+      "to": [
+        15.5,
+        11,
+        9.2426
+      ],
+      "rotation": {
+        "angle": -45,
+        "axis": "x",
+        "origin": [
+          13.25,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4.5,
+            2.5,
+            6.75,
+            5.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            6.5,
+            4,
+            7.7425,
+            7
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            6.25,
+            5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            3,
+            1.5,
+            4.2425,
+            4.5
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            4,
+            1,
+            6.25,
+            2.2425
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            5.5,
+            1,
+            7.75,
+            2.2425
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        13,
+        4.6,
+        6.5917
+      ],
+      "to": [
+        14,
+        11.4,
+        9.4083
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          13.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            4.5,
+            15.5,
+            7.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            10.5,
+            2.5,
+            11.9085,
+            5.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            11.5,
+            4.5,
+            12,
+            7.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            12,
+            2.5,
+            13.4085,
+            5.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            10,
+            1.5,
+            10.5,
+            2.9085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            14,
+            6.5,
+            14.5,
+            7.9085
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        13,
+        6.5917,
+        4.6
+      ],
+      "to": [
+        14,
+        9.4083,
+        11.4
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          13.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8.5,
+            4,
+            9,
+            5.4085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            12,
+            0,
+            15.4,
+            1.4085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            14.5,
+            2.5,
+            15,
+            3.9085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            8.5,
+            3,
+            11.9,
+            4.4085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            10.5,
+            1.5,
+            11,
+            4.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            12,
+            0,
+            12.5,
+            3.4
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        13,
+        4.6,
+        6.5917
+      ],
+      "to": [
+        14,
+        11.4,
+        9.4083
+      ],
+      "rotation": {
+        "angle": 45,
+        "axis": "x",
+        "origin": [
+          13.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            1.5,
+            14.5,
+            4.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            9,
+            3,
+            10.4085,
+            6.4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            15,
+            0,
+            15.5,
+            3.4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            9,
+            0,
+            10.4085,
+            3.4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            14,
+            0,
+            14.5,
+            1.4085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            13.5,
+            6,
+            14,
+            7.4085
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "ring",
+      "from": [
+        13,
+        4.6,
+        6.5917
+      ],
+      "to": [
+        14,
+        11.4,
+        9.4083
+      ],
+      "rotation": {
+        "angle": -45,
+        "axis": "x",
+        "origin": [
+          13.5,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            13,
+            0,
+            13.5,
+            3.4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            8,
+            0.5,
+            9.4085,
+            3.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            13,
+            3,
+            13.5,
+            6.4
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            13.5,
+            1.5,
+            14.9085,
+            4.9
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            13.5,
+            6.5,
+            14,
+            7.9085
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            12,
+            4.5,
+            12.5,
+            5.9085
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    },
+    {
+      "name": "flange",
+      "from": [
+        14.5,
+        4.25,
+        4.25
+      ],
+      "to": [
+        16,
+        11.75,
+        11.75
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          8,
+          8,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            13.5,
+            4,
+            14.25,
+            7.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "east": {
+          "uv": [
+            8.5,
+            4,
+            12.25,
+            7.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "south": {
+          "uv": [
+            9,
+            2,
+            9.75,
+            5.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "west": {
+          "uv": [
+            11.5,
+            0,
+            15.25,
+            3.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "up": {
+          "uv": [
+            8,
+            4,
+            8.75,
+            7.75
+          ],
+          "texture": "#pipe_worn"
+        },
+        "down": {
+          "uv": [
+            9.5,
+            2,
+            10.25,
+            5.75
+          ],
+          "texture": "#pipe_worn"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -135,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        -135,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "fixed": {
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "joint",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "scope": 0,
+      "color": 0,
+      "children": [
+        0
+      ]
+    },
+    {
+      "name": "arm_yp",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "scope": 0,
+      "color": 0,
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "name": "arm_xp",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "scope": 0,
+      "color": 0,
+      "children": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    }
+  ]
+}
