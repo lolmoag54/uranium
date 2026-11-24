@@ -5955,6 +5955,24 @@
         ]
       },
       "path": "~/Radium"
+    },
+    {
+      "name": "Dildo",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dildo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/uranium/loot_table/blocks/dildo.json",
+          "src/main/resources/assets/uranium/models/block/dildo.json",
+          "src/main/resources/assets/uranium/blockstates/dildo.json",
+          "src/main/java/net/mcreator/uranium/block/DildoBlock.java",
+          "src/main/resources/assets/uranium/models/item/dildo.json",
+          "src/main/resources/assets/uranium/items/dildo.json"
+        ]
+      },
+      "path": "~/Radium/dildo"
     }
   ],
   "variable_elements": [
@@ -6321,7 +6339,8 @@
       "gui.uranium.cipugui.label_fe": "FE",
       "item.uranium.radiferouscrystal": "Radiferous crystal",
       "item.uranium.emptyvial": "Empty vial",
-      "item.uranium.watervial": "Water vial"
+      "item.uranium.watervial": "Water vial",
+      "item.uranium.dildo": "Dildo"
     }
   },
   "metadata": {
@@ -6463,7 +6482,12 @@
       },
       {
         "name": "Radium",
-        "children": []
+        "children": [
+          {
+            "name": "dildo",
+            "children": []
+          }
+        ]
       },
       {
         "name": "centrifuge",

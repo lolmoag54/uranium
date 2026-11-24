@@ -1,0 +1,16 @@
+{
+  "parent": "uranium:custom/dildo",
+  "textures": {
+    "all": "minecraft:block/bubble_coral_block",
+    "particle": "minecraft:block/bubble_coral_block",
+    "0": "uranium:block/",
+    "1": "uranium:block/",
+    "2": "uranium:block/",
+    "3": "uranium:block/",
+    "4": "uranium:block/",
+    "5": "uranium:block/",
+    "6": "uranium:block/",
+    "7": "uranium:block/",
+    "8": "uranium:block/"
+  }
+}

@@ -93,6 +93,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.RADIFEROUSCRYSTAL.get());
 				tabData.accept(UraniumModItems.EMPTYVIAL.get());
 				tabData.accept(UraniumModItems.WATERVIAL.get());
+				tabData.accept(UraniumModBlocks.DILDO.get().asItem());
 			}).withTabsBefore(POLONIUM.getId()).build());
 
 	@SubscribeEvent
