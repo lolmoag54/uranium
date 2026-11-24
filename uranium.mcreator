@@ -5955,20 +5955,6 @@
         ]
       },
       "path": "~/Radium"
-    },
-    {
-      "name": "Itemi",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "itemi",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/uranium/items/itemi.json",
-          "src/main/resources/assets/uranium/models/item/itemi.json",
-          "src/main/java/net/mcreator/uranium/item/ItemiItem.java"
-        ]
-      }
     }
   ],
   "variable_elements": [
@@ -6335,8 +6321,7 @@
       "gui.uranium.cipugui.label_fe": "FE",
       "item.uranium.radiferouscrystal": "Radiferous crystal",
       "item.uranium.emptyvial": "Empty vial",
-      "item.uranium.watervial": "Water vial",
-      "item.uranium.itemi": "Itemi"
+      "item.uranium.watervial": "Water vial"
     }
   },
   "metadata": {
