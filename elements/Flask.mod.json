@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "texure_a_faire",
+    "texture": "flask",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Radiferous crystal",
+    "name": "water vial",
     "rarity": "COMMON",
     "creativeTabs": [
       "CUSTOM:Radiumcreativetab"

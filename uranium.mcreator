@@ -6327,15 +6327,7 @@
       "gui.uranium.crushergui.label_title": "CRUSHER",
       "gui.uranium.crushergui.label_fe": "FE",
       "item.uranium.crystallizer": "Crystallizer",
-      "gui.uranium.crystallizergui.label_title": "CRYSTALLIZER",
-      "gui.uranium.crystallizergui.label_fe": "FE",
-      "gui.uranium.crystallizergui.label_in0": "Vial",
-      "gui.uranium.crystallizergui.label_in1": "powder",
-      "gui.uranium.cipugui.label_title": "INDUSTRIAL UNIT",
-      "gui.uranium.cipugui.label_fe": "FE",
       "item.uranium.radiferouscrystal": "Radiferous crystal",
-      "item.uranium.emptyvial": "Empty vial",
-      "item.uranium.watervial": "Water vial",
       "item.uranium.prosessor": "Prosessor"
     }
   },
