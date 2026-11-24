@@ -5735,21 +5735,6 @@
         ]
       },
       "path": "~/Radium"
-    },
-    {
-      "name": "Radiferouscrystal",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "radiferouscrystal",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/uranium/models/item/radiferouscrystal.json",
-          "src/main/java/net/mcreator/uranium/item/RadiferouscrystalItem.java",
-          "src/main/resources/assets/uranium/items/radiferouscrystal.json"
-        ]
-      },
-      "path": "~/Radium"
     }
   ],
   "variable_elements": [
@@ -6127,7 +6112,6 @@
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModModels.java",
       "src/main/java/net/mcreator/uranium/UraniumMod.java",
