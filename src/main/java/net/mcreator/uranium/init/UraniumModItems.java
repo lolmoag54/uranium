@@ -129,6 +129,7 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> RADIFEROUSCRYSTAL;
 	public static final DeferredItem<Item> EMPTYVIAL;
 	public static final DeferredItem<Item> WATERVIAL;
+	public static final DeferredItem<Item> ITEMI;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -237,6 +238,7 @@ public class UraniumModItems {
 		RADIFEROUSCRYSTAL = register("radiferouscrystal", RadiferouscrystalItem::new);
 		EMPTYVIAL = register("emptyvial", EmptyvialItem::new);
 		WATERVIAL = register("watervial", WatervialItem::new);
+		ITEMI = register("itemi", ItemiItem::new);
 	}
 
 	// Start of user code block custom items
