@@ -3,13 +3,7 @@
     "default": {
       "name": "default",
       "map": {
-        "texture": "cable"
-      }
-    },
-    "coolant": {
-      "name": "coolant",
-      "map": {
-        "texture": "tuyaut"
+        "2": "electrical_cable_worn"
       }
     }
   }

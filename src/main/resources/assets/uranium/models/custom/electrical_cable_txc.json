@@ -1,4 +1,6 @@
 {
+  "format_version": "26.3",
+  "credit": "Made with Blockbench",
   "texture_size": [
     32,
     32
@@ -28,60 +30,57 @@
       "faces": {
         "north": {
           "uv": [
-            0,
-            3,
             8,
-            0
+            0.5,
+            14,
+            3.5
           ],
-          "rotation": 180,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "east": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "rotation": 90,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "south": {
           "uv": [
-            0,
-            0,
-            8,
-            3
+            10,
+            4.5,
+            16,
+            7.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "west": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "rotation": 270,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "up": {
           "uv": [
-            0,
-            3,
-            8,
-            0
+            9,
+            4.5,
+            15,
+            7.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "down": {
           "uv": [
-            8,
-            0,
-            0,
-            3
+            9.5,
+            2,
+            15.5,
+            5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         }
       }
     },
@@ -109,51 +108,48 @@
       "faces": {
         "north": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            11,
+            3,
+            14,
+            4.5
           ],
-          "rotation": 180,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "east": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            11,
+            3,
+            14,
+            4.5
           ],
-          "rotation": 180,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "south": {
           "uv": [
-            2.5,
-            3,
-            5.5,
-            5.5
+            9,
+            4.5,
+            12,
+            6
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "west": {
           "uv": [
-            5.5,
-            3,
-            2.5,
-            5.5
+            11.5,
+            1,
+            14.5,
+            2.5
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "down": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "rotation": 180,
-          "texture": "#texture"
+          "texture": "#1"
         }
       }
     },
@@ -181,51 +177,48 @@
       "faces": {
         "north": {
           "uv": [
-            9,
             0,
-            12,
-            3
+            8,
+            3,
+            11
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "east": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            13.5,
+            2,
+            15,
+            5
           ],
-          "rotation": 90,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "west": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            9.5,
+            0.5,
+            11,
+            3.5
           ],
-          "rotation": 270,
-          "texture": "#texture"
+          "texture": "#1"
         },
         "up": {
           "uv": [
-            2.5,
-            5.5,
-            5.5,
-            3
+            11,
+            6.5,
+            14,
+            8
           ],
-          "texture": "#texture"
+          "texture": "#1"
         },
         "down": {
           "uv": [
-            2.5,
+            9.5,
             5.5,
-            5.5,
-            3
+            12.5,
+            7
           ],
-          "rotation": 180,
-          "texture": "#texture"
+          "texture": "#1"
         }
       }
     }
@@ -280,7 +273,7 @@
     "firstperson_lefthand": {
       "rotation": [
         0,
-        225,
+        -135,
         0
       ],
       "scale": [
@@ -304,7 +297,7 @@
     "gui": {
       "rotation": [
         30,
-        225,
+        -135,
         0
       ],
       "scale": [
