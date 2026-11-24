@@ -5720,6 +5720,36 @@
         ]
       },
       "path": "~/Radium"
+    },
+    {
+      "name": "Flask",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flask",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/flask.json",
+          "src/main/resources/assets/uranium/models/item/flask.json",
+          "src/main/java/net/mcreator/uranium/item/FlaskItem.java"
+        ]
+      },
+      "path": "~/Radium"
+    },
+    {
+      "name": "Radiferouscrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiferouscrystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/radiferouscrystal.json",
+          "src/main/java/net/mcreator/uranium/item/RadiferouscrystalItem.java",
+          "src/main/resources/assets/uranium/items/radiferouscrystal.json"
+        ]
+      },
+      "path": "~/Radium"
     }
   ],
   "variable_elements": [
@@ -6077,7 +6107,9 @@
       "gui.uranium.centrifugegui.label_title": "CENTRIFUGE",
       "gui.uranium.crushergui.label_title": "CRUSHER",
       "gui.uranium.crushergui.label_fe": "FE",
-      "item.uranium.crystallizer": "Crystallizer"
+      "item.uranium.crystallizer": "Crystallizer",
+      "item.uranium.flask": "water vial",
+      "item.uranium.radiferouscrystal": "Radiferous crystal"
     }
   },
   "metadata": {

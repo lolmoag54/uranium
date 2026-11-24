@@ -189,5 +189,7 @@
   "gui.uranium.centrifugegui.label_title": "CENTRIFUGE",
   "gui.uranium.crushergui.label_title": "CRUSHER",
   "gui.uranium.crushergui.label_fe": "FE",
-  "item.uranium.crystallizer": "Crystallizer"
+  "item.uranium.crystallizer": "Crystallizer",
+  "item.uranium.flask": "water vial",
+  "item.uranium.radiferouscrystal": "Radiferous crystal"
 }

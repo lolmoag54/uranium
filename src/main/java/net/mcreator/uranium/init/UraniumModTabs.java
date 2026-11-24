@@ -90,6 +90,8 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.ROCHESTERIL.get());
 				tabData.accept(UraniumModBlocks.CLOSEDINDUSTRIALPROCESSINGUNIT.get().asItem());
 				tabData.accept(UraniumModBlocks.CRYSTALLIZER.get().asItem());
+				tabData.accept(UraniumModItems.FLASK.get());
+				tabData.accept(UraniumModItems.RADIFEROUSCRYSTAL.get());
 			}).withTabsBefore(POLONIUM.getId()).build());
 
 	@SubscribeEvent
