@@ -94,7 +94,7 @@ public class CoolingpoolguiMenu extends AbstractContainerMenu implements Uranium
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 46, 35) {
+		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 66, 37) {
 			private final int slot = 0;
 			private int x = CoolingpoolguiMenu.this.x;
 			private int y = CoolingpoolguiMenu.this.y;
@@ -104,7 +104,7 @@ public class CoolingpoolguiMenu extends AbstractContainerMenu implements Uranium
 				return UraniumModItems.SPENTFUELROD.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 118, 35) {
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 126, 37) {
 			private final int slot = 1;
 			private int x = CoolingpoolguiMenu.this.x;
 			private int y = CoolingpoolguiMenu.this.y;
@@ -116,9 +116,9 @@ public class CoolingpoolguiMenu extends AbstractContainerMenu implements Uranium
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 2 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 2 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
 	}
 
 	private void setItemInSlot(int index, ItemResource resource, int amount) {

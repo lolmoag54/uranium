@@ -141,6 +141,7 @@ public class UraniumModBlockEntities {
 		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLANTPIPES.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, WATERPUMP.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Item.BLOCK, COOLINGPOOL.get(), WorldlyContainerWrapper::new);
+		event.registerBlockEntity(Capabilities.Energy.BLOCK, COOLINGPOOL.get(), (blockEntity, side) -> ((CoolingpoolBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, REPROCESSINGPLANT.get(), WorldlyContainerWrapper::new);
 		event.registerBlockEntity(Capabilities.Energy.BLOCK, REPROCESSINGPLANT.get(), (blockEntity, side) -> ((ReprocessingplantBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.Item.BLOCK, CALCINATIONFURNACE.get(), WorldlyContainerWrapper::new);

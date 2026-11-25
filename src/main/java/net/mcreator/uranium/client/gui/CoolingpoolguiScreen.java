@@ -12,6 +12,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 
 import net.mcreator.uranium.world.inventory.CoolingpoolguiMenu;
+import net.mcreator.uranium.procedures.RcreppowerProcedure;
 import net.mcreator.uranium.procedures.RcpoolwaterProcedure;
 import net.mcreator.uranium.procedures.RcpoolprogressProcedure;
 import net.mcreator.uranium.init.UraniumModScreens;
@@ -24,9 +25,10 @@ public class CoolingpoolguiScreen extends AbstractContainerScreen<Coolingpoolgui
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final Identifier BACKGROUND = Identifier.parse("uranium:textures/screens/coolingpoolgui.png");
-	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/rc_m_pool.png");
-	private static final Identifier SPRITE_1 = Identifier.parse("uranium:textures/screens/rc_bar_water.png");
-	private static final Identifier SPRITE_2 = Identifier.parse("uranium:textures/screens/rc_arrow.png");
+	private static final Identifier SPRITE_0 = Identifier.parse("uranium:textures/screens/rc_m_pool2.png");
+	private static final Identifier SPRITE_1 = Identifier.parse("uranium:textures/screens/rc_bar_energy.png");
+	private static final Identifier SPRITE_2 = Identifier.parse("uranium:textures/screens/rc_bar_water.png");
+	private static final Identifier SPRITE_3 = Identifier.parse("uranium:textures/screens/rc_arrow.png");
 
 	public CoolingpoolguiScreen(CoolingpoolguiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text, 176, 166);
@@ -53,8 +55,9 @@ public class CoolingpoolguiScreen extends AbstractContainerScreen<Coolingpoolgui
 		super.extractBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_0, this.leftPos + -1, this.topPos + 0, 0, 0, 176, 176, 176, 176);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 9, this.topPos + 20, 0, Mth.clamp((int) RcpoolwaterProcedure.execute(world, x, y, z) * 50, 0, 1000), 50, 50, 50, 1050);
-		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_2, this.leftPos + 71, this.topPos + 35, 0, Mth.clamp((int) RcpoolprogressProcedure.execute(world, x, y, z) * 38, 0, 304), 38, 38, 38, 342);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_1, this.leftPos + 7, this.topPos + 20, 0, Mth.clamp((int) RcreppowerProcedure.execute(world, x, y, z) * 50, 0, 1000), 50, 50, 50, 1050);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_2, this.leftPos + 25, this.topPos + 20, 0, Mth.clamp((int) RcpoolwaterProcedure.execute(world, x, y, z) * 50, 0, 1000), 50, 50, 50, 1050);
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, SPRITE_3, this.leftPos + 85, this.topPos + 37, 0, Mth.clamp((int) RcpoolprogressProcedure.execute(world, x, y, z) * 38, 0, 304), 38, 38, 38, 342);
 	}
 
 	@Override
@@ -70,9 +73,8 @@ public class CoolingpoolguiScreen extends AbstractContainerScreen<Coolingpoolgui
 	@Override
 	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.text(this.font, Component.translatable("gui.uranium.coolingpoolgui.label_title"), 7, 5, -3550246, false);
-		guiGraphics.text(this.font, Component.translatable("gui.uranium.coolingpoolgui.label_h2o"), 8, 71, -3550246, false);
-		guiGraphics.text(this.font, Component.translatable("gui.uranium.coolingpoolgui.label_in"), 43, 54, -3550246, false);
-		guiGraphics.text(this.font, Component.translatable("gui.uranium.coolingpoolgui.label_out"), 113, 54, -3550246, false);
+		guiGraphics.text(this.font, Component.translatable("gui.uranium.coolingpoolgui.label_fe"), 8, 71, -3550246, false);
+		guiGraphics.text(this.font, Component.translatable("gui.uranium.coolingpoolgui.label_h2o"), 23, 71, -3550246, false);
 	}
 
 	@Override

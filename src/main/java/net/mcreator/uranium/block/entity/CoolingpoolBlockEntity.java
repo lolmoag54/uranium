@@ -1,5 +1,7 @@
 package net.mcreator.uranium.block.entity;
 
+import net.neoforged.neoforge.transfer.energy.SimpleEnergyHandler;
+
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.block.state.BlockState;
@@ -40,6 +42,7 @@ public class CoolingpoolBlockEntity extends RandomizableContainerBlockEntity imp
 		if (!this.tryLoadLootTable(valueInput))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
 		ContainerHelper.loadAllItems(valueInput, this.stacks);
+		valueInput.child("energyStorage").ifPresent(input -> energyStorage.deserialize(input));
 	}
 
 	@Override
@@ -47,6 +50,7 @@ public class CoolingpoolBlockEntity extends RandomizableContainerBlockEntity imp
 		super.saveAdditional(valueOutput);
 		if (!this.trySaveLootTable(valueOutput))
 			ContainerHelper.saveAllItems(valueOutput, this.stacks);
+		energyStorage.serialize(valueOutput.child("energyStorage"));
 	}
 
 	@Override
@@ -99,6 +103,8 @@ public class CoolingpoolBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
+		if (index == 1)
+			return false;
 		return true;
 	}
 
@@ -114,6 +120,20 @@ public class CoolingpoolBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
+		if (index == 0)
+			return false;
 		return true;
+	}
+
+	private final SimpleEnergyHandler energyStorage = new SimpleEnergyHandler(20000, 256, 0, 0) {
+		@Override
+		protected void onEnergyChanged(int previousAmount) {
+			setChanged();
+			level.sendBlockUpdated(worldPosition, level.getBlockState(worldPosition), level.getBlockState(worldPosition), 2);
+		}
+	};
+
+	public SimpleEnergyHandler getEnergyStorage() {
+		return energyStorage;
 	}
 }

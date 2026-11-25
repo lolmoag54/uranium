@@ -44,6 +44,13 @@
         "name": "CUSTOM:cooling",
         "type": "integer",
         "value": 0
+      },
+      {
+        "min": 0,
+        "max": 20,
+        "name": "CUSTOM:water",
+        "type": "integer",
+        "value": 0
       }
     ],
     "name": "Cooling pool",
@@ -120,16 +127,21 @@
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
+    "inventoryOutSlotIDs": [
+      1
+    ],
+    "inventoryInSlotIDs": [
+      0
+    ],
+    "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 0,
-    "energyMaxReceive": 0,
+    "energyCapacity": 20000,
+    "energyMaxReceive": 256,
     "energyMaxExtract": 0,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": "Crusherblockadded",
     "onTickUpdate": "Rcpooltick",
     "generateFeature": false,
     "restrictionBiomes": [],

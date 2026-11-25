@@ -39,6 +39,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.uranium.world.inventory.CoolingpoolguiMenu;
 import net.mcreator.uranium.procedures.RcpooltickProcedure;
+import net.mcreator.uranium.procedures.CrusherblockaddedProcedure;
 import net.mcreator.uranium.block.entity.CoolingpoolBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -46,6 +47,7 @@ import io.netty.buffer.Unpooled;
 public class CoolingpoolBlock extends Block implements EntityBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public static final IntegerProperty COOLING = IntegerProperty.create("cooling", 0, 100);
+	public static final IntegerProperty WATER = IntegerProperty.create("water", 0, 20);
 
 	public CoolingpoolBlock(BlockBehaviour.Properties properties) {
 		super(properties
@@ -53,7 +55,7 @@ public class CoolingpoolBlock extends Block implements EntityBlock {
 						() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.place")), () -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.hit")),
 						() -> BuiltInRegistries.SOUND_EVENT.getValue(Identifier.parse("block.anvil.fall"))))
 				.strength(3f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(COOLING, 0));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(COOLING, 0).setValue(WATER, 0));
 	}
 
 	@Override
@@ -74,7 +76,7 @@ public class CoolingpoolBlock extends Block implements EntityBlock {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, COOLING);
+		builder.add(FACING, COOLING, WATER);
 	}
 
 	@Override
@@ -82,7 +84,7 @@ public class CoolingpoolBlock extends Block implements EntityBlock {
 		BlockState state = super.getStateForPlacement(context);
 		if (state == null)
 			return null;
-		return state.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(COOLING, 0);
+		return state.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(COOLING, 0).setValue(WATER, 0);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -97,6 +99,7 @@ public class CoolingpoolBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 2);
+		CrusherblockaddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

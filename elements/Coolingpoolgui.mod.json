@@ -6,14 +6,14 @@
     "width": 176,
     "height": 166,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 2,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
         "type": "sprite",
         "data": {
-          "sprite": "rc_m_pool.png",
+          "sprite": "rc_m_pool2.png",
           "spritesCount": 1,
           "spriteIndex": {
             "fixedValue": 0.0
@@ -43,13 +43,44 @@
       {
         "type": "sprite",
         "data": {
+          "sprite": "rc_bar_energy.png",
+          "spritesCount": 21,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "Rcreppower"
+          },
+          "x": 133,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fe",
+          "text": {
+            "fixedValue": "FE"
+          },
+          "color": {
+            "value": -3550246,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 134,
+          "y": 108,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
           "sprite": "rc_bar_water.png",
           "spritesCount": 21,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "Rcpoolwater"
           },
-          "x": 135,
+          "x": 151,
           "y": 57,
           "locked": false
         }
@@ -66,7 +97,7 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 134,
+          "x": 149,
           "y": 108,
           "locked": false
         }
@@ -85,25 +116,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 171,
-          "y": 71,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_in",
-          "text": {
-            "fixedValue": "Spent"
-          },
-          "color": {
-            "value": -3550246,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 169,
-          "y": 91,
+          "x": 191,
+          "y": 73,
           "locked": false
         }
       },
@@ -116,8 +130,8 @@
             "fixedValue": 0.0,
             "name": "Rcpoolprogress"
           },
-          "x": 197,
-          "y": 72,
+          "x": 211,
+          "y": 74,
           "locked": false
         }
       },
@@ -129,25 +143,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 243,
-          "y": 71,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_out",
-          "text": {
-            "fixedValue": "Cooled"
-          },
-          "color": {
-            "value": -3550246,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 239,
-          "y": 91,
+          "x": 251,
+          "y": 73,
           "locked": false
         }
       }

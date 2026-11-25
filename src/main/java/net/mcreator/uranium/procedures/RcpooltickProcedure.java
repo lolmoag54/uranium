@@ -1,7 +1,9 @@
 package net.mcreator.uranium.procedures;
 
+import net.neoforged.neoforge.transfer.transaction.Transaction;
 import net.neoforged.neoforge.transfer.item.ItemUtil;
 import net.neoforged.neoforge.transfer.item.ItemResource;
+import net.neoforged.neoforge.transfer.energy.EnergyHandler;
 import net.neoforged.neoforge.transfer.ResourceHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -15,6 +17,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.Container;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.uranium.init.UraniumModItems;
@@ -40,7 +43,15 @@ public class RcpooltickProcedure {
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.SPENTFUELROD.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 63
 					&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.AIR.asItem()
 							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == UraniumModItems.COOLEDSPENTFUELROD.get())
-					&& getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcWater") >= 1) {
+					&& getBlockNBTNumber(world, BlockPos.containing(x, y, z), "rcWater") >= 1 && getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 128) {
+				if (world instanceof ILevelExtension _ext) {
+					if (_ext.getCapability(Capabilities.Energy.BLOCK, BlockPos.containing(x, y, z), null) instanceof EnergyHandler _energyHandler) {
+						try (var _tx = Transaction.openRoot()) {
+							_energyHandler.extract(128, _tx);
+							_tx.commit();
+						}
+					}
+				}
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -140,5 +151,13 @@ public class RcpooltickProcedure {
 		if (blockEntity != null)
 			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
 		return -1;
+	}
+
+	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			if (levelExtension.getCapability(Capabilities.Energy.BLOCK, pos, direction) instanceof EnergyHandler energyHandler)
+				return energyHandler.getAmountAsInt();
+		}
+		return 0;
 	}
 }
