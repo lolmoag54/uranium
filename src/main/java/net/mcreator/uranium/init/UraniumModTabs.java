@@ -50,7 +50,9 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.URANIUMPELLET.get());
 				tabData.accept(UraniumModItems.ZICRONIUM.get());
 				tabData.accept(UraniumModItems.ZICRON.get());
+				tabData.accept(UraniumModBlocks.ZICRON_ORE.get().asItem());
 				tabData.accept(UraniumModBlocks.REINFORCEDCONCRETE.get().asItem());
+				tabData.accept(UraniumModBlocks.LEADCRAFTINGTABLE.get().asItem());
 				tabData.accept(UraniumModBlocks.LEADORE.get().asItem());
 				tabData.accept(UraniumModItems.URANIUM_ARMOR_HELMET.get());
 				tabData.accept(UraniumModItems.URANIUM_ARMOR_CHESTPLATE.get());
@@ -94,6 +96,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.RADIFEROUSCRYSTAL.get());
 				tabData.accept(UraniumModItems.EMPTYVIAL.get());
 				tabData.accept(UraniumModItems.WATERVIAL.get());
+				tabData.accept(UraniumModItems.STERILIZED_WATER_VIAL.get());
 			}).withTabsBefore(POLONIUM.getId()).build());
 
 	@SubscribeEvent

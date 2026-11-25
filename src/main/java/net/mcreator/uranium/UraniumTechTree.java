@@ -53,10 +53,11 @@ import net.neoforged.neoforge.registries.RegisterEvent;
  * Aucune modification de la classe principale MCreator.
  * Inspiré de SQ-Nuclear (MIT, (c) 2026 SideQuestChris).
  *
- * v4.3 :
- *  - révélation uniquement de la suite directe (les étapes suivantes restent cachées) ;
- *  - masquage des crafts et suites sur les nœuds verrouillés ou des systèmes non débloqués ;
- *  - onglets de systèmes (Radium -> Uranium -> Plutonium + All).
+ * v4.4 :
+ *  - rejoue la construction progressive ("Build again") et réinitialise la vue ("Reset view") ;
+ *  - navigation "< Back" / "Next >" entre systèmes (Radium -> Uranium -> Plutonium) ;
+ *  - légende des catégories en bas à gauche cliquable + indicateur de boucle fermée ;
+ *  - révélation uniquement de la suite directe et crafts cachés tant que verrouillé.
  */
 public final class UraniumTechTree {
     private UraniumTechTree() {}
@@ -836,7 +837,7 @@ public final class UraniumTechTree {
 
     public static class TechTreeScreen extends Screen {
         private static final int CW = 86, RH = 64, BOX = 34;
-        private static final int HEADER = 70, FOOT = 18;
+        private static final int HEADER = 52, FOOT = 18;
         private static final int STARS = 44;
         private static final float MIN_ZOOM = 0.2f;
         private static final float LOD_ZOOM = 0.42f;
@@ -884,13 +885,13 @@ public final class UraniumTechTree {
         private TechNode hovered;
         private long lastNano;
         private float time;
+        private float buildStart;
         private TechSystem activeSystem = null;
         private List<Category> cats = List.of();
         private Category filter;
         private StatusFilter statusFilter = StatusFilter.ALL;
         private String searchQuery = "";
         private boolean searchFocused = false;
-        private final float[] chipAnim = new float[16];
         private final float[] tabAnim = new float[4];
         private TechNode selected, shown;
         private float panelAnim, panelScroll, panelContentH;
@@ -936,6 +937,7 @@ public final class UraniumTechTree {
                 known = new HashSet<>(TechTreeCommon.CLIENT_UNLOCKED);
                 TechTreeCommon.CLIENT_NEW = 0;
                 activeSystem = currentHighestSystem();
+                buildStart = time;
                 fit(true);
                 opened = true;
             } else if (width != lastW || height != lastH) {
@@ -943,6 +945,21 @@ public final class UraniumTechTree {
             }
             lastW = width;
             lastH = height;
+        }
+
+        private void replayBuild() {
+            buildStart = time;
+            anims.clear();
+            parts.clear();
+            fit(false);
+            notifyBanner("Building tech tree...");
+        }
+
+        private void resetView() {
+            filter = null;
+            statusFilter = StatusFilter.ALL;
+            searchQuery = "";
+            fit(false);
         }
 
         private static int[] systemStat(TechSystem sys) {
@@ -989,9 +1006,19 @@ public final class UraniumTechTree {
             return cur;
         }
 
+        private void stepPage(int delta) {
+            List<TechSystem> order = new ArrayList<>();
+            order.add(null);
+            order.addAll(TechTree.SYSTEMS);
+            int idx = order.indexOf(activeSystem);
+            if (idx < 0) idx = 0;
+            int nextIdx = Math.max(0, Math.min(order.size() - 1, idx + delta));
+            selectSystem(order.get(nextIdx));
+        }
+
         private void notifyBanner(String msg) {
             statusBanner = msg;
-            statusBannerTimer = 3.2f;
+            statusBannerTimer = 2.8f;
         }
 
         private void selectSystem(TechSystem sys) {
@@ -1002,6 +1029,7 @@ public final class UraniumTechTree {
                 return;
             }
             activeSystem = sys;
+            buildStart = time;
             if (selected != null && sys != null && selected.system() != sys) {
                 selectNode(null);
             }
@@ -1095,7 +1123,8 @@ public final class UraniumTechTree {
         private Anim anim(TechNode n) { return anims.computeIfAbsent(n.id(), k -> new Anim()); }
 
         private float appear(TechNode n) {
-            return Draw.clamp((time - 0.10f - n.col() * 0.04f - n.row() * 0.012f) / 0.38f);
+            float elapsed = time - buildStart;
+            return Draw.clamp((elapsed - 0.06f - n.col() * 0.055f - n.row() * 0.015f) / 0.34f);
         }
 
         private ItemStack stackOf(String itemId) {
@@ -1120,7 +1149,7 @@ public final class UraniumTechTree {
         private TechNode nodeAt(double mx, double my) {
             double wx = (mx - panX) / zoom, wy = (my - panY) / zoom;
             for (TechNode n : TechTree.BY_ID.values()) {
-                if (!isRevealed(n)) continue;
+                if (!isRevealed(n) || appear(n) <= 0.1f) continue;
                 if (wx >= nx(n) && wx < nx(n) + BOX && wy >= ny(n) && wy < ny(n) + BOX) return n;
             }
             return null;
@@ -1153,10 +1182,6 @@ public final class UraniumTechTree {
                 float byFilter = hasActiveFilter && !matchesFilter(n) ? 1f : 0f;
                 float byPath = selected != null && !path.contains(n.id()) ? 0.55f : 0f;
                 a.dim += (Math.max(bySystem, Math.max(byFilter, byPath)) - a.dim) * kd;
-            }
-            for (int i = 0; i < chipAnim.length; i++) {
-                boolean on = i == 0 ? filter == null : i - 1 < cats.size() && cats.get(i - 1) == filter;
-                chipAnim[i] += ((on ? 1f : 0f) - chipAnim[i]) * kd;
             }
             for (int i = 0; i < tabAnim.length; i++) {
                 TechSystem s = i == 0 ? null : TechTree.SYSTEMS.get(i - 1);
@@ -1366,14 +1391,8 @@ public final class UraniumTechTree {
                 }
             }
             if (k == InputConstants.KEY_ESCAPE && selected != null) { selectNode(null); return true; }
-            if (k == InputConstants.KEY_R) {
-                filter = null;
-                statusFilter = StatusFilter.ALL;
-                searchQuery = "";
-                activeSystem = currentHighestSystem();
-                fit(false);
-                return true;
-            }
+            if (k == InputConstants.KEY_R) { resetView(); return true; }
+            if (k == InputConstants.KEY_B) { replayBuild(); return true; }
             if (k == InputConstants.KEY_M) { openAlmanac(null); return true; }
             if (k == InputConstants.KEY_K || k == InputConstants.KEY_E) { onClose(); return true; }
             if (k == InputConstants.KEY_TAB) { cycleFilter(); return true; }
@@ -1405,6 +1424,8 @@ public final class UraniumTechTree {
             drawFx(g);
             Draw.pop(g);
             drawHeader(g, open, mx, my);
+            drawLegend(g, open, mx, my);
+            drawPageBar(g, open, mx, my);
             drawPanel(g, mx, my);
             drawFooter(g, open);
 
@@ -1644,7 +1665,7 @@ public final class UraniumTechTree {
 
             long done = TechTree.BY_ID.values().stream().filter(TechTreeScreen::unlocked).count();
             String cnt = done + " / " + TechTree.BY_ID.size();
-            int bw = Math.min(110, Math.max(54, width / 5)), bx = width - bw - 14, by = 12 + off;
+            int bw = Math.min(92, Math.max(48, width / 6)), bx = width - bw - 14, by = 12 + off;
             int cntX = bx - font.width(cnt) - 8;
             Draw.text(g, font, cnt, cntX, 9 + off, Draw.alpha(TXT2, open), false);
             Draw.round(g, bx - 1, by - 1, bx + bw + 1, by + 8, Draw.alpha(0xFF2B343E, open));
@@ -1653,40 +1674,36 @@ public final class UraniumTechTree {
             if (fw > 0) {
                 Draw.rect(g, bx, by, bx + fw, by + 7, Draw.alpha(0xFF5DB82E, open));
                 Draw.rect(g, bx, by, bx + fw, by + 2, Draw.alpha(0xFFFFFFFF, 0.24f * open));
-                int s0 = bx + Math.round(((time * 0.55f) % 1.8f - 0.3f) * fw);
-                s0 = Math.max(s0, bx);
-                int s1 = Math.min(s0 + 10, bx + fw);
-                if (s1 > s0) Draw.rect(g, s0, by, s1, by + 7, Draw.alpha(0xFFFFFFFF, 0.28f * open));
             }
 
-            int titleEnd = 34 + font.width("URANIUM TECH TREE") + 10;
+            int titleEnd = 34 + font.width("URANIUM TECH TREE") + 8;
             int rightEdge = cntX - 8;
             int curX = titleEnd;
 
-            String alLabel = rightEdge - curX > 95 ? "Mob almanac" : "Mobs";
-            int alW = font.width(alLabel) + 12;
+            String alLabel = rightEdge - curX > 90 ? "Mobs" : "M";
+            int alW = font.width(alLabel) + 10;
             if (curX + alW <= rightEdge) {
                 int y = 7 + off;
                 boolean hv = mx >= curX && mx < curX + alW && my >= y && my < y + 14;
                 Draw.button(g, font, alLabel, curX, y, alW, 14, hv, open);
                 hits.add(new Hit(curX, y, curX + alW, y + 14, () -> openAlmanac(null),
                         List.of(Component.literal("Mob almanac"), Component.literal("§8Mobs and their loots (key M)"))));
-                curX += alW + 5;
+                curX += alW + 4;
             }
 
             String stLabel = statusFilter.label;
-            int stW = font.width(stLabel) + 12;
+            int stW = font.width(stLabel) + 10;
             if (curX + stW <= rightEdge) {
                 int y = 7 + off;
                 boolean hv = mx >= curX && mx < curX + stW && my >= y && my < y + 14;
                 Draw.button(g, font, stLabel, curX, y, stW, 14, hv || statusFilter != StatusFilter.ALL, open);
                 hits.add(new Hit(curX, y, curX + stW, y + 14, this::cycleStatusFilter,
                         List.of(Component.literal("Status filter: " + statusFilter.name()), Component.literal("§8Click to cycle All / Avail / Done"))));
-                curX += stW + 5;
+                curX += stW + 4;
             }
 
-            int srW = Math.min(92, rightEdge - curX);
-            if (srW >= 42) {
+            int srW = Math.min(76, rightEdge - curX);
+            if (srW >= 38) {
                 int y = 7 + off, x0 = curX, x1 = curX + srW;
                 Draw.round(g, x0, y, x1, y + 14, Draw.alpha(searchFocused ? 0xFF6FCF3A : 0xFF2B343E, open));
                 Draw.rect(g, x0 + 1, y + 1, x1 - 1, y + 13, Draw.alpha(0xFF0C1014, open));
@@ -1698,8 +1715,8 @@ public final class UraniumTechTree {
                         List.of(Component.literal("Quick search"), Component.literal("§8Click and type to filter revealed nodes (R to reset)"))));
             }
 
-            // --- Ligne 1 : Systèmes Radium -> Uranium -> Plutonium + All ---
-            int ty = 26 + off, th = 16, tGap = 5, tx = 12;
+            // --- Onglets des systèmes en haut : Radium -> Uranium -> Plutonium + All ---
+            int ty = 28 + off, th = 16, tGap = 5, tx = 12;
             int totalTabs = TechTree.SYSTEMS.size() + 1;
             for (int i = 0; i < totalTabs; i++) {
                 TechSystem sys = i == 0 ? null : TechTree.SYSTEMS.get(i - 1);
@@ -1756,64 +1773,80 @@ public final class UraniumTechTree {
                 hits.add(new Hit(tx, ty, tx + tw, ty + th, () -> selectSystem(targetSys), tabTip));
                 tx += tw + tGap;
             }
+        }
 
-            // --- Ligne 2 : Catégories ---
-            int n = cats.size() + 1, cy = 47 + off, ch = 16, gap = 5;
-            boolean compact = false;
-            for (int pass = 0; pass < 2; pass++) {
-                int sum = 12;
-                for (int i = 0; i < n; i++) sum += chipW(i, compact) + gap;
-                if (sum <= width - 4 || pass == 1) break;
-                compact = true;
-                gap = 3;
-            }
-            int cx = 12;
-            for (int i = 0; i < n; i++) {
-                Category c = i == 0 ? null : cats.get(i - 1);
-                int w = chipW(i, compact);
-                if (cx + w > width - 8) break;
-                int[] stat = chipStat(c);
-                boolean hv = mx >= cx && mx < cx + w && my >= cy && my < cy + ch;
-                float on = i < chipAnim.length ? chipAnim[i] : 0f;
-                int col = c == null ? 0xFFB6F25A : c.color();
-                int edge = Draw.mix(hv ? 0xFF42505D : 0xFF2B343E, col, on);
-                int fill = Draw.mix(hv ? 0xFF1D252D : 0xFF141A1F, Draw.mix(0xFF141A1F, col, 0.22f), on);
-                Draw.round(g, cx, cy, cx + w, cy + ch, Draw.alpha(edge, open));
-                Draw.round(g, cx + 1, cy + 1, cx + w - 1, cy + ch - 1, Draw.alpha(fill, open));
-                Draw.rect(g, cx + 2, cy + 1, cx + w - 2, cy + 2, Draw.alpha(0xFFFFFFFF, 0.10f * open));
-                int txx = cx + (compact ? 4 : 6);
-                if (c != null && !compact) {
-                    Draw.rect(g, txx, cy + 4, txx + 5, cy + 9, Draw.alpha(col, open));
-                    txx += 9;
-                }
-                String label = c == null ? "All" : c.label();
-                Draw.text(g, font, label, txx, cy + 2, Draw.alpha(Draw.mix(TXT2, TXT, Math.max(on, hv ? 0.6f : 0f)), open), false);
-                if (on > 0.3f)
-                    Draw.text(g, font, stat[0] + "/" + stat[1], txx + font.width(label) + 6, cy + 2, Draw.alpha(TXT3, open * on), false);
-                int barW = w - 6, frac = stat[1] == 0 ? 0 : Math.round(barW * (stat[0] / (float) stat[1]));
-                Draw.rect(g, cx + 3, cy + ch - 4, cx + 3 + barW, cy + ch - 2, Draw.alpha(0xFF0A0D10, open));
-                Draw.rect(g, cx + 3, cy + ch - 4, cx + 3 + frac, cy + ch - 2, Draw.alpha(col, 0.92f * open));
+        // --- Légende des catégories en bas à gauche (comme dans la vidéo) ---
+        private void drawLegend(GuiGraphicsExtractor g, float open, int mx, int my) {
+            int lx = 10, ly = height - FOOT - 8 - cats.size() * 10;
+            if (ly < HEADER + 6) return;
+            for (int i = 0; i < cats.size(); i++) {
+                Category c = cats.get(i);
+                int y = ly + i * 10;
+                boolean active = filter == c;
+                boolean hv = mx >= lx && mx < lx + 74 && my >= y && my < y + 9;
+                int cCol = active ? 0xFFFFFFFF : hv ? TXT : TXT2;
+                Draw.rect(g, lx, y + 2, lx + 5, y + 7, Draw.alpha(c.color(), open));
+                if (active) Draw.frame1(g, lx - 1, y + 1, lx + 6, y + 8, Draw.alpha(0xFFFFFFFF, open));
+                Draw.text(g, font, c.label(), lx + 8, y + 1, Draw.alpha(cCol, open), active);
                 final Category fc = c;
-                hits.add(new Hit(cx, cy, cx + w, cy + ch, () -> setFilter(fc), null));
-                cx += w + gap;
+                hits.add(new Hit(lx, y, lx + 74, y + 9, () -> setFilter(fc),
+                        List.of(Component.literal("Filter: " + c.label()), Component.literal("§8Click to toggle category filter"))));
             }
         }
 
-        private int[] chipStat(Category c) {
-            int have = 0, all = 0;
-            for (TechNode n : TechTree.BY_ID.values()) {
-                if (activeSystem != null && n.system() != activeSystem) continue;
-                if (c == null || n.cat() == c) { all++; if (unlocked(n)) have++; }
-            }
-            return new int[] { have, all };
-        }
+        // --- Barre "< Back" / page / "Next >" / "Build again" / "Reset view" (comme dans la vidéo) ---
+        private void drawPageBar(GuiGraphicsExtractor g, float open, int mx, int my) {
+            List<TechSystem> order = new ArrayList<>();
+            order.add(null);
+            order.addAll(TechTree.SYSTEMS);
+            int idx = Math.max(0, order.indexOf(activeSystem));
+            int total = order.size();
 
-        private int chipW(int i, boolean compact) {
-            Category c = i == 0 ? null : cats.get(i - 1);
-            int[] st = chipStat(c);
-            int w = (compact ? 8 : 12) + font.width(c == null ? "All" : c.label()) + (c == null || compact ? 0 : 9);
-            float on = i < chipAnim.length ? chipAnim[i] : 0f;
-            return w + Math.round((6 + font.width(st[0] + "/" + st[1])) * on);
+            int barY = height - FOOT - 18;
+            int rightLimit = width - (selected != null ? panelW() : 0) - 10;
+            if (rightLimit < 120) return;
+
+            String resetLbl = "Reset view";
+            int rw = font.width(resetLbl) + 10;
+            int rx = rightLimit - rw;
+            boolean rhv = mx >= rx && mx < rx + rw && my >= barY && my < barY + 14;
+            Draw.button(g, font, resetLbl, rx, barY, rw, 14, rhv, open);
+            hits.add(new Hit(rx, barY, rx + rw, barY + 14, this::resetView,
+                    List.of(Component.literal("Reset view"), Component.literal("§8Reset filters and zoom (R)"))));
+
+            String buildLbl = "Build again";
+            int bw = font.width(buildLbl) + 10;
+            int bx = rx - bw - 4;
+            boolean bhv = mx >= bx && mx < bx + bw && my >= barY && my < barY + 14;
+            Draw.button(g, font, buildLbl, bx, barY, bw, 14, bhv, open);
+            hits.add(new Hit(bx, barY, bx + bw, barY + 14, this::replayBuild,
+                    List.of(Component.literal("Build again"), Component.literal("§8Replay step-by-step build animation (B)"))));
+
+            int navW = Math.min(136, bx - 16);
+            if (navW < 70) return;
+            int nx0 = (bx - navW) / 2;
+            String backLbl = "< Back";
+            int backW = font.width(backLbl) + 8;
+            boolean backHv = idx > 0 && mx >= nx0 && mx < nx0 + backW && my >= barY && my < barY + 14;
+            Draw.button(g, font, backLbl, nx0, barY, backW, 14, backHv, open);
+            if (idx > 0) hits.add(new Hit(nx0, barY, nx0 + backW, barY + 14, () -> stepPage(-1), null));
+
+            String pageLbl = (idx + 1) + " / " + total;
+            Draw.text(g, font, pageLbl, nx0 + navW / 2 - font.width(pageLbl) / 2, barY + 3, Draw.alpha(TXT2, open), false);
+
+            String nextLbl = "Next >";
+            int nextW = font.width(nextLbl) + 8;
+            int nextX = nx0 + navW - nextW;
+            boolean nextHv = idx < total - 1 && mx >= nextX && mx < nextX + nextW && my >= barY && my < barY + 14;
+            Draw.button(g, font, nextLbl, nextX, barY, nextW, 14, nextHv, open);
+            if (idx < total - 1) hits.add(new Hit(nextX, barY, nextX + nextW, barY + 14, () -> stepPage(1), null));
+
+            // Indicateur "Loop closed" si le système actif est complété
+            TechSystem curSys = activeSystem != null ? activeSystem : currentHighestSystem();
+            if (curSys != null && isSystemCompleted(curSys)) {
+                String loopTxt = "Loop closed";
+                Draw.text(g, font, loopTxt, rightLimit - font.width(loopTxt), barY - 11, Draw.alpha(GREEN, open), true);
+            }
         }
 
         private void drawFooter(GuiGraphicsExtractor g, float open) {
@@ -1821,7 +1854,7 @@ public final class UraniumTechTree {
             Draw.rect(g, 0, y0, width, height, Draw.alpha(0xFF07090B, 0.97f * open));
             Draw.rect(g, 0, y0, width, y0 + 1, Draw.alpha(PANEL_LINE, open));
             String[][] hints = { {"Drag", "Move"}, {"Wheel", "Zoom"}, {"Click", "Details"}, {"Esc", "Close"},
-                                 {"M", "Mobs"}, {"R", "Reset"}, {"Tab", "Category"} };
+                                 {"M", "Mobs"}, {"B", "Build"}, {"R", "Reset"} };
             int x = 12;
             for (String[] h : hints) {
                 int kw = font.width(h[0]) + 8, lw = font.width(h[1]);

@@ -5970,6 +5970,21 @@
         ]
       },
       "path": "~/computing"
+    },
+    {
+      "name": "SterilizedWaterVial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sterilized_water_vial",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/sterilized_water_vial.json",
+          "src/main/resources/assets/uranium/items/sterilized_water_vial.json",
+          "src/main/java/net/mcreator/uranium/item/SterilizedWaterVialItem.java"
+        ]
+      },
+      "path": "~/Radium"
     }
   ],
   "variable_elements": [
@@ -6309,7 +6324,7 @@
       "item.uranium.penchblende": "Pitchblende",
       "item.uranium.penchblendeore": "Pitchblende ore",
       "item.uranium.splitter": "Splitter",
-      "item.uranium.pitchblendeconcentrate": "Pitchblendeconcentrate",
+      "item.uranium.pitchblendeconcentrate": "radiferous powder",
       "item.uranium.powderedfertilizedsoil": "Powderedfertilizedsoil",
       "item_group.uranium.radiumcreativetab": "Radiumcreativetab",
       "item.uranium.rochesteril": "Rocky residue",
@@ -6338,7 +6353,8 @@
       "item.uranium.emptyvial": "Empty vial",
       "item.uranium.watervial": "Water vial",
       "item.uranium.prossesor": "Prossesor",
-      "gui.uranium.coolingpoolgui.label_fe": "FE"
+      "gui.uranium.coolingpoolgui.label_fe": "FE",
+      "item.uranium.sterilized_water_vial": "sterilized water vial"
     }
   },
   "metadata": {
