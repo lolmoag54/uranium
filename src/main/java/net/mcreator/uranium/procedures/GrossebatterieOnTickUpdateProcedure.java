@@ -215,28 +215,36 @@ public class GrossebatterieOnTickUpdateProcedure {
 						}
 					}
 					capacity = getMaxEnergyStored(world, BlockPos.containing(x, y, z), null) / 5;
-					if (getEnergyStored(world, BlockPos.containing(x, y, z), null) > capacity && getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 100000) {
+					if (getEnergyStored(world, BlockPos.containing(x, y, z), null) > capacity && getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 0) {
 						{
 							int _value = 0;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
-							if (_bs.getBlock().getStateDefinition().getProperty("batterie_level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 200000) {
+					} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 100000) {
 						{
 							int _value = 1;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
-							if (_bs.getBlock().getStateDefinition().getProperty("batterie_level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 300000) {
+					} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 200000) {
 						{
 							int _value = 2;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
-							if (_bs.getBlock().getStateDefinition().getProperty("batterie_level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+						}
+					} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 300000) {
+						{
+							int _value = 3;
+							BlockPos _pos = BlockPos.containing(x, y, z);
+							BlockState _bs = world.getBlockState(_pos);
+							if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
 					} else if (getEnergyStored(world, BlockPos.containing(x, y, z), null) <= 400000) {
@@ -244,15 +252,15 @@ public class GrossebatterieOnTickUpdateProcedure {
 							int _value = 3;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
-							if (_bs.getBlock().getStateDefinition().getProperty("batterie_level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
 					} else {
 						{
-							int _value = 4;
+							int _value = 5;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
-							if (_bs.getBlock().getStateDefinition().getProperty("batterie_level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+							if (_bs.getBlock().getStateDefinition().getProperty("level") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
 					}

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "plutonium_mox_rod",
+    "texture": "boosted_fuel_rod",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

@@ -3,12 +3,18 @@ package net.mcreator.uranium.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -21,12 +27,13 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.uranium.procedures.RcpumptickProcedure;
 import net.mcreator.uranium.block.entity.WaterpumpBlockEntity;
 
-public class WaterpumpBlock extends Block implements EntityBlock {
+public class WaterpumpBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
+	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public WaterpumpBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.METAL).strength(3f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
 	@Override
@@ -37,7 +44,7 @@ public class WaterpumpBlock extends Block implements EntityBlock {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING);
+		builder.add(FACING, WATERLOGGED);
 	}
 
 	@Override
@@ -45,7 +52,8 @@ public class WaterpumpBlock extends Block implements EntityBlock {
 		BlockState state = super.getStateForPlacement(context);
 		if (state == null)
 			return null;
-		return state.setValue(FACING, context.getHorizontalDirection().getOpposite());
+		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+		return state.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -57,16 +65,29 @@ public class WaterpumpBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public FluidState getFluidState(BlockState state) {
+		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
+	}
+
+	@Override
+	public BlockState updateShape(BlockState state, LevelReader world, ScheduledTickAccess scheduledTickAccess, BlockPos currentPos, Direction facing, BlockPos facingPos, BlockState facingState, RandomSource random) {
+		if (state.getValue(WATERLOGGED)) {
+			scheduledTickAccess.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+		}
+		return super.updateShape(state, world, scheduledTickAccess, currentPos, facing, facingPos, facingState, random);
+	}
+
+	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 2);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		RcpumptickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		world.scheduleTick(pos, this, 2);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override

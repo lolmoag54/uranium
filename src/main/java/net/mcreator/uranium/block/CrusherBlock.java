@@ -13,7 +13,11 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -40,22 +44,9 @@ import net.mcreator.uranium.block.entity.CrusherBlockEntity;
 
 import io.netty.buffer.Unpooled;
 
-import com.mojang.serialization.MapCodec;
-
-public class CrusherBlock extends FallingBlock implements EntityBlock {
+public class CrusherBlock extends Block implements EntityBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public static final IntegerProperty CRUSHING = IntegerProperty.create("crushing", 0, 100);
-	public static final MapCodec<CrusherBlock> CODEC = simpleCodec(CrusherBlock::new);
-
-	@Override
-	public MapCodec<CrusherBlock> codec() {
-		return CODEC;
-	}
-
-	@Override
-	public int getDustColor(BlockState blockstate, BlockGetter world, BlockPos pos) {
-		return blockstate.getMapColor(world, pos).col;
-	}
 
 	public CrusherBlock(BlockBehaviour.Properties properties) {
 		super(properties

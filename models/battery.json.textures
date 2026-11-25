@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "level_four": {
+      "name": "level_four",
+      "map": {
+        "missing": "battery_4",
+        "battery_worn": "battery_4"
+      }
+    },
+    "default": {
+      "name": "default",
+      "map": {
+        "missing": "battery_0",
+        "battery_worn": "battery_0"
+      }
+    },
+    "level_three": {
+      "name": "level_three",
+      "map": {
+        "missing": "battery_3",
+        "battery_worn": "battery_3"
+      }
+    },
+    "level_one": {
+      "name": "level_one",
+      "map": {
+        "missing": "battery_1",
+        "battery_worn": "battery_1"
+      }
+    },
+    "level_two": {
+      "name": "level_two",
+      "map": {
+        "missing": "battery_2",
+        "battery_worn": "battery_2"
+      }
+    },
+    "level_five": {
+      "name": "level_five",
+      "map": {
+        "missing": "battery_5",
+        "battery_worn": "battery_5"
+      }
+    }
+  }
+}

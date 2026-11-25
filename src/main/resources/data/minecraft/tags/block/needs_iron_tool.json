@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "uranium:closedindustrialprocessingunit",
     "uranium:calcinationfurnace",
+    "uranium:closedindustrialprocessingunit",
     "uranium:leadore",
     "uranium:penchblendeore",
     "uranium:zicron_ore",

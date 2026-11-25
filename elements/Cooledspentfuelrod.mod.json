@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "plutonium_cooled_rod",
+    "texture": "cooled_fuel_rod",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},

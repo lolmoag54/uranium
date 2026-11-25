@@ -1,32 +1,17 @@
 {
   "variants": {
-    "facing=north,on=true": {
-      "model": "uranium:block/reactor_0"
-    },
-    "facing=north,on=false": {
+    "facing=north": {
       "model": "uranium:block/reactor"
     },
-    "facing=east,on=true": {
-      "model": "uranium:block/reactor_0",
-      "y": 90
-    },
-    "facing=east,on=false": {
+    "facing=east": {
       "model": "uranium:block/reactor",
       "y": 90
     },
-    "facing=south,on=true": {
-      "model": "uranium:block/reactor_0",
-      "y": 180
-    },
-    "facing=south,on=false": {
+    "facing=south": {
       "model": "uranium:block/reactor",
       "y": 180
     },
-    "facing=west,on=true": {
-      "model": "uranium:block/reactor_0",
-      "y": 270
-    },
-    "facing=west,on=false": {
+    "facing=west": {
       "model": "uranium:block/reactor",
       "y": 270
     }

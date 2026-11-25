@@ -1,0 +1,9 @@
+{
+  "parent": "uranium:custom/battery",
+  "textures": {
+    "all": "uranium:block/battery_5",
+    "particle": "uranium:block/battery_0",
+    "missing": "uranium:block/battery_5",
+    "battery_worn": "uranium:block/battery_5"
+  }
+}

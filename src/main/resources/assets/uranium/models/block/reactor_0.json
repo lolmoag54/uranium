@@ -1,8 +1,0 @@
-{
-  "parent": "uranium:custom/reacteur",
-  "textures": {
-    "all": "uranium:block/reacteur",
-    "particle": "uranium:block/reacteur_off",
-    "0": "uranium:block/reacteur"
-  }
-}

@@ -1,19 +1,94 @@
 {
   "variants": {
-    "batterie_level=1": {
+    "facing=north,level=1": {
       "model": "uranium:block/grossebatterie_0"
     },
-    "batterie_level=2": {
+    "facing=north,level=2": {
       "model": "uranium:block/grossebatterie_1"
     },
-    "batterie_level=3": {
+    "facing=north,level=3": {
       "model": "uranium:block/grossebatterie_2"
     },
-    "batterie_level=4": {
+    "facing=north,level=4": {
       "model": "uranium:block/grossebatterie_3"
     },
-    "batterie_level=0": {
+    "facing=north,level=5": {
+      "model": "uranium:block/grossebatterie_4"
+    },
+    "facing=north,level=0": {
       "model": "uranium:block/grossebatterie"
+    },
+    "facing=east,level=1": {
+      "model": "uranium:block/grossebatterie_0",
+      "y": 90
+    },
+    "facing=east,level=2": {
+      "model": "uranium:block/grossebatterie_1",
+      "y": 90
+    },
+    "facing=east,level=3": {
+      "model": "uranium:block/grossebatterie_2",
+      "y": 90
+    },
+    "facing=east,level=4": {
+      "model": "uranium:block/grossebatterie_3",
+      "y": 90
+    },
+    "facing=east,level=5": {
+      "model": "uranium:block/grossebatterie_4",
+      "y": 90
+    },
+    "facing=east,level=0": {
+      "model": "uranium:block/grossebatterie",
+      "y": 90
+    },
+    "facing=south,level=1": {
+      "model": "uranium:block/grossebatterie_0",
+      "y": 180
+    },
+    "facing=south,level=2": {
+      "model": "uranium:block/grossebatterie_1",
+      "y": 180
+    },
+    "facing=south,level=3": {
+      "model": "uranium:block/grossebatterie_2",
+      "y": 180
+    },
+    "facing=south,level=4": {
+      "model": "uranium:block/grossebatterie_3",
+      "y": 180
+    },
+    "facing=south,level=5": {
+      "model": "uranium:block/grossebatterie_4",
+      "y": 180
+    },
+    "facing=south,level=0": {
+      "model": "uranium:block/grossebatterie",
+      "y": 180
+    },
+    "facing=west,level=1": {
+      "model": "uranium:block/grossebatterie_0",
+      "y": 270
+    },
+    "facing=west,level=2": {
+      "model": "uranium:block/grossebatterie_1",
+      "y": 270
+    },
+    "facing=west,level=3": {
+      "model": "uranium:block/grossebatterie_2",
+      "y": 270
+    },
+    "facing=west,level=4": {
+      "model": "uranium:block/grossebatterie_3",
+      "y": 270
+    },
+    "facing=west,level=5": {
+      "model": "uranium:block/grossebatterie_4",
+      "y": 270
+    },
+    "facing=west,level=0": {
+      "model": "uranium:block/grossebatterie",
+      "y": 270
     }
   }
 }

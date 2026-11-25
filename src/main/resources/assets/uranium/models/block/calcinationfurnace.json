@@ -1,12 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "uranium:custom/calcinationfurnace",
   "textures": {
-    "down": "uranium:block/plutonium_calc_side",
-    "up": "uranium:block/plutonium_calc_top",
-    "north": "uranium:block/plutonium_calc_front",
-    "east": "uranium:block/plutonium_calc_side",
-    "south": "uranium:block/plutonium_calc_side",
-    "west": "uranium:block/plutonium_calc_side",
-    "particle": "uranium:block/plutonium_calc_side"
+    "all": "uranium:block/nuclear_machines_worn",
+    "particle": "uranium:block/nuclear_machines_worn",
+    "missing": "uranium:block/nuclear_machines_worn",
+    "nuclear_machines_worn": "uranium:block/nuclear_machines_worn"
   }
 }

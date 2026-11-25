@@ -24,7 +24,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -45,7 +45,7 @@
     "hardness": 3.0,
     "resistance": 6.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "COMMON",
@@ -65,7 +65,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": false,
     "lightOpacity": 15,
-    "tickRate": 2,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -98,7 +98,7 @@
       "fixedValue": 0.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],

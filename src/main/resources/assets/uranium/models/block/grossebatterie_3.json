@@ -1,8 +1,9 @@
 {
-  "parent": "uranium:custom/batterie",
+  "parent": "uranium:custom/battery",
   "textures": {
-    "all": "uranium:block/batterie_full",
-    "particle": "uranium:block/batteire_empty",
-    "0": "uranium:block/batterie_full"
+    "all": "uranium:block/battery_4",
+    "particle": "uranium:block/battery_0",
+    "missing": "uranium:block/battery_4",
+    "battery_worn": "uranium:block/battery_4"
   }
 }

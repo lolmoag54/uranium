@@ -57,8 +57,13 @@ public class CoolingpoolBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public boolean propagatesSkylightDown(BlockState state) {
+		return true;
+	}
+
+	@Override
 	public int getLightDampening(BlockState state) {
-		return 15;
+		return 0;
 	}
 
 	@Override

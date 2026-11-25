@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "uranium:item/plutonium_cooled_rod"
+    "layer0": "uranium:item/cooled_fuel_rod"
   }
 }

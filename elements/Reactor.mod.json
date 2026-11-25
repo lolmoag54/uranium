@@ -2,52 +2,19 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "reacteur_off",
+    "texture": "nuclear_machines_worn",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "reacteur:off",
+    "customModelName": "uraniumreactor:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "states": [
-      {
-        "texture": "reacteur",
-        "textureTop": "",
-        "textureLeft": "",
-        "textureFront": "",
-        "textureRight": "",
-        "textureBack": "",
-        "renderType": 2,
-        "customModelName": "reacteur:on",
-        "particleTexture": "",
-        "hasCustomBoundingBox": false,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 16.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ],
-        "stateMap": [
-          {
-            "property": {
-              "name": "CUSTOM:on",
-              "type": "logic"
-            },
-            "value": true
-          }
-        ]
-      }
-    ],
+    "states": [],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",

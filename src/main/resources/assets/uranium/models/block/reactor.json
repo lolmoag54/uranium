@@ -1,8 +1,9 @@
 {
-  "parent": "uranium:custom/reacteur",
+  "parent": "uranium:custom/uraniumreactor",
   "textures": {
-    "all": "uranium:block/reacteur_off",
-    "particle": "uranium:block/reacteur_off",
-    "0": "uranium:block/reacteur_off"
+    "all": "uranium:block/nuclear_machines_worn",
+    "particle": "uranium:block/nuclear_machines_worn",
+    "missing": "uranium:block/nuclear_machines_worn",
+    "nuclear_machines_worn": "uranium:block/nuclear_machines_worn"
   }
 }

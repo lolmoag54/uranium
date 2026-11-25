@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "missing": "nuclear_machines_worn",
+        "nuclear_machines_worn": "nuclear_machines_worn"
+      }
+    }
+  }
+}
