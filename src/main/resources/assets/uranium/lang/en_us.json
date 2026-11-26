@@ -42,7 +42,6 @@
   "item.uranium.fuelrod": "Uranium fuel rod",
   "item.uranium.spentfuelrod": "Spent fuel rod",
   "gui.uranium.crushergui.label_crusher": "Crusher",
-  "gui.uranium.reactorgui.label_reactor": "Reactor",
   "item.uranium.crusher": "Crusher",
   "item.uranium.reactor": "Fission reactor",
   "entity.uranium.poissonchatte": "mutaded catfish",
@@ -201,5 +200,7 @@
   "item.uranium.watervial": "Water vial",
   "item.uranium.prossesor": "Prossesor",
   "gui.uranium.coolingpoolgui.label_fe": "FE",
-  "item.uranium.sterilized_water_vial": "sterilized water vial"
+  "item.uranium.sterilized_water_vial": "sterilized water vial",
+  "item.uranium.random_acces_memory": "random acces memory",
+  "item.uranium.silicon": "Silicon"
 }

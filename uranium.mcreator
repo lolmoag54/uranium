@@ -13,7 +13,7 @@
           "src/main/java/net/mcreator/uranium/item/SteelItem.java"
         ]
       },
-      "path": "~/Steel"
+      "path": "~/minerais/Steel"
     },
     {
       "name": "Centrifuge",
@@ -23,17 +23,17 @@
       "registry_name": "centrifuge",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
-          "src/main/resources/assets/uranium/items/centrifuge.json",
-          "src/main/resources/assets/uranium/models/block/centrifuge_0.json",
-          "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
           "src/main/resources/assets/uranium/models/block/centrifuge.json",
           "src/main/java/net/mcreator/uranium/block/CentrifugeBlock.java",
+          "src/main/resources/assets/uranium/models/block/centrifuge_0.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CentrifugeBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/centrifuge.json",
           "src/main/resources/assets/uranium/models/item/centrifuge.json",
-          "src/main/resources/assets/uranium/blockstates/centrifuge.json"
+          "src/main/resources/assets/uranium/blockstates/centrifuge.json",
+          "src/main/resources/assets/uranium/items/centrifuge.json"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/machines/centrifuge"
     },
     {
       "name": "Centrifugegui",
@@ -47,7 +47,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/CentrifugeguiMenu.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/machines/centrifuge"
     },
     {
       "name": "Uraniumcreativetab",
@@ -58,7 +58,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Depleteduranium",
@@ -69,11 +69,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/uranium/item/DepleteduraniumItem.java",
-          "src/main/resources/assets/uranium/items/depleteduranium.json",
-          "src/main/resources/assets/uranium/models/item/depleteduranium.json"
+          "src/main/resources/assets/uranium/models/item/depleteduranium.json",
+          "src/main/resources/assets/uranium/items/depleteduranium.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Enricheduranium",
@@ -83,12 +83,12 @@
       "registry_name": "enricheduranium",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/EnricheduraniumItem.java",
           "src/main/resources/assets/uranium/models/item/enricheduranium.json",
+          "src/main/java/net/mcreator/uranium/item/EnricheduraniumItem.java",
           "src/main/resources/assets/uranium/items/enricheduranium.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Yellowcake",
@@ -103,7 +103,7 @@
           "src/main/java/net/mcreator/uranium/item/YellowcakeItem.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "CentrifugeOnTickUpdate",
@@ -138,7 +138,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CentrifugeOnTickUpdateProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/machines/centrifuge"
     },
     {
       "name": "Sulfuricacid",
@@ -148,17 +148,17 @@
       "registry_name": "sulfuricacid",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/client/fluid/SulfuricacidFluidExtension.java",
           "src/main/resources/assets/uranium/items/sulfuricacid_bucket.json",
           "src/main/java/net/mcreator/uranium/fluid/types/SulfuricacidFluidType.java",
           "src/main/java/net/mcreator/uranium/block/SulfuricacidBlock.java",
+          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
           "src/main/java/net/mcreator/uranium/item/SulfuricacidItem.java",
           "src/main/resources/assets/uranium/blockstates/sulfuricacid.json",
-          "src/main/java/net/mcreator/uranium/fluid/SulfuricacidFluid.java",
-          "src/main/resources/assets/uranium/models/block/sulfuricacid.json"
+          "src/main/resources/assets/uranium/models/block/sulfuricacid.json",
+          "src/main/java/net/mcreator/uranium/client/fluid/SulfuricacidFluidExtension.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Enricheduraniumrecipe",
@@ -171,7 +171,7 @@
           "src/main/resources/data/uranium/recipe/enricheduraniumrecipe.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Rawuranium",
@@ -181,15 +181,15 @@
       "registry_name": "rawuranium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/rawuranium.json",
-          "src/main/resources/assets/uranium/models/block/rawuranium.json",
-          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
-          "src/main/resources/assets/uranium/items/rawuranium.json",
+          "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json",
           "src/main/resources/assets/uranium/blockstates/rawuranium.json",
-          "src/main/resources/data/uranium/loot_table/blocks/rawuranium.json"
+          "src/main/java/net/mcreator/uranium/block/RawuraniumBlock.java",
+          "src/main/resources/assets/uranium/models/item/rawuranium.json",
+          "src/main/resources/assets/uranium/items/rawuranium.json",
+          "src/main/resources/assets/uranium/models/block/rawuranium.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Uraniumcentrifugerecipe",
@@ -224,7 +224,7 @@
           "src/main/java/net/mcreator/uranium/procedures/UraniumcentrifugerecipeProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/machines/centrifuge"
     },
     {
       "name": "Fluoride",
@@ -234,12 +234,12 @@
       "registry_name": "fluoride",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/items/fluoride.json",
           "src/main/java/net/mcreator/uranium/item/FluorideItem.java",
-          "src/main/resources/assets/uranium/models/item/fluoride.json",
-          "src/main/resources/assets/uranium/items/fluoride.json"
+          "src/main/resources/assets/uranium/models/item/fluoride.json"
         ]
       },
-      "path": "~/Uranium/fluorite"
+      "path": "~/minerais/Uranium/fluorite"
     },
     {
       "name": "Progressbarcentrifugegui",
@@ -271,7 +271,7 @@
           "src/main/java/net/mcreator/uranium/procedures/ProgressbarcentrifugeguiProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/machines/centrifuge"
     },
     {
       "name": "Lingotdeplomb",
@@ -282,11 +282,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/items/lingotdeplomb.json",
-          "src/main/java/net/mcreator/uranium/item/LingotdeplombItem.java",
-          "src/main/resources/assets/uranium/models/item/lingotdeplomb.json"
+          "src/main/resources/assets/uranium/models/item/lingotdeplomb.json",
+          "src/main/java/net/mcreator/uranium/item/LingotdeplombItem.java"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Pepitedeplomb",
@@ -296,12 +296,12 @@
       "registry_name": "pepitedeplomb",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/pepitedeplomb.json",
           "src/main/resources/assets/uranium/items/pepitedeplomb.json",
-          "src/main/java/net/mcreator/uranium/item/PepitedeplombItem.java"
+          "src/main/java/net/mcreator/uranium/item/PepitedeplombItem.java",
+          "src/main/resources/assets/uranium/models/item/pepitedeplomb.json"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Blockdeplomb",
@@ -312,14 +312,14 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/models/item/blockdeplomb.json",
-          "src/main/resources/assets/uranium/blockstates/blockdeplomb.json",
-          "src/main/java/net/mcreator/uranium/block/BlockdeplombBlock.java",
           "src/main/resources/assets/uranium/items/blockdeplomb.json",
           "src/main/resources/assets/uranium/models/block/blockdeplomb.json",
-          "src/main/resources/data/uranium/loot_table/blocks/blockdeplomb.json"
+          "src/main/java/net/mcreator/uranium/block/BlockdeplombBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/blockdeplomb.json",
+          "src/main/resources/assets/uranium/blockstates/blockdeplomb.json"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Grossebatterie",
@@ -329,21 +329,21 @@
       "registry_name": "grossebatterie",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/loot_table/blocks/grossebatterie.json",
+          "src/main/resources/assets/uranium/items/grossebatterie.json",
           "src/main/resources/assets/uranium/blockstates/grossebatterie.json",
           "src/main/resources/assets/uranium/models/block/grossebatterie.json",
-          "src/main/resources/assets/uranium/models/block/grossebatterie_0.json",
-          "src/main/resources/assets/uranium/models/block/grossebatterie_3.json",
-          "src/main/resources/assets/uranium/models/item/grossebatterie.json",
-          "src/main/resources/assets/uranium/items/grossebatterie.json",
           "src/main/resources/assets/uranium/models/block/grossebatterie_2.json",
-          "src/main/resources/assets/uranium/models/block/grossebatterie_1.json",
-          "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/grossebatterie.json",
+          "src/main/resources/assets/uranium/models/item/grossebatterie.json",
           "src/main/java/net/mcreator/uranium/block/entity/GrossebatterieBlockEntity.java",
-          "src/main/resources/assets/uranium/models/block/grossebatterie_4.json"
+          "src/main/java/net/mcreator/uranium/block/GrossebatterieBlock.java",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_1.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_3.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_4.json",
+          "src/main/resources/assets/uranium/models/block/grossebatterie_0.json"
         ]
       },
-      "path": "~/batterie"
+      "path": "~/energy/batterie"
     },
     {
       "name": "SolarpanelOnTickUpdate",
@@ -384,13 +384,13 @@
       "registry_name": "solarpanel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/solarpanel.json",
-          "src/main/resources/assets/uranium/models/block/solarpanel.json",
-          "src/main/resources/assets/uranium/items/solarpanel.json",
           "src/main/resources/data/uranium/loot_table/blocks/solarpanel.json",
           "src/main/java/net/mcreator/uranium/block/SolarpanelBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/SolarpanelBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/solarpanel.json",
+          "src/main/resources/assets/uranium/models/item/solarpanel.json",
           "src/main/resources/assets/uranium/blockstates/solarpanel.json",
-          "src/main/java/net/mcreator/uranium/block/entity/SolarpanelBlockEntity.java"
+          "src/main/resources/assets/uranium/items/solarpanel.json"
         ]
       },
       "path": "~/energy/panneau solaire"
@@ -424,7 +424,7 @@
           "src/main/java/net/mcreator/uranium/procedures/GrossebatterieOnTickUpdateProcedure.java"
         ]
       },
-      "path": "~/batterie"
+      "path": "~/energy/batterie"
     },
     {
       "name": "CableOnTickUpdate",
@@ -455,7 +455,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableOnTickUpdateProcedure.java"
         ]
       },
-      "path": "~/cables/procedure"
+      "path": "~/machines/cables/procedure"
     },
     {
       "name": "Cable",
@@ -465,16 +465,16 @@
       "registry_name": "cable",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CableBlockEntity.java",
-          "src/main/resources/assets/uranium/blockstates/cable.json",
-          "src/main/resources/assets/uranium/models/block/cable.json",
-          "src/main/java/net/mcreator/uranium/block/CableBlock.java",
-          "src/main/resources/assets/uranium/models/item/cable.json",
           "src/main/resources/data/uranium/loot_table/blocks/cable.json",
-          "src/main/resources/assets/uranium/items/cable.json"
+          "src/main/resources/assets/uranium/items/cable.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/cable.json",
+          "src/main/java/net/mcreator/uranium/block/CableBlock.java",
+          "src/main/resources/assets/uranium/models/block/cable.json",
+          "src/main/resources/assets/uranium/blockstates/cable.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableE",
@@ -484,16 +484,16 @@
       "registry_name": "cable_e",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/blockstates/cable_e.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CableEBlockEntity.java",
-          "src/main/resources/assets/uranium/items/cable_e.json",
-          "src/main/resources/assets/uranium/models/block/cable_e.json",
-          "src/main/resources/assets/uranium/models/item/cable_e.json",
           "src/main/java/net/mcreator/uranium/block/CableEBlock.java",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_e.json"
+          "src/main/resources/data/uranium/loot_table/blocks/cable_e.json",
+          "src/main/resources/assets/uranium/items/cable_e.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableEBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/cable_e.json",
+          "src/main/resources/assets/uranium/blockstates/cable_e.json",
+          "src/main/resources/assets/uranium/models/block/cable_e.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableI",
@@ -503,16 +503,16 @@
       "registry_name": "cable_i",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/cable_i.json",
-          "src/main/resources/assets/uranium/models/block/cable_i.json",
           "src/main/java/net/mcreator/uranium/block/CableIBlock.java",
           "src/main/resources/assets/uranium/blockstates/cable_i.json",
+          "src/main/resources/assets/uranium/models/block/cable_i.json",
+          "src/main/resources/assets/uranium/items/cable_i.json",
           "src/main/resources/data/uranium/loot_table/blocks/cable_i.json",
-          "src/main/resources/assets/uranium/models/item/cable_i.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CableIBlockEntity.java"
+          "src/main/java/net/mcreator/uranium/block/entity/CableIBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/cable_i.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableL",
@@ -522,16 +522,16 @@
       "registry_name": "cable_l",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/loot_table/blocks/cable_l.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CableLBlockEntity.java",
-          "src/main/java/net/mcreator/uranium/block/CableLBlock.java",
-          "src/main/resources/assets/uranium/items/cable_l.json",
           "src/main/resources/assets/uranium/models/item/cable_l.json",
           "src/main/resources/assets/uranium/blockstates/cable_l.json",
-          "src/main/resources/assets/uranium/models/block/cable_l.json"
+          "src/main/resources/assets/uranium/models/block/cable_l.json",
+          "src/main/java/net/mcreator/uranium/block/CableLBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CableLBlockEntity.java",
+          "src/main/resources/assets/uranium/items/cable_l.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_l.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableLC",
@@ -541,16 +541,16 @@
       "registry_name": "cable_lc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CableLCBlockEntity.java",
           "src/main/resources/assets/uranium/blockstates/cable_lc.json",
+          "src/main/resources/assets/uranium/models/block/cable_lc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableLCBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_lc.json",
           "src/main/resources/assets/uranium/models/item/cable_lc.json",
           "src/main/resources/assets/uranium/items/cable_lc.json",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_lc.json",
-          "src/main/resources/assets/uranium/models/block/cable_lc.json",
           "src/main/java/net/mcreator/uranium/block/CableLCBlock.java"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableLCC",
@@ -560,16 +560,16 @@
       "registry_name": "cable_lcc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CableLCCBlockEntity.java",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_lcc.json",
-          "src/main/resources/assets/uranium/items/cable_lcc.json",
-          "src/main/resources/assets/uranium/blockstates/cable_lcc.json",
           "src/main/resources/assets/uranium/models/block/cable_lcc.json",
+          "src/main/resources/assets/uranium/items/cable_lcc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_lcc.json",
+          "src/main/resources/assets/uranium/models/item/cable_lcc.json",
+          "src/main/resources/assets/uranium/blockstates/cable_lcc.json",
           "src/main/java/net/mcreator/uranium/block/CableLCCBlock.java",
-          "src/main/resources/assets/uranium/models/item/cable_lcc.json"
+          "src/main/java/net/mcreator/uranium/block/entity/CableLCCBlockEntity.java"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableLT",
@@ -579,16 +579,16 @@
       "registry_name": "cable_lt",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/cable_lt.json",
-          "src/main/resources/assets/uranium/models/block/cable_lt.json",
-          "src/main/resources/assets/uranium/blockstates/cable_lt.json",
           "src/main/resources/data/uranium/loot_table/blocks/cable_lt.json",
           "src/main/java/net/mcreator/uranium/block/entity/CableLTBlockEntity.java",
           "src/main/java/net/mcreator/uranium/block/CableLTBlock.java",
-          "src/main/resources/assets/uranium/items/cable_lt.json"
+          "src/main/resources/assets/uranium/models/item/cable_lt.json",
+          "src/main/resources/assets/uranium/items/cable_lt.json",
+          "src/main/resources/assets/uranium/models/block/cable_lt.json",
+          "src/main/resources/assets/uranium/blockstates/cable_lt.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableLTC",
@@ -598,16 +598,16 @@
       "registry_name": "cable_ltc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/cable_ltc.json",
-          "src/main/resources/assets/uranium/items/cable_ltc.json",
-          "src/main/resources/assets/uranium/blockstates/cable_ltc.json",
-          "src/main/resources/assets/uranium/models/block/cable_ltc.json",
           "src/main/java/net/mcreator/uranium/block/CableLTCBlock.java",
+          "src/main/resources/assets/uranium/blockstates/cable_ltc.json",
+          "src/main/resources/assets/uranium/items/cable_ltc.json",
           "src/main/java/net/mcreator/uranium/block/entity/CableLTCBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/cable_ltc.json",
+          "src/main/resources/assets/uranium/models/item/cable_ltc.json",
           "src/main/resources/data/uranium/loot_table/blocks/cable_ltc.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableT",
@@ -617,16 +617,16 @@
       "registry_name": "cable_t",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/models/block/cable_t.json",
+          "src/main/resources/assets/uranium/models/item/cable_t.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableTBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/cable_t.json",
           "src/main/java/net/mcreator/uranium/block/CableTBlock.java",
           "src/main/resources/data/uranium/loot_table/blocks/cable_t.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CableTBlockEntity.java",
-          "src/main/resources/assets/uranium/models/item/cable_t.json",
-          "src/main/resources/assets/uranium/blockstates/cable_t.json",
-          "src/main/resources/assets/uranium/models/block/cable_t.json",
           "src/main/resources/assets/uranium/items/cable_t.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableTC",
@@ -636,16 +636,16 @@
       "registry_name": "cable_tc",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/uranium/block/CableTCBlock.java",
+          "src/main/resources/assets/uranium/models/item/cable_tc.json",
           "src/main/resources/assets/uranium/blockstates/cable_tc.json",
           "src/main/resources/data/uranium/loot_table/blocks/cable_tc.json",
-          "src/main/resources/assets/uranium/models/item/cable_tc.json",
           "src/main/resources/assets/uranium/items/cable_tc.json",
           "src/main/resources/assets/uranium/models/block/cable_tc.json",
-          "src/main/java/net/mcreator/uranium/block/CableTCBlock.java",
           "src/main/java/net/mcreator/uranium/block/entity/CableTCBlockEntity.java"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableTX",
@@ -655,16 +655,16 @@
       "registry_name": "cable_tx",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CableTXBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_tx.json",
           "src/main/resources/assets/uranium/models/block/cable_tx.json",
+          "src/main/resources/assets/uranium/blockstates/cable_tx.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableTXBlockEntity.java",
           "src/main/resources/assets/uranium/models/item/cable_tx.json",
           "src/main/resources/assets/uranium/items/cable_tx.json",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_tx.json",
-          "src/main/java/net/mcreator/uranium/block/CableTXBlock.java",
-          "src/main/resources/assets/uranium/blockstates/cable_tx.json"
+          "src/main/java/net/mcreator/uranium/block/CableTXBlock.java"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableTXC",
@@ -674,16 +674,16 @@
       "registry_name": "cable_txc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CableTXCBlock.java",
-          "src/main/java/net/mcreator/uranium/block/entity/CableTXCBlockEntity.java",
-          "src/main/resources/assets/uranium/models/item/cable_txc.json",
           "src/main/resources/assets/uranium/items/cable_txc.json",
-          "src/main/resources/assets/uranium/blockstates/cable_txc.json",
           "src/main/resources/assets/uranium/models/block/cable_txc.json",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_txc.json"
+          "src/main/java/net/mcreator/uranium/block/entity/CableTXCBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/cable_txc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_txc.json",
+          "src/main/resources/assets/uranium/models/item/cable_txc.json",
+          "src/main/java/net/mcreator/uranium/block/CableTXCBlock.java"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableTXCC",
@@ -693,16 +693,16 @@
       "registry_name": "cable_txcc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CableTXCCBlock.java",
-          "src/main/java/net/mcreator/uranium/block/entity/CableTXCCBlockEntity.java",
-          "src/main/resources/assets/uranium/models/block/cable_txcc.json",
-          "src/main/resources/assets/uranium/models/item/cable_txcc.json",
           "src/main/resources/assets/uranium/items/cable_txcc.json",
+          "src/main/java/net/mcreator/uranium/block/CableTXCCBlock.java",
           "src/main/resources/assets/uranium/blockstates/cable_txcc.json",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_txcc.json"
+          "src/main/resources/assets/uranium/models/item/cable_txcc.json",
+          "src/main/resources/assets/uranium/models/block/cable_txcc.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_txcc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableTXCCBlockEntity.java"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableX",
@@ -712,16 +712,16 @@
       "registry_name": "cable_x",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CableXBlock.java",
-          "src/main/resources/assets/uranium/blockstates/cable_x.json",
-          "src/main/resources/assets/uranium/models/item/cable_x.json",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_x.json",
           "src/main/java/net/mcreator/uranium/block/entity/CableXBlockEntity.java",
-          "src/main/resources/assets/uranium/models/block/cable_x.json",
-          "src/main/resources/assets/uranium/items/cable_x.json"
+          "src/main/resources/data/uranium/loot_table/blocks/cable_x.json",
+          "src/main/resources/assets/uranium/items/cable_x.json",
+          "src/main/resources/assets/uranium/blockstates/cable_x.json",
+          "src/main/java/net/mcreator/uranium/block/CableXBlock.java",
+          "src/main/resources/assets/uranium/models/item/cable_x.json",
+          "src/main/resources/assets/uranium/models/block/cable_x.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableXC",
@@ -731,16 +731,16 @@
       "registry_name": "cable_xc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CableXCBlock.java",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_xc.json",
           "src/main/java/net/mcreator/uranium/block/entity/CableXCBlockEntity.java",
           "src/main/resources/assets/uranium/models/block/cable_xc.json",
-          "src/main/resources/assets/uranium/models/item/cable_xc.json",
           "src/main/resources/assets/uranium/items/cable_xc.json",
-          "src/main/resources/assets/uranium/blockstates/cable_xc.json"
+          "src/main/resources/assets/uranium/blockstates/cable_xc.json",
+          "src/main/java/net/mcreator/uranium/block/CableXCBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_xc.json",
+          "src/main/resources/assets/uranium/models/item/cable_xc.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableF",
@@ -750,16 +750,16 @@
       "registry_name": "cable_f",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/cable_f.json",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_f.json",
-          "src/main/resources/assets/uranium/models/block/cable_f.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CableFBlockEntity.java",
-          "src/main/resources/assets/uranium/models/item/cable_f.json",
           "src/main/java/net/mcreator/uranium/block/CableFBlock.java",
-          "src/main/resources/assets/uranium/blockstates/cable_f.json"
+          "src/main/resources/assets/uranium/items/cable_f.json",
+          "src/main/resources/assets/uranium/models/item/cable_f.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_f.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CableFBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/cable_f.json",
+          "src/main/resources/assets/uranium/models/block/cable_f.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableS",
@@ -769,16 +769,16 @@
       "registry_name": "cable_s",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/cable_s.json",
+          "src/main/java/net/mcreator/uranium/block/CableSBlock.java",
           "src/main/resources/assets/uranium/items/cable_s.json",
+          "src/main/resources/data/uranium/loot_table/blocks/cable_s.json",
           "src/main/resources/assets/uranium/blockstates/cable_s.json",
           "src/main/java/net/mcreator/uranium/block/entity/CableSBlockEntity.java",
-          "src/main/resources/data/uranium/loot_table/blocks/cable_s.json",
-          "src/main/java/net/mcreator/uranium/block/CableSBlock.java",
+          "src/main/resources/assets/uranium/models/item/cable_s.json",
           "src/main/resources/assets/uranium/models/block/cable_s.json"
         ]
       },
-      "path": "~/cables/cables"
+      "path": "~/machines/cables/cables"
     },
     {
       "name": "CableModelUpdaterMain",
@@ -809,7 +809,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterMainProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater"
+      "path": "~/machines/cables/procedure/Model_Updater"
     },
     {
       "name": "CableModelUpdaterN",
@@ -840,7 +840,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterNProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterE",
@@ -871,7 +871,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterEProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterI",
@@ -902,7 +902,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterIProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterL",
@@ -933,7 +933,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterLC",
@@ -964,7 +964,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLCProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterLCC",
@@ -995,7 +995,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLCCProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterLT",
@@ -1026,7 +1026,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLTProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterLTC",
@@ -1057,7 +1057,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterLTCProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterT",
@@ -1088,7 +1088,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterTC",
@@ -1119,7 +1119,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTCProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterTX",
@@ -1150,7 +1150,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTXProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterTXC",
@@ -1181,7 +1181,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTXCProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterTXCC",
@@ -1212,7 +1212,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterTXCCProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterX",
@@ -1243,7 +1243,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterXProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterXC",
@@ -1274,7 +1274,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterXCProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterF",
@@ -1305,7 +1305,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterFProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableModelUpdaterS",
@@ -1336,7 +1336,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableModelUpdaterSProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/Model_Updater/SubModel"
+      "path": "~/machines/cables/procedure/Model_Updater/SubModel"
     },
     {
       "name": "CableForgeEnergyMain",
@@ -1367,7 +1367,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CableForgeEnergyMainProcedure.java"
         ]
       },
-      "path": "~/cables/procedure/FE"
+      "path": "~/machines/cables/procedure/FE"
     },
     {
       "name": "Centrifugeenergyprocedure",
@@ -1399,7 +1399,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/centrifuge"
+      "path": "~/machines/centrifuge"
     },
     {
       "name": "Letscentrifuge",
@@ -1487,7 +1487,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CentrifugeBlockAddedProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/machines/centrifuge"
     },
     {
       "name": "GrossebatterieBlockAdded",
@@ -1518,7 +1518,7 @@
           "src/main/java/net/mcreator/uranium/procedures/GrossebatterieBlockAddedProcedure.java"
         ]
       },
-      "path": "~/batterie"
+      "path": "~/energy/batterie"
     },
     {
       "name": "ForgeFlowTimer",
@@ -1547,15 +1547,15 @@
       "registry_name": "rawuranium_deepslate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/rawuranium_deepslate.json",
-          "src/main/java/net/mcreator/uranium/block/RawuraniumDeepslateBlock.java",
           "src/main/resources/data/uranium/loot_table/blocks/rawuranium_deepslate.json",
           "src/main/resources/assets/uranium/blockstates/rawuranium_deepslate.json",
+          "src/main/java/net/mcreator/uranium/block/RawuraniumDeepslateBlock.java",
           "src/main/resources/assets/uranium/models/item/rawuranium_deepslate.json",
+          "src/main/resources/assets/uranium/items/rawuranium_deepslate.json",
           "src/main/resources/assets/uranium/models/block/rawuranium_deepslate.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Fuelrod",
@@ -1566,11 +1566,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/items/fuelrod.json",
-          "src/main/resources/assets/uranium/models/item/fuelrod.json",
-          "src/main/java/net/mcreator/uranium/item/FuelrodItem.java"
+          "src/main/java/net/mcreator/uranium/item/FuelrodItem.java",
+          "src/main/resources/assets/uranium/models/item/fuelrod.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Spentfuelrod",
@@ -1580,12 +1580,12 @@
       "registry_name": "spentfuelrod",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/spentfuelrod.json",
+          "src/main/java/net/mcreator/uranium/item/SpentfuelrodItem.java",
           "src/main/resources/assets/uranium/models/item/spentfuelrod.json",
-          "src/main/java/net/mcreator/uranium/item/SpentfuelrodItem.java"
+          "src/main/resources/assets/uranium/items/spentfuelrod.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Crusherrecipe",
@@ -1616,7 +1616,7 @@
           }
         ]
       },
-      "path": "~/crusher"
+      "path": "~/machines/crusher"
     },
     {
       "name": "CrusherOnTickUpdate",
@@ -1647,7 +1647,7 @@
           }
         ]
       },
-      "path": "~/crusher"
+      "path": "~/machines/crusher"
     },
     {
       "name": "Crusherprogressbar",
@@ -1679,7 +1679,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/crusher"
+      "path": "~/machines/crusher"
     },
     {
       "name": "Crusherpowerbar",
@@ -1711,7 +1711,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/crusher"
+      "path": "~/machines/crusher"
     },
     {
       "name": "Crusherblockadded",
@@ -1742,7 +1742,7 @@
           }
         ]
       },
-      "path": "~/crusher"
+      "path": "~/machines/crusher"
     },
     {
       "name": "ReactorOnTickUpdate",
@@ -1877,25 +1877,11 @@
       "registry_name": "crushergui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/client/gui/CrusherguiScreen.java",
-          "src/main/java/net/mcreator/uranium/world/inventory/CrusherguiMenu.java"
+          "src/main/java/net/mcreator/uranium/world/inventory/CrusherguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/CrusherguiScreen.java"
         ]
       },
-      "path": "~/crusher"
-    },
-    {
-      "name": "Reactorgui",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reactorgui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/uranium/client/gui/ReactorguiScreen.java",
-          "src/main/java/net/mcreator/uranium/world/inventory/ReactorguiMenu.java"
-        ]
-      },
-      "path": "~/energy/reactor"
+      "path": "~/machines/crusher"
     },
     {
       "name": "Crusher",
@@ -1905,16 +1891,16 @@
       "registry_name": "crusher",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/items/crusher.json",
+          "src/main/resources/data/uranium/loot_table/blocks/crusher.json",
           "src/main/resources/assets/uranium/models/item/crusher.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CrusherBlockEntity.java",
           "src/main/resources/assets/uranium/blockstates/crusher.json",
           "src/main/resources/assets/uranium/models/block/crusher.json",
-          "src/main/resources/data/uranium/loot_table/blocks/crusher.json",
-          "src/main/java/net/mcreator/uranium/block/CrusherBlock.java",
-          "src/main/resources/assets/uranium/items/crusher.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CrusherBlockEntity.java"
+          "src/main/java/net/mcreator/uranium/block/CrusherBlock.java"
         ]
       },
-      "path": "~/crusher"
+      "path": "~/machines/crusher"
     },
     {
       "name": "Reactor",
@@ -1924,13 +1910,13 @@
       "registry_name": "reactor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/blockstates/reactor.json",
+          "src/main/resources/assets/uranium/items/reactor.json",
+          "src/main/resources/data/uranium/loot_table/blocks/reactor.json",
+          "src/main/resources/assets/uranium/models/block/reactor.json",
           "src/main/java/net/mcreator/uranium/block/ReactorBlock.java",
           "src/main/java/net/mcreator/uranium/block/entity/ReactorBlockEntity.java",
-          "src/main/resources/assets/uranium/items/reactor.json",
-          "src/main/resources/assets/uranium/models/block/reactor.json",
-          "src/main/resources/data/uranium/loot_table/blocks/reactor.json",
-          "src/main/resources/assets/uranium/models/item/reactor.json"
+          "src/main/resources/assets/uranium/models/item/reactor.json",
+          "src/main/resources/assets/uranium/blockstates/reactor.json"
         ]
       },
       "path": "~/energy/reactor"
@@ -1946,7 +1932,7 @@
           "src/main/resources/data/uranium/recipe/fuelrodrecipe.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "NuggettoingotLead",
@@ -1959,7 +1945,7 @@
           "src/main/resources/data/uranium/recipe/nuggettoingot_lead.json"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "IngottoblockLead",
@@ -1972,7 +1958,7 @@
           "src/main/resources/data/uranium/recipe/ingottoblock_lead.json"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Poissonchatte",
@@ -1982,11 +1968,11 @@
       "registry_name": "poissonchatte",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/client/renderer/PoissonchatteRenderer.java",
+          "src/main/resources/assets/uranium/models/item/poissonchatte_spawn_egg.json",
           "src/main/java/net/mcreator/uranium/entity/PoissonchatteEntity.java",
           "src/main/resources/assets/uranium/items/poissonchatte_spawn_egg.json",
-          "src/main/resources/assets/uranium/models/item/poissonchatte_spawn_egg.json",
-          "src/main/resources/data/uranium/neoforge/biome_modifier/poissonchatte_biome_modifier.json"
+          "src/main/resources/data/uranium/neoforge/biome_modifier/poissonchatte_biome_modifier.json",
+          "src/main/java/net/mcreator/uranium/client/renderer/PoissonchatteRenderer.java"
         ]
       },
       "path": "~/mob/catfish"
@@ -2058,12 +2044,12 @@
       "registry_name": "cruched_rawuranium",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/CruchedRawuraniumItem.java",
           "src/main/resources/assets/uranium/models/item/cruched_rawuranium.json",
+          "src/main/java/net/mcreator/uranium/item/CruchedRawuraniumItem.java",
           "src/main/resources/assets/uranium/items/cruched_rawuranium.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Yellowcakerecipe",
@@ -2076,7 +2062,7 @@
           "src/main/resources/data/uranium/recipe/yellowcakerecipe.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Sulfuricwasteland",
@@ -2086,9 +2072,9 @@
       "registry_name": "sulfuricwasteland",
       "metadata": {
         "files": [
+          "src/main/resources/data/uranium/worldgen/configured_feature/sulfuricwasteland_tree.json",
           "src/main/resources/data/uranium/worldgen/biome/sulfuricwasteland.json",
-          "src/main/resources/data/uranium/worldgen/placed_feature/sulfuricwasteland_tree.json",
-          "src/main/resources/data/uranium/worldgen/configured_feature/sulfuricwasteland_tree.json"
+          "src/main/resources/data/uranium/worldgen/placed_feature/sulfuricwasteland_tree.json"
         ]
       },
       "path": "~/dimension_biome"
@@ -2101,17 +2087,17 @@
       "registry_name": "radioactivewasteland",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/world/teleporter/RadioactivewastelandPortalShape.java",
-          "src/main/resources/data/uranium/timeline/radioactivewasteland_effects.json",
           "src/main/resources/assets/uranium/blockstates/radioactivewasteland_portal.json",
-          "src/main/java/net/mcreator/uranium/world/teleporter/RadioactivewastelandTeleporter.java",
-          "src/main/java/net/mcreator/uranium/block/RadioactivewastelandPortalBlock.java",
+          "src/main/java/net/mcreator/uranium/item/RadioactivewastelandItem.java",
+          "src/main/java/net/mcreator/uranium/world/teleporter/RadioactivewastelandPortalShape.java",
+          "src/main/resources/assets/uranium/models/block/radioactivewasteland_portal_ns.json",
+          "src/main/resources/assets/uranium/models/item/radioactivewasteland.json",
           "src/main/resources/data/uranium/dimension_type/radioactivewasteland.json",
           "src/main/resources/data/uranium/dimension/radioactivewasteland.json",
-          "src/main/resources/assets/uranium/models/item/radioactivewasteland.json",
+          "src/main/java/net/mcreator/uranium/block/RadioactivewastelandPortalBlock.java",
+          "src/main/java/net/mcreator/uranium/world/teleporter/RadioactivewastelandTeleporter.java",
+          "src/main/resources/data/uranium/timeline/radioactivewasteland_effects.json",
           "src/main/resources/assets/uranium/models/block/radioactivewasteland_portal_ew.json",
-          "src/main/java/net/mcreator/uranium/item/RadioactivewastelandItem.java",
-          "src/main/resources/assets/uranium/models/block/radioactivewasteland_portal_ns.json",
           "src/main/resources/assets/uranium/items/radioactivewasteland.json"
         ]
       },
@@ -2151,15 +2137,15 @@
       "registry_name": "fluorite_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/fluorite_ore.json",
-          "src/main/resources/assets/uranium/blockstates/fluorite_ore.json",
           "src/main/java/net/mcreator/uranium/block/FluoriteOreBlock.java",
           "src/main/resources/assets/uranium/items/fluorite_ore.json",
           "src/main/resources/assets/uranium/models/block/fluorite_ore.json",
+          "src/main/resources/assets/uranium/models/item/fluorite_ore.json",
+          "src/main/resources/assets/uranium/blockstates/fluorite_ore.json",
           "src/main/resources/data/uranium/loot_table/blocks/fluorite_ore.json"
         ]
       },
-      "path": "~/Uranium/fluorite"
+      "path": "~/minerais/Uranium/fluorite"
     },
     {
       "name": "DeepslateFluoriteOre",
@@ -2169,15 +2155,15 @@
       "registry_name": "deepslate_fluorite_ore",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/items/deepslate_fluorite_ore.json",
           "src/main/resources/assets/uranium/models/item/deepslate_fluorite_ore.json",
-          "src/main/resources/data/uranium/loot_table/blocks/deepslate_fluorite_ore.json",
+          "src/main/resources/assets/uranium/blockstates/deepslate_fluorite_ore.json",
           "src/main/resources/assets/uranium/models/block/deepslate_fluorite_ore.json",
           "src/main/java/net/mcreator/uranium/block/DeepslateFluoriteOreBlock.java",
-          "src/main/resources/assets/uranium/items/deepslate_fluorite_ore.json",
-          "src/main/resources/assets/uranium/blockstates/deepslate_fluorite_ore.json"
+          "src/main/resources/data/uranium/loot_table/blocks/deepslate_fluorite_ore.json"
         ]
       },
-      "path": "~/Uranium/fluorite"
+      "path": "~/minerais/Uranium/fluorite"
     },
     {
       "name": "Uraniumhexafluoride",
@@ -2187,12 +2173,12 @@
       "registry_name": "uraniumhexafluoride",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/uraniumhexafluoride.json",
+          "src/main/resources/assets/uranium/models/item/uraniumhexafluoride.json",
           "src/main/java/net/mcreator/uranium/item/UraniumhexafluorideItem.java",
-          "src/main/resources/assets/uranium/models/item/uraniumhexafluoride.json"
+          "src/main/resources/assets/uranium/items/uraniumhexafluoride.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Fluor",
@@ -2207,7 +2193,7 @@
           "src/main/resources/assets/uranium/items/fluor.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Fluorrecipe",
@@ -2220,7 +2206,7 @@
           "src/main/java/net/mcreator/uranium/recipe/brewing/FluorrecipeBrewingRecipe.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "UraniumhexafluorideRecipe",
@@ -2233,7 +2219,7 @@
           "src/main/java/net/mcreator/uranium/recipe/brewing/UraniumhexafluorideRecipeBrewingRecipe.java"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "SteelHammer",
@@ -2243,12 +2229,12 @@
       "registry_name": "steel_hammer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/SteelHammerItem.java",
           "src/main/resources/assets/uranium/items/steel_hammer.json",
+          "src/main/java/net/mcreator/uranium/item/SteelHammerItem.java",
           "src/main/resources/assets/uranium/models/item/steel_hammer.json"
         ]
       },
-      "path": "~/Steel"
+      "path": "~/minerais/Steel"
     },
     {
       "name": "Uraniumpellet",
@@ -2258,12 +2244,12 @@
       "registry_name": "uraniumpellet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/uraniumpellet.json",
+          "src/main/resources/assets/uranium/items/uraniumpellet.json",
           "src/main/java/net/mcreator/uranium/item/UraniumpelletItem.java",
-          "src/main/resources/assets/uranium/items/uraniumpellet.json"
+          "src/main/resources/assets/uranium/models/item/uraniumpellet.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Zicronium",
@@ -2273,12 +2259,12 @@
       "registry_name": "zicronium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/zicronium.json",
           "src/main/java/net/mcreator/uranium/item/ZicroniumItem.java",
+          "src/main/resources/assets/uranium/items/zicronium.json",
           "src/main/resources/assets/uranium/models/item/zicronium.json"
         ]
       },
-      "path": "~/Zicronium"
+      "path": "~/minerais/Zicronium"
     },
     {
       "name": "Zicron",
@@ -2289,11 +2275,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/uranium/item/ZicronItem.java",
-          "src/main/resources/assets/uranium/items/zicron.json",
-          "src/main/resources/assets/uranium/models/item/zicron.json"
+          "src/main/resources/assets/uranium/models/item/zicron.json",
+          "src/main/resources/assets/uranium/items/zicron.json"
         ]
       },
-      "path": "~/Zicronium"
+      "path": "~/minerais/Zicronium"
     },
     {
       "name": "Zicroniumrecipe",
@@ -2307,7 +2293,7 @@
           "src/main/resources/data/uranium/recipe/zicroniumrecipe.json"
         ]
       },
-      "path": "~/Zicronium"
+      "path": "~/minerais/Zicronium"
     },
     {
       "name": "ZicronOre",
@@ -2317,15 +2303,15 @@
       "registry_name": "zicron_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/zicron_ore.json",
+          "src/main/resources/data/uranium/loot_table/blocks/zicron_ore.json",
           "src/main/resources/assets/uranium/items/zicron_ore.json",
           "src/main/resources/assets/uranium/blockstates/zicron_ore.json",
           "src/main/resources/assets/uranium/models/block/zicron_ore.json",
-          "src/main/java/net/mcreator/uranium/block/ZicronOreBlock.java",
-          "src/main/resources/data/uranium/loot_table/blocks/zicron_ore.json"
+          "src/main/resources/assets/uranium/models/item/zicron_ore.json",
+          "src/main/java/net/mcreator/uranium/block/ZicronOreBlock.java"
         ]
       },
-      "path": "~/Zicronium"
+      "path": "~/minerais/Zicronium"
     },
     {
       "name": "Weneeareactornow",
@@ -2351,7 +2337,7 @@
           "src/main/resources/data/uranium/recipe/uranium_pellet_recipe.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Reinforcedconcrete",
@@ -2362,14 +2348,14 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/items/reinforcedconcrete.json",
+          "src/main/resources/assets/uranium/models/block/reinforcedconcrete.json",
           "src/main/resources/data/uranium/loot_table/blocks/reinforcedconcrete.json",
-          "src/main/java/net/mcreator/uranium/block/ReinforcedconcreteBlock.java",
-          "src/main/resources/assets/uranium/models/item/reinforcedconcrete.json",
           "src/main/resources/assets/uranium/blockstates/reinforcedconcrete.json",
-          "src/main/resources/assets/uranium/models/block/reinforcedconcrete.json"
+          "src/main/java/net/mcreator/uranium/block/ReinforcedconcreteBlock.java",
+          "src/main/resources/assets/uranium/models/item/reinforcedconcrete.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Reinforcedconcreterecipe",
@@ -2383,7 +2369,7 @@
           "src/main/resources/data/uranium/recipe/reinforcedconcreterecipe.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "LeadcraftingtableGui",
@@ -2397,7 +2383,7 @@
           "src/main/java/net/mcreator/uranium/world/inventory/LeadcraftingtableGuiMenu.java"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Reactorcraftingrecipe",
@@ -2428,7 +2414,7 @@
           "src/main/java/net/mcreator/uranium/procedures/ReactorcraftingrecipeProcedure.java"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "LeadcraftingtableOnTickUpdate",
@@ -2459,7 +2445,7 @@
           "src/main/java/net/mcreator/uranium/procedures/LeadcraftingtableOnTickUpdateProcedure.java"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Leadcraftingtable",
@@ -2469,16 +2455,16 @@
       "registry_name": "leadcraftingtable",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/LeadcraftingtableBlockEntity.java",
-          "src/main/resources/assets/uranium/blockstates/leadcraftingtable.json",
-          "src/main/resources/assets/uranium/models/block/leadcraftingtable.json",
           "src/main/java/net/mcreator/uranium/block/LeadcraftingtableBlock.java",
+          "src/main/resources/assets/uranium/models/item/leadcraftingtable.json",
+          "src/main/resources/assets/uranium/models/block/leadcraftingtable.json",
           "src/main/resources/assets/uranium/items/leadcraftingtable.json",
-          "src/main/resources/data/uranium/loot_table/blocks/leadcraftingtable.json",
-          "src/main/resources/assets/uranium/models/item/leadcraftingtable.json"
+          "src/main/resources/assets/uranium/blockstates/leadcraftingtable.json",
+          "src/main/java/net/mcreator/uranium/block/entity/LeadcraftingtableBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/leadcraftingtable.json"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Leadcraftingtablerecipe",
@@ -2491,7 +2477,7 @@
           "src/main/resources/data/uranium/recipe/leadcraftingtablerecipe.json"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Leadore",
@@ -2501,15 +2487,15 @@
       "registry_name": "leadore",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/loot_table/blocks/leadore.json",
+          "src/main/java/net/mcreator/uranium/block/LeadoreBlock.java",
+          "src/main/resources/assets/uranium/blockstates/leadore.json",
           "src/main/resources/assets/uranium/models/block/leadore.json",
           "src/main/resources/assets/uranium/models/item/leadore.json",
           "src/main/resources/assets/uranium/items/leadore.json",
-          "src/main/java/net/mcreator/uranium/block/LeadoreBlock.java",
-          "src/main/resources/assets/uranium/blockstates/leadore.json"
+          "src/main/resources/data/uranium/loot_table/blocks/leadore.json"
         ]
       },
-      "path": "~/plomb"
+      "path": "~/minerais/plomb"
     },
     {
       "name": "Crystalstag",
@@ -2519,11 +2505,11 @@
       "registry_name": "crystalstag",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/entity/CrystalstagEntity.java",
-          "src/main/java/net/mcreator/uranium/entity/layer/CrystalstagLayer.java",
+          "src/main/java/net/mcreator/uranium/client/renderer/CrystalstagRenderer.java",
           "src/main/java/net/mcreator/uranium/entity/model/CrystalstagModel.java",
+          "src/main/java/net/mcreator/uranium/entity/layer/CrystalstagLayer.java",
           "src/main/resources/data/uranium/neoforge/biome_modifier/crystalstag_biome_modifier.json",
-          "src/main/java/net/mcreator/uranium/client/renderer/CrystalstagRenderer.java"
+          "src/main/java/net/mcreator/uranium/entity/CrystalstagEntity.java"
         ]
       },
       "path": "~/mob/cristal stag"
@@ -2541,7 +2527,7 @@
           "src/main/resources/assets/uranium/items/uranium_pickaxe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumAxe",
@@ -2556,7 +2542,7 @@
           "src/main/resources/assets/uranium/models/item/uranium_axe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumSword",
@@ -2566,12 +2552,12 @@
       "registry_name": "uranium_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/uranium_sword.json",
           "src/main/java/net/mcreator/uranium/item/UraniumSwordItem.java",
-          "src/main/resources/assets/uranium/models/item/uranium_sword.json"
+          "src/main/resources/assets/uranium/models/item/uranium_sword.json",
+          "src/main/resources/assets/uranium/items/uranium_sword.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumShovel",
@@ -2586,7 +2572,7 @@
           "src/main/java/net/mcreator/uranium/item/UraniumShovelItem.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumHoe",
@@ -2601,7 +2587,7 @@
           "src/main/resources/assets/uranium/models/item/uranium_hoe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumPickaxeRecipe",
@@ -2615,7 +2601,7 @@
           "src/main/resources/data/uranium/advancement/recipes/uranium_pickaxe_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumAxeRecipe",
@@ -2628,7 +2614,7 @@
           "src/main/resources/data/uranium/recipe/uranium_axe_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumSwordRecipe",
@@ -2641,7 +2627,7 @@
           "src/main/resources/data/uranium/recipe/uranium_sword_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumShovelRecipe",
@@ -2654,7 +2640,7 @@
           "src/main/resources/data/uranium/recipe/uranium_shovel_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumHoeRecipe",
@@ -2667,7 +2653,7 @@
           "src/main/resources/data/uranium/recipe/uranium_hoe_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumArmor",
@@ -2677,20 +2663,20 @@
       "registry_name": "uranium_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/uranium_armor_boots.json",
-          "src/main/resources/assets/uranium/models/item/uranium_armor_leggings.json",
-          "src/main/resources/assets/uranium/models/item/uranium_armor_boots.json",
-          "src/main/resources/assets/uranium/models/item/uranium_armor_helmet.json",
-          "src/main/resources/assets/uranium/models/item/uranium_armor_chestplate.json",
-          "src/main/resources/assets/uranium/items/uranium_armor_helmet.json",
-          "src/main/resources/assets/uranium/items/uranium_armor_leggings.json",
           "src/main/resources/assets/uranium/equipment/uranium_armor.json",
-          "src/main/java/net/mcreator/uranium/item/UraniumArmorItem.java",
+          "src/main/resources/assets/uranium/items/uranium_armor_helmet.json",
           "src/main/java/net/mcreator/uranium/client/renderer/item/UraniumArmorArmor.java",
-          "src/main/resources/assets/uranium/items/uranium_armor_chestplate.json"
+          "src/main/resources/assets/uranium/models/item/uranium_armor_chestplate.json",
+          "src/main/resources/assets/uranium/models/item/uranium_armor_boots.json",
+          "src/main/resources/assets/uranium/items/uranium_armor_chestplate.json",
+          "src/main/resources/assets/uranium/models/item/uranium_armor_helmet.json",
+          "src/main/resources/assets/uranium/items/uranium_armor_boots.json",
+          "src/main/resources/assets/uranium/items/uranium_armor_leggings.json",
+          "src/main/resources/assets/uranium/models/item/uranium_armor_leggings.json",
+          "src/main/java/net/mcreator/uranium/item/UraniumArmorItem.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumArmorHelmetRecipe",
@@ -2704,7 +2690,7 @@
           "src/main/resources/data/uranium/advancement/recipes/uranium_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumArmorChestplateRecipe",
@@ -2718,7 +2704,7 @@
           "src/main/resources/data/uranium/advancement/recipes/uranium_armor_chestplate_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumArmorLeggingsRecipe",
@@ -2732,7 +2718,7 @@
           "src/main/resources/data/uranium/advancement/recipes/uranium_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumArmorBootsRecipe",
@@ -2742,11 +2728,11 @@
       "registry_name": "uranium_armor_boots_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/uranium_armor_boots_recipe.json",
-          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_boots_recipe.json"
+          "src/main/resources/data/uranium/advancement/recipes/uranium_armor_boots_recipe.json",
+          "src/main/resources/data/uranium/recipe/uranium_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "Insulateduranium",
@@ -2757,11 +2743,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/uranium/item/InsulateduraniumItem.java",
-          "src/main/resources/assets/uranium/items/insulateduranium.json",
-          "src/main/resources/assets/uranium/models/item/insulateduranium.json"
+          "src/main/resources/assets/uranium/models/item/insulateduranium.json",
+          "src/main/resources/assets/uranium/items/insulateduranium.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "Enriched_uranium_armorArmor",
@@ -2771,20 +2757,20 @@
       "registry_name": "enriched_uranium_armor_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/enriched_uranium_armor_armor_helmet.json",
-          "src/main/java/net/mcreator/uranium/item/Enriched_uranium_armorArmorItem.java",
-          "src/main/resources/assets/uranium/items/enriched_uranium_armor_armor_boots.json",
-          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_boots.json",
-          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_chestplate.json",
           "src/main/java/net/mcreator/uranium/client/renderer/item/Enriched_uranium_armorArmorArmor.java",
-          "src/main/resources/assets/uranium/equipment/enriched_uranium_armor_armor.json",
-          "src/main/resources/assets/uranium/items/enriched_uranium_armor_armor_chestplate.json",
-          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_leggings.json",
+          "src/main/resources/assets/uranium/items/enriched_uranium_armor_armor_helmet.json",
+          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_helmet.json",
+          "src/main/java/net/mcreator/uranium/item/Enriched_uranium_armorArmorItem.java",
           "src/main/resources/assets/uranium/items/enriched_uranium_armor_armor_leggings.json",
-          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_helmet.json"
+          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_leggings.json",
+          "src/main/resources/assets/uranium/items/enriched_uranium_armor_armor_chestplate.json",
+          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_chestplate.json",
+          "src/main/resources/assets/uranium/equipment/enriched_uranium_armor_armor.json",
+          "src/main/resources/assets/uranium/models/item/enriched_uranium_armor_armor_boots.json",
+          "src/main/resources/assets/uranium/items/enriched_uranium_armor_armor_boots.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "Enriched_uranium_armorArmorHelmetRecipe",
@@ -2798,7 +2784,7 @@
           "src/main/resources/data/uranium/recipe/enriched_uranium_armor_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "Enriched_uranium_armorArmorChestplateRecipe",
@@ -2808,11 +2794,11 @@
       "registry_name": "enriched_uranium_armor_armor_chestplate_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/advancement/recipes/enriched_uranium_armor_armor_chestplate_recipe.json",
-          "src/main/resources/data/uranium/recipe/enriched_uranium_armor_armor_chestplate_recipe.json"
+          "src/main/resources/data/uranium/recipe/enriched_uranium_armor_armor_chestplate_recipe.json",
+          "src/main/resources/data/uranium/advancement/recipes/enriched_uranium_armor_armor_chestplate_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "Enriched_uranium_armorArmorLeggingsRecipe",
@@ -2826,7 +2812,7 @@
           "src/main/resources/data/uranium/recipe/enriched_uranium_armor_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "Enriched_uranium_armorArmorBootsRecipe",
@@ -2836,11 +2822,11 @@
       "registry_name": "enriched_uranium_armor_armor_boots_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/recipe/enriched_uranium_armor_armor_boots_recipe.json",
-          "src/main/resources/data/uranium/advancement/recipes/enriched_uranium_armor_armor_boots_recipe.json"
+          "src/main/resources/data/uranium/advancement/recipes/enriched_uranium_armor_armor_boots_recipe.json",
+          "src/main/resources/data/uranium/recipe/enriched_uranium_armor_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "UraniumArmorEvenementDeTick",
@@ -2875,7 +2861,7 @@
           "src/main/java/net/mcreator/uranium/procedures/UraniumArmorEvenementDeTickProcedure.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "EnricheduraniumarmorArmorEvenementDeTickDuCasque",
@@ -2894,7 +2880,7 @@
           "src/main/java/net/mcreator/uranium/procedures/EnricheduraniumarmorArmorEvenementDeTickDuCasqueProcedure.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "EnricheduraniumarmorArmorEvenementDeTickDuPlastron",
@@ -2913,7 +2899,7 @@
           "src/main/java/net/mcreator/uranium/procedures/EnricheduraniumarmorArmorEvenementDeTickDuPlastronProcedure.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "EnricheduraniumarmorArmorEvenementDeTickDesJambieres",
@@ -2932,7 +2918,7 @@
           "src/main/java/net/mcreator/uranium/procedures/EnricheduraniumarmorArmorEvenementDeTickDesJambieresProcedure.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "EnricheduraniumarmorArmorEvenementDeTickDesBottes",
@@ -2951,7 +2937,7 @@
           "src/main/java/net/mcreator/uranium/procedures/EnricheduraniumarmorArmorEvenementDeTickDesBottesProcedure.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "AlleffectLorsqueVousCliquezAvecLeBoutonDroitDeLaSourisSurUnBloc",
@@ -2970,7 +2956,7 @@
           "src/main/java/net/mcreator/uranium/procedures/AlleffectLorsqueVousCliquezAvecLeBoutonDroitDeLaSourisSurUnBlocProcedure.java"
         ]
       },
-      "path": "~/Uranium/armor"
+      "path": "~/minerais/Uranium/armor"
     },
     {
       "name": "CrystalstagspawneggLorsqueVousCliquezAvecLeBoutonDroitDeLaSourisSurUnBloc",
@@ -3029,7 +3015,7 @@
           "src/main/resources/data/uranium/recipe/insulateduraniumrecipe.json"
         ]
       },
-      "path": "~/Uranium"
+      "path": "~/minerais/Uranium"
     },
     {
       "name": "WindturbineQuandLeBlocEstAjoute",
@@ -3122,7 +3108,7 @@
           "src/main/java/net/mcreator/uranium/procedures/WindturbineLorsDeLaMiseAJourDuTickProcedure.java"
         ]
       },
-      "path": "~/centrifuge"
+      "path": "~/energy"
     },
     {
       "name": "WindturbineConditionDeLectureMedium",
@@ -3228,14 +3214,14 @@
       "registry_name": "windturbine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/blockstates/windturbine.json",
-          "src/main/resources/assets/uranium/models/item/windturbine.json",
-          "src/main/java/net/mcreator/uranium/block/WindturbineBlock.java",
-          "src/main/resources/assets/uranium/items/windturbine.json",
           "src/main/java/net/mcreator/uranium/block/entity/WindturbineBlockEntity.java",
-          "src/main/resources/data/uranium/loot_table/blocks/windturbine.json",
           "src/main/java/net/mcreator/uranium/client/renderer/block/WindturbineRenderer.java",
-          "src/main/resources/assets/uranium/models/block/windturbine.json"
+          "src/main/resources/assets/uranium/models/block/windturbine.json",
+          "src/main/java/net/mcreator/uranium/block/WindturbineBlock.java",
+          "src/main/resources/assets/uranium/models/item/windturbine.json",
+          "src/main/resources/assets/uranium/blockstates/windturbine.json",
+          "src/main/resources/data/uranium/loot_table/blocks/windturbine.json",
+          "src/main/resources/assets/uranium/items/windturbine.json"
         ]
       },
       "path": "~/energy/wind_turbine"
@@ -4123,7 +4109,7 @@
           }
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Rcpumptick",
@@ -4154,7 +4140,7 @@
           }
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Rcmachinethermal",
@@ -4185,7 +4171,7 @@
           }
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Rcthermalcrusher",
@@ -4216,7 +4202,7 @@
           }
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Rcthermalcentrifuge",
@@ -4247,7 +4233,7 @@
           }
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Rcpipeshape",
@@ -4278,7 +4264,7 @@
           }
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Rcpipeupdate",
@@ -4309,7 +4295,7 @@
           }
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Reactorcontrolgui",
@@ -4319,9 +4305,9 @@
       "registry_name": "reactorcontrolgui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/world/inventory/ReactorcontrolguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/ReactorcontrolguiScreen.java",
           "src/main/java/net/mcreator/uranium/network/ReactorcontrolguiButtonMessage.java",
-          "src/main/java/net/mcreator/uranium/client/gui/ReactorcontrolguiScreen.java"
+          "src/main/java/net/mcreator/uranium/world/inventory/ReactorcontrolguiMenu.java"
         ]
       },
       "path": "~/energy/reactor"
@@ -4334,16 +4320,16 @@
       "registry_name": "coolantpipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipe.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipe.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipe.json",
           "src/main/resources/assets/uranium/models/item/coolantpipe.json",
-          "src/main/resources/assets/uranium/items/coolantpipe.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipe.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipe.json",
           "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeBlockEntity.java",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeBlock.java",
-          "src/main/resources/assets/uranium/blockstates/coolantpipe.json"
+          "src/main/resources/assets/uranium/items/coolantpipe.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeE",
@@ -4355,14 +4341,14 @@
         "files": [
           "src/main/resources/assets/uranium/models/item/coolantpipee.json",
           "src/main/resources/assets/uranium/blockstates/coolantpipee.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeEBlock.java",
           "src/main/resources/data/uranium/loot_table/blocks/coolantpipee.json",
           "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeEBlockEntity.java",
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeEBlock.java",
-          "src/main/resources/assets/uranium/models/block/coolantpipee.json",
-          "src/main/resources/assets/uranium/items/coolantpipee.json"
+          "src/main/resources/assets/uranium/items/coolantpipee.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipee.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeI",
@@ -4372,16 +4358,16 @@
       "registry_name": "coolantpipei",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeIBlockEntity.java",
           "src/main/resources/data/uranium/loot_table/blocks/coolantpipei.json",
           "src/main/resources/assets/uranium/blockstates/coolantpipei.json",
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeIBlock.java",
           "src/main/resources/assets/uranium/models/item/coolantpipei.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipei.json",
-          "src/main/resources/assets/uranium/items/coolantpipei.json"
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeIBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeIBlockEntity.java",
+          "src/main/resources/assets/uranium/items/coolantpipei.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipei.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeL",
@@ -4391,16 +4377,16 @@
       "registry_name": "coolantpipel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/blockstates/coolantpipel.json",
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeLBlock.java",
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLBlockEntity.java",
-          "src/main/resources/assets/uranium/models/block/coolantpipel.json",
           "src/main/resources/data/uranium/loot_table/blocks/coolantpipel.json",
           "src/main/resources/assets/uranium/models/item/coolantpipel.json",
-          "src/main/resources/assets/uranium/items/coolantpipel.json"
+          "src/main/resources/assets/uranium/items/coolantpipel.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLBlockEntity.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipel.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLBlock.java",
+          "src/main/resources/assets/uranium/models/block/coolantpipel.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeLC",
@@ -4410,16 +4396,16 @@
       "registry_name": "coolantpipelc",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/models/block/coolantpipelc.json",
           "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLCBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelc.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeLCBlock.java",
           "src/main/resources/assets/uranium/blockstates/coolantpipelc.json",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelc.json",
-          "src/main/resources/assets/uranium/items/coolantpipelc.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipelc.json",
-          "src/main/resources/assets/uranium/models/item/coolantpipelc.json"
+          "src/main/resources/assets/uranium/models/item/coolantpipelc.json",
+          "src/main/resources/assets/uranium/items/coolantpipelc.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeLCC",
@@ -4430,15 +4416,15 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/models/item/coolantpipelcc.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLCCBlockEntity.java",
           "src/main/resources/assets/uranium/items/coolantpipelcc.json",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelcc.json",
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeLCCBlock.java",
+          "src/main/resources/assets/uranium/models/block/coolantpipelcc.json",
           "src/main/resources/assets/uranium/blockstates/coolantpipelcc.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipelcc.json"
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLCCBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelcc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLCCBlock.java"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeLT",
@@ -4448,16 +4434,16 @@
       "registry_name": "coolantpipelt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeLTBlock.java",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelt.json",
-          "src/main/resources/assets/uranium/items/coolantpipelt.json",
-          "src/main/resources/assets/uranium/models/item/coolantpipelt.json",
           "src/main/resources/assets/uranium/models/block/coolantpipelt.json",
+          "src/main/resources/assets/uranium/items/coolantpipelt.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipelt.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeLTBlock.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipelt.json",
           "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLTBlockEntity.java",
           "src/main/resources/assets/uranium/blockstates/coolantpipelt.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeLTC",
@@ -4467,16 +4453,16 @@
       "registry_name": "coolantpipeltc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/blockstates/coolantpipeltc.json",
           "src/main/resources/assets/uranium/models/block/coolantpipeltc.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeLTCBlock.java",
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLTCBlockEntity.java",
-          "src/main/resources/assets/uranium/models/item/coolantpipeltc.json",
+          "src/main/resources/assets/uranium/items/coolantpipeltc.json",
           "src/main/resources/data/uranium/loot_table/blocks/coolantpipeltc.json",
-          "src/main/resources/assets/uranium/items/coolantpipeltc.json"
+          "src/main/resources/assets/uranium/models/item/coolantpipeltc.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipeltc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeLTCBlockEntity.java"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeT",
@@ -4486,16 +4472,16 @@
       "registry_name": "coolantpipet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/coolantpipet.json",
-          "src/main/resources/assets/uranium/blockstates/coolantpipet.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipet.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeTBlock.java",
-          "src/main/resources/assets/uranium/models/block/coolantpipet.json",
-          "src/main/resources/assets/uranium/models/item/coolantpipet.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipet.json",
           "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTBlockEntity.java",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipet.json"
+          "src/main/resources/assets/uranium/models/item/coolantpipet.json",
+          "src/main/resources/assets/uranium/items/coolantpipet.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipet.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeTC",
@@ -4505,16 +4491,16 @@
       "registry_name": "coolantpipetc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/coolantpipetc.json",
-          "src/main/resources/assets/uranium/models/item/coolantpipetc.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipetc.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTCBlockEntity.java",
-          "src/main/resources/assets/uranium/blockstates/coolantpipetc.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeTCBlock.java",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetc.json"
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetc.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipetc.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipetc.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipetc.json",
+          "src/main/resources/assets/uranium/items/coolantpipetc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTCBlockEntity.java"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeTX",
@@ -4524,16 +4510,16 @@
       "registry_name": "coolantpipetx",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXBlockEntity.java",
+          "src/main/resources/assets/uranium/items/coolantpipetx.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeTXBlock.java",
-          "src/main/resources/assets/uranium/models/item/coolantpipetx.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipetx.json",
           "src/main/resources/assets/uranium/blockstates/coolantpipetx.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipetx.json",
           "src/main/resources/data/uranium/loot_table/blocks/coolantpipetx.json",
-          "src/main/resources/assets/uranium/items/coolantpipetx.json"
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXBlockEntity.java",
+          "src/main/resources/assets/uranium/models/block/coolantpipetx.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeTXC",
@@ -4543,16 +4529,16 @@
       "registry_name": "coolantpipetxc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXCBlockEntity.java",
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeTXCBlock.java",
-          "src/main/resources/assets/uranium/models/item/coolantpipetxc.json",
-          "src/main/resources/assets/uranium/items/coolantpipetxc.json",
           "src/main/resources/data/uranium/loot_table/blocks/coolantpipetxc.json",
           "src/main/resources/assets/uranium/blockstates/coolantpipetxc.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipetxc.json"
+          "src/main/resources/assets/uranium/models/block/coolantpipetxc.json",
+          "src/main/resources/assets/uranium/items/coolantpipetxc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeTXCBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXCBlockEntity.java",
+          "src/main/resources/assets/uranium/models/item/coolantpipetxc.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeTXCC",
@@ -4562,16 +4548,16 @@
       "registry_name": "coolantpipetxcc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXCCBlockEntity.java",
           "src/main/resources/assets/uranium/models/item/coolantpipetxcc.json",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetxcc.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeTXCCBlock.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipetxcc.json",
           "src/main/resources/assets/uranium/items/coolantpipetxcc.json",
           "src/main/resources/assets/uranium/blockstates/coolantpipetxcc.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipetxcc.json"
+          "src/main/resources/assets/uranium/models/block/coolantpipetxcc.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeTXCCBlockEntity.java"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeX",
@@ -4581,16 +4567,16 @@
       "registry_name": "coolantpipex",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/coolantpipex.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeXBlockEntity.java",
           "src/main/resources/assets/uranium/models/block/coolantpipex.json",
-          "src/main/resources/assets/uranium/items/coolantpipex.json",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipex.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeXBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeXBlockEntity.java",
+          "src/main/resources/assets/uranium/items/coolantpipex.json",
+          "src/main/resources/assets/uranium/models/item/coolantpipex.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipex.json",
           "src/main/resources/assets/uranium/blockstates/coolantpipex.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeXC",
@@ -4600,16 +4586,16 @@
       "registry_name": "coolantpipexc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/blockstates/coolantpipexc.json",
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeXCBlock.java",
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipexc.json",
-          "src/main/resources/assets/uranium/models/block/coolantpipexc.json",
           "src/main/resources/assets/uranium/models/item/coolantpipexc.json",
           "src/main/resources/assets/uranium/items/coolantpipexc.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeXCBlockEntity.java"
+          "src/main/resources/assets/uranium/models/block/coolantpipexc.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipexc.json",
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeXCBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeXCBlockEntity.java",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipexc.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeF",
@@ -4619,16 +4605,16 @@
       "registry_name": "coolantpipef",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/block/coolantpipef.json",
           "src/main/resources/data/uranium/loot_table/blocks/coolantpipef.json",
-          "src/main/resources/assets/uranium/items/coolantpipef.json",
           "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeFBlockEntity.java",
-          "src/main/java/net/mcreator/uranium/block/CoolantpipeFBlock.java",
+          "src/main/resources/assets/uranium/blockstates/coolantpipef.json",
+          "src/main/resources/assets/uranium/models/block/coolantpipef.json",
+          "src/main/resources/assets/uranium/items/coolantpipef.json",
           "src/main/resources/assets/uranium/models/item/coolantpipef.json",
-          "src/main/resources/assets/uranium/blockstates/coolantpipef.json"
+          "src/main/java/net/mcreator/uranium/block/CoolantpipeFBlock.java"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "CoolantpipeS",
@@ -4638,16 +4624,16 @@
       "registry_name": "coolantpipes",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/loot_table/blocks/coolantpipes.json",
-          "src/main/resources/assets/uranium/items/coolantpipes.json",
           "src/main/resources/assets/uranium/models/block/coolantpipes.json",
-          "src/main/resources/assets/uranium/models/item/coolantpipes.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeSBlockEntity.java",
+          "src/main/resources/assets/uranium/items/coolantpipes.json",
+          "src/main/resources/assets/uranium/blockstates/coolantpipes.json",
           "src/main/java/net/mcreator/uranium/block/CoolantpipeSBlock.java",
-          "src/main/resources/assets/uranium/blockstates/coolantpipes.json"
+          "src/main/resources/assets/uranium/models/item/coolantpipes.json",
+          "src/main/resources/data/uranium/loot_table/blocks/coolantpipes.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CoolantpipeSBlockEntity.java"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Waterpump",
@@ -4657,16 +4643,16 @@
       "registry_name": "waterpump",
       "metadata": {
         "files": [
-          "src/main/resources/data/uranium/loot_table/blocks/waterpump.json",
-          "src/main/resources/assets/uranium/models/item/waterpump.json",
-          "src/main/resources/assets/uranium/items/waterpump.json",
+          "src/main/java/net/mcreator/uranium/block/entity/WaterpumpBlockEntity.java",
           "src/main/java/net/mcreator/uranium/block/WaterpumpBlock.java",
           "src/main/resources/assets/uranium/blockstates/waterpump.json",
-          "src/main/resources/assets/uranium/models/block/waterpump.json",
-          "src/main/java/net/mcreator/uranium/block/entity/WaterpumpBlockEntity.java"
+          "src/main/resources/assets/uranium/items/waterpump.json",
+          "src/main/resources/data/uranium/loot_table/blocks/waterpump.json",
+          "src/main/resources/assets/uranium/models/item/waterpump.json",
+          "src/main/resources/assets/uranium/models/block/waterpump.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Coolantpiperecipe",
@@ -4679,7 +4665,7 @@
           "src/main/resources/data/uranium/recipe/coolantpiperecipe.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "Waterpumprecipe",
@@ -4692,7 +4678,7 @@
           "src/main/resources/data/uranium/recipe/waterpumprecipe.json"
         ]
       },
-      "path": "~/coolant"
+      "path": "~/machines/coolant"
     },
     {
       "name": "UraniumTechTree",
@@ -4736,7 +4722,7 @@
           }
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/coolingpool"
     },
     {
       "name": "Rcpoolprogress",
@@ -4768,7 +4754,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/plutonium"
+      "path": "~/machines/coolingpool"
     },
     {
       "name": "Rcpoolwater",
@@ -4800,7 +4786,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/plutonium"
+      "path": "~/machines/coolingpool"
     },
     {
       "name": "Rcreptick",
@@ -4831,7 +4817,7 @@
           }
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/reprossesingplant"
     },
     {
       "name": "Rcrepprogress",
@@ -4863,7 +4849,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/plutonium"
+      "path": "~/machines/reprossesingplant"
     },
     {
       "name": "Rcreppower",
@@ -4895,7 +4881,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/plutonium"
+      "path": "~/machines/reprossesingplant"
     },
     {
       "name": "Rccalctick",
@@ -4926,7 +4912,7 @@
           }
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/calcination_furnace"
     },
     {
       "name": "Rccalcprogress",
@@ -4958,7 +4944,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/plutonium"
+      "path": "~/machines/calcination_furnace"
     },
     {
       "name": "Rccalcpower",
@@ -4990,7 +4976,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/plutonium"
+      "path": "~/machines/calcination_furnace"
     },
     {
       "name": "Cooledspentfuelrod",
@@ -5000,12 +4986,12 @@
       "registry_name": "cooledspentfuelrod",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/items/cooledspentfuelrod.json",
           "src/main/resources/assets/uranium/models/item/cooledspentfuelrod.json",
-          "src/main/java/net/mcreator/uranium/item/CooledspentfuelrodItem.java",
-          "src/main/resources/assets/uranium/items/cooledspentfuelrod.json"
+          "src/main/java/net/mcreator/uranium/item/CooledspentfuelrodItem.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Nitricacid",
@@ -5015,12 +5001,12 @@
       "registry_name": "nitricacid",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/NitricacidItem.java",
+          "src/main/resources/assets/uranium/items/nitricacid.json",
           "src/main/resources/assets/uranium/models/item/nitricacid.json",
-          "src/main/resources/assets/uranium/items/nitricacid.json"
+          "src/main/java/net/mcreator/uranium/item/NitricacidItem.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Tbpsolvent",
@@ -5030,12 +5016,12 @@
       "registry_name": "tbpsolvent",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/tbpsolvent.json",
           "src/main/java/net/mcreator/uranium/item/TbpsolventItem.java",
+          "src/main/resources/assets/uranium/models/item/tbpsolvent.json",
           "src/main/resources/assets/uranium/items/tbpsolvent.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Oxalicacid",
@@ -5045,12 +5031,12 @@
       "registry_name": "oxalicacid",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/oxalicacid.json",
           "src/main/resources/assets/uranium/models/item/oxalicacid.json",
+          "src/main/resources/assets/uranium/items/oxalicacid.json",
           "src/main/java/net/mcreator/uranium/item/OxalicacidItem.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Plutoniumnitrate",
@@ -5061,11 +5047,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/uranium/item/PlutoniumnitrateItem.java",
-          "src/main/resources/assets/uranium/items/plutoniumnitrate.json",
-          "src/main/resources/assets/uranium/models/item/plutoniumnitrate.json"
+          "src/main/resources/assets/uranium/models/item/plutoniumnitrate.json",
+          "src/main/resources/assets/uranium/items/plutoniumnitrate.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Fissionwaste",
@@ -5075,12 +5061,12 @@
       "registry_name": "fissionwaste",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/FissionwasteItem.java",
           "src/main/resources/assets/uranium/models/item/fissionwaste.json",
+          "src/main/java/net/mcreator/uranium/item/FissionwasteItem.java",
           "src/main/resources/assets/uranium/items/fissionwaste.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Plutoniumdioxide",
@@ -5090,12 +5076,12 @@
       "registry_name": "plutoniumdioxide",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/PlutoniumdioxideItem.java",
           "src/main/resources/assets/uranium/items/plutoniumdioxide.json",
+          "src/main/java/net/mcreator/uranium/item/PlutoniumdioxideItem.java",
           "src/main/resources/assets/uranium/models/item/plutoniumdioxide.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Moxfuelrod",
@@ -5106,11 +5092,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/items/moxfuelrod.json",
-          "src/main/java/net/mcreator/uranium/item/MoxfuelrodItem.java",
-          "src/main/resources/assets/uranium/models/item/moxfuelrod.json"
+          "src/main/resources/assets/uranium/models/item/moxfuelrod.json",
+          "src/main/java/net/mcreator/uranium/item/MoxfuelrodItem.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Plutoniumcore",
@@ -5120,12 +5106,12 @@
       "registry_name": "plutoniumcore",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/items/plutoniumcore.json",
           "src/main/java/net/mcreator/uranium/item/PlutoniumcoreItem.java",
-          "src/main/resources/assets/uranium/models/item/plutoniumcore.json",
-          "src/main/resources/assets/uranium/items/plutoniumcore.json"
+          "src/main/resources/assets/uranium/models/item/plutoniumcore.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Coolingpool",
@@ -5135,16 +5121,16 @@
       "registry_name": "coolingpool",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/block/coolingpool.json",
-          "src/main/java/net/mcreator/uranium/block/CoolingpoolBlock.java",
           "src/main/java/net/mcreator/uranium/block/entity/CoolingpoolBlockEntity.java",
           "src/main/resources/assets/uranium/models/item/coolingpool.json",
-          "src/main/resources/assets/uranium/items/coolingpool.json",
+          "src/main/java/net/mcreator/uranium/block/CoolingpoolBlock.java",
           "src/main/resources/data/uranium/loot_table/blocks/coolingpool.json",
-          "src/main/resources/assets/uranium/blockstates/coolingpool.json"
+          "src/main/resources/assets/uranium/items/coolingpool.json",
+          "src/main/resources/assets/uranium/blockstates/coolingpool.json",
+          "src/main/resources/assets/uranium/models/block/coolingpool.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/coolingpool"
     },
     {
       "name": "Reprocessingplant",
@@ -5154,16 +5140,16 @@
       "registry_name": "reprocessingplant",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/blockstates/reprocessingplant.json",
-          "src/main/resources/assets/uranium/models/item/reprocessingplant.json",
-          "src/main/resources/assets/uranium/items/reprocessingplant.json",
+          "src/main/resources/assets/uranium/models/block/reprocessingplant.json",
           "src/main/resources/data/uranium/loot_table/blocks/reprocessingplant.json",
           "src/main/java/net/mcreator/uranium/block/entity/ReprocessingplantBlockEntity.java",
-          "src/main/resources/assets/uranium/models/block/reprocessingplant.json",
+          "src/main/resources/assets/uranium/models/item/reprocessingplant.json",
+          "src/main/resources/assets/uranium/blockstates/reprocessingplant.json",
+          "src/main/resources/assets/uranium/items/reprocessingplant.json",
           "src/main/java/net/mcreator/uranium/block/ReprocessingplantBlock.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/reprossesingplant"
     },
     {
       "name": "Calcinationfurnace",
@@ -5173,16 +5159,16 @@
       "registry_name": "calcinationfurnace",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/block/calcinationfurnace.json",
-          "src/main/resources/assets/uranium/items/calcinationfurnace.json",
+          "src/main/java/net/mcreator/uranium/block/entity/CalcinationfurnaceBlockEntity.java",
           "src/main/resources/assets/uranium/models/item/calcinationfurnace.json",
           "src/main/java/net/mcreator/uranium/block/CalcinationfurnaceBlock.java",
-          "src/main/java/net/mcreator/uranium/block/entity/CalcinationfurnaceBlockEntity.java",
           "src/main/resources/data/uranium/loot_table/blocks/calcinationfurnace.json",
-          "src/main/resources/assets/uranium/blockstates/calcinationfurnace.json"
+          "src/main/resources/assets/uranium/blockstates/calcinationfurnace.json",
+          "src/main/resources/assets/uranium/models/block/calcinationfurnace.json",
+          "src/main/resources/assets/uranium/items/calcinationfurnace.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/calcination_furnace"
     },
     {
       "name": "Coolingpoolgui",
@@ -5192,11 +5178,11 @@
       "registry_name": "coolingpoolgui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/world/inventory/CoolingpoolguiMenu.java",
-          "src/main/java/net/mcreator/uranium/client/gui/CoolingpoolguiScreen.java"
+          "src/main/java/net/mcreator/uranium/client/gui/CoolingpoolguiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/CoolingpoolguiMenu.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/coolingpool"
     },
     {
       "name": "Reprocessingplantgui",
@@ -5206,11 +5192,11 @@
       "registry_name": "reprocessingplantgui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/world/inventory/ReprocessingplantguiMenu.java",
-          "src/main/java/net/mcreator/uranium/client/gui/ReprocessingplantguiScreen.java"
+          "src/main/java/net/mcreator/uranium/client/gui/ReprocessingplantguiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/ReprocessingplantguiMenu.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/reprossesingplant"
     },
     {
       "name": "Calcinationfurnacegui",
@@ -5224,7 +5210,7 @@
           "src/main/java/net/mcreator/uranium/client/gui/CalcinationfurnaceguiScreen.java"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/machines/calcination_furnace"
     },
     {
       "name": "Nitricacidrecipe",
@@ -5237,7 +5223,7 @@
           "src/main/resources/data/uranium/recipe/nitricacidrecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Tbpsolventrecipe",
@@ -5250,7 +5236,7 @@
           "src/main/resources/data/uranium/recipe/tbpsolventrecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Oxalicacidrecipe",
@@ -5263,7 +5249,7 @@
           "src/main/resources/data/uranium/recipe/oxalicacidrecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Moxfuelrodrecipe",
@@ -5276,7 +5262,7 @@
           "src/main/resources/data/uranium/recipe/moxfuelrodrecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Plutoniumcorerecipe",
@@ -5289,7 +5275,7 @@
           "src/main/resources/data/uranium/recipe/plutoniumcorerecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Coolingpoolrecipe",
@@ -5302,7 +5288,7 @@
           "src/main/resources/data/uranium/recipe/coolingpoolrecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Reprocessingplantrecipe",
@@ -5315,7 +5301,7 @@
           "src/main/resources/data/uranium/recipe/reprocessingplantrecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Calcinationfurnacerecipe",
@@ -5328,7 +5314,7 @@
           "src/main/resources/data/uranium/recipe/calcinationfurnacerecipe.json"
         ]
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Polonium",
@@ -5339,7 +5325,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/plutonium"
+      "path": "~/minerais/plutonium"
     },
     {
       "name": "Penchblende",
@@ -5349,12 +5335,12 @@
       "registry_name": "penchblende",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/PenchblendeItem.java",
           "src/main/resources/assets/uranium/items/penchblende.json",
-          "src/main/resources/assets/uranium/models/item/penchblende.json"
+          "src/main/resources/assets/uranium/models/item/penchblende.json",
+          "src/main/java/net/mcreator/uranium/item/PenchblendeItem.java"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Penchblendeore",
@@ -5364,15 +5350,15 @@
       "registry_name": "penchblendeore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/item/penchblendeore.json",
-          "src/main/resources/assets/uranium/blockstates/penchblendeore.json",
           "src/main/resources/assets/uranium/models/block/penchblendeore.json",
           "src/main/resources/data/uranium/loot_table/blocks/penchblendeore.json",
-          "src/main/resources/assets/uranium/items/penchblendeore.json",
-          "src/main/java/net/mcreator/uranium/block/PenchblendeoreBlock.java"
+          "src/main/resources/assets/uranium/models/item/penchblendeore.json",
+          "src/main/resources/assets/uranium/blockstates/penchblendeore.json",
+          "src/main/java/net/mcreator/uranium/block/PenchblendeoreBlock.java",
+          "src/main/resources/assets/uranium/items/penchblendeore.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Splitter",
@@ -5382,16 +5368,16 @@
       "registry_name": "splitter",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/models/block/splitter.json",
           "src/main/java/net/mcreator/uranium/block/entity/SplitterBlockEntity.java",
           "src/main/java/net/mcreator/uranium/block/SplitterBlock.java",
+          "src/main/resources/assets/uranium/models/block/splitter.json",
           "src/main/resources/assets/uranium/items/splitter.json",
+          "src/main/resources/assets/uranium/models/item/splitter.json",
           "src/main/resources/data/uranium/loot_table/blocks/splitter.json",
-          "src/main/resources/assets/uranium/blockstates/splitter.json",
-          "src/main/resources/assets/uranium/models/item/splitter.json"
+          "src/main/resources/assets/uranium/blockstates/splitter.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Pitchblendeconcentrate",
@@ -5401,12 +5387,12 @@
       "registry_name": "pitchblendeconcentrate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/PitchblendeconcentrateItem.java",
           "src/main/resources/assets/uranium/items/pitchblendeconcentrate.json",
+          "src/main/java/net/mcreator/uranium/item/PitchblendeconcentrateItem.java",
           "src/main/resources/assets/uranium/models/item/pitchblendeconcentrate.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Powderedfertilizedsoil",
@@ -5416,12 +5402,12 @@
       "registry_name": "powderedfertilizedsoil",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/models/item/powderedfertilizedsoil.json",
           "src/main/resources/assets/uranium/items/powderedfertilizedsoil.json",
-          "src/main/java/net/mcreator/uranium/item/PowderedfertilizedsoilItem.java",
-          "src/main/resources/assets/uranium/models/item/powderedfertilizedsoil.json"
+          "src/main/java/net/mcreator/uranium/item/PowderedfertilizedsoilItem.java"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Radiumcreativetab",
@@ -5432,7 +5418,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Crucherrecipepitchblende",
@@ -5463,7 +5449,7 @@
           "src/main/java/net/mcreator/uranium/procedures/CrucherrecipepitchblendeProcedure.java"
         ]
       },
-      "path": "~/crusher"
+      "path": "~/machines/crusher"
     },
     {
       "name": "Splittergui",
@@ -5473,11 +5459,11 @@
       "registry_name": "splittergui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/world/inventory/SplitterguiMenu.java",
-          "src/main/java/net/mcreator/uranium/client/gui/SplitterguiScreen.java"
+          "src/main/java/net/mcreator/uranium/client/gui/SplitterguiScreen.java",
+          "src/main/java/net/mcreator/uranium/world/inventory/SplitterguiMenu.java"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Rochesteril",
@@ -5492,7 +5478,7 @@
           "src/main/resources/assets/uranium/items/rochesteril.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Rcthermalsplit",
@@ -5523,7 +5509,7 @@
           }
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Rcsplittick",
@@ -5554,7 +5540,7 @@
           }
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Rcsplitprogress",
@@ -5586,7 +5572,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Rcsplitpower",
@@ -5618,7 +5604,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Rcsplitheat",
@@ -5650,7 +5636,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Rcsplitwater",
@@ -5682,7 +5668,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Radium"
+      "path": "~/machines/splitter"
     },
     {
       "name": "Closedindustrialprocessingunit",
@@ -5692,16 +5678,16 @@
       "registry_name": "closedindustrialprocessingunit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/entity/ClosedindustrialprocessingunitBlockEntity.java",
           "src/main/resources/assets/uranium/items/closedindustrialprocessingunit.json",
           "src/main/resources/assets/uranium/blockstates/closedindustrialprocessingunit.json",
-          "src/main/resources/assets/uranium/models/block/closedindustrialprocessingunit.json",
           "src/main/resources/assets/uranium/models/item/closedindustrialprocessingunit.json",
+          "src/main/java/net/mcreator/uranium/block/ClosedindustrialprocessingunitBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/ClosedindustrialprocessingunitBlockEntity.java",
           "src/main/resources/data/uranium/loot_table/blocks/closedindustrialprocessingunit.json",
-          "src/main/java/net/mcreator/uranium/block/ClosedindustrialprocessingunitBlock.java"
+          "src/main/resources/assets/uranium/models/block/closedindustrialprocessingunit.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/cipu"
     },
     {
       "name": "Crystallizer",
@@ -5711,16 +5697,16 @@
       "registry_name": "crystallizer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/block/CrystallizerBlock.java",
-          "src/main/resources/assets/uranium/items/crystallizer.json",
-          "src/main/java/net/mcreator/uranium/block/entity/CrystallizerBlockEntity.java",
-          "src/main/resources/data/uranium/loot_table/blocks/crystallizer.json",
           "src/main/resources/assets/uranium/blockstates/crystallizer.json",
-          "src/main/resources/assets/uranium/models/item/crystallizer.json",
-          "src/main/resources/assets/uranium/models/block/crystallizer.json"
+          "src/main/resources/data/uranium/loot_table/blocks/crystallizer.json",
+          "src/main/resources/assets/uranium/models/block/crystallizer.json",
+          "src/main/java/net/mcreator/uranium/block/CrystallizerBlock.java",
+          "src/main/java/net/mcreator/uranium/block/entity/CrystallizerBlockEntity.java",
+          "src/main/resources/assets/uranium/items/crystallizer.json",
+          "src/main/resources/assets/uranium/models/item/crystallizer.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/crystalizer"
     },
     {
       "name": "Crystallizergui",
@@ -5734,7 +5720,7 @@
           "src/main/java/net/mcreator/uranium/client/gui/CrystallizerguiScreen.java"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/crystalizer"
     },
     {
       "name": "Cipugui",
@@ -5744,11 +5730,11 @@
       "registry_name": "cipugui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/client/gui/CipuguiScreen.java",
-          "src/main/java/net/mcreator/uranium/world/inventory/CipuguiMenu.java"
+          "src/main/java/net/mcreator/uranium/world/inventory/CipuguiMenu.java",
+          "src/main/java/net/mcreator/uranium/client/gui/CipuguiScreen.java"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/cipu"
     },
     {
       "name": "Rcxtaltick",
@@ -5779,7 +5765,7 @@
           }
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/crystalizer"
     },
     {
       "name": "Rcxtalprogress",
@@ -5811,7 +5797,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Radium"
+      "path": "~/machines/crystalizer"
     },
     {
       "name": "Rcciputick",
@@ -5842,7 +5828,7 @@
           }
         ]
       },
-      "path": "~/Radium"
+      "path": "~/machines/cipu"
     },
     {
       "name": "Rcciputprogress",
@@ -5874,7 +5860,7 @@
         ],
         "return_type": "number"
       },
-      "path": "~/Radium"
+      "path": "~/machines/cipu"
     },
     {
       "name": "Radiferouscrystal",
@@ -5884,12 +5870,12 @@
       "registry_name": "radiferouscrystal",
       "metadata": {
         "files": [
+          "src/main/resources/assets/uranium/items/radiferouscrystal.json",
           "src/main/java/net/mcreator/uranium/item/RadiferouscrystalItem.java",
-          "src/main/resources/assets/uranium/models/item/radiferouscrystal.json",
-          "src/main/resources/assets/uranium/items/radiferouscrystal.json"
+          "src/main/resources/assets/uranium/models/item/radiferouscrystal.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Emptyvial",
@@ -5900,11 +5886,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/items/emptyvial.json",
-          "src/main/resources/assets/uranium/models/item/emptyvial.json",
-          "src/main/java/net/mcreator/uranium/item/EmptyvialItem.java"
+          "src/main/java/net/mcreator/uranium/item/EmptyvialItem.java",
+          "src/main/resources/assets/uranium/models/item/emptyvial.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "EmptyvialEvenementAuClicDroitDansLair",
@@ -5939,7 +5925,7 @@
           "src/main/java/net/mcreator/uranium/procedures/EmptyvialEvenementAuClicDroitDansLairProcedure.java"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Watervial",
@@ -5949,12 +5935,12 @@
       "registry_name": "watervial",
       "metadata": {
         "files": [
-          "src/main/resources/assets/uranium/items/watervial.json",
+          "src/main/java/net/mcreator/uranium/item/WatervialItem.java",
           "src/main/resources/assets/uranium/models/item/watervial.json",
-          "src/main/java/net/mcreator/uranium/item/WatervialItem.java"
+          "src/main/resources/assets/uranium/items/watervial.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
     },
     {
       "name": "Prossesor",
@@ -5964,8 +5950,8 @@
       "registry_name": "prossesor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/uranium/item/ProssesorItem.java",
           "src/main/resources/assets/uranium/items/prossesor.json",
+          "src/main/java/net/mcreator/uranium/item/ProssesorItem.java",
           "src/main/resources/assets/uranium/models/item/prossesor.json"
         ]
       },
@@ -5980,11 +5966,41 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/uranium/models/item/sterilized_water_vial.json",
-          "src/main/resources/assets/uranium/items/sterilized_water_vial.json",
-          "src/main/java/net/mcreator/uranium/item/SterilizedWaterVialItem.java"
+          "src/main/java/net/mcreator/uranium/item/SterilizedWaterVialItem.java",
+          "src/main/resources/assets/uranium/items/sterilized_water_vial.json"
         ]
       },
-      "path": "~/Radium"
+      "path": "~/minerais/Radium"
+    },
+    {
+      "name": "RandomAccesMemory",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_acces_memory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/RandomAccesMemoryItem.java",
+          "src/main/resources/assets/uranium/items/random_acces_memory.json",
+          "src/main/resources/assets/uranium/models/item/random_acces_memory.json"
+        ]
+      },
+      "path": "~/computing"
+    },
+    {
+      "name": "Silicon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silicon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/models/item/silicon.json",
+          "src/main/resources/assets/uranium/items/silicon.json",
+          "src/main/java/net/mcreator/uranium/item/SiliconItem.java"
+        ]
+      },
+      "path": "~/computing"
     }
   ],
   "variable_elements": [
@@ -6195,7 +6211,6 @@
       "item.uranium.fuelrod": "Uranium fuel rod",
       "item.uranium.spentfuelrod": "Spent fuel rod",
       "gui.uranium.crushergui.label_crusher": "Crusher",
-      "gui.uranium.reactorgui.label_reactor": "Reactor",
       "item.uranium.crusher": "Crusher",
       "item.uranium.reactor": "Fission reactor",
       "entity.uranium.poissonchatte": "mutaded catfish",
@@ -6354,94 +6369,44 @@
       "item.uranium.watervial": "Water vial",
       "item.uranium.prossesor": "Prossesor",
       "gui.uranium.coolingpoolgui.label_fe": "FE",
-      "item.uranium.sterilized_water_vial": "sterilized water vial"
+      "item.uranium.sterilized_water_vial": "sterilized water vial",
+      "item.uranium.random_acces_memory": "random acces memory",
+      "item.uranium.silicon": "Silicon"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/EntityAnimationFactory.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
+      "src/main/java/net/mcreator/uranium/client/AnimatedEntityRenderers.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModFluids.java",
-      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/uranium/init/UraniumModFluidTypes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModMenus.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModScreens.java",
+      "src/main/java/net/mcreator/uranium/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBrewingRecipes.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlocks.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModBlockEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModItems.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntities.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModEntityRenderers.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/uranium/UraniumMod.java",
-      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
-      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
       "src/main/java/net/mcreator/uranium/init/UraniumModModels.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/uranium/init/UraniumModTabs.java",
+      "src/main/java/net/mcreator/uranium/UraniumMod.java",
+      "src/main/java/net/mcreator/uranium/network/UraniumModVariables.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "plomb",
-        "children": []
-      },
-      {
-        "name": "cables",
-        "children": [
-          {
-            "name": "cables",
-            "children": []
-          },
-          {
-            "name": "procedure",
-            "children": [
-              {
-                "name": "Model_Updater",
-                "children": [
-                  {
-                    "name": "SubModel",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "FE",
-                "children": []
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Procedures_utiles",
         "children": []
       },
       {
-        "name": "Uranium",
-        "children": [
-          {
-            "name": "fluorite",
-            "children": []
-          },
-          {
-            "name": "armor",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "batterie",
-        "children": []
-      },
-      {
         "name": "achievement",
-        "children": []
-      },
-      {
-        "name": "Steel",
         "children": []
       },
       {
@@ -6462,14 +6427,6 @@
         "children": []
       },
       {
-        "name": "Zicronium",
-        "children": []
-      },
-      {
-        "name": "coolant",
-        "children": []
-      },
-      {
         "name": "energy",
         "children": [
           {
@@ -6483,28 +6440,122 @@
           {
             "name": "wind_turbine",
             "children": []
+          },
+          {
+            "name": "batterie",
+            "children": []
           }
         ]
       },
       {
-        "name": "plutonium",
-        "children": []
-      },
-      {
-        "name": "Radium",
-        "children": []
-      },
-      {
-        "name": "centrifuge",
-        "children": []
-      },
-      {
-        "name": "crusher",
-        "children": []
-      },
-      {
         "name": "computing",
         "children": []
+      },
+      {
+        "name": "machines",
+        "children": [
+          {
+            "name": "centrifuge",
+            "children": []
+          },
+          {
+            "name": "crusher",
+            "children": []
+          },
+          {
+            "name": "splitter",
+            "children": []
+          },
+          {
+            "name": "crystalizer",
+            "children": []
+          },
+          {
+            "name": "cipu",
+            "children": []
+          },
+          {
+            "name": "coolingpool",
+            "children": []
+          },
+          {
+            "name": "reprossesingplant",
+            "children": []
+          },
+          {
+            "name": "calcination_furnace",
+            "children": []
+          },
+          {
+            "name": "coolant",
+            "children": []
+          },
+          {
+            "name": "cables",
+            "children": [
+              {
+                "name": "cables",
+                "children": []
+              },
+              {
+                "name": "procedure",
+                "children": [
+                  {
+                    "name": "Model_Updater",
+                    "children": [
+                      {
+                        "name": "SubModel",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "FE",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "minerais",
+        "children": [
+          {
+            "name": "plomb",
+            "children": []
+          },
+          {
+            "name": "Uranium",
+            "children": [
+              {
+                "name": "fluorite",
+                "children": []
+              },
+              {
+                "name": "armor",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Steel",
+            "children": []
+          },
+          {
+            "name": "plutonium",
+            "children": []
+          },
+          {
+            "name": "Radium",
+            "children": []
+          },
+          {
+            "name": "Zicronium",
+            "children": []
+          }
+        ]
       }
     ]
   },

@@ -16,7 +16,6 @@ public class UraniumModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(UraniumModMenus.CENTRIFUGEGUI.get(), CentrifugeguiScreen::new);
 		event.register(UraniumModMenus.CRUSHERGUI.get(), CrusherguiScreen::new);
-		event.register(UraniumModMenus.REACTORGUI.get(), ReactorguiScreen::new);
 		event.register(UraniumModMenus.LEADCRAFTINGTABLE_GUI.get(), LeadcraftingtableGuiScreen::new);
 		event.register(UraniumModMenus.REACTORCONTROLGUI.get(), ReactorcontrolguiScreen::new);
 		event.register(UraniumModMenus.COOLINGPOOLGUI.get(), CoolingpoolguiScreen::new);
