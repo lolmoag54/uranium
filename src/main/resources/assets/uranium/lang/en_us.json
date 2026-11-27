@@ -37,7 +37,7 @@
   "advancements.letscentrifuge.title": "let's centrifuge",
   "advancements.letscentrifuge.descr": "craft a centrifuge",
   "advancements.welcometo.descr": "thank for using our mod",
-  "advancements.welcometo.title": "Welcome to",
+  "advancements.welcometo.title": "Welcome to radiocraftica",
   "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore",
   "item.uranium.fuelrod": "Uranium fuel rod",
   "item.uranium.spentfuelrod": "Spent fuel rod",
@@ -202,5 +202,8 @@
   "gui.uranium.coolingpoolgui.label_fe": "FE",
   "item.uranium.sterilized_water_vial": "sterilized water vial",
   "item.uranium.random_acces_memory": "random acces memory",
-  "item.uranium.silicon": "Silicon"
+  "item.uranium.silicon": "Silicon",
+  "item.uranium.radiferousconcentrate": "Radiferousconcentrate",
+  "item.uranium.liquified_radiferouscencentrate": "Liquified Radiferouscencentrate",
+  "item.uranium.crystaliserbase": "Crystaliserbase"
 }

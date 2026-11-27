@@ -25,8 +25,8 @@ import net.mcreator.uranium.init.UraniumModItems;
 public class RcxtaltickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.isClientSide()) {
-			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == UraniumModItems.PITCHBLENDECONCENTRATE.get()
-					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.WATERVIAL.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() <= 63
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == UraniumModItems.LIQUIFIED_RADIFEROUSCENCENTRATE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == UraniumModItems.CRYSTALISERBASE.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() <= 63
 					&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == Blocks.AIR.asItem()
 							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == UraniumModItems.RADIFEROUSCRYSTAL.get())
 					&& getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 25) {

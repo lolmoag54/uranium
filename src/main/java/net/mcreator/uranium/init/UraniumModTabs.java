@@ -41,6 +41,7 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.SPENTFUELROD.get());
 				tabData.accept(UraniumModBlocks.CRUSHER.get().asItem());
 				tabData.accept(UraniumModBlocks.REACTOR.get().asItem());
+				tabData.accept(UraniumModItems.CRUCHED_RAWURANIUM.get());
 				tabData.accept(UraniumModItems.RADIOACTIVEWASTELAND.get());
 				tabData.accept(UraniumModBlocks.FLUORITE_ORE.get().asItem());
 				tabData.accept(UraniumModBlocks.DEEPSLATE_FLUORITE_ORE.get().asItem());
@@ -99,6 +100,9 @@ public class UraniumModTabs {
 				tabData.accept(UraniumModItems.EMPTYVIAL.get());
 				tabData.accept(UraniumModItems.WATERVIAL.get());
 				tabData.accept(UraniumModItems.STERILIZED_WATER_VIAL.get());
+				tabData.accept(UraniumModItems.RADIFEROUSCONCENTRATE.get());
+				tabData.accept(UraniumModItems.LIQUIFIED_RADIFEROUSCENCENTRATE.get());
+				tabData.accept(UraniumModItems.CRYSTALISERBASE.get());
 			}).withTabsBefore(POLONIUM.getId()).build());
 
 	@SubscribeEvent

@@ -6001,6 +6001,126 @@
         ]
       },
       "path": "~/computing"
+    },
+    {
+      "name": "Poudreradiferecraft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poudreradiferecraft",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/PoudreradiferecraftProcedure.java"
+        ]
+      },
+      "path": "~/machines/cipu"
+    },
+    {
+      "name": "Siliciumcraft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "siliciumcraft",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/uranium/procedures/SiliciumcraftProcedure.java"
+        ]
+      },
+      "path": "~/machines/cipu"
+    },
+    {
+      "name": "Radiferousconcentrate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiferousconcentrate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/RadiferousconcentrateItem.java",
+          "src/main/resources/assets/uranium/models/item/radiferousconcentrate.json",
+          "src/main/resources/assets/uranium/items/radiferousconcentrate.json"
+        ]
+      },
+      "path": "~/minerais/Radium"
+    },
+    {
+      "name": "LiquifiedRadiferouscencentrate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquified_radiferouscencentrate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/item/LiquifiedRadiferouscencentrateItem.java",
+          "src/main/resources/assets/uranium/models/item/liquified_radiferouscencentrate.json",
+          "src/main/resources/assets/uranium/items/liquified_radiferouscencentrate.json"
+        ]
+      },
+      "path": "~/minerais/Radium"
+    },
+    {
+      "name": "Liquifiedradiferousrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquifiedradiferousrecipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/uranium/recipe/brewing/LiquifiedradiferousrecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/minerais/Radium"
+    },
+    {
+      "name": "Crystaliserbase",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystaliserbase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/uranium/items/crystaliserbase.json",
+          "src/main/java/net/mcreator/uranium/item/CrystaliserbaseItem.java",
+          "src/main/resources/assets/uranium/models/item/crystaliserbase.json"
+        ]
+      },
+      "path": "~/minerais/Radium"
     }
   ],
   "variable_elements": [
@@ -6111,9 +6231,6 @@
       "~Crusher@CUSTOM:Crusher",
       "~Centrifuge@CUSTOM:Centrifuge"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~Sulfuricacid@CUSTOM:Sulfuricacid"
-    ],
     "ENTITIES:minecraft:aquatic": [
       "~Poissonchatte@CUSTOM:Poissonchatte"
     ],
@@ -6163,6 +6280,9 @@
     "ITEMS:minecraft:foot_armor": [
       "~Enriched_uranium_armorArmor@CUSTOM:Enriched_uranium_armorArmor.boots",
       "~UraniumArmor@CUSTOM:UraniumArmor.boots"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~Sulfuricacid@CUSTOM:Sulfuricacid"
     ]
   },
   "tab_element_order": {},
@@ -6206,7 +6326,7 @@
       "advancements.letscentrifuge.title": "let\u0027s centrifuge",
       "advancements.letscentrifuge.descr": "craft a centrifuge",
       "advancements.welcometo.descr": "thank for using our mod",
-      "advancements.welcometo.title": "Welcome to",
+      "advancements.welcometo.title": "Welcome to radiocraftica",
       "item.uranium.rawuranium_deepslate": "Deepslate Raw uranium ore",
       "item.uranium.fuelrod": "Uranium fuel rod",
       "item.uranium.spentfuelrod": "Spent fuel rod",
@@ -6371,7 +6491,10 @@
       "gui.uranium.coolingpoolgui.label_fe": "FE",
       "item.uranium.sterilized_water_vial": "sterilized water vial",
       "item.uranium.random_acces_memory": "random acces memory",
-      "item.uranium.silicon": "Silicon"
+      "item.uranium.silicon": "Silicon",
+      "item.uranium.radiferousconcentrate": "Radiferousconcentrate",
+      "item.uranium.liquified_radiferouscencentrate": "Liquified Radiferouscencentrate",
+      "item.uranium.crystaliserbase": "Crystaliserbase"
     }
   },
   "metadata": {
@@ -6562,8 +6685,8 @@
   "workspaceSettings": {
     "modid": "uranium",
     "modName": "uranium",
-    "version": "1.0.0",
-    "author": "MCreator",
+    "version": "0.0.1",
+    "author": "moddeurs",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,

@@ -39,6 +39,11 @@ public class UraniumModBrewingRecipes implements IModPlugin {
 		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(UraniumModItems.URANIUMHEXAFLUORIDE.get()), Identifier.parse("uranium:uraniumhexafluoride_recipe")));
 		inputStack.clear();
 		ingredientStack.clear();
+		ingredientStack.add(new ItemStack(UraniumModItems.RADIFEROUSCONCENTRATE.get()));
+		inputStack.add(new ItemStack(UraniumModItems.WATERVIAL.get()));
+		brewingRecipes.add(factory.createBrewingRecipe(List.copyOf(ingredientStack), List.copyOf(inputStack), new ItemStack(UraniumModItems.LIQUIFIED_RADIFEROUSCENCENTRATE.get()), Identifier.parse("uranium:liquifiedradiferousrecipe")));
+		inputStack.clear();
+		ingredientStack.clear();
 		registration.addRecipes(RecipeTypes.BREWING, brewingRecipes);
 	}
 }

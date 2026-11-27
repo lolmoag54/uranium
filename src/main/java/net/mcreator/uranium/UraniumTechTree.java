@@ -52,12 +52,6 @@ import net.neoforged.neoforge.registries.RegisterEvent;
  * Place dans src/main/java/net/mcreator/uranium/. Touche K en jeu + bouton ☢ dans l'inventaire.
  * Aucune modification de la classe principale MCreator.
  * Inspiré de SQ-Nuclear (MIT, (c) 2026 SideQuestChris).
- *
- * v4.4 :
- *  - rejoue la construction progressive ("Build again") et réinitialise la vue ("Reset view") ;
- *  - navigation "< Back" / "Next >" entre systèmes (Radium -> Uranium -> Plutonium) ;
- *  - légende des catégories en bas à gauche cliquable + indicateur de boucle fermée ;
- *  - révélation uniquement de la suite directe et crafts cachés tant que verrouillé.
  */
 public final class UraniumTechTree {
     private UraniumTechTree() {}
@@ -114,96 +108,128 @@ public final class UraniumTechTree {
         public static final List<Mob> MOBS = new ArrayList<>();
 
         static {
-            // --- Départ (Radium) ---
-            auto("start", "enricheduranium", "Welcome", "Thanks for using our mod.", 0, 7, NUCLEAIRE, SYS_RADIUM);
+            // =========================================================================
+            // 1. SYSTÈME RADIUM (rangées 0..4, colonnes 0..8)
+            // =========================================================================
+            auto("start", "enricheduranium", "Welcome", "Thanks for using our mod.", 0, 1, NUCLEAIRE, SYS_RADIUM);
 
-            // --- Système Radium (palier 1 : base) ---
-            add("pitch_ore", "penchblendeore", "Pitchblende ore", "Radioactive ore.", 1, 1, MINERAI, SYS_RADIUM, "start");
+            // Branche Radium : Pechblende -> Poudre -> Séparateur -> Concentré -> Unité -> Cristalliseur
+            add("pitch_ore", "penchblendeore", "Pitchblende ore", "Radioactive ore.", 1, 0, MINERAI, SYS_RADIUM, "start");
             add("pitch", "penchblende", "Pitchblende", "Radioactive mineral. The crusher can grind it.", 2, 0, MATIERE, SYS_RADIUM, "pitch_ore");
-            add("empty_vial", "emptyvial", "Empty vial", "Glass sample vial for chemical handling.", 2, 2, MATIERE, SYS_RADIUM, "start");
             add("powder", "powderedfertilizedsoil", "Pitchblende powder", "Ground pitchblende.", 3, 0, MATIERE, SYS_RADIUM, "pitch", "crusher");
             add("splitter", "splitter", "Mineral separator", "Splits powder into concentrate and rock. Needs FE, heat and water.", 4, 0, MACHINE, SYS_RADIUM, "powder");
             add("conc", "pitchblendeconcentrate", "Pitchblende concentrate", "Concentrated output of the mineral separator.", 5, 0, NUCLEAIRE, SYS_RADIUM, "splitter");
             add("rock", "rochesteril", "Rocky residue", "Mining waste. May still be slightly radioactive.", 5, 1, MATIERE, SYS_RADIUM, "splitter");
+
             add("closed", "closedindustrialprocessingunit", "Industrial processing unit", "Heavy industrial machine.", 6, 0, MACHINE, SYS_RADIUM, "conc");
-            add("crystallizer", "crystallizer", "Crystallizer", "Grows crystalline compounds from processed materials.", 6, 1, MACHINE, SYS_RADIUM, "conc", "processor");
-            add("radiferous_crystal", "radiferouscrystal", "Radiferous crystal", "Radioactive crystal grown from mineral processing.", 7, 1, NUCLEAIRE, SYS_RADIUM, "crystallizer");
-            add("portal", "radioactivewasteland", "Wasteland portal igniter", "Opens the portal to the radioactive wasteland.", 1, 8, NUCLEAIRE, SYS_RADIUM, "start");
+            add("radiferous_conc", "radiferousconcentrate", "Radiferous concentrate", "Pitchblende concentrate refined in the industrial processing unit.", 7, 0, NUCLEAIRE, SYS_RADIUM, "closed");
+            add("silicon", "silicon", "Silicon", "Made from sand in the industrial processing unit.", 7, 1, MATIERE, SYS_RADIUM, "closed");
+            add("ram", "random_acces_memory", "Random access memory", "Electronic memory component.", 8, 1, MACHINE, SYS_RADIUM, "silicon");
 
-            // --- Système Uranium (palier 2 : après Radium) ---
-            add("fluorite", "fluorite_ore", "Fluorite ore", "Mine fluorite to get fluoride.", 1, 3, MINERAI, SYS_URANIUM, "start");
-            add("fluorite_deep", "deepslate_fluorite_ore", "Deepslate fluorite ore", "Fluorite ore found in deepslate.", 1, 5, MINERAI, SYS_URANIUM, "start");
-            add("raw", "rawuranium", "Raw uranium ore", "Mine raw uranium ore.", 1, 6, MINERAI, SYS_URANIUM, "start");
-            add("raw_deep", "rawuranium_deepslate", "Deepslate uranium ore", "Raw uranium ore found in deepslate.", 1, 9, MINERAI, SYS_URANIUM, "start");
-            add("leadore", "leadore", "Lead ore", "Needed for pellets and the reactor.", 1, 4, MINERAI, SYS_URANIUM, "start");
-            add("zicron_ore", "zicron_ore", "Zicron ore", "Source of raw zirconium.", 1, 12, MINERAI, SYS_URANIUM, "start");
-            add("steel", "steel", "Steel", "Strong alloy.", 1, 7, METAL, SYS_URANIUM, "start");
-            add("solar", "solarpanel", "Solar panel", "Begin renewable energy.", 1, 10, ENERGIE, SYS_URANIUM, "start");
+            // Fioles & Cristallisation
+            add("empty_vial", "emptyvial", "Empty vial", "Glass sample vial for chemical handling.", 1, 2, MATIERE, SYS_RADIUM, "start");
+            add("sterile_vial", "sterilized_water_vial", "Sterilized water vial", "Sterile water vial.", 2, 2, FLUIDE, SYS_RADIUM, "empty_vial");
+            add("liquified_conc", "liquified_radiferouscencentrate", "Liquified radiferous concentrate", "Concentrate dissolved in a water vial (brewing stand).", 7, 2, FLUIDE, SYS_RADIUM, "radiferous_conc", "empty_vial");
+            add("crystallizer", "crystallizer", "Crystallizer", "Grows crystalline compounds from processed materials.", 6, 2, MACHINE, SYS_RADIUM, "conc", "closed");
+            add("crystal_base", "crystaliserbase", "Crystallizer base", "Seed base consumed by the crystallizer.", 7, 3, MATIERE, SYS_RADIUM, "crystallizer");
+            add("radiferous_crystal", "radiferouscrystal", "Radiferous crystal", "Radioactive crystal grown from liquified concentrate.", 8, 2, NUCLEAIRE, SYS_RADIUM, "crystallizer", "liquified_conc", "crystal_base");
 
-            add("fluoride", "fluoride", "Fluoride", "Found in fluorite ore.", 2, 3, MATIERE, SYS_URANIUM, "fluorite", "fluorite_deep");
-            add("fluor", "fluor", "Fluor", "Smelted from fluoride.", 3, 3, MATIERE, SYS_URANIUM, "fluoride");
-            add("waterpump", "waterpump", "Water pump", "Pumps water for cooling.", 2, 9, MACHINE, SYS_URANIUM, "steel");
-            add("coolantpipe", "coolantpipe", "Coolant pipe", "Carries coolant to the reactor.", 2, 8, MACHINE, SYS_URANIUM, "steel");
+            // Portail Wasteland
+            add("portal", "radioactivewasteland", "Wasteland portal igniter", "Opens the portal to the radioactive wasteland.", 1, 4, NUCLEAIRE, SYS_RADIUM, "start");
+
+            // =========================================================================
+            // 2. SYSTÈME URANIUM (rangées 6..18, colonnes 1..11)
+            // =========================================================================
+            // Minerais de base (colonne 1)
+            add("raw", "rawuranium", "Raw uranium ore", "Mine raw uranium ore.", 1, 7, MINERAI, SYS_URANIUM, "start");
+            add("raw_deep", "rawuranium_deepslate", "Deepslate uranium ore", "Raw uranium ore found in deepslate.", 1, 8, MINERAI, SYS_URANIUM, "start");
+            add("fluorite", "fluorite_ore", "Fluorite ore", "Mine fluorite to get fluoride.", 1, 10, MINERAI, SYS_URANIUM, "start");
+            add("fluorite_deep", "deepslate_fluorite_ore", "Deepslate fluorite ore", "Fluorite ore found in deepslate.", 1, 11, MINERAI, SYS_URANIUM, "start");
+            add("leadore", "leadore", "Lead ore", "Needed for pellets and the reactor.", 1, 13, MINERAI, SYS_URANIUM, "start");
+            add("steel", "steel", "Steel", "Strong alloy.", 1, 15, METAL, SYS_URANIUM, "start");
+            add("zicron_ore", "zicron_ore", "Zicron ore", "Source of raw zirconium.", 1, 17, MINERAI, SYS_URANIUM, "start");
+            add("solar", "solarpanel", "Solar panel", "Begin renewable energy.", 1, 18, ENERGIE, SYS_URANIUM, "start");
+
+            // Traitement Uranium -> Yellowcake -> UF6 (rangées 7..8)
+            add("crusher", "crusher", "Crusher", "Crushes raw uranium ore.", 2, 7, MACHINE, SYS_URANIUM, "raw", "raw_deep");
+            add("crushed", "cruched_rawuranium", "Crushed uranium", "Output of the crusher.", 3, 7, MATIERE, SYS_URANIUM, "crusher");
+            add("sulfuric", "sulfuricacid_bucket", "Sulfuric acid", "Corrosive liquid bucket used to treat crushed uranium.", 3, 8, FLUIDE, SYS_URANIUM, "start");
+            add("yellowcake", "yellowcake", "Yellowcake", "Crushed uranium treated with sulfuric acid.", 4, 7, MATIERE, SYS_URANIUM, "crushed", "sulfuric");
+
+            // Fluor & UF6 (rangées 10..11)
+            add("fluoride", "fluoride", "Fluoride", "Found in fluorite ore.", 2, 10, MATIERE, SYS_URANIUM, "fluorite", "fluorite_deep");
+            add("fluor", "fluor", "Fluor", "Smelted from fluoride.", 3, 10, MATIERE, SYS_URANIUM, "fluoride");
+            add("hexa", "uraniumhexafluoride", "Uranium hexafluoride", "Yellowcake + fluor, ready to enrich.", 5, 8, NUCLEAIRE, SYS_URANIUM, "yellowcake", "fluor");
+
+            // Énergie & Réseau (rangée 18)
+            add("cable", "cable", "Cables", "Carry energy between machines.", 2, 18, ENERGIE, SYS_URANIUM, "solar");
+            add("battery", "grossebatterie", "Heavy battery", "Stores a large amount of energy.", 3, 18, ENERGIE, SYS_URANIUM, "cable");
+            add("wind", "windturbine", "Wind turbine", "Generates energy from the wind.", 4, 18, ENERGIE, SYS_URANIUM, "cable");
+            add("processor", "prossesor", "Processor", "Electronic control component.", 3, 17, MACHINE, SYS_URANIUM, "cable", "steel");
+
+            // Plomb, Zicronium & Refroidissement (rangées 13..16)
+            add("lead", "lingotdeplomb", "Lead ingot", "Smelted lead.", 2, 13, METAL, SYS_URANIUM, "leadore");
+            add("nugget", "pepitedeplomb", "Lead nugget", "Small piece of lead.", 3, 12, METAL, SYS_URANIUM, "lead");
+            add("lead_block", "blockdeplomb", "Lead block", "Compact block of lead ingots.", 3, 13, METAL, SYS_URANIUM, "lead");
+            add("lead_table", "leadcraftingtable", "Lead crafting table", "Crafting station with its own recipes.", 3, 14, MACHINE, SYS_URANIUM, "lead");
+            add("concrete", "reinforcedconcrete", "Reinforced concrete", "Reactor shielding.", 4, 13, METAL, SYS_URANIUM, "lead");
+
+            add("coolantpipe", "coolantpipe", "Coolant pipe", "Carries coolant to the reactor.", 2, 15, MACHINE, SYS_URANIUM, "steel");
+            add("waterpump", "waterpump", "Water pump", "Pumps water for cooling.", 2, 16, MACHINE, SYS_URANIUM, "steel");
             add("water_vial", "watervial", "Water vial", "Vial filled with water.", 3, 2, FLUIDE, SYS_URANIUM, "empty_vial", "waterpump");
+            add("hammer", "steel_hammer", "Steel hammer", "Used to press pellets.", 3, 15, EQUIPEMENT, SYS_URANIUM, "steel", "lead");
 
-            add("crusher", "crusher", "Crusher", "Crushes raw uranium ore.", 2, 6, MACHINE, SYS_URANIUM, "raw", "raw_deep");
-            add("crushed", "cruched_rawuranium", "Crushed uranium", "Output of the crusher.", 3, 6, MATIERE, SYS_URANIUM, "crusher");
-            add("sulfuric_fluid", "sulfuricacid", "Sulfuric acid block", "Corrosive acid block/fluid.", 3, 4, FLUIDE, SYS_URANIUM, "sulfuric");
-            add("sulfuric", "sulfuricacid_bucket", "Sulfuric acid", "Corrosive liquid used to treat crushed uranium.", 3, 4, FLUIDE, SYS_URANIUM);
-            add("yellowcake", "yellowcake", "Yellowcake", "Crushed uranium treated with sulfuric acid.", 4, 6, MATIERE, SYS_URANIUM, "crushed", "sulfuric");
-            add("hexa", "uraniumhexafluoride", "Uranium hexafluoride", "Yellowcake + fluor, ready to enrich.", 5, 6, NUCLEAIRE, SYS_URANIUM, "yellowcake", "fluor");
+            add("zicron", "zicron", "Zicron", "Raw zirconium.", 2, 17, MATIERE, SYS_URANIUM, "zicron_ore");
+            add("zicronium", "zicronium", "Zicronium", "Cladding for fuel rods.", 3, 16, METAL, SYS_URANIUM, "zicron");
 
-            add("cable", "cable", "Cables", "Carry energy between machines.", 2, 10, ENERGIE, SYS_URANIUM, "solar");
-            add("battery", "grossebatterie", "Heavy battery", "Stores a large amount of energy.", 3, 8, ENERGIE, SYS_URANIUM, "cable");
-            add("wind", "windturbine", "Wind turbine", "Generates energy from the wind.", 3, 11, ENERGIE, SYS_URANIUM, "cable");
-            add("processor", "prossesor", "Processor", "Electronic control component.", 4, 8, MACHINE, SYS_URANIUM, "cable", "steel");
+            // Centrifugeuse, Enrichissement, Réacteur & Déchets (colonnes 6..11)
+            add("centrifuge", "centrifuge", "Centrifuge", "Separates enriched from depleted uranium.", 6, 8, MACHINE, SYS_URANIUM, "hexa", "cable");
+            add("enriched", "enricheduranium", "Enriched uranium", "Fissile uranium.", 7, 9, NUCLEAIRE, SYS_URANIUM, "centrifuge");
+            add("depleted", "depleteduranium", "Depleted uranium", "Dense by-product of enrichment.", 7, 6, NUCLEAIRE, SYS_URANIUM, "centrifuge");
 
-            add("lead", "lingotdeplomb", "Lead ingot", "Smelted lead.", 2, 4, METAL, SYS_URANIUM, "leadore");
-            add("concrete", "reinforcedconcrete", "Reinforced concrete", "Reactor shielding.", 3, 9, METAL, SYS_URANIUM, "lead");
-            add("nugget", "pepitedeplomb", "Lead nugget", "Small piece of lead.", 3, 2, METAL, SYS_URANIUM, "lead");
-            add("lead_block", "blockdeplomb", "Lead block", "Compact block of lead ingots.", 3, 1, METAL, SYS_URANIUM, "lead");
-            add("lead_table", "leadcraftingtable", "Lead crafting table", "Crafting station with its own recipes.", 3, 5, MACHINE, SYS_URANIUM, "lead");
-            add("zicron", "zicron", "Zicron", "Raw zirconium.", 2, 12, MATIERE, SYS_URANIUM, "zicron_ore");
-            add("zicronium", "zicronium", "Zicronium", "Cladding for fuel rods.", 3, 12, METAL, SYS_URANIUM, "zicron");
-            add("hammer", "steel_hammer", "Steel hammer", "Used to press pellets.", 3, 7, EQUIPEMENT, SYS_URANIUM, "steel", "lead");
+            add("pellet", "uraniumpellet", "Uranium pellet", "Pressed enriched uranium.", 8, 10, NUCLEAIRE, SYS_URANIUM, "enriched", "hammer");
+            add("fuelrod", "fuelrod", "Fuel rod", "Pellets in a zicronium cladding.", 9, 11, NUCLEAIRE, SYS_URANIUM, "pellet", "zicronium");
+            add("reactor", "reactor", "Fission reactor", "We need a reactor now?", 10, 12, NUCLEAIRE, SYS_URANIUM, "fuelrod", "concrete");
+            add("spent", "spentfuelrod", "Spent fuel rod", "Waste from the reactor.", 11, 11, NUCLEAIRE, SYS_URANIUM, "reactor");
 
-            add("centrifuge", "centrifuge", "Centrifuge", "Separates enriched from depleted uranium.", 6, 6, MACHINE, SYS_URANIUM, "hexa", "cable");
-            add("enriched", "enricheduranium", "Enriched uranium", "Fissile uranium.", 7, 6, NUCLEAIRE, SYS_URANIUM, "centrifuge");
-            add("depleted", "depleteduranium", "Depleted uranium", "Dense by-product of enrichment.", 7, 5, NUCLEAIRE, SYS_URANIUM, "centrifuge");
+            // Outils & Armures Uranium appauvri (colonne 8, rangées 4..8)
+            add("u_pickaxe", "uranium_pickaxe", "Uranium pickaxe", "Uranium pickaxe.", 8, 4, EQUIPEMENT, SYS_URANIUM, "depleted");
+            add("u_axe", "uranium_axe", "Uranium axe", "Uranium axe.", 8, 5, EQUIPEMENT, SYS_URANIUM, "depleted");
+            add("u_sword", "uranium_sword", "Uranium sword", "Uranium sword.", 8, 6, EQUIPEMENT, SYS_URANIUM, "depleted");
+            add("u_shovel", "uranium_shovel", "Uranium shovel", "Uranium shovel.", 8, 7, EQUIPEMENT, SYS_URANIUM, "depleted");
+            add("u_hoe", "uranium_hoe", "Uranium hoe", "Uranium hoe.", 8, 8, EQUIPEMENT, SYS_URANIUM, "depleted");
 
-            add("pellet", "uraniumpellet", "Uranium pellet", "Pressed enriched uranium.", 8, 7, NUCLEAIRE, SYS_URANIUM, "enriched", "hammer");
-            add("fuelrod", "fuelrod", "Fuel rod", "Pellets in a zicronium cladding.", 9, 7, NUCLEAIRE, SYS_URANIUM, "pellet", "zicronium");
-            add("reactor", "reactor", "Fission reactor", "We need a reactor now?", 10, 6, NUCLEAIRE, SYS_URANIUM, "fuelrod", "concrete");
-            add("spent", "spentfuelrod", "Spent fuel rod", "Waste from the reactor.", 11, 5, NUCLEAIRE, SYS_URANIUM, "reactor");
+            // Armures Uranium (colonne 8, rangées 14..17)
+            add("ua_helmet", "uranium_armor_helmet", "Uranium helmet", "Uranium armor piece.", 8, 14, EQUIPEMENT, SYS_URANIUM, "depleted");
+            add("ua_chestplate", "uranium_armor_chestplate", "Uranium chestplate", "Uranium armor piece.", 8, 15, EQUIPEMENT, SYS_URANIUM, "depleted");
+            add("ua_leggings", "uranium_armor_leggings", "Uranium leggings", "Uranium armor piece.", 8, 16, EQUIPEMENT, SYS_URANIUM, "depleted");
+            add("ua_boots", "uranium_armor_boots", "Uranium boots", "Uranium armor piece.", 8, 17, EQUIPEMENT, SYS_URANIUM, "depleted");
 
-            add("u_pickaxe", "uranium_pickaxe", "Uranium pickaxe", "Uranium pickaxe.", 8, 5, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("u_axe", "uranium_axe", "Uranium axe", "Uranium axe.", 8, 3, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("u_sword", "uranium_sword", "Uranium sword", "Uranium sword.", 8, 1, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("u_shovel", "uranium_shovel", "Uranium shovel", "Uranium shovel.", 8, 10, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("u_hoe", "uranium_hoe", "Uranium hoe", "Uranium hoe.", 8, 2, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("ua_helmet", "uranium_armor_helmet", "Uranium helmet", "Uranium armor piece.", 8, 6, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("ua_chestplate", "uranium_armor_chestplate", "Uranium chestplate", "Uranium armor piece.", 8, 8, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("ua_leggings", "uranium_armor_leggings", "Uranium leggings", "Uranium armor piece.", 8, 11, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("ua_boots", "uranium_armor_boots", "Uranium boots", "Uranium armor piece.", 8, 0, EQUIPEMENT, SYS_URANIUM, "depleted");
-            add("insulated", "insulateduranium", "Insulated uranium", "Shielded uranium for insulated armor.", 8, 4, MATIERE, SYS_URANIUM, "enriched");
-            add("ia_helmet", "enriched_uranium_armor_armor_helmet", "Insulated helmet", "Insulated uranium armor piece.", 9, 2, EQUIPEMENT, SYS_URANIUM, "insulated");
-            add("ia_chestplate", "enriched_uranium_armor_armor_chestplate", "Insulated chestplate", "Insulated uranium armor piece.", 9, 5, EQUIPEMENT, SYS_URANIUM, "insulated");
-            add("ia_leggings", "enriched_uranium_armor_armor_leggings", "Insulated leggings", "Insulated uranium armor piece.", 9, 4, EQUIPEMENT, SYS_URANIUM, "insulated");
-            add("ia_boots", "enriched_uranium_armor_armor_boots", "Insulated boots", "Insulated uranium armor piece.", 9, 3, EQUIPEMENT, SYS_URANIUM, "insulated");
+            // Uranium isolé & Armures isolées (colonnes 8..9, rangées 9..13)
+            add("insulated", "insulateduranium", "Insulated uranium", "Shielded uranium for insulated armor.", 8, 9, MATIERE, SYS_URANIUM, "enriched");
+            add("ia_helmet", "enriched_uranium_armor_armor_helmet", "Insulated helmet", "Insulated uranium armor piece.", 9, 9, EQUIPEMENT, SYS_URANIUM, "insulated");
+            add("ia_chestplate", "enriched_uranium_armor_armor_chestplate", "Insulated chestplate", "Insulated uranium armor piece.", 9, 10, EQUIPEMENT, SYS_URANIUM, "insulated");
+            add("ia_leggings", "enriched_uranium_armor_armor_leggings", "Insulated leggings", "Insulated uranium armor piece.", 9, 11, EQUIPEMENT, SYS_URANIUM, "insulated");
+            add("ia_boots", "enriched_uranium_armor_armor_boots", "Insulated boots", "Insulated uranium armor piece.", 9, 12, EQUIPEMENT, SYS_URANIUM, "insulated");
 
-            // --- Système Plutonium (palier 3 : après Uranium) ---
-            add("cooling_pool", "coolingpool", "Cooling pool", "Cools spent fuel rods in water.", 12, 3, MACHINE, SYS_PLUTONIUM, "spent");
-            add("cooled", "cooledspentfuelrod", "Cooled spent fuel rod", "Left to decay in a cooling pool.", 13, 3, NUCLEAIRE, SYS_PLUTONIUM, "cooling_pool");
-            add("nitric", "nitricacid", "Nitric acid", "Dissolves spent fuel (PUREX process).", 12, 4, FLUIDE, SYS_PLUTONIUM, "spent");
-            add("tbp", "tbpsolvent", "TBP solvent", "Tributyl phosphate in kerosene. Separates uranium, plutonium and waste.", 12, 6, FLUIDE, SYS_PLUTONIUM, "spent");
-            add("oxalic", "oxalicacid", "Oxalic acid", "Precipitates plutonium as oxalate.", 12, 5, FLUIDE, SYS_PLUTONIUM, "spent");
-            add("reprocessing", "reprocessingplant", "Reprocessing plant", "PUREX: rod + nitric acid + TBP give plutonium, uranium and waste.", 14, 4, MACHINE, SYS_PLUTONIUM, "cooled", "nitric", "tbp");
-            add("nitrate", "plutoniumnitrate", "Plutonium nitrate", "Plutonium nitrate solution. Precipitate and calcine it.", 15, 6, NUCLEAIRE, SYS_PLUTONIUM, "reprocessing");
-            add("waste", "fissionwaste", "Fission waste", "Highly radioactive.", 15, 4, NUCLEAIRE, SYS_PLUTONIUM, "reprocessing");
-            add("calcination", "calcinationfurnace", "Calcination furnace", "Calcines plutonium nitrate with oxalic acid.", 16, 6, MACHINE, SYS_PLUTONIUM, "nitrate", "oxalic");
-            add("dioxide", "plutoniumdioxide", "Plutonium dioxide", "PuO2 powder. For MOX fuel or cores.", 17, 6, NUCLEAIRE, SYS_PLUTONIUM, "calcination");
-            add("mox", "moxfuelrod", "MOX fuel rod", "Reactor fuel: +50% power, runs hotter.", 18, 7, NUCLEAIRE, SYS_PLUTONIUM, "dioxide", "fuelrod");
-            add("core", "plutoniumcore", "Plutonium core", "Fissile core.", 18, 6, NUCLEAIRE, SYS_PLUTONIUM, "dioxide");
+            // =========================================================================
+            // 3. SYSTÈME PLUTONIUM (colonnes 12..18, rangées 8..13)
+            // =========================================================================
+            add("cooling_pool", "coolingpool", "Cooling pool", "Cools spent fuel rods in water.", 12, 8, MACHINE, SYS_PLUTONIUM, "spent");
+            add("cooled", "cooledspentfuelrod", "Cooled spent fuel rod", "Left to decay in a cooling pool.", 13, 8, NUCLEAIRE, SYS_PLUTONIUM, "cooling_pool");
+
+            add("nitric", "nitricacid", "Nitric acid", "Dissolves spent fuel (PUREX process).", 12, 10, FLUIDE, SYS_PLUTONIUM, "spent");
+            add("tbp", "tbpsolvent", "TBP solvent", "Tributyl phosphate in kerosene. Separates uranium, plutonium and waste.", 12, 11, FLUIDE, SYS_PLUTONIUM, "spent");
+            add("oxalic", "oxalicacid", "Oxalic acid", "Precipitates plutonium as oxalate.", 12, 12, FLUIDE, SYS_PLUTONIUM, "spent");
+
+            add("reprocessing", "reprocessingplant", "Reprocessing plant", "PUREX: rod + nitric acid + TBP give plutonium, uranium and waste.", 14, 10, MACHINE, SYS_PLUTONIUM, "cooled", "nitric", "tbp");
+            add("nitrate", "plutoniumnitrate", "Plutonium nitrate", "Plutonium nitrate solution. Precipitate and calcine it.", 15, 11, NUCLEAIRE, SYS_PLUTONIUM, "reprocessing");
+            add("waste", "fissionwaste", "Fission waste", "Highly radioactive.", 15, 9, NUCLEAIRE, SYS_PLUTONIUM, "reprocessing");
+
+            add("calcination", "calcinationfurnace", "Calcination furnace", "Calcines plutonium nitrate with oxalic acid.", 16, 11, MACHINE, SYS_PLUTONIUM, "nitrate", "oxalic");
+            add("dioxide", "plutoniumdioxide", "Plutonium dioxide", "PuO2 powder. For MOX fuel or cores.", 17, 11, NUCLEAIRE, SYS_PLUTONIUM, "calcination");
+            add("mox", "moxfuelrod", "MOX fuel rod", "Reactor fuel: +50% power, runs hotter.", 18, 12, NUCLEAIRE, SYS_PLUTONIUM, "dioxide", "fuelrod");
+            add("core", "plutoniumcore", "Plutonium core", "Fissile core.", 18, 10, NUCLEAIRE, SYS_PLUTONIUM, "dioxide");
 
             // --- Procédés des machines ---
             process("crushed", "crusher", 2, "1 second per item. Uses energy.", ing("rawuranium", 1));
@@ -217,6 +243,11 @@ public final class UraniumTechTree {
             process("nitrate", "reprocessing", 0, "", ing("cooledspentfuelrod", 1), ing("nitricacid", 1), ing("tbpsolvent", 1));
             process("waste", "reprocessing", 0, "", ing("cooledspentfuelrod", 1), ing("nitricacid", 1), ing("tbpsolvent", 1));
             process("dioxide", "calcination", 0, "", ing("plutoniumnitrate", 1), ing("oxalicacid", 1));
+            process("radiferous_conc", "closed", 0, "", ing("pitchblendeconcentrate", 1));
+            process("silicon", "closed", 0, "", ing("minecraft:sand", 1));
+            process("radiferous_crystal", "crystallizer", 0, "", ing("liquified_radiferouscencentrate", 1), ing("crystaliserbase", 1));
+            addManual("liquified_conc", new Recipe("Brewing stand", "minecraft:brewing_stand",
+                    List.of(ing("watervial", 1), ing("radiferousconcentrate", 1)), 1, "Brewing recipe."));
             station("hexa", "Brewing stand", "minecraft:brewing_stand", "Brewing recipe.");
 
             // --- Almanach des mobs (touche M) ---
@@ -836,7 +867,7 @@ public final class UraniumTechTree {
     }
 
     public static class TechTreeScreen extends Screen {
-        private static final int CW = 86, RH = 64, BOX = 34;
+        private static final int CW = 94, RH = 72, BOX = 34;
         private static final int HEADER = 52, FOOT = 18;
         private static final int STARS = 44;
         private static final float MIN_ZOOM = 0.2f;
@@ -1155,7 +1186,7 @@ public final class UraniumTechTree {
             return null;
         }
 
-        private int panelW() { return Math.max(142, Math.min(196, Math.round(width * 0.42f))); }
+        private int panelW() { return Math.max(148, Math.min(206, Math.round(width * 0.44f))); }
 
         private int panelX() { return width - Math.round(panelW() * Draw.easeOut(panelAnim)); }
 
@@ -1484,6 +1515,7 @@ public final class UraniumTechTree {
                 float ap = appear(n);
                 if (ap <= 0f) continue;
                 boolean nu = unlocked(n);
+                boolean nav = available(n);
                 for (String pid : n.parents()) {
                     TechNode p = TechTree.BY_ID.get(pid);
                     if (p == null || !isRevealed(p)) continue;
@@ -1491,15 +1523,15 @@ public final class UraniumTechTree {
                     boolean onPath = selected != null && path.contains(n.id()) && path.contains(pid);
                     float al = ap * (1f - 0.72f * Math.max(anim(n).dim, anim(p).dim));
                     int base = n.color();
-                    int col = pu ? (nu ? base : Draw.dim(base, 0.65f)) : DIM_LINE;
+                    int col = pu ? (nu ? base : nav ? Draw.mix(base, GOLD, 0.45f) : Draw.dim(base, 0.65f)) : DIM_LINE;
                     if (onPath) col = Draw.mix(col, 0xFFFFFFFF, 0.30f);
-                    int th = onPath ? 3 : 2;
+                    int th = onPath ? 3 : nav ? 3 : 2;
                     Route r = new Route(nx(p) + BOX, ny(p) + BOX / 2, nx(n), ny(n) + BOX / 2);
                     if (!onScreen(Math.min(r.ax, r.bx) - 6, Math.min(r.ay, r.by) - 6, Math.abs(r.bx - r.ax) + 12, Math.abs(r.by - r.ay) + 12)) continue;
                     if (!lod) route(g, r, th + 2, Draw.alpha(0xFF000000, 0.48f * al));
                     route(g, r, th, Draw.alpha(col, al));
                     if (!lod) Draw.arrow(g, r.bx, r.by, Draw.alpha(col, al));
-                    if (pu && (!lod || onPath)) flow(g, r, Draw.mix(col, 0xFFFFFFFF, 0.55f), al, nu, onPath, pos);
+                    if (pu && (!lod || onPath || nav)) flow(g, r, Draw.mix(col, 0xFFFFFFFF, nav ? 0.7f : 0.55f), al, nu, onPath || nav, pos);
                 }
             }
         }
@@ -1558,33 +1590,38 @@ public final class UraniumTechTree {
             boolean un = unlocked(n), av = available(n);
             boolean lod = zoom < LOD_ZOOM && an.hover < 0.05f && an.sel < 0.05f;
             float al = ap * (1f - 0.72f * an.dim);
-            float pulse = 0.5f + 0.5f * (float) Math.sin(time * 2.6f + n.col() * 0.6f);
+            float pulse = 0.5f + 0.5f * (float) Math.sin(time * (av ? 4.2f : 2.6f) + n.col() * 0.6f);
             float ut = time - an.unlock;
             float pop = ut >= 0f && ut < 0.5f ? 1f + 0.22f * (float) Math.sin(ut / 0.5f * Math.PI) : 1f;
-            float sc = (0.55f + 0.45f * Draw.easeBack(ap)) * (1f + 0.12f * an.hover) * pop;
+            float sc = (0.55f + 0.45f * Draw.easeBack(ap)) * (1f + (av ? 0.05f * pulse : 0f) + 0.14f * an.hover) * pop;
 
             Draw.pushAt(g, x + BOX / 2f, y + BOX / 2f, sc);
 
             if (!lod) {
                 Draw.round(g, x + 1, y + 3, x + BOX + 1, y + BOX + 3, Draw.alpha(0xFF000000, 0.44f * al));
-                float glow = (un ? 0.30f : av ? 0.10f + 0.28f * pulse : 0f) + 0.35f * an.hover + 0.40f * an.sel;
+                if (av) {
+                    int ring = 2 + Math.round(2f * pulse);
+                    Draw.frame(g, x - ring, y - ring, x + BOX + ring, y + BOX + ring, 1, Draw.alpha(GOLD, (0.45f + 0.45f * pulse) * al));
+                    Draw.glow(g, x - 1, y - 1, x + BOX + 1, y + BOX + 1, GOLD, (0.42f + 0.35f * pulse) * al, 4);
+                }
+                float glow = (un ? 0.30f : av ? 0.25f + 0.30f * pulse : 0f) + 0.35f * an.hover + 0.40f * an.sel;
                 if (ut >= 0f && ut < 0.9f) glow += 0.8f * (1f - ut / 0.9f);
-                if (glow > 0.01f) Draw.glow(g, x, y, x + BOX, y + BOX, un || av ? base : 0xFFFFFFFF, Math.min(1f, glow) * al, 3);
+                if (glow > 0.01f) Draw.glow(g, x, y, x + BOX, y + BOX, av ? GOLD : un ? base : 0xFFFFFFFF, Math.min(1f, glow) * al, 3);
             }
 
-            int border = un ? base : av ? Draw.dim(base, 0.55f + 0.35f * pulse) : LOCKED;
+            int border = un ? base : av ? Draw.mix(base, GOLD, 0.45f + 0.45f * pulse) : LOCKED;
             border = Draw.mix(border, 0xFFFFFFFF, Math.max(an.hover * 0.85f, an.sel * 0.6f));
-            int plate = un ? Draw.mix(0xFF161B20, base, 0.16f) : av ? 0xFF171C22 : 0xFF111418;
+            int plate = un ? Draw.mix(0xFF161B20, base, 0.16f) : av ? Draw.mix(0xFF1B1E18, GOLD, 0.14f + 0.08f * pulse) : 0xFF111418;
             if (lod) Draw.rect(g, x, y, x + BOX, y + BOX, Draw.alpha(border, al));
             else Draw.rframe(g, x, y, x + BOX, y + BOX, Draw.alpha(border, al));
             Draw.rect(g, x + 2, y + 2, x + BOX - 2, y + BOX - 2, Draw.alpha(plate, al));
             if (!lod) {
-                Draw.rect(g, x + 2, y + 2, x + BOX - 2, y + 3, Draw.alpha(0xFFFFFFFF, 0.14f * al));
+                Draw.rect(g, x + 2, y + 2, x + BOX - 2, y + 3, Draw.alpha(av ? GOLD : 0xFFFFFFFF, (av ? 0.35f : 0.14f) * al));
                 Draw.rect(g, x + 2, y + 2, x + 3, y + BOX - 2, Draw.alpha(0xFFFFFFFF, 0.10f * al));
                 Draw.rect(g, x + 2, y + BOX - 4, x + BOX - 2, y + BOX - 2, Draw.alpha(0xFF000000, 0.30f * al));
             }
 
-            int bob = av && !lod ? Math.round((float) Math.sin(time * 3f + n.col()) * 1.2f) : 0;
+            int bob = av && !lod ? Math.round((float) Math.sin(time * 3.6f + n.col()) * 1.4f) : 0;
             Draw.item(g, stack(n), x + (BOX - 16) / 2, y + (BOX - 16) / 2 + bob);
             float veil = Math.max(!un && !av ? 0.66f : 0f, Math.max(an.dim * 0.75f, 1f - ap));
             if (veil > 0.01f) Draw.rect(g, x + 2, y + 2, x + BOX - 2, y + BOX - 2, Draw.alpha(plate, Math.min(1f, veil)));
@@ -1596,10 +1633,10 @@ public final class UraniumTechTree {
                 Draw.disc(g, mx0, y - 3, 10, Draw.alpha(0xFF0A0D10, al), Draw.alpha(base, al));
                 Draw.check(g, mx0 + 2, y, Draw.alpha(0xFFFFFFFF, al));
             } else if (av) {
-                int gold = Draw.mix(0xFF8A6D17, GOLD, 0.4f + 0.6f * pulse);
-                Draw.disc(g, mx0, y - 3, 10, Draw.alpha(0xFF0A0D10, al), Draw.alpha(gold, al));
-                Draw.rect(g, mx0 + 4, y - 1, mx0 + 6, y + 3, Draw.alpha(0xFF1A1405, al));
-                Draw.rect(g, mx0 + 4, y + 4, mx0 + 6, y + 5, Draw.alpha(0xFF1A1405, al));
+                int gold = Draw.mix(0xFF9E7B18, GOLD, 0.45f + 0.55f * pulse);
+                Draw.disc(g, mx0 - 1, y - 4, 12, Draw.alpha(0xFF0A0D10, al), Draw.alpha(gold, al));
+                Draw.rect(g, mx0 + 4, y - 2, mx0 + 6, y + 3, Draw.alpha(0xFF1A1405, al));
+                Draw.rect(g, mx0 + 4, y + 4, mx0 + 6, y + 6, Draw.alpha(0xFF1A1405, al));
             } else {
                 Draw.disc(g, mx0, y + BOX - 7, 10, Draw.alpha(0xFF0A0D10, al), Draw.alpha(0xFF262C33, al));
                 Draw.lock(g, mx0 + 2, y + BOX - 6, Draw.alpha(0xFF8A939D, al));
@@ -1609,7 +1646,7 @@ public final class UraniumTechTree {
             if (stp != null && !un) Draw.badge(g, font, x - 6, y - 6, String.valueOf(stp), GOLD, al);
 
             if (zoom >= LABEL_ZOOM) {
-                int tc = un ? TXT : av ? 0xFFB8C0C8 : 0xFF66707A, ty = y + BOX + 5;
+                int tc = un ? TXT : av ? Draw.mix(GOLD, 0xFFFFFFFF, 0.35f + 0.35f * pulse) : 0xFF66707A, ty = y + BOX + 5;
                 for (String ln : labelLines(n.title())) {
                     Draw.text(g, font, ln, x + BOX / 2 - font.width(ln) / 2, ty, Draw.alpha(tc, al), (un || av) && !lod);
                     ty += 9;
@@ -1715,7 +1752,6 @@ public final class UraniumTechTree {
                         List.of(Component.literal("Quick search"), Component.literal("§8Click and type to filter revealed nodes (R to reset)"))));
             }
 
-            // --- Onglets des systèmes en haut : Radium -> Uranium -> Plutonium + All ---
             int ty = 28 + off, th = 16, tGap = 5, tx = 12;
             int totalTabs = TechTree.SYSTEMS.size() + 1;
             for (int i = 0; i < totalTabs; i++) {
@@ -1775,7 +1811,6 @@ public final class UraniumTechTree {
             }
         }
 
-        // --- Légende des catégories en bas à gauche (comme dans la vidéo) ---
         private void drawLegend(GuiGraphicsExtractor g, float open, int mx, int my) {
             int lx = 10, ly = height - FOOT - 8 - cats.size() * 10;
             if (ly < HEADER + 6) return;
@@ -1794,7 +1829,6 @@ public final class UraniumTechTree {
             }
         }
 
-        // --- Barre "< Back" / page / "Next >" / "Build again" / "Reset view" (comme dans la vidéo) ---
         private void drawPageBar(GuiGraphicsExtractor g, float open, int mx, int my) {
             List<TechSystem> order = new ArrayList<>();
             order.add(null);
@@ -1841,7 +1875,6 @@ public final class UraniumTechTree {
             Draw.button(g, font, nextLbl, nextX, barY, nextW, 14, nextHv, open);
             if (idx < total - 1) hits.add(new Hit(nextX, barY, nextX + nextW, barY + 14, () -> stepPage(1), null));
 
-            // Indicateur "Loop closed" si le système actif est complété
             TechSystem curSys = activeSystem != null ? activeSystem : currentHighestSystem();
             if (curSys != null && isSystemCompleted(curSys)) {
                 String loopTxt = "Loop closed";
@@ -1947,7 +1980,6 @@ public final class UraniumTechTree {
             }
             py += 4;
 
-            // --- HOW TO GET : caché si verrouillé (pas de craft pour ce qui est verrouillé / après) ---
             pSection(g, n, "HOW TO GET", "");
             if (n.auto()) {
                 pText(g, "Unlocked from the start.", TXT2);
@@ -1995,7 +2027,6 @@ public final class UraniumTechTree {
                 py += 2;
             }
 
-            // --- USED FOR : n'affiche que les éléments déjà révélés (pas la suite future) ---
             pSection(g, n, "USED FOR", "");
             Map<String, TechNode> used = new LinkedHashMap<>();
             for (TechNode k : TechTree.childrenOf(n.id())) if (isRevealed(k)) used.put(k.id(), k);
@@ -2016,6 +2047,62 @@ public final class UraniumTechTree {
                     x += 21;
                 }
                 py += 22;
+            }
+
+            int[] pStat = systemStat(TechTree.SYS_PLUTONIUM);
+            pSection(g, n, "NEXT TO PLUTONIUM", pStat[0] + "/" + pStat[1]);
+            if (isSystemUnlocked(TechTree.SYS_PLUTONIUM)) {
+                List<TechNode> pTodo = new ArrayList<>();
+                for (TechNode k : TechTree.BY_ID.values()) {
+                    if (k.system() == TechTree.SYS_PLUTONIUM && !unlocked(k)) pTodo.add(k);
+                }
+                if (pTodo.isEmpty()) {
+                    pText(g, "Plutonium unlocked!", GREEN);
+                    py += 12;
+                } else {
+                    int x = pX;
+                    for (TechNode k : pTodo) {
+                        if (x + 18 > pX + pW) { x = pX; py += 20; }
+                        if (vis(py, 18)) {
+                            boolean canFocus = isRevealed(k);
+                            boolean hv = canFocus && mx >= x && mx < x + 18 && my >= py && my < py + 18;
+                            pSlot(g, stack(k), x, py, null, hv);
+                            if (!canFocus) Draw.rect(g, x + 1, py + 1, x + 17, py + 17, Draw.alpha(0xFF0C1014, 0.65f * pA));
+                            hits.add(new Hit(x, py, x + 18, py + 18, canFocus ? () -> focusNode(k) : () -> {},
+                                    List.of(Component.literal(k.title()), Component.literal(canFocus ? "§eNext step in Plutonium" : "§8Locked Plutonium node"))));
+                        }
+                        x += 21;
+                    }
+                    py += 22;
+                }
+            } else {
+                TechSystem blocker = null;
+                for (TechSystem s : TechTree.SYSTEMS) {
+                    if (s == TechTree.SYS_PLUTONIUM) break;
+                    if (!isSystemCompleted(s)) { blocker = s; break; }
+                }
+                if (blocker != null) {
+                    int[] bStat = systemStat(blocker);
+                    for (String ln : wrap("Finish " + blocker.label() + " (" + bStat[0] + "/" + bStat[1] + ") first.", pW)) {
+                        pText(g, ln, GOLD);
+                        py += 10;
+                    }
+                    int rem = 0;
+                    for (TechNode k : TechTree.BY_ID.values()) {
+                        if (k.system() == blocker && !unlocked(k)) {
+                            rem++;
+                            if (rem <= 6) {
+                                pText(g, "· " + font.plainSubstrByWidth(k.title(), pW - 10), TXT2);
+                                py += 10;
+                            }
+                        }
+                    }
+                    if (rem > 6) {
+                        pText(g, "· +" + (rem - 6) + " more in " + blocker.label(), TXT3);
+                        py += 10;
+                    }
+                    py += 2;
+                }
             }
 
             List<Mob> mobs = TechTree.mobsDropping(n.itemId());

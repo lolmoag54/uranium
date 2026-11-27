@@ -133,6 +133,9 @@ public class UraniumModItems {
 	public static final DeferredItem<Item> STERILIZED_WATER_VIAL;
 	public static final DeferredItem<Item> RANDOM_ACCES_MEMORY;
 	public static final DeferredItem<Item> SILICON;
+	public static final DeferredItem<Item> RADIFEROUSCONCENTRATE;
+	public static final DeferredItem<Item> LIQUIFIED_RADIFEROUSCENCENTRATE;
+	public static final DeferredItem<Item> CRYSTALISERBASE;
 	static {
 		STEEL = register("steel", SteelItem::new);
 		CENTRIFUGE = block(UraniumModBlocks.CENTRIFUGE, new Item.Properties().stacksTo(16));
@@ -245,6 +248,9 @@ public class UraniumModItems {
 		STERILIZED_WATER_VIAL = register("sterilized_water_vial", SterilizedWaterVialItem::new);
 		RANDOM_ACCES_MEMORY = register("random_acces_memory", RandomAccesMemoryItem::new);
 		SILICON = register("silicon", SiliconItem::new);
+		RADIFEROUSCONCENTRATE = register("radiferousconcentrate", RadiferousconcentrateItem::new);
+		LIQUIFIED_RADIFEROUSCENCENTRATE = register("liquified_radiferouscencentrate", LiquifiedRadiferouscencentrateItem::new);
+		CRYSTALISERBASE = register("crystaliserbase", CrystaliserbaseItem::new);
 	}
 
 	// Start of user code block custom items

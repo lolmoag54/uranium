@@ -4,11 +4,11 @@ license="Not specified"
 
 [[mods]]
 modId="uranium"
-version="1.0.0"
+version="0.0.1"
 displayName="uranium"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="MCreator"
+authors="moddeurs"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

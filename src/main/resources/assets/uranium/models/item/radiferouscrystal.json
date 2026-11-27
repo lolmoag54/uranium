@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "uranium:item/texure_a_faire"
+    "layer0": "uranium:item/radiferous_cristal"
   }
 }
